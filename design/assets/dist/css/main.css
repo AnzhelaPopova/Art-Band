@@ -411,3 +411,75 @@ p {
   color: rgba(0, 0, 0, 0.7);
   text-transform: uppercase;
 }
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  .mbl-header-btn {
+    background-color: #FBFFE9;
+    border-bottom: 1px solid #A0B45B;
+    display: flex;
+    padding: 5% 0 5% 5%;
+  }
+  .mbl-header-btn__back {
+    color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(160, 180, 91, 0.6);
+    border-radius: 20px;
+    width: 35vw;
+    height: 5.5vh;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-size: 0.9em;
+  }
+  .mbl-header-btn__back:hover {
+    cursor: pointer;
+  }
+}
+.mbl-mk {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FBFFE9;
+}
+.mbl-mk__title {
+  color: rgba(0, 0, 0, 0.7);
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 1.8em;
+  padding-top: 5%;
+}
+
+.mbl-mk-card {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #A0B45B;
+  padding: 5%;
+  margin: 5% 3% 5% 3%;
+  align-items: center;
+}
+.mbl-mk-card__img {
+  width: 100%;
+}
+.mbl-mk-card__title {
+  color: rgba(0, 0, 0, 0.7);
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  padding: 5% 0 5% 0;
+  border-bottom: 1px solid black;
+  width: 95%;
+  text-align: center;
+}
+.mbl-mk-card__text {
+  padding-top: 5%;
+  align-self: flex-start;
+  margin-left: 2%;
+  color: rgba(0, 0, 0, 0.7);
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+.mbl-mk-card__text:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
