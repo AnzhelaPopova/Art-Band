@@ -413,6 +413,9 @@ p {
 }
 
 @media screen and (min-width: 375px) and (max-width: 768px) {
+  .dsk-nav, .dsk-nav__logo, .dsk-nav__pages, .dsk-nav__social, .dsk-nav__nmbr {
+    display: none;
+  }
   .mbl-header-btn {
     background-color: #FBFFE9;
     border-bottom: 1px solid #A0B45B;
@@ -420,17 +423,23 @@ p {
     padding: 5% 0 5% 5%;
   }
   .mbl-header-btn__back {
-    color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: rgba(160, 180, 91, 0.6);
     border-radius: 20px;
     width: 35vw;
     height: 5.5vh;
-    font-family: "Inter", sans-serif;
-    font-weight: 800;
-    font-size: 0.9em;
   }
   .mbl-header-btn__back:hover {
     cursor: pointer;
+  }
+  .mbl-header-btn__link {
+    color: rgba(0, 0, 0, 0.7);
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-size: 0.9em;
+    text-decoration: none;
   }
 }
 .mbl-mk {
@@ -482,4 +491,42 @@ p {
 .mbl-mk-card__text:hover {
   cursor: pointer;
   text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1560px) {
+  .mbl-header-btn, .mbl-header-btn__back, .mbl-mk {
+    display: none;
+  }
+  .dsk-nav {
+    background-color: rgba(160, 180, 91, 0.3);
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+  }
+  .dsk-nav__pages {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .dsk-nav__link {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+  }
+  .dsk-nav__link:hover {
+    text-decoration: underline;
+  }
+  .dsk-nav__social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 8%;
+  }
+  .dsk-nav__nmbr {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
