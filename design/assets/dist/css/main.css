@@ -411,3 +411,21 @@ p {
   color: rgba(0, 0, 0, 0.7);
   text-transform: uppercase;
 }
+
+.mk3 {
+  background-color: #FBFFE9;
+}
+
+.mk3-content1 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.mk3-content1 h2 {
+  font: "Inter", sans-serif;
+  font-size: 40px;
+  text-align: center;
+}
+.mk3-content1 p {
+  font: "Nunito", sans-serif;
+}
