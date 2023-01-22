@@ -411,3 +411,58 @@ p {
   color: rgba(0, 0, 0, 0.7);
   text-transform: uppercase;
 }
+
+@media screen and (min-width: 1px) and (max-width: 768px) {
+  .neuro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FBFFE9;
+  }
+  .neuro__img1 {
+    width: 86.77vw;
+    height: 86.77vw;
+    margin-top: 4.07vw;
+  }
+  .neuro__img1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 45px;
+  }
+  .neuro__title {
+    width: 86.26vw;
+    margin-top: 3.56vw;
+    padding-bottom: 5.6vw;
+    text-align: center;
+    vertical-align: top;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    color: rgba(0, 0, 0, 0.7);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  }
+  .neuro__description {
+    width: 86.26vw;
+    margin-top: 4.07vw;
+    text-align: left;
+    vertical-align: top;
+    font-family: "Nunito", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+    color: rgba(0, 0, 0, 0.7);
+  }
+  .neuro__img2 {
+    width: 86.77vw;
+    height: 62.08vw;
+    margin-top: 6.87vw;
+  }
+  .neuro__img2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+}
