@@ -1,1 +1,66 @@
 @import "../layouts/variables.scss";
+.shop-page__wrapper {
+    background-color: #FBFFE9;
+    padding-top: 90px;
+}
+.shop-page__heading {
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    color: rgba(0, 0, 0, 0.7);
+}
+.shop-page__about {
+    display: flex;
+margin-top: 51px;
+
+}
+.shop-page__about-text{
+    margin-left: 10px;
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 36px;
+color: rgba(0, 0, 0, 0.7);
+}
+.shop-page__about-img {
+    width: 540px;
+height: 674px;
+border-radius: 45px;
+margin-right: 10px;
+margin-left: 120px;
+}
+.shop-page__about-text-green {
+    color: #A0B45B;
+}
+.shop-page__about-text-small {
+    font-family: 'Nunito';
+font-style: normal;
+font-weight: 300;
+font-size: 28px;
+line-height: 38px;
+color: rgba(0, 0, 0, 0.72);
+margin-top: 20px;
+}
+.shop-page-line {
+    border: none; 
+    width: 1053.72px;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 1px; /* Толщина линии */
+    margin-bottom: 80px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.shop-page-collage {
+    width: 1000px;
+height: 1414px;
+margin-top: 44px;
+display: block;
+margin-left: auto;
+margin-right: auto 
+}
