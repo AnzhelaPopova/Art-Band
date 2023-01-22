@@ -1,6 +1,5 @@
 @import "../layouts/variables.scss";
 .shop-page__wrapper {
-    background-color: #FBFFE9;
     padding-top: 90px;
 }
 .shop-page__heading {
@@ -56,11 +55,52 @@ margin-top: 20px;
     margin-right: auto;
     
 }
-.shop-page-collage {
-    width: 1000px;
-height: 1414px;
+.shop-page__grid {
 margin-top: 44px;
-display: block;
+}
+
+.shop-page__grid-one {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+.shop-page__grid-one-img {
+width: 390px;
 margin-left: auto;
-margin-right: auto 
+margin-right: auto;
+border-radius: 45px;
+} 
+.shop-page__grid-two {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.shop-page__grid-two-img {
+    width: 290px;
+    margin-left: auto;
+margin-right: auto;
+border-radius: 45px;
+margin-top: 7px;
+}
+.shop-page__grid-three {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.shop-page__grid-three-img {
+    width: 391px;
+    margin-left: auto;
+margin-right: auto;
+border-radius: 45px;
+margin-top: 7px;
+}
+.shop-page__grid-four {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+}
+.shop-page__grid-four-img {
+    width: 295px;
+    margin-left: auto;
+margin-right: auto;
+border-radius: 45px;
+margin-top: 7px;
 }
