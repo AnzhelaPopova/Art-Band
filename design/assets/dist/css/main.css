@@ -413,7 +413,7 @@ p {
 }
 
 @media screen and (min-width: 375px) and (max-width: 768px) {
-  .dsk-nav, .dsk-nav__logo, .dsk-nav__pages, .dsk-nav__social, .dsk-nav__nmbr {
+  .dsk-nav, .dsk-nav__logo, .dsk-nav__pages, .dsk-nav__social, .dsk-nav__nmbr, .dsk-main {
     display: none;
   }
   .mbl-header-btn {
@@ -427,7 +427,7 @@ p {
     align-items: center;
     justify-content: center;
     background-color: rgba(160, 180, 91, 0.6);
-    border-radius: 20px;
+    border-radius: 22px;
     width: 35vw;
     height: 5.5vh;
   }
@@ -503,11 +503,13 @@ p {
     align-content: center;
     justify-content: space-around;
   }
-  .dsk-nav__pages {
-    width: 50%;
+  .dsk-nav__pages, .dsk-nav__social, .dsk-nav__nmbr {
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+  .dsk-nav__pages {
+    width: 50%;
   }
   .dsk-nav__link {
     font-family: "Inter", sans-serif;
@@ -519,14 +521,20 @@ p {
     text-decoration: underline;
   }
   .dsk-nav__social {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     width: 8%;
   }
-  .dsk-nav__nmbr {
+  .dsk-main {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+  }
+  .dsk-main__info {
+    width: 100%;
+    border: 1px solid red;
+  }
+  .dsk-main__info_text {
+    font-family: "Annabelle", sans-serif;
+  }
+  .dsk-main__info_title {
+    font-family: "Calibri", sans-serif;
+    color: #5D6F3A;
   }
 }
