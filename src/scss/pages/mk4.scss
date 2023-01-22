@@ -69,9 +69,111 @@
                 border-radius: 15px;
             }
         }
+
+        &__img3 {
+            display: none;
+        }
     }
 }
 
-@media screen and (min-width: calc($tablet+1px)) {
-    
+
+@media screen and (min-width: 768px) {
+    .wrapper-neuro {
+        display: flex;
+        justify-content: center;
+
+        width: 100vw;
+
+        background-color: $color-light;
+    }
+
+    .neuro {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 89.44vw;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        margin-top: 5.63vw;
+
+        &__block {
+            width: 39.44vw;
+            height: 37.78vw;
+
+            margin-bottom: 4.38vw;
+        }
+
+        &__img3 {
+            order: -1;
+
+            & img {
+                width: 100%;
+                height: 100%;
+
+                object-fit: cover;
+                border-radius: 15px;
+            }
+        }
+
+        &__about {
+            order: 0;
+        }
+
+        &__img1 {
+            order: 2;
+
+            & img {
+                width: 100%;
+                height: 100%;
+
+                object-fit: cover;
+                border-radius: 15px;
+            }
+        }
+
+        &__img2 {
+            order: 1;
+
+            & img {
+                width: 100%;
+                height: 100%;
+
+                object-fit: cover;
+                border-radius: 15px;
+            }
+
+        }
+        &__title {
+            width: 42.3vw;
+            padding-bottom: 1.39vw;
+
+            text-align: center;
+            vertical-align: top;
+
+            font-family: $title-font;
+            font-weight: 600;
+            font-size: 40px;
+            line-height: 48.41px;
+
+            color: $color-text;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+        }
+        &__description {
+            width: 100%;
+            margin-top: 1.94vw;
+
+            text-align: left;
+            vertical-align: top;
+
+            font-family: $default-font;
+            font-weight: 300;
+            font-size: 22px;
+            line-height: 30px;
+
+            color: $color-text;
+        }
+    }
 }
