@@ -405,7 +405,11 @@ p {
   text-transform: uppercase;
 }
 
-@media screen and (min-width: 1px) and (max-width: 768px) {
+.neuro__body {
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 768px) {
   .neuro {
     display: flex;
     flex-direction: column;
@@ -431,8 +435,7 @@ p {
     vertical-align: top;
     font-family: "Inter", sans-serif;
     font-weight: 600;
-    font-size: 22px;
-    line-height: 27px;
+    font-size: calc((100vw - 19px) / 17);
     color: rgba(0, 0, 0, 0.7);
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
   }
@@ -443,13 +446,12 @@ p {
     vertical-align: top;
     font-family: "Nunito", sans-serif;
     font-weight: 300;
-    font-size: 18px;
-    line-height: 25px;
+    font-size: calc((100vw + 87.86px) / 26.714);
     color: rgba(0, 0, 0, 0.7);
   }
   .neuro__img2 {
     width: 86.77vw;
-    height: 62.08vw;
+    height: auto;
     margin-top: 6.87vw;
   }
   .neuro__img2 img {
@@ -462,7 +464,7 @@ p {
     display: none;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .wrapper-neuro {
     display: flex;
     justify-content: center;
@@ -470,10 +472,8 @@ p {
     background-color: #FBFFE9;
   }
   .neuro {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     width: 89.44vw;
     padding-left: 15px;
     padding-right: 15px;
@@ -481,11 +481,11 @@ p {
   }
   .neuro__block {
     width: 39.44vw;
-    height: 37.78vw;
     margin-bottom: 4.38vw;
   }
   .neuro__img3 {
     order: -1;
+    height: 37vw;
   }
   .neuro__img3 img {
     width: 100%;
@@ -494,9 +494,12 @@ p {
     border-radius: 15px;
   }
   .neuro__about {
+    justify-self: end;
     order: 0;
+    height: auto;
   }
   .neuro__img1 {
+    justify-self: end;
     order: 2;
   }
   .neuro__img1 img {
@@ -515,14 +518,13 @@ p {
     border-radius: 15px;
   }
   .neuro__title {
-    width: 42.3vw;
+    width: 100%;
     padding-bottom: 1.39vw;
     text-align: center;
     vertical-align: top;
     font-family: "Inter", sans-serif;
     font-weight: 600;
-    font-size: 40px;
-    line-height: 48.41px;
+    font-size: calc((100vw - 172px) / 29.85);
     color: rgba(0, 0, 0, 0.7);
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
   }
@@ -533,8 +535,7 @@ p {
     vertical-align: top;
     font-family: "Nunito", sans-serif;
     font-weight: 300;
-    font-size: 22px;
-    line-height: 30px;
+    font-size: calc((100vw + 126.5px) / 74.625);
     color: rgba(0, 0, 0, 0.7);
   }
 }
