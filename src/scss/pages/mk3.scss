@@ -1,18 +1,18 @@
 @import "../layouts/variables.scss";
 
-.mk3 {
+.loza {
     background-color: $color-light;
+    margin: 0 auto;
+    
 }
 
-.mk3-content1 {
+.loza-content1 {
     display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
+    
+    
     
     h2 {
         font: $title-font;
-        
-        font-size: 40px;
         text-align: center;
     } 
 
@@ -20,12 +20,20 @@
         font: $default-font;
     }
 
+    &__image-block {
+        width: ;
+        margin: 20px;
+        border: 1px solid red;
+    }
+
     &__image {
-        
+        width: 80%;
+        border: 1px solid red;
     }
 
     &__text-block {
-        
+        width: 70%;
+        margin: 20px;
     }
 }
 
