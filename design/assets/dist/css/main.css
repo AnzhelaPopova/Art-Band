@@ -407,6 +407,7 @@ p {
 
 .neuro__body {
   overflow-x: hidden;
+  background-color: #FBFFE9;
 }
 
 @media screen and (max-width: 768px) {
@@ -414,7 +415,6 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #FBFFE9;
   }
   .neuro__img1 {
     width: 86.77vw;
@@ -469,7 +469,6 @@ p {
     display: flex;
     justify-content: center;
     width: 100vw;
-    background-color: #FBFFE9;
   }
   .neuro {
     display: grid;
@@ -485,7 +484,7 @@ p {
   }
   .neuro__img3 {
     order: -1;
-    height: 37vw;
+    height: 38vw;
   }
   .neuro__img3 img {
     width: 100%;
@@ -524,7 +523,7 @@ p {
     vertical-align: top;
     font-family: "Inter", sans-serif;
     font-weight: 600;
-    font-size: calc((100vw - 172px) / 29.85);
+    font-size: calc((100vw - 166.27px) / 30.136);
     color: rgba(0, 0, 0, 0.7);
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
   }
@@ -535,7 +534,7 @@ p {
     vertical-align: top;
     font-family: "Nunito", sans-serif;
     font-weight: 300;
-    font-size: calc((100vw + 126.5px) / 74.625);
+    font-size: calc((100vw + 68.47px) / 69.789);
     color: rgba(0, 0, 0, 0.7);
   }
 }
