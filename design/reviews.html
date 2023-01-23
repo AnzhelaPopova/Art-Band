@@ -4,17 +4,85 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title> О нас </title>
+		<title>Отзывы</title>
 
 		<link rel="stylesheet" href="./assets/styles/normalize.css">
 		<link rel="shortcut icon" href="./assets/icons/icon.png" />
 		<link rel="stylesheet" href="./assets/dist/css/fonts.css" />
 		<link rel="stylesheet" href="./assets/dist/css/main.css" />
 	</head>
-	<body>
-		<div class="wrapper">
-			
-
+	<body class="reviews-body">
+		<header class="reviews-header">
+			<!-- <div class="reviews-container"> -->
+				<div class="reviews-header__inner">
+					<div class="reviews-arrow">
+						<a class="reviews-arrow__link" href="./about.html">
+							<img class="reviews-arrow__img" src="./assets/icons/arrow.png" alt="Стрелка Назад">
+						</a>
+					</div>
+					<div class="reviews-tomain">
+						<a class="reviews-tomain__link" href="./about.html">НА ГЛАВНУЮ</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<img class="reviews-line__img" src="./assets/icons/line.png">
+		<main>
+			<section>
+				<div class="reviews-container">
+					<h1 class="reviews-heighlight">ОТЗЫВЫ</h1>
+					<div class="reviews-slider" aria-label="Gallery">
+						<ol class="reviews-slider__viewport reviews-list">
+							<li id="reviews-slider__slide1" tabindex="0" class="reviews-slider__slide reviews-list">
+								<div class="reviews-slider__snapper">
+									<a href="#reviews-slider__slide4" class="reviews-slider__prev">Go to last slide</a>
+									<p class="reviews-text">Это реально было потрясающе! так интересно, столько идей, столько возможностей для творчества! Светалана дала нам полный полет фантазии, не ограничивая рамками какой то определенной работы! Как здорово, что есть такое место в Химках, где можно так душевно поработать!</p>
+									<a href="#reviews-slider__slide2" class="reviews-slider__next">Go to next slide</a>
+								</div>
+							</li>
+							<li id="reviews-slider__slide2" tabindex="0" class="reviews-slider__slide reviews-list">
+								<div class="reviews-slider__snapper"></div>
+								<a href="#reviews-slider__slide1" class="reviews-slider__prev">Go to last slide</a>
+								<p class="reviews-text">На Сходне открылась творческая Мастерская , расположена, очень удобно рядом станция Сходня , рядом остановка автобусов, парковка есть . В Мастерской проводятся Мастер Классы для детей и взрослых, можно купить подарки ручной работы . Я купила подарочки набор новогодних пряников , игрушку на ёлку домик, мыло ручной работы и много чего интересного увидела, обязательно буду заходить . Огромное спасибо , приветливой хозяйки Мастерской Марине.</p>
+								<a href="#reviews-slider__slide3" class="reviews-slider__next">Go to last slide</a>
+							</li>
+							<li id="reviews-slider__slide3" tabindex="0" class="reviews-slider__slide reviews-list">
+								<div class="reviews-slider__snapper"></div>
+								<a href="#reviews-slider__slide2" class="reviews-slider__prev">Go to last slide</a>
+								<p class="reviews-text">Волшебный магазин уникальных изделий ручной работы. Мастер классы проводят мастера высшей категории, которые проходят в атмосфере тепла и уюта. В мастерской интересно и детям, и взрослым. Очень здорово, что на Сходне появилось такое место, где можно увлекательно провести время вместе с детьми</p>
+								<a href="#reviews-slider__slide4" class="reviews-slider__next">Go to last slide</a>
+							</li>
+							<li id="reviews-slider__slide4" tabindex="0" class="reviews-slider__slide reviews-list">
+								<div class="reviews-slider__snapper"></div>
+								<a href="#reviews-slider__slide3" class="reviews-slider__prev">Go to last slide</a>
+								<p class="reviews-text">Отличное творческое место. Можно не только посетить интересные мастер-классы, но и приобрести замечательные подарки ручной работы местных мастеров по привлекательным ценам.</p>
+								<a href="#reviews-slider__slide1" class="reviews-slider__next">Go to last slide</a>
+							</li>
+						</ol>
+						<aside class="reviews-slider__navigation">
+							<ol class="reviews-slider__navigation-list reviews-list">
+								<li class="reviews-slider__navigation-item reviews-list">
+									<a href="#reviews-slider__slide1" class="reviews-slider__navigation-button">Go to slide 1</a>
+								</li>
+								<li class="reviews-slider__navigation-item reviews-list">
+									<a href="#reviews-slider__slide2" class="reviews-slider__navigation-button">Go to slide 2</a>
+								</li>
+								<li class="reviews-slider__navigation-item reviews-list">
+									<a href="#reviews-slider__slide3" class="reviews-slider__navigation-button">Go to slide 3</a>
+								</li>
+								<li class="reviews-slider__navigation-item reviews-list">
+									<a href="#reviews-slider__slide4" class="reviews-slider__navigation-button">Go to slide 4</a>
+								</li>
+							</ol>
+						</aside>
+					</div>
+					<img src="./assets/images/reviews/reviews7.jpeg" class="reviews-img__item">
+					<img src="./assets/images/reviews/reviews8.jpeg" class="reviews-img__item">
+					<img src="./assets/images/reviews/reviews6.jpeg" class="reviews-img__item">
+				</div>
+			</section>
+			</main>
+			<footer></footer>
 		</div>
 	</body>
 </html>
