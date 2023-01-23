@@ -4,7 +4,7 @@
 }
 .shop-page__heading {
     text-align: center;
-    font-family: 'Inter';
+    $title-font: "Inter", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 40px;
@@ -25,15 +25,32 @@ font-size: 30px;
 line-height: 36px;
 color: rgba(0, 0, 0, 0.7);
 }
-.shop-page__about-img {
+@media (min-width: 767px) {.shop-page__about-img {
     width: 540px;
 height: 674px;
 border-radius: 45px;
 margin-right: 10px;
 margin-left: 120px;
+} 
 }
+@media (max-width: 766px) {.shop-page__about-img {
+    display: none;
+}
+}
+/*.shop-page__about-img {
+    width: 540px;
+height: 674px;
+border-radius: 45px;
+margin-right: 10px;
+margin-left: 120px;
+}*/
 .shop-page__about-text-green {
     color: #A0B45B;
+}
+
+@media (max-width: 766px) {.shop-page__about-text-small {
+    display: none;
+}
 }
 .shop-page__about-text-small {
     font-family: 'Nunito';
@@ -43,6 +60,10 @@ font-size: 28px;
 line-height: 38px;
 color: rgba(0, 0, 0, 0.72);
 margin-top: 20px;
+}
+@media (max-width: 766px) {.shop-page-line  {
+    display: none;
+}
 }
 .shop-page-line {
     border: none; 
@@ -54,6 +75,10 @@ margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
     
+}
+@media (max-width: 766px) {.shop-page__grid  {
+    display: none;
+}
 }
 .shop-page__grid {
 margin-top: 44px;
