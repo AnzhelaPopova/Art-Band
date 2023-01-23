@@ -2,6 +2,7 @@
 
 .neuro__body {
     overflow-x: hidden;
+    background-color: $color-light;
 }
 
 @media screen and (max-width: $tablet) {
@@ -10,8 +11,6 @@
 
         flex-direction: column;
         align-items: center;
-
-        background-color: $color-light;
 
         &__img1 {
             width: 86.77vw;
@@ -87,8 +86,6 @@
         justify-content: center;
 
         width: 100vw;
-
-        background-color: $color-light;
     }
 
     .neuro {
@@ -109,7 +106,7 @@
 
         &__img3 {
             order: -1;
-            height: 37vw;
+            height: 38vw;
 
             & img {
                 width: 100%;
@@ -160,7 +157,7 @@
 
             font-family: $title-font;
             font-weight: 600;
-            font-size: calc(( 100vw - 172px )/ 29.85 );
+            font-size: calc(( 100vw - 166.27px )/ 30.136 );
             // line-height: 48.41px;
 
             color: $color-text;
@@ -175,7 +172,7 @@
 
             font-family: $default-font;
             font-weight: 300;
-            font-size: calc( ( 100vw + 126.5px)/ 74.625 );
+            font-size: calc( ( 100vw + 68.47px)/ 69.789 );
             // line-height: 30px; 
 
             color: $color-text;
