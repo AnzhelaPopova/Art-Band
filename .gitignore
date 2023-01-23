@@ -1,7 +1,10 @@
 # Dependencies
 /node_modules
-/dist
+<<<<<<< HEAD
+/design/assets/dist
+=======
 ./design/assets/dist
+>>>>>>> dev
 
 # Misc
 .DS_Store
