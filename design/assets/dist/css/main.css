@@ -362,6 +362,30 @@
   font-weight: 400;
 }
 
+@font-face {
+  font-family: "Annabelle";
+  src: url(../ac3a622104aae97d1961.ttf);
+}
+@font-face {
+  font-family: "Inter";
+  src: url(../e89cb19905e7db5591b0.ttf);
+}
+@font-face {
+  font-family: "Inter";
+  src: url(../88fa7ae373b07b41ecce.ttf);
+}
+@font-face {
+  font-family: "Inter";
+  src: url(../4d56bb21f2399db8ad48.ttf);
+}
+@font-face {
+  font-family: "Calibri";
+  src: url(../952f1ae64afe47a25173.ttf);
+}
+@font-face {
+  font-family: "Nunito";
+  src: url(../99a3b019e7727ac19479.ttf);
+}
 h1,
 h2,
 h3,
@@ -412,6 +436,137 @@ p {
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  .dsk-diary__link {
+    display: none;
+  }
+  .mbl-diary {
+    background-color: #FBFFE9;
+    display: flex;
+    justify-content: center;
+  }
+  .mbl-diary__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1%;
+    background-color: rgba(160, 180, 91, 0.5);
+    border-radius: 45px;
+    box-shadow: 4px 4px 4px 0 rgba(63, 84, 0, 0.6);
+    width: 95vw;
+    height: 75vh;
+  }
+  .mbl-diary__title {
+    font-family: "Nunito", sans-serif;
+    font-weight: 900;
+    font-size: 1.4em;
+    color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    margin: 8% 3% 8% 3%;
+  }
+  .mbl-diary__discription {
+    display: flex;
+    flex-direction: column;
+  }
+  .mbl-diary__text {
+    font-family: "Nunito", sans-serif;
+    font-weight: 500;
+    font-size: 1.2em;
+    color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 4% 0 4%;
+  }
+  .mbl-diary__part {
+    margin-bottom: 8%;
+    text-align: center;
+  }
+  .mbl-diary__img {
+    width: 85%;
+    margin: 2% 0 7% 7%;
+  }
+  .mbl-diary__go {
+    display: flex;
+    justify-content: center;
+  }
+  .mbl-diary__link {
+    background-color: #A0B45B;
+    color: #FBFFE9;
+    text-decoration: none;
+    font-size: 1.2em;
+    width: 40vw;
+    height: 5vh;
+    border-radius: 15px;
+    box-shadow: 4px 4px 4px 0 rgba(63, 84, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 2560px) {
+  .mbl-diary__go, .mbl-diary__link {
+    display: none;
+  }
+  .dsk-diary {
+    background-color: #FBFFE9;
+    display: flex;
+    justify-content: center;
+  }
+  .dsk-diary__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(160, 180, 91, 0.5);
+    border-radius: 45px;
+    box-shadow: 4px 4px 4px 0 rgba(63, 84, 0, 0.6);
+    width: 60vw;
+    height: 50vh;
+  }
+  .dsk-diary__title {
+    font-family: "Nunito", sans-serif;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    margin-top: 3%;
+  }
+  .dsk-diary__discription {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .dsk-diary__text {
+    font-family: "Nunito", sans-serif;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.7);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .dsk-diary__part {
+    margin: 6% 0 0 15%;
+    text-align: center;
+  }
+  .dsk-diary__link {
+    background-color: #A0B45B;
+    color: #FBFFE9;
+    text-decoration: none;
+    font-size: 1em;
+    width: 35%;
+    height: 15%;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px 0 rgba(63, 84, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6%;
+  }
+  .dsk-diary__img {
+    width: 70%;
+    margin: 3% 0 0 15%;
+  }
+}
 @media screen and (min-width: 375px) and (max-width: 768px) {
   .dsk-nav, .dsk-nav__logo, .dsk-nav__pages, .dsk-nav__social, .dsk-nav__nmbr, .dsk-main-block {
     display: none;
@@ -493,7 +648,7 @@ p {
   text-decoration: underline;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1560px) {
+@media screen and (min-width: 768px) and (max-width: 2560px) {
   .mbl-header-btn, .mbl-header-btn__back {
     display: none;
   }
@@ -513,7 +668,7 @@ p {
   }
   .dsk-nav__link {
     font-family: "Inter", sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     text-decoration: none;
     color: rgba(0, 0, 0, 0.7);
   }
@@ -523,12 +678,16 @@ p {
   .dsk-nav__social {
     width: 8%;
   }
+  .dsk-nav__nmbr {
+    font-family: "Inter", sans-serif;
+    font-size: 0.9em;
+  }
   .dsk-main-block {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    height: 85vh;
+    height: 100vh;
   }
   .dsk-main-block__brand {
     width: 50vw;
@@ -542,9 +701,9 @@ p {
   }
   .dsk-main-block__title {
     font-family: "Calibri", sans-serif;
-    font-weight: 700;
+    font-weight: 900;
     color: #5D6F3A;
-    font-size: 4em;
+    font-size: 5em;
     text-align: center;
   }
   .dsk-main-block__discription {
@@ -564,7 +723,6 @@ p {
     color: #FBFFE9;
     font-family: "Inter", sans-serif;
     font-size: 0.8em;
-    font-weight: 600;
     text-decoration: none;
   }
   .dsk-mk {
@@ -603,8 +761,10 @@ p {
     width: 100%;
   }
   .dsk-mk-card__img_block {
+    width: 98%;
     object-fit: scale-down;
     object-position: top;
+    padding: 0%;
   }
   .dsk-mk-card__title {
     color: rgba(0, 0, 0, 0.7);
