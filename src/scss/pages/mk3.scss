@@ -1,39 +1,90 @@
 @import "../layouts/variables.scss";
 
-.loza {
-    background-color: $color-light;
-    margin: 0 auto;
+@media screen and (min-width: $big-tablet) and (max-width: $large-desktop) {
+    .loza-desktop {
+        background-color: $color-light;
+        margin: 0 auto;
+    }
     
+    .loza-content1 {
+        display: flex;
+        margin: 20px;
+        
+        
+        h2 {
+            font: $title-font;
+            text-align: center;
+            margin: 20px;
+        } 
+    
+        p {
+            font: $default-font;
+            margin: 20px;
+        }
+    
+        &__image-block {
+            width: 50%;
+            border: 1px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        &__image {
+            width: 90%;
+            border: 1px solid red;
+            
+        }
+    
+        &__text-block {
+            width: 50%;
+            border: 1px solid blue;
+        }
+    }
+    
+    .loza-content2 {
+        display: flex;
+        
+    
+        &__block1 {
+            border: 1px solid blue;
+            
+        }
+    
+        &__block2 {
+            border: 1px solid blue;
+            
+        }
+    
+        &__block3 {
+            border: 1px solid blue;
+            
+        }
+    
+        &__image1 {
+            width: 95%;
+        }
+    
+        &__image2 {
+            width: 95%;
+        }
+    
+        &__image3 {
+            width: 95%;
+        }
+    
+        &__image4 {
+            width: 95%;
+        }
+    
+        &__image5 {
+            width: 95%;
+        }
+    
+        &__image6 {
+            width: 95%;
+        }
+    }
 }
 
-.loza-content1 {
-    display: flex;
-    
-    
-    
-    h2 {
-        font: $title-font;
-        text-align: center;
-    } 
-
-    p {
-        font: $default-font;
-    }
-
-    &__image-block {
-        width: ;
-        margin: 20px;
-        border: 1px solid red;
-    }
-
-    &__image {
-        width: 80%;
-        border: 1px solid red;
-    }
-
-    &__text-block {
-        width: 70%;
-        margin: 20px;
-    }
-}
 
