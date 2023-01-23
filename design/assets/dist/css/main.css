@@ -413,6 +413,9 @@ p {
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1560px) {
+  .loza-mobile {
+    display: none;
+  }
   .loza-desktop {
     background-color: #FBFFE9;
     margin: 0 auto;
@@ -474,5 +477,44 @@ p {
   }
   .loza-content2__image6 {
     width: 95%;
+  }
+}
+@media screen and (min-width: 1px) and (max-width: 768px) {
+  .loza-desktop {
+    display: none;
+  }
+  .loza-mobile {
+    background-color: #FBFFE9;
+    margin: 0 auto;
+  }
+  .loza-mobile__content1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .loza-mobile__buttons {
+    display: flex;
+    justify-content: flex-start;
+    border: 1px solid red;
+    width: 80%;
+  }
+  .loza-mobile__buttons_errow {
+    background-color: rgba(160, 180, 91, 0.6);
+  }
+  .loza-mobile__image1 {
+    width: 80%;
+    margin-top: 20px;
+    border-radius: 10%;
+  }
+  .loza-mobile__title-block {
+    width: 80%;
+  }
+  .loza-mobile__title {
+    font: "Inter", sans-serif;
+    text-align: center;
+    margin: 20px;
+  }
+  .loza-mobile__text-block {
+    width: 80%;
   }
 }

@@ -1,6 +1,10 @@
 @import "../layouts/variables.scss";
 
 @media screen and (min-width: $big-tablet) and (max-width: $large-desktop) {
+    .loza-mobile {
+        display: none;
+    }
+    
     .loza-desktop {
         background-color: $color-light;
         margin: 0 auto;
@@ -63,6 +67,7 @@
     
         &__image1 {
             width: 95%;
+            
         }
     
         &__image2 {
@@ -87,4 +92,51 @@
     }
 }
 
+@media screen and (min-width: 1px) and (max-width: $tablet) {
+    .loza-desktop {
+        display: none;
+    }
 
+    .loza-mobile {
+        background-color: $color-light;
+        margin: 0 auto;
+
+        &__content1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__buttons {
+            display: flex;
+            justify-content: flex-start;
+            border: 1px solid red;
+            width: 80%;
+        }
+
+        &__buttons_errow {
+            background-color: $color-dark-green;
+            
+        }
+
+        &__image1 {
+            width: 80%;
+            margin-top: 20px;
+            border-radius: 10%;
+        }
+
+        &__title-block {
+            width: 80%;
+        }
+
+        &__title {
+            font: $title-font;
+            text-align: center;
+            margin: 20px;
+        } 
+
+        &__text-block {
+            width: 80%;
+        }
+    }
+}
