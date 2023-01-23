@@ -1,5 +1,7 @@
 # Dependencies
 /node_modules
+/dist
+./design/assets/dist
 
 # Misc
 .DS_Store
