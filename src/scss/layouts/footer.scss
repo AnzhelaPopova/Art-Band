@@ -1,1 +1,23 @@
 @import "./variables.scss";
+
+// $title-font-logo: "Annabelle", sans-serif;
+// $title-font-logo_green: "Calibri", sans-serif;
+// $title-font: "Inter", sans-serif;
+// $default-font: "Nunito", sans-serif;
+
+.q1 {
+    font-family: "Annabelle";
+    font-size: 20px;
+}
+
+.q2 {
+    font-family: $title-font-logo_green;
+}
+
+.q3 {
+    font-family: $title-font;
+}
+
+.q4 {
+    font-family: $default-font;
+}
