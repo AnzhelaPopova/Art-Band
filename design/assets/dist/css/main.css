@@ -412,41 +412,49 @@ p {
   text-transform: uppercase;
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1560px) {
+@media screen and (min-width: 768px) and (max-width: 1560px) {
   .loza-mobile {
     display: none;
   }
   .loza-desktop {
     background-color: #FBFFE9;
-    margin: 0 auto;
   }
   .loza-content1 {
     display: flex;
-    margin: 20px;
-  }
-  .loza-content1 h2 {
-    font: "Inter", sans-serif;
-    text-align: center;
-    margin: 20px;
-  }
-  .loza-content1 p {
-    font: "Nunito", sans-serif;
-    margin: 20px;
+    justify-content: space-around;
+    margin-top: 30px;
   }
   .loza-content1__image-block {
     width: 50%;
-    border: 1px solid red;
+    border: 1px solid blue;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   .loza-content1__image {
-    width: 90%;
-    border: 1px solid red;
+    width: 80%;
   }
   .loza-content1__text-block {
     width: 50%;
-    border: 1px solid blue;
+  }
+  .loza-content1__title {
+    font: "Inter", sans-serif;
+    text-align: center;
+    margin: 20px;
+    font-weight: bolder;
+    color: rgba(0, 0, 0, 0.7);
+    width: 80%;
+  }
+  .loza-content1__text {
+    font: "Nunito", sans-serif;
+    margin: 20px;
+    color: rgba(0, 0, 0, 0.7);
+    width: 80%;
+    line-height: 1.5em;
+  }
+  .loza-content1__line {
+    width: 85%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.7);
   }
   .loza-content2 {
     display: flex;
@@ -498,11 +506,17 @@ p {
     width: 80%;
     margin-top: 20px;
   }
-  .loza-mobile__buttons_errow {
+  .loza-mobile__buttons_arrow {
     background-color: rgba(160, 180, 91, 0.6);
     width: 11vw;
     height: 7vh;
     border-radius: 50%;
+  }
+  .loza-mobile__buttons_arrow:hover {
+    background: #A0B45B;
+  }
+  .loza-mobile__buttons_arrow:active {
+    transform: translateY(3px);
   }
   .loza-mobile__buttons_to-main {
     background-color: rgba(160, 180, 91, 0.6);
@@ -525,24 +539,23 @@ p {
     border-radius: 10%;
     margin-top: 20px;
   }
-  .loza-mobile__title-block {
-    width: 80%;
-  }
   .loza-mobile__title {
     font: "Inter", sans-serif;
     text-align: center;
     margin: 20px;
     color: rgba(0, 0, 0, 0.7);
+    font-weight: bolder;
   }
   .loza-mobile__line2 {
     width: 80%;
     height: 10px;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.7);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.7);
     margin-bottom: 30px;
   }
   .loza-mobile__text-block {
     width: 80%;
     color: rgba(0, 0, 0, 0.7);
+    font: "Nunito", sans-serif;
   }
   .loza-mobile__content2 {
     margin: 25px;
@@ -572,14 +585,10 @@ p {
     width: 45%;
     border-radius: 15px;
   }
-  .loza-mobile__title-block2 {
-    width: 40%;
-    border: 1px solid red;
-  }
   .loza-mobile__title2 {
     font: "Inter", sans-serif;
     text-align: center;
-    margin: 20px;
+    margin-top: 30px;
     color: rgba(0, 0, 0, 0.7);
     font-weight: bolder;
   }

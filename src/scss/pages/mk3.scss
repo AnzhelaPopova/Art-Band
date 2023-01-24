@@ -1,49 +1,65 @@
 @import "../layouts/variables.scss";
 
-@media screen and (min-width: $big-tablet) and (max-width: $large-desktop) {
+@media screen and (min-width: $tablet) and (max-width: $large-desktop) {
     .loza-mobile {
         display: none;
     }
     
     .loza-desktop {
         background-color: $color-light;
-        margin: 0 auto;
+        
     }
     
     .loza-content1 {
         display: flex;
-        margin: 20px;
+        justify-content: space-around;
+        margin-top: 30px;
         
-        
-        h2 {
-            font: $title-font;
-            text-align: center;
-            margin: 20px;
-        } 
-    
-        p {
-            font: $default-font;
-            margin: 20px;
-        }
-    
         &__image-block {
             width: 50%;
-            border: 1px solid red;
+            border: 1px solid blue;
             display: flex;
             justify-content: center;
             align-items: center;
         }
     
         &__image {
-            width: 90%;
-            border: 1px solid red;
+            width: 80%;
+           
             
         }
-    
+
         &__text-block {
             width: 50%;
-            border: 1px solid blue;
+            
         }
+
+        &__title {
+            font: $title-font;
+            text-align: center;
+            margin: 20px;
+            font-weight: bolder;
+            color: $color-text;
+            width: 80%;
+        } 
+    
+        &__text {
+            font: $default-font;
+            margin: 20px;
+            color: $color-text;
+            width: 80%;
+            line-height: 1.5em;
+        }
+    
+        &__line {
+            width: 85%;
+            border-bottom: 1px solid $color-text;
+            
+        }
+
+        
+    
+        
     }
     
     .loza-content2 {
@@ -114,11 +130,19 @@
             margin-top: 20px;
         }
 
-        &__buttons_errow {
+        &__buttons_arrow {
             background-color: $color-dark-green;
             width: 11vw;
             height: 7vh;
             border-radius: 50%;
+            
+            &:hover {
+                background: $color-light-green;    
+            }
+
+            &:active {
+                transform: translateY(3px);
+            }
         }
 
         &__buttons_to-main {
@@ -145,27 +169,25 @@
             margin-top: 20px;
         }
 
-        &__title-block {
-            width: 80%;
-        }
-
         &__title {
             font: $title-font;
             text-align: center;
             margin: 20px;
-            color: $color-text
+            color: $color-text;
+            font-weight: bolder;
         } 
 
         &__line2 {
             width: 80%;
             height: 10px;
-            border-bottom: 2px solid $color-text;
+            border-bottom: 1px solid $color-text;
             margin-bottom: 30px;
         }
 
         &__text-block {
             width: 80%;
             color: $color-text;
+            font: $default-font;
         }
 
         &__content2 {
@@ -203,15 +225,10 @@
             border-radius: 15px;
         }
 
-        &__title-block2 {
-            width: 40%;
-            border: 1px solid red;
-        }
-
         &__title2 {
             font: $title-font;
             text-align: center;
-            margin: 20px;
+            margin-top: 30px;
             color: $color-text;
             font-weight: bolder;
         }
