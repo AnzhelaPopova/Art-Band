@@ -15,7 +15,7 @@
     display: grid;
     grid-template-areas: "main-img-box  main-cont"
                          "cont img-box";
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
     row-gap: 3.7vw;
     padding: 5vw 0 5vw 0;
     /*font-size: calc(18px + 4 * (100vw / 1440));*/
@@ -46,6 +46,7 @@
 
     &__inner {
         width: 90%;
+        margin-right: 1.2em;
     }
     
     &__title {
@@ -68,11 +69,9 @@
     }
 
     &__list-item {
-        list-style-type: none;
-
-        &::before {
-            content: "\2013";
-        }
+        list-style-type: "\2013 \00A0";
+        margin-left: 0.8em;
+        margin-right: 1.2em;
     }
 }
 
@@ -80,7 +79,9 @@
     grid-area: img-box;
 
     &__inner {
-        margin: auto;
+        /*margin: auto;*/
+        margin-right: 1.2em;
+        margin-left: 1em;
         width: 90%;
         display: flex;
         flex-wrap: wrap;
@@ -180,13 +181,11 @@
         }
     
         &__list-item {
-            list-style-type: none;
-    
-            &::before {
-                content: "\2013";
-            }
+            list-style-type: "\2013 \00A0";
+            margin-left: 0.8em;
         }
     }
+    
     
     .mk5-img-box {
         grid-area: img-box;
