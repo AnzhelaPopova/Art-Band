@@ -561,6 +561,7 @@ p {
     border-radius: 15px;
   }
   .mkphoto__plant-text {
+    font-weight: 300;
     margin-left: 2em;
     font-family: "Nunito", sans-serif;
     margin-top: 2em;
@@ -577,6 +578,7 @@ p {
     padding-bottom: 2vw;
   }
   .mkphoto__maintext {
+    font-weight: 300;
     font-family: "Nunito", sans-serif;
     margin-top: 2em;
     font-size: calc((27vw - 19px) / 17);
@@ -636,6 +638,7 @@ p {
     padding-bottom: 2vw;
   }
   .mkphoto__maintext, .mkphoto__plant-text2 {
+    font-weight: 300;
     margin-left: 2.5em;
     text-align: left;
     font-family: "Nunito", sans-serif;

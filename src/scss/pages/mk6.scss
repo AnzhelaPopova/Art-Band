@@ -24,6 +24,7 @@
            }
            
            &__plant-text{
+            font-weight: 300;
             margin-left: 2em;
             font-family: $default-font;
             margin-top: 2em;
@@ -41,6 +42,7 @@
            }
            
            &__maintext{
+            font-weight: 300;
             font-family: $default-font;
             margin-top: 2em;
             font-size: calc((27vw - 19px)/ 17);
@@ -110,6 +112,7 @@
            }
            
            &__maintext, &__plant-text2{
+            font-weight: 300;
             margin-left: 2.5em;
             text-align: left;
             font-family: $default-font;
