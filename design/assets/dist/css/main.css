@@ -165,6 +165,7 @@
   optgroup,
   select,
   textarea {
+    font-family: inherit; /* 1 */
     font-size: 100%; /* 1 */
     line-height: 1.15; /* 1 */
     margin: 0; /* 2 */
@@ -352,20 +353,13 @@
 /*!******************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/app.scss ***!
   \******************************************************************************************************************************************************/
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  border: none;
-}
-
 h1,
 h2,
 h3,
 h4,
 h5,
 h6,
-p {
+p, a {
   margin: 0;
 }
 
@@ -392,16 +386,6 @@ p {
 .button:focus {
   background-color: #77854e;
   box-shadow: none;
-}
-
-.title {
-  font-family: "Inter", sans-serif;
-  font-size: 64px;
-  line-height: 130%;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: rgba(0, 0, 0, 0.7);
-  text-transform: uppercase;
 }
 
 .q1 {
