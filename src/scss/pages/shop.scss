@@ -180,16 +180,20 @@ display: none;
         color: rgba(0, 0, 0, 0.7);
     }
         }
-
+        @media (min-width: 767px) {.shop-page__mobile {
+            display: none;
+                }
+            }
+        @media (max-width: 766px) {.shop-page__mobile {
+        display: flex;
+        flex-direction: column;
+        }
+    }
 @media (min-width: 767px) {.shop-page__mobile-img {
     display: none;
         }
     }
-@media (max-width: 766px) {.shop-page__mobile-img
- { display: flex;
-flex-direction: column;
-}
-    }
+
 @media (max-width: 766px) {.shop-page__mobile-img
     {width: 378px;
         height: 406px;
