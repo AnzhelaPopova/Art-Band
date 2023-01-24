@@ -17,7 +17,7 @@
         
         &__image-block {
             width: 50%;
-            border: 1px solid blue;
+            
             display: flex;
             justify-content: center;
             align-items: center;
@@ -64,21 +64,37 @@
     
     .loza-content2 {
         display: flex;
-        
+        margin: 0 auto;
+        width: 91%;
+        margin-top: 30px;
+        gap: 10px;
+        margin-bottom: 30px;
     
         &__block1 {
-            border: 1px solid blue;
             
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            gap: 20px;
         }
     
         &__block2 {
-            border: 1px solid blue;
             
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            gap: 20px;
         }
     
         &__block3 {
-            border: 1px solid blue;
             
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            gap: 20px;
         }
     
         &__image1 {

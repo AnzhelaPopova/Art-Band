@@ -426,7 +426,6 @@ p {
   }
   .loza-content1__image-block {
     width: 50%;
-    border: 1px solid blue;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -458,15 +457,32 @@ p {
   }
   .loza-content2 {
     display: flex;
+    margin: 0 auto;
+    width: 91%;
+    margin-top: 30px;
+    gap: 10px;
+    margin-bottom: 30px;
   }
   .loza-content2__block1 {
-    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
   }
   .loza-content2__block2 {
-    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
   }
   .loza-content2__block3 {
-    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
   }
   .loza-content2__image1 {
     width: 95%;
