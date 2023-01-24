@@ -500,7 +500,7 @@ p {
   }
   .loza-mobile__buttons_errow {
     background-color: rgba(160, 180, 91, 0.6);
-    width: 9vw;
+    width: 11vw;
     height: 8vh;
     border-radius: 50%;
   }
@@ -541,5 +541,29 @@ p {
   }
   .loza-mobile__text-block {
     width: 80%;
+  }
+  .loza-mobile__content2 {
+    margin: 20px;
+  }
+  .loza-mobile__image-block1 {
+    display: flex;
+    justify-content: space-around;
+  }
+  .loza-mobile__image-block2 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+  }
+  .loza-mobile__image2 {
+    width: 45%;
+  }
+  .loza-mobile__image3 {
+    width: 45%;
+  }
+  .loza-mobile__image4 {
+    width: 45%;
+  }
+  .loza-mobile__image5 {
+    width: 45%;
   }
 }
