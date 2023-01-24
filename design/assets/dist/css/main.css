@@ -438,6 +438,91 @@ p {
 }
 
 @media screen and (min-width: 375px) and (max-width: 768px) {
+  .mbl-header-btn, .wrapper-mbl-mk {
+    display: none;
+  }
+  .main-footer-mbl {
+    background-color: rgba(160, 180, 91, 0.6);
+    height: 147gitпшvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-footer-mbl__title {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+    line-height: 30px;
+    margin: 12% 0 8% 0;
+  }
+  .main-footer-mbl__title_next {
+    margin: 8% 0 8% 0;
+  }
+  .main-footer-mbl__text {
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 8%;
+    line-height: 30px;
+  }
+  .main-footer-mbl__social-block {
+    display: flex;
+    gap: 3%;
+    margin-left: 15%;
+  }
+  .main-footer-mbl__icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .main-footer-mbl__img {
+    width: 70%;
+  }
+  .main-footer-mbl__img_big {
+    width: 85%;
+  }
+  .main-footer-mbl__link {
+    height: 100%;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .main-footer-mbl__web {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 600;
+  }
+  .main-footer-mbl__number {
+    font-size: 0.9em;
+    font-weight: 600;
+  }
+  .main-footer-mbl__address {
+    width: 70vw;
+  }
+  .main-footer-mbl__map {
+    margin-bottom: 8%;
+  }
+  .main-footer-mbl__copy {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10%;
+  }
+  .main-footer-mbl__brand {
+    font-family: "Annabelle", sans-serif;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 1.5em;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 768px) {
   .dsk-nav, .dsk-nav__logo, .dsk-nav__pages, .dsk-nav__social, .dsk-nav__nmbr, .dsk-main-block {
     display: none;
   }
@@ -634,7 +719,7 @@ p {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 2560px) {
-  .main-page-mbl {
+  .main-page-mbl, .main-footer-mbl {
     display: none;
   }
   .dsk-main-block {
@@ -753,85 +838,8 @@ p {
   }
 }
 @media screen and (min-width: 375px) and (max-width: 768px) {
-  .main-footer-mbl {
-    background-color: rgba(160, 180, 91, 0.6);
-    height: 147gitпшvh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .main-footer-mbl__title {
-    font-family: "Inter", sans-serif;
-    font-weight: 700;
-    font-size: 1.5em;
-    text-align: center;
-    color: rgba(0, 0, 0, 0.7);
-    line-height: 30px;
-    margin: 12% 0 8% 0;
-  }
-  .main-footer-mbl__title_next {
-    margin: 8% 0 8% 0;
-  }
-  .main-footer-mbl__text {
-    font-family: "Nunito", sans-serif;
-    font-weight: 400;
-    font-size: 1.2em;
-    text-align: center;
-    color: rgba(0, 0, 0, 0.7);
-    margin-bottom: 8%;
-    line-height: 30px;
-  }
-  .main-footer-mbl__social-block {
-    display: flex;
-    gap: 3%;
-    margin-left: 15%;
-  }
-  .main-footer-mbl__icon {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .main-footer-mbl__img {
-    width: 70%;
-  }
-  .main-footer-mbl__img_big {
-    width: 85%;
-  }
-  .main-footer-mbl__link {
-    height: 100%;
-    width: 60vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
-  }
-  .main-footer-mbl__web {
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.7);
-    font-weight: 600;
-  }
-  .main-footer-mbl__number {
-    font-size: 0.9em;
-    font-weight: 600;
-  }
-  .main-footer-mbl__address {
-    width: 70vw;
-  }
-  .main-footer-mbl__map {
-    margin-bottom: 8%;
-  }
-  .main-footer-mbl__copy {
-    display: flex;
-    width: 100vw;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 10%;
-  }
-  .main-footer-mbl__brand {
-    font-family: "Annabelle", sans-serif;
-    color: rgba(0, 0, 0, 0.7);
-    font-size: 1.5em;
+  .mbl-header-btn, .wrapper-mbl-mk {
+    display: none;
   }
 }
 @media screen and (min-width: 375px) and (max-width: 768px) {
