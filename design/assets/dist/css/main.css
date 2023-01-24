@@ -405,6 +405,103 @@ p {
   text-transform: uppercase;
 }
 
+.main-page-mbl {
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper-main-page-mbl {
+    background-color: #FBFFE9;
+  }
+  .main-page-mbl-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../4d3bb931b7d70fd38f6d.png);
+    object-fit: cover;
+    background-repeat: no-repeat;
+  }
+  .main-page-mbl-main__logo {
+    margin-bottom: 47.88vh;
+  }
+  .main-page-mbl-main__logo_black {
+    font-family: "Annabelle", sans-serif;
+  }
+  .main-page-mbl-main__logo_green {
+    font-family: "Calibri", sans-serif;
+  }
+  .main-page-mbl-main__logo_description {
+    font-family: "Inter", sans-serif;
+  }
+  .main-page-mbl-main__number {
+    margin-bottom: 3.38vh;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .main-page-mbl-main__social-networks {
+    display: flex;
+    margin-bottom: 5.17vh;
+  }
+  .main-page-mbl-main__social-networks_tg {
+    margin-right: 22px;
+  }
+  .main-page-mbl-main__social-networks_vk {
+    margin-left: 22px;
+  }
+  .main-page-mbl-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 30.75vh;
+    margin-top: 30px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+  }
+  .main-page-mbl-section_1 {
+    background-image: url(../577a69538b383c228477.png);
+  }
+  .main-page-mbl-section_2 {
+    background-image: url(../75ddb51c5f8b1c6e6d9c.png);
+  }
+  .main-page-mbl-section_3 {
+    background-image: url(../72c72f1e243c4fb9fba4.png);
+  }
+  .main-page-mbl-section_4 {
+    background-image: url(../29ec46d0fd1afe4a1ba8.png);
+  }
+  .main-page-mbl-section__title {
+    margin-bottom: 24px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  .main-page-mbl-section__button {
+    width: 133px;
+    height: 42px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    background: #E1EFDB;
+    border-radius: 20px;
+    text-transform: uppercase;
+  }
+}
+@media screen and (min-width: 769px) {
+  .wrapper-main-page-mbl {
+    display: none;
+  }
+}
 .neuro__body {
   overflow-x: hidden;
   background-color: #FBFFE9;
