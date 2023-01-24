@@ -43,7 +43,6 @@
         &__social-block {
             display: flex;
             gap: 3%;
-            margin-left: 15%;
         }
 
         &__icon {
@@ -62,12 +61,11 @@
         }
 
         &__link {
-            height: 100%;
-            width: 60vw;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
             align-items: flex-start;
+            margin-bottom: 0;
         }
 
         &__web {

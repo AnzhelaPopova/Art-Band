@@ -472,7 +472,6 @@ p {
   .main-footer-mbl__social-block {
     display: flex;
     gap: 3%;
-    margin-left: 15%;
   }
   .main-footer-mbl__icon {
     display: flex;
@@ -487,12 +486,11 @@ p {
     width: 85%;
   }
   .main-footer-mbl__link {
-    height: 100%;
-    width: 60vw;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
+    margin-bottom: 0;
   }
   .main-footer-mbl__web {
     text-decoration: none;
