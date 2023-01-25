@@ -1,6 +1,5 @@
 # Dependencies
 /node_modules
-./design/assets/dist
 /design/assets/dist
 
 # Misc
