@@ -12,32 +12,34 @@
     
     .loza-content1 {
         display: flex;
-        justify-content: space-around;
-        margin-top: 30px;
+        justify-content: center;
+        align-items: center;        
+        
         
         &__image-block {
-            width: 50%;
-            
+            border: 1px solid blue;
             display: flex;
             justify-content: center;
-            align-items: center;
         }
     
         &__image {
-            width: 80%;
-           
-            
+            width: 70%;
         }
 
         &__text-block {
+            border: 1px solid blue;
             width: 50%;
-            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         &__title {
             font: $title-font;
+            font-size: 35px;
             text-align: center;
-            margin: 20px;
+            margin-bottom: 3%;
+            margin-top: 4%;
             font-weight: bolder;
             color: $color-text;
             width: 80%;
@@ -48,30 +50,23 @@
             margin: 20px;
             color: $color-text;
             width: 80%;
-            line-height: 1.5em;
+            
         }
     
         &__line {
-            width: 85%;
+            width: 90%;
             border-bottom: 1px solid $color-text;
-            
         }
-
-        
-    
-        
     }
     
     .loza-content2 {
         display: flex;
-        margin: 0 auto;
-        width: 91%;
-        margin-top: 30px;
+        justify-content: center;
+        margin-top: 5%;
         gap: 10px;
         margin-bottom: 30px;
     
         &__block1 {
-            
             display: flex;
             flex-direction: column;
             justify-content: space-around;
@@ -80,7 +75,6 @@
         }
     
         &__block2 {
-            
             display: flex;
             flex-direction: column;
             justify-content: space-around;
@@ -89,7 +83,6 @@
         }
     
         &__block3 {
-            
             display: flex;
             flex-direction: column;
             justify-content: space-around;
@@ -191,6 +184,8 @@
             margin: 20px;
             color: $color-text;
             font-weight: bolder;
+            font-size: 22px;
+            line-height: 1.2em;
         } 
 
         &__line2 {
