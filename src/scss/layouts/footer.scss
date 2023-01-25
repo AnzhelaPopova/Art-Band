@@ -1,1 +1,199 @@
 @import "./variables.scss";
+
+@media screen and (min-width: 769px) {
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    background-color: $color-dark-green;
+
+    &__work {
+        display: flex;
+        flex-direction: row;
+        padding-top: 10vh;
+    }
+
+    &__nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__cosial {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        &_items {
+            margin: 20px 20px;
+            cursor: pointer;
+        }
+    }
+
+    & ul {
+        font-size: 18px;
+        list-style: none;
+        color: $color-text;
+        padding: 5px 0 5px 0;
+        } 
+   
+     &__logo {
+        font-family: $title-font;
+        display: flex;
+        align-items: flex-end;
+        font-size: 20px;
+        width: 50vw;
+        border-top: 2px solid black;
+        justify-content: center;
+        align-content: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        margin-top: 40px;
+
+            & span {
+                font-family: $title-font-logo;
+                font-size: 32px;
+            } 
+        } 
+
+        &__list {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 10vw;
+        border: 1 px solid black;
+
+            &_items {
+            width: 200px;
+            font-size: 20px;
+            list-style: none;
+            color: $color-text;
+            padding: 10px 0 10px 0;
+            font-family: $title-font;
+            text-decoration: none;
+            } 
+
+        &_hours {
+          background: url(../../design/assets/icons/clock.png) left no-repeat;
+          padding: 10px 0px 10px 50px;
+          font-size: 18px;
+          line-height: 30px;
+          font-family: $title-font;
+        }
+
+        &_address {
+          background: url(../../design/assets/icons/location.png) left no-repeat;
+          padding: 10px 0px 10px 50px;
+          font-size: 18px;
+          line-height: 30px;
+          font-family: $title-font;
+        }
+
+        &_phone {
+          background: url(../../design/assets/icons/phone.png) left no-repeat;
+          padding: 10px 0px 10px 50px;
+          font-size: 18px;
+          line-height: 30px;
+          font-family: $title-font;
+        }
+      }
+    }
+}
+
+@media screen and (max-width: $tablet) {
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        background-color: $color-dark-green;
+        height: 100vh;
+
+        &__nav {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin:0 74px;
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+        }
+    
+        &__work {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__cosial {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding-bottom: 3vh;
+    
+            &_items {
+                margin: 20px 20px;
+                cursor: pointer;
+                padding: auto;
+            }
+        }
+    
+        & ul {
+            list-style: none;
+            color: $color-text;
+            padding: 5px 0;
+            } 
+       
+         &__logo {
+            font-family: $title-font;
+            display: flex;
+            font-size: 20px;
+            justify-content: center;
+            align-items: flex-end;
+            padding: 3vh 0;
+            flex-grow: 1;
+    
+                & span {
+                    font-family: $title-font-logo;
+                    font-size: 25px;
+                } 
+            } 
+
+        &__items {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+        }
+    
+        &__list {
+            display: flex;
+            flex-direction: column;
+            margin: 0px 5vw;
+            padding: 3vh 0;
+            cursor: pointer;
+    
+                &_items {
+                font-size: 18px;
+                list-style: none;
+                color: $color-text;
+                padding: 10px 0 10px 0;
+                font-family: $title-font;
+                text-decoration: none;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                cursor: pointer;
+                } 
+
+            &_contacts {
+              padding: 10px 0px;
+              font-size: 16px;
+              line-height: 30px;
+              font-family: $title-font;
+              line-height: normal;
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              text-align: center;
+            }
+            }
+        }
+    }
