@@ -727,14 +727,14 @@ p, a {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    margin-left: 20px;
+    margin-left: 4%;
   }
   .loza-content1__image-block {
     display: flex;
     justify-content: center;
   }
   .loza-content1__image {
-    max-width: 90%;
+    max-width: 100%;
     object-fit: cover;
   }
   .loza-content1__text-block {
@@ -749,7 +749,7 @@ p, a {
     margin-bottom: 3%;
     margin-top: 4%;
     color: rgba(0, 0, 0, 0.7);
-    font: "Inter", sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 3.125vw;
     font-weight: bolder;
   }
@@ -757,8 +757,8 @@ p, a {
     width: 80%;
     margin: 20px;
     color: rgba(0, 0, 0, 0.7);
-    font: "Nunito", sans-serif;
-    font-size: 1.25vw;
+    font-family: "Nunito", sans-serif;
+    font-size: 1.319vw;
   }
   .loza-content1__line {
     width: 90%;
@@ -834,7 +834,7 @@ p, a {
   }
   .loza-mobile__buttons_arrow {
     width: 11vw;
-    height: 7vh;
+    height: 8vh;
     border-radius: 50%;
     background-color: rgba(160, 180, 91, 0.6);
   }
@@ -846,11 +846,11 @@ p, a {
   }
   .loza-mobile__buttons_to-main {
     width: 30vw;
-    height: 7vh;
+    height: 8vh;
     background-color: rgba(160, 180, 91, 0.6);
-    border-radius: 22px;
+    border-radius: 25px;
     margin-left: 5%;
-    font: "Inter", sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: bolder;
     color: rgba(0, 0, 0, 0.7);
     font-size: 3.562vw;
@@ -870,9 +870,9 @@ p, a {
     text-align: center;
     margin: 20px;
     color: rgba(0, 0, 0, 0.7);
-    font: "Inter", sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: bolder;
-    font-size: 5.598vw;
+    font-size: 5.067vw;
     line-height: 1.2em;
   }
   .loza-mobile__line2 {
@@ -884,7 +884,7 @@ p, a {
   .loza-mobile__text-block {
     width: 80%;
     color: rgba(0, 0, 0, 0.7);
-    font: "Nunito", sans-serif;
+    font-family: "Nunito", sans-serif;
     font-size: 4.58vw;
   }
   .loza-mobile__content2 {
@@ -918,9 +918,9 @@ p, a {
   .loza-mobile__title2 {
     width: 100%;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 10%;
     color: rgba(0, 0, 0, 0.7);
-    font: "Inter", sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: bolder;
     font-size: 5.598vw;
   }
@@ -928,7 +928,7 @@ p, a {
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin-top: 15px;
+    margin-top: 25px;
   }
   .loza-mobile__image-block4 {
     display: flex;
