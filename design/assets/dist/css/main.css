@@ -784,7 +784,7 @@ p {
     font-family: "Inter", sans-serif;
     font-weight: 700;
     font-size: 1.8em;
-    padding: 2% 0 1% 0;
+    padding: 1% 0 1% 0;
   }
   .dsk-mk-card {
     width: 20vw;
@@ -891,14 +891,14 @@ p {
     text-decoration: underline;
   }
 }
-.latter {
+.later {
   background-color: #FBFFE9;
   height: 90vh;
   display: flex;
   justify-content: center;
 }
 @media screen and (min-width: 768px) and (max-width: 2560px) {
-  .latter__container {
+  .later__container {
     width: 60vw;
     height: 40vh;
     background-color: rgba(160, 180, 91, 0.5);
@@ -909,7 +909,7 @@ p {
     justify-content: center;
     margin-top: 20vh;
   }
-  .latter__text {
+  .later__text {
     width: 80%;
     text-align: center;
     font-family: "Nunito", sans-serif;
@@ -920,7 +920,7 @@ p {
   }
 }
 @media screen and (min-width: 375px) and (max-width: 768px) {
-  .latter__container {
+  .later__container {
     width: 80vw;
     height: 30vh;
     background-color: rgba(160, 180, 91, 0.5);
@@ -931,7 +931,7 @@ p {
     justify-content: center;
     margin-top: 10vh;
   }
-  .latter__text {
+  .later__text {
     width: 80%;
     text-align: center;
     font-family: "Nunito", sans-serif;
