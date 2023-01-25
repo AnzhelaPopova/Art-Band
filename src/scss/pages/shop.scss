@@ -1,65 +1,82 @@
 @import "../layouts/variables.scss";
 .shop-page__wrapper {
     padding-top: 90px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: $color-light;
+    padding: 10px;
+    
+    
 }
-
+.shop-page__backgroung {
+    background-color: $color-light;
+}
 @media (max-width: 766px) {.shop-page__heading{
-
-
-font-style: normal;
+    font-family:$title-font;
+    font-style: normal;
 font-weight: 700;
 font-size: 26px;
 line-height: 31px;
 text-align: center;
 text-transform: uppercase;
+color: $color-text;
+margin-top: 10px;
     }
     }
 
     @media (min-width: 767px) {.shop-page__heading {
     text-align: center;
-    $title-font: "Inter", sans-serif;
+    font-family:$title-font;
     font-style: normal;
     font-weight: 600;
     font-size: 40px;
     line-height: 48px;
-    color: rgba(0, 0, 0, 0.7);
+    color: $color-text;
+    margin-top: 15px;
 }
     }
+    /*.shop-page__heading {
+        text-align: center;
+    font-family:$title-font;
+    font-style: normal;
+    color: $color-text;
+    font-size: calc(( 100vw + 310.1px )/ 26.93 );
+    font-weight: 600;
+    line-height: 48px;
+    }*/
+
 .shop-page__about {
     display: flex;
 margin-top: 51px;}
 
 @media (max-width: 766px) {.shop-page__about {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 }
-@media (max-width: 766px) {.shop-page__about-text{
-margin-bottom: 10px;
-}
-}
+
 @media (min-width: 767px) {.shop-page__about-text{
     margin-left: 10px;
-    $title-font: "Inter", sans-serif;
+    font-family:$title-font;
 font-style: normal;
 font-weight: 400;
 font-size: 30px;
 line-height: 36px;
-color: rgba(0, 0, 0, 0.7);
+color: $color-text;
 }
 }
 
 @media (max-width: 766px) {.shop-page__about-text{
     margin-left: 10px;
-    $title-font: "Inter", sans-serif;
+    font-family:$title-font;
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
     line-height: 25px;
     margin-right: 7px;
-    
-    color: #000000;
+    color: $color-text;
 }
 }
+
 @media (min-width: 767px) {.shop-page__about-img {
     width: 540px;
 height: 674px;
@@ -80,7 +97,7 @@ margin-right: 10px;
 margin-left: 120px;
 }*/
 .shop-page__about-text-green {
-    color: #A0B45B;
+    color: $color-light-green;
 }
 
 
@@ -89,12 +106,12 @@ margin-left: 120px;
 }
 }
 .shop-page__about-text-small {
-    $default-font: "Nunito", sans-serif;
+   font-family: $default-font;
 font-style: normal;
 font-weight: 300;
 font-size: 28px;
 line-height: 38px;
-color: rgba(0, 0, 0, 0.72);
+color: $color-text;
 margin-top: 20px;
 }
 @media (max-width: 766px) {.shop-page-line  {
@@ -124,6 +141,7 @@ margin-top: 44px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 
+
 }
 .shop-page__grid-one-img {
 width: 390px;
@@ -134,6 +152,7 @@ border-radius: 45px;
 .shop-page__grid-two {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+ 
 }
 
 .shop-page__grid-two-img {
@@ -146,6 +165,8 @@ margin-top: 7px;
 .shop-page__grid-three {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+
+ 
 }
 .shop-page__grid-three-img {
     width: 391px;
@@ -157,6 +178,8 @@ margin-top: 7px;
 .shop-page__grid-four {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr; 
+ 
+
 }
 .shop-page__grid-four-img {
     width: 295px;
@@ -172,7 +195,7 @@ display: none;
     
         @media (min-width: 767px) {.shop-page__heading_two {
         text-align: center;
-        $title-font: "Inter", sans-serif;
+        font-family:$title-font;
         font-style: normal;
         font-weight: 600;
         font-size: 40px;
@@ -195,7 +218,7 @@ display: none;
     }
 
 @media (max-width: 766px) {.shop-page__mobile-img
-    {width: 378px;
+    {width: 360px;
         height: 406px;
         border: 1px solid #A0B45B;
         margin-left: auto;
