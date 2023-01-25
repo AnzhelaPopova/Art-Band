@@ -3,8 +3,6 @@
 /*-------------MK5------------*/
 @media screen and (min-width: $tablet) {
     
-
-
 .mk5-wrapper {
     background-color: $color-light;
     margin: 0 auto;
@@ -79,7 +77,6 @@
     grid-area: img-box;
 
     &__inner {
-        /*margin: auto;*/
         margin-right: 1.2em;
         margin-left: 1em;
         width: 90%;
@@ -117,8 +114,6 @@
 
     .mk5-wrapper {
         background-color: $color-light;
-        /*max-width: 1200px;
-        margin: 0 auto;*/
     }
     
     
@@ -130,8 +125,7 @@
                              "cont";
         row-gap: 3.7vw;
         padding: 5vw 0 5vw 0;
-        /*font-size: calc(18px + 4 * (100vw / 1440));
-        font-size: 1.5vw;*/
+        /*font-size: calc(18px + 4 * (100vw / 1440));*/
         font-size: 18px;
         line-height: 24.5px;
         font-weight: 300;
@@ -173,11 +167,11 @@
         &__line {
             background-color: rgba(0, 0, 0, 0.5);
             height: 1px;
-            margin: 2vw 0 0.8vw 0;
+            margin: 4vw 0 4vw 0;
         }
     
         &__list {
-            margin-top: 2.1vw;
+            margin-top: 5vw;
         }
     
         &__list-item {
@@ -191,7 +185,6 @@
         grid-area: img-box;
     
         &__inner {
-            /*background-color: aqua;*/
             margin: auto;
             width: 90%;
             display: flex;
@@ -211,13 +204,12 @@
         margin: auto;
     
         &__inner {
-            /*background-color: aqua;*/
             margin: auto;
             width: 90%;
         }
     
         &__text {
-            margin-bottom: 1.5vw;
+            margin-bottom: 5vw;
         }
     }
     
