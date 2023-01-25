@@ -68,7 +68,7 @@
 
     .main-page-mbl-section {
         &_1 {
-            background-image: url(../../design/assets/images/main/main1.png);
+            background-image: url(../../design/assets/images/main/main2.png);
         }
         &_2 {
             background-image: url(../../design/assets/images/main/main3.png);
@@ -91,6 +91,7 @@
 
         object-fit: cover;
         background-repeat: no-repeat;
+        background-size: contain;
 
         &__title {
             margin-bottom: 24px;
