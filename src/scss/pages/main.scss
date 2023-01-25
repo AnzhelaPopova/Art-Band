@@ -1,1 +1,124 @@
 @import "../layouts/variables.scss";
+
+.main-page-mbl {
+    overflow-x: hidden;
+}
+
+@media screen and (max-width: $tablet) {
+    .wrapper-main-page-mbl {
+        background-color: $color-light;
+    }
+
+    .main-page-mbl-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+
+        width: 100vw;
+        height: 100vh;
+
+        background-image: url(../../design/assets/images/main/main-background-mbl.png);
+        object-fit: cover;
+        background-repeat: no-repeat;
+
+        &__logo {
+            margin-bottom: 47.88vh;
+
+            &_black {
+                font-family: $title-font-logo;
+            }
+
+            &_green {
+
+                font-family: $title-font-logo_green;
+            }
+
+            &_description {
+                font-family: $title-font;
+            }
+        }
+
+        &__number {
+            margin-bottom: 3.38vh;
+            padding-bottom: 5px;
+
+            border-bottom: 1px solid black;
+
+            font-family: $title-font;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 19px;
+        }
+
+        &__social-networks {
+            display: flex;
+
+            margin-bottom: 5.17vh;
+
+            &_tg {
+                margin-right: 22px;
+            }
+
+            &_vk {
+                margin-left: 22px;
+            }
+        }
+    }
+
+    .main-page-mbl-section {
+        &_1 {
+            background-image: url(../../design/assets/images/main/main1.png);
+        }
+        &_2 {
+            background-image: url(../../design/assets/images/main/main3.png);
+        }
+        &_3 {
+            background-image: url(../../design/assets/images/main/main4.png);
+        }
+        &_4 {
+            background-image: url(../../design/assets/images/main/main5.png);
+        }
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        width: 100vw;
+        height: 30.75vh;
+
+        margin-top: 30px;
+
+        object-fit: cover;
+        background-repeat: no-repeat;
+
+        &__title {
+            margin-bottom: 24px;
+
+            font-family: $title-font;
+            font-weight: 700;
+            font-size: 30px;
+            text-align: center;
+
+            color: #FFFFFF;
+        }
+
+        &__button {
+            width: 133px;
+            height: 42px;
+
+            font-family: $title-font;
+            font-weight: 700;
+            font-size: 14px;
+
+            background: #E1EFDB;
+            border-radius: 20px;
+            text-transform: uppercase;
+        }
+    }
+}
+@media screen and (min-width: 769px) {
+    .wrapper-main-page-mbl {
+        display: none;
+    }
+}

@@ -353,6 +353,13 @@
 /*!******************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/app.scss ***!
   \******************************************************************************************************************************************************/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
 h1,
 h2,
 h3,
@@ -393,18 +400,103 @@ p, a {
   font-size: 20px;
 }
 
-.q2 {
-  font-family: "Calibri", sans-serif;
+.main-page-mbl {
+  overflow-x: hidden;
 }
 
-.q3 {
-  font-family: "Inter", sans-serif;
+@media screen and (max-width: 768px) {
+  .wrapper-main-page-mbl {
+    background-color: #FBFFE9;
+  }
+  .main-page-mbl-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../4d3bb931b7d70fd38f6d.png);
+    object-fit: cover;
+    background-repeat: no-repeat;
+  }
+  .main-page-mbl-main__logo {
+    margin-bottom: 47.88vh;
+  }
+  .main-page-mbl-main__logo_black {
+    font-family: "Annabelle", sans-serif;
+  }
+  .main-page-mbl-main__logo_green {
+    font-family: "Calibri", sans-serif;
+  }
+  .main-page-mbl-main__logo_description {
+    font-family: "Inter", sans-serif;
+  }
+  .main-page-mbl-main__number {
+    margin-bottom: 3.38vh;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .main-page-mbl-main__social-networks {
+    display: flex;
+    margin-bottom: 5.17vh;
+  }
+  .main-page-mbl-main__social-networks_tg {
+    margin-right: 22px;
+  }
+  .main-page-mbl-main__social-networks_vk {
+    margin-left: 22px;
+  }
+  .main-page-mbl-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 30.75vh;
+    margin-top: 30px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+  }
+  .main-page-mbl-section_1 {
+    background-image: url(../ee1cd0a8c1c858e5248f.png);
+  }
+  .main-page-mbl-section_2 {
+    background-image: url(../75ddb51c5f8b1c6e6d9c.png);
+  }
+  .main-page-mbl-section_3 {
+    background-image: url(../72c72f1e243c4fb9fba4.png);
+  }
+  .main-page-mbl-section_4 {
+    background-image: url(../29ec46d0fd1afe4a1ba8.png);
+  }
+  .main-page-mbl-section__title {
+    margin-bottom: 24px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  .main-page-mbl-section__button {
+    width: 133px;
+    height: 42px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    background: #E1EFDB;
+    border-radius: 20px;
+    text-transform: uppercase;
+  }
 }
-
-.q4 {
-  font-family: "Nunito", sans-serif;
+@media screen and (min-width: 769px) {
+  .wrapper-main-page-mbl {
+    display: none;
+  }
 }
-
 .neuro__body {
   overflow-x: hidden;
   background-color: #FBFFE9;
@@ -536,6 +628,66 @@ p, a {
     font-weight: 300;
     font-size: calc((100vw + 68.47px) / 69.789);
     color: rgba(0, 0, 0, 0.7);
+  }
+}
+.reviews-body {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: #FBFFE9;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.reviews-header__inner {
+  min-height: 60px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 24px;
+  margin-left: 20px;
+}
+
+.reviews-arrow__link {
+  margin-right: 15px;
+  width: 45px;
+  height: 45px;
+}
+
+.reviews-arrow__img {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.reviews-tomain__link {
+  width: 133px;
+  height: 45px;
+  padding: 14px 18px;
+  border-radius: 20px;
+  background-color: rgba(160, 180, 91, 0.6);
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+}
+
+.reviews-line__img {
+  width: 100%;
+  height: 1px;
+  margin-bottom: 27px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .container {
+    margin: 0 60px;
   }
 }
 .reviews-body {
