@@ -1,1 +1,275 @@
 @import "../layouts/variables.scss";
+
+@media screen and (min-width: $tablet) and (max-width: $large-desktop) {
+
+    .main-page-mbl, .main-footer-mbl {
+        display: none;
+    }
+
+    .dsk-main-block {
+        background-image: url(../../design/assets/images/main/main-background.png);
+        background-repeat: no-repeat;
+        background-size: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 100vh;
+
+        &__brand {
+            width: 50vw;
+        }
+
+        &__text {
+            font-family: $title-font-logo;
+            font-size: 4em;
+
+            &_bottom {
+                text-align: end;
+            }
+        }
+
+        &__title {
+            font-family: $title-font-logo_green;
+            font-weight: 900;
+            color: $color-title-logo;
+            font-size: 5em;
+            text-align: center;
+        }
+
+        &__discription {
+            color: $color-text;
+            font-family: $title-font;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        &__btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 25px;
+            width: 10%;
+            height: 6%;
+            background-color: rgb(81, 81, 81);
+            color: $color-light;
+            font-family: $title-font;
+            font-size: 0.8em;
+            text-decoration: none;
+        }
+    }
+
+    .dsk-mk {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        background-color: $color-light;
+        justify-content: center;
+        padding: 0 5% 0 5%;
+        column-gap: 4%;
+        height: 250vh;
+    
+        &__title {
+            width: 100vw;
+            text-align: center;
+            color: $color-text;
+            font-family: $title-font;
+            font-weight: 700;
+            font-size: 1.8em;
+            padding: 1% 0 1% 0;
+        }
+    }
+    
+        .dsk-mk-card {
+            width: 20vw;
+            height: 55vh;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid $color-light-green;
+            padding: 1%;
+            margin: 0;
+            align-items: center;
+
+        
+            &__img {
+                width: 100%;
+
+                &_block {
+                    width: 98%;
+                    object-fit: scale-down;
+                    object-position: top;
+                    padding: 0%;
+                }
+            }
+    
+            &__title {
+                color: $color-text;
+                font-family: $title-font;
+                font-weight: 700;
+                font-size: 1.1em;
+                padding: 5% 0 5% 0;
+                border-bottom: 1px solid black;
+                width: 95%;
+                text-align: center;
+
+                &_long {
+                    padding: 1% 0 1% 0;
+                }
+            }
+    
+            &__text {
+                padding-top: 5%;
+                align-self: flex-start;
+                margin-left: 2%;
+                color: $color-text;
+                font-family: $title-font;
+                font-weight: 600;
+                font-size: 0.9em;
+                text-decoration: none;
+    
+                &:hover {
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+            }
+        }
+}
+
+@media screen and (max-width: $tablet) {
+    .wrapper-main-page-mbl {
+        background-color: $color-light;
+    }
+
+    .main-page-mbl-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+
+        width: 100vw;
+        height: 239vh;
+
+        background-image: url(../../design/assets/images/main/main-backgr-mbl.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        &__logo {
+            width: 90vw;
+            margin-bottom: 40vh;
+
+            &_black {
+                font-family: $title-font-logo;
+                font-size: 2.7em;
+                text-align: start;
+                line-height: 0.5em;
+            }
+
+            &_bottom {
+                text-align: end;
+            }
+
+            &_green {
+            font-family: $title-font-logo_green;
+            font-weight: 900;
+            color: $color-title-logo;
+            font-size: 3.2em;
+            text-align: center;
+            }
+
+            &_description {
+                color: $color-text;
+                font-family: $title-font;
+                text-align: center;
+                font-weight: 500;
+                margin-top: 7vh;
+            }
+        }
+
+        &__number {
+            margin-bottom: 3.38vh;
+            padding-bottom: 5px;
+
+            border-bottom: 1px solid black;
+
+            font-family: $title-font;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 19px;
+        }
+
+        &__social-networks {
+            display: flex;
+
+            margin-bottom: 5.17vh;
+
+            &_tg {
+                margin-right: 22px;
+            }
+
+            &_vk {
+                margin-left: 22px;
+            }
+        }
+    }
+
+    .main-page-mbl-section {
+        &_1 {
+            background-image: url(../../design/assets/images/main/main1-2.png);
+            background-size: 100vw;
+        }
+        &_2 {
+            background-image: url(../../design/assets/images/main/main3.png);
+            background-size: 100vw;
+        }
+        &_3 {
+            background-image: url(../../design/assets/images/main/main4.png);
+            background-size: 100vw;
+        }
+        &_4 {
+            background-image: url(../../design/assets/images/main/main5.png);
+            background-size: 100vw;
+        }
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 30.75vh;
+        margin-top: 30px;
+        object-fit: cover;
+        background-repeat: no-repeat;
+
+        &__title {
+            margin-bottom: 24px;
+
+            font-family: $title-font;
+            font-weight: 700;
+            font-size: 30px;
+            text-align: center;
+
+            color: #FFFFFF;
+        }
+
+        &__button {
+            width: 133px;
+            height: 42px;
+
+            font-family: $title-font;
+            font-weight: 700;
+            font-size: 14px;
+
+            background: #E1EFDB;
+            border-radius: 20px;
+            text-transform: uppercase;
+        }
+    }
+}
+@media screen and (min-width: 769px) {
+    .wrapper-main-page-mbl {
+        display: none;
+    }
+}
