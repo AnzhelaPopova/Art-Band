@@ -1,1 +1,150 @@
 @import "../layouts/variables.scss";
+
+.mkphoto__body {
+    overflow-x: hidden;
+    background-color: $color-light;
+    color:$color-text ;
+}
+
+@media screen and (min-width: 769px){
+    .mkphoto{
+        width: 100vw;
+        margin-top: 3em;
+    
+            &__main{
+            display: flex;
+            justify-content: center;
+            }
+
+           &__plant{
+            margin-left: 3em;
+            width: 70%;
+            height: 80%;
+            border-radius: 15px;
+           }
+           
+           &__plant-text{
+            font-weight: 300;
+            margin-left: 2em;
+            font-family: $default-font;
+            margin-top: 2em;
+            font-size: calc((27vw - 19px)/ 17);
+            line-height: 120%;
+           }
+           &__title{
+            font-family: $title-font;
+            width: 90%;
+            text-align: center;
+            font-weight: 600;
+            font-size: calc((45vw - 19px)/ 17);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+            padding-bottom: 2vw;
+           }
+           
+           &__maintext{
+            font-weight: 300;
+            font-family: $default-font;
+            margin-top: 2em;
+            font-size: calc((27vw - 19px)/ 17);
+            line-height: 120%;
+           }
+           &__list{
+            list-style-type: none;
+           }
+
+           &__list::before{
+            content: "– ";
+           }
+           &__plant-text2{
+            display: none;
+           }
+
+           &__images{
+            margin-top: 5%;
+            margin-bottom: 5%;
+            display: flex;
+            justify-content: space-around;
+           }
+
+           &__img-basket, &__img-cup, &__img-hat{
+            border-radius: 15px;
+            width: 30%;
+            }
+
+            &__img-headband{
+            display: none;}
+
+            }
+
+}
+
+@media screen and (max-width: $tablet){
+    .mkphoto{
+        width: 100vw;
+        margin-top: 3em;
+    
+            &__main{
+            display: flex;
+            flex-direction: column;
+            }
+
+           &__plant{
+            display: block;
+            margin: 0 auto;
+            width: 80%;
+            height: 80%;
+            border-radius: 15px;
+           }
+           
+           &__plant-text{
+            display: none;
+           }
+           &__title{
+            margin: 0 auto;
+            margin-top: 2em;
+            font-family: $title-font;
+            width: 80%;
+            text-align: center;
+            font-weight: 600;
+            font-size: calc((80vw - 19px)/ 17);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+            padding-bottom: 2vw;
+           }
+           
+           &__maintext, &__plant-text2{
+            font-weight: 300;
+            margin-left: 2.5em;
+            text-align: left;
+            font-family: $default-font;
+            margin-top: 2em;
+            font-size: calc((60vw - 19px)/ 17);
+            line-height: 120%;
+           }
+           &__list{
+            list-style-type: none;
+           }
+
+           &__list::before{
+            content: "– ";
+           }
+
+           &__images{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            margin-top: 2em;
+            margin-bottom: 1em;
+            gap: 2em;
+           
+           }
+
+           &__img-basket, &__img-cup, &__img-hat, &__img-headband{
+            border-radius: 15px;
+            width: 40%;
+            height: 40%;
+            }
+
+            }
+
+}

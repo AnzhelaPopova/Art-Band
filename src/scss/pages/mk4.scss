@@ -1,1 +1,181 @@
 @import "../layouts/variables.scss";
+
+.neuro__body {
+    overflow-x: hidden;
+    background-color: $color-light;
+}
+
+@media screen and (max-width: $tablet) {
+    .neuro {
+        display: flex;
+
+        flex-direction: column;
+        align-items: center;
+
+        &__img1 {
+            width: 86.77vw;
+            height: 86.77vw;
+            margin-top: 4.07vw;
+
+        }
+
+        &__img1 img {
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+            border-radius: 45px;
+        }
+
+        &__title {
+            width: 86.26vw;
+            margin-top: 3.56vw;
+            padding-bottom: 5.6vw;
+
+            text-align: center;
+            vertical-align: top;
+
+            font-family: $title-font;
+            font-weight: 600;
+            font-size: calc((100vw - 19px)/ 17);
+            // line-height: 27px;
+
+            color: $color-text;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+        }
+
+        &__description {
+            width: 86.26vw;
+            margin-top: 4.07vw;
+
+            text-align: left;
+            vertical-align: top;
+
+            font-family: $default-font;
+            font-weight: 300;
+            font-size: calc((100vw + 87.86px)/ 26.714);
+            // line-height: 25px;
+
+            color: $color-text;
+        }
+
+        &__img2 {
+            width: 86.77vw;
+            height: auto;
+            margin-top: 6.87vw;
+
+            & img {
+                width: 100%;
+                height: 100%;
+
+                object-fit: cover;
+                border-radius: 15px;
+            }
+        }
+
+        &__img3 {
+            display: none;
+        }
+    }
+}
+
+
+@media screen and (min-width: 769px) {
+    .wrapper-neuro {
+        display: flex;
+        justify-content: center;
+
+        width: 100vw;
+    }
+
+    .neuro {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        width: 89.44vw;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        margin-top: 5.63vw;
+
+        &__block {
+            width: 39.44vw;
+
+            margin-bottom: 4.38vw;
+        }
+
+        &__img3 {
+            order: -1;
+            height: 38vw;
+
+            & img {
+                width: 100%;
+                height: 100%;
+
+                object-fit: cover;
+                border-radius: 15px;
+            }
+        }
+
+        &__about {
+            justify-self: end;
+            order: 0;
+            height: auto;
+        }
+
+        &__img1 {
+            justify-self: end;
+            order: 2;
+
+            & img {
+                width: 100%;
+                height: 100%;
+
+                object-fit: cover;
+                border-radius: 15px;
+            }
+        }
+
+        &__img2 {
+            order: 1;
+
+            & img {
+                width: 100%;
+                height: 100%;
+
+                object-fit: cover;
+                border-radius: 15px;
+            }
+
+        }
+        &__title {
+            width: 100%;
+            padding-bottom: 1.39vw;
+
+            text-align: center;
+            vertical-align: top;
+
+            font-family: $title-font;
+            font-weight: 600;
+            font-size: calc(( 100vw - 166.27px )/ 30.136 );
+            // line-height: 48.41px;
+
+            color: $color-text;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+        }
+        &__description {
+            width: 100%;
+            margin-top: 1.94vw;
+
+            text-align: left;
+            vertical-align: top;
+
+            font-family: $default-font;
+            font-weight: 300;
+            font-size: calc( ( 100vw + 68.47px)/ 69.789 );
+            // line-height: 30px; 
+
+            color: $color-text;
+        }
+    }
+}
