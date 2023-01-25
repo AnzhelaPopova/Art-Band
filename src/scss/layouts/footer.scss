@@ -9,7 +9,7 @@
 
     .main-footer-mbl {
         background-color: $color-dark-green;
-        height: 147gitпшvh;
+        height: 145vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -37,7 +37,6 @@
             color: $color-text;
             margin-bottom: 8%;
             line-height: 30px;
-
         }
 
         &__social-block {
@@ -102,3 +101,224 @@
         }
     }
 }
+
+@media screen and (min-width: 769px) {
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    background-color: $color-dark-green;
+
+    &__work {
+        display: flex;
+        flex-direction: row;
+        padding-top: 10vh;
+    }
+
+    &__nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__cosial {
+    margin-left: 9vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+
+        &_items {
+            width: 40%;
+            margin: 20px 20px;
+            cursor: pointer;
+        }
+
+        &_small {
+            width: 48%;
+        }
+    }
+
+    & ul {
+        font-size: 18px;
+        list-style: none;
+        color: $color-text;
+        padding: 5px 0 5px 0;
+        } 
+   
+     &__logo {
+        font-family: $title-font;
+        display: flex;
+        align-items: flex-end;
+        font-size: 20px;
+        width: 50vw;
+        border-top: 2px solid $color-text;
+        justify-content: center;
+        align-content: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        margin-top: 40px;
+
+            & span {
+                font-family: $title-font-logo;
+                color: $color-text;
+                font-size: 1.5em;
+            } 
+        } 
+
+        &__copy-dsk {
+            color: $color-text;
+
+        }
+
+        &__list {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 10vw;
+
+            &_items {
+            width: 100%;
+            font-size: 20px;
+            list-style: none;
+            color: $color-text;
+            padding: 10px 0 10px 0;
+            font-family: $title-font;
+            text-decoration: none;
+            } 
+
+        &_hours {
+          background: url(../../design/assets/icons/clock.png) left no-repeat;
+          padding: 10px 0px 10px 50px;
+          font-size: 18px;
+          line-height: 30px;
+          font-family: $title-font;
+          color: $color-text;
+        }
+
+        &_address {
+          background: url(../../design/assets/icons/location.png) left no-repeat;
+          padding: 10px 0px 10px 50px;
+          font-size: 18px;
+          line-height: 30px;
+          font-family: $title-font;
+          color: $color-text;
+        }
+
+        &_phone {
+          background: url(../../design/assets/icons/phone.png) left no-repeat;
+          padding: 10px 0px 10px 50px;
+          font-size: 18px;
+          line-height: 30px;
+          font-family: $title-font;
+          color: $color-text;
+        }
+      }
+    }
+}
+
+@media screen and (max-width: $tablet) {
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        background-color: $color-dark-green;
+        height: 85vh;
+        background-size: contain;
+
+        &__nav {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin:0 74px;
+            border-top: 2px solid $color-text;
+            border-bottom: 2px solid $color-text;
+        }
+    
+        &__work {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__cosial {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+    
+            &_items {
+                width: 50%;
+                margin: 20px 20px;
+                cursor: pointer;
+                padding: auto;
+            }
+
+            &_small {
+                width: 58%;
+            }
+        }
+    
+        & ul {
+            list-style: none;
+            color: $color-text;
+            padding: 5px 0;
+            } 
+       
+         &__logo {
+            display: flex;
+            width: 100vw;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 10%;
+            margin: 8% 0 0 0;
+    
+                & span {
+                    font-family: $title-font-logo;
+            color: $color-text;
+            font-size: 1.5em;
+                } 
+            } 
+
+        &__items {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+        }
+    
+        &__list {
+            display: flex;
+            flex-direction: column;
+            margin: 0px 5vw;
+            padding: 8% 0 0 0;
+            cursor: pointer;
+    
+                &_items {
+                list-style: none;
+                text-decoration: none;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                cursor: pointer;
+                font-family: $default-font;
+                font-weight: 700;
+                font-size: 1.2em;
+                text-align: center;
+                color: $color-text;
+                margin-bottom: 8%;
+                line-height: 30px;
+                } 
+
+            &_contacts {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                font-family: $default-font;
+                font-weight: 400;
+                font-size: 1.2em;
+                text-align: center;
+                color: $color-text;
+                margin-bottom: 8%;
+                line-height: 30px;
+            }
+            }
+        }
+    }

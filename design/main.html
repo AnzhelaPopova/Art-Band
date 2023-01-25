@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./assets/dist/css/main.css" />
   </head>
   <body>
-    <header class="mbl-header-btn dsk-nav">
+    <header class="dsk-nav">
       <!--DESKTOP HEADER-->
       <div class="dsk-nav__logo">
         <a href="./main.html"
@@ -39,11 +39,6 @@
       </div>
 
       <div class="dsk-nav__nmbr">+7 (983) 132-39-08</div>
-
-      <!--MOBILE HEADER-->
-      <div class="mbl-header-btn__back">
-        <a class="mbl-header-btn__link" href="./main.html">НА ГЛАВНУЮ</a>
-      </div>
     </header>
 
     <main>
@@ -63,6 +58,66 @@
         <!--ВСТВИТЬ ССЫЛКУ НА АБЗАЦ КАК ЗАПИСАТЬСЯ!!!-->
         <a class="dsk-main-block__btn" href="">ЗАПИСАТЬСЯ</a>
       </div>
+
+      <div class="wrapper-main-page-mbl">
+        <div class="main-page-mbl">
+          <div class="main-page-mbl-main">
+            <div class="main-page-mbl-main__logo">
+              <h1 style="display: none">Творческая мастерская Art-Band</h1>
+              <h2 class="main-page-mbl-main__logo_black">творческая</h2>
+              <h2 class="main-page-mbl-main__logo_green">МАСТЕРСКАЯ</h2>
+              <h2
+                class="main-page-mbl-main__logo_black main-page-mbl-main__logo_bottom"
+              >
+                Art-Band
+              </h2>
+              <h2 class="main-page-mbl-main__logo_description">
+                Мастер-классы <br />
+                для взрослых и детей
+              </h2>
+            </div>
+            <div class="main-page-mbl-main__number">+7 (983) 132-39-08</div>
+            <figure class="main-page-mbl-main__social-networks">
+              <a
+                href="https://vk.com/artbandclub"
+                class="main-page-mbl-main__social-networks_tg"
+                ><img src="./assets/images/main/tg.png" alt="Иконка Телеграм"
+              /></a>
+              <a
+                href="https://t.me/artbandclub"
+                class="main-page-mbl-main__social-networks_vk"
+                ><img src="./assets/images/main/vk.png" alt="Иконка Вконтакте"
+              /></a>
+            </figure>
+
+            <section class="main-page-mbl-section main-page-mbl-section_1">
+              <h2 class="main-page-mbl-section__title">О нас</h2>
+              <a href="./about.html">
+                <button class="main-page-mbl-section__button">Подробнее</button>
+              </a>
+            </section>
+            <section class="main-page-mbl-section main-page-mbl-section_2">
+              <h2 class="main-page-mbl-section__title">Мастер-классы</h2>
+              <a href="./mk.html">
+                <button class="main-page-mbl-section__button">Подробнее</button>
+              </a>
+            </section>
+            <section class="main-page-mbl-section main-page-mbl-section_3">
+              <h2 class="main-page-mbl-section__title">Магазин handmade</h2>
+              <a href="./shop.html">
+                <button class="main-page-mbl-section__button">Подробнее</button>
+              </a>
+            </section>
+            <section class="main-page-mbl-section main-page-mbl-section_4">
+              <h2 class="main-page-mbl-section__title">Отзывы</h2>
+              <a href="./reviews.html">
+                <button class="main-page-mbl-section__button">Подробнее</button>
+              </a>
+            </section>
+          </div>
+        </div>
+      </div>
+
       <!--MOBILE MK-->
       <div class="wrapper-mbl-mk">
         <div class="mbl-mk dsk-mk">
@@ -125,7 +180,6 @@
               alt="Шкатулка"
             />
             <h2 class="mbl-mk-card__title dsk-mk-card__title">Декупаж</h2>
-            <!--ДОРАБОТАТЬ СТРАНИЧКУ, ГДЕ НЕТ ОПИСАНИЯ МК-->
             <a class="mbl-mk-card__text dsk-mk-card__text" href="./later.html"
               >Подробнее →</a
             >
@@ -166,7 +220,6 @@
             <h2 class="mbl-mk-card__title dsk-mk-card__title">
               Предметная съёмка
             </h2>
-            <!--ДОРАБОТАТЬ СТРАНИЧКУ, ГДЕ НЕТ ОПИСАНИЯ МК-->
             <a class="mbl-mk-card__text dsk-mk-card__text" href="./mk6.html"
               >Подробнее →</a
             >
@@ -220,6 +273,7 @@
       </div>
     </main>
     <footer>
+      <!--MOBILE-ФУТЕР ГЛАВНОЙ СТРАНИЦЫ-->
       <div class="main-footer-mbl">
         <h3 class="main-footer-mbl__title">
           ХОЧУ НА МАСТЕР-КЛАСС! <br />
