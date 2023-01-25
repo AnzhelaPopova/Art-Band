@@ -353,7 +353,9 @@
 /*!******************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/app.scss ***!
   \******************************************************************************************************************************************************/
+
 @charset "UTF-8";
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -386,12 +388,14 @@
   font-family: "Nunito";
   src: url(../99a3b019e7727ac19479.ttf);
 }
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6,
+
 p, a {
   margin: 0;
 }
@@ -420,6 +424,7 @@ p, a {
   background-color: #77854e;
   box-shadow: none;
 }
+
 
 @media screen and (min-width: 375px) and (max-width: 768px) {
   .mbl-header-btn, .wrapper-mbl-mk {
@@ -1927,4 +1932,13 @@ margin-left: 120px;
     line-height: 2em;
     color: rgba(0, 0, 0, 0.7);
   }
+
+.title {
+  font-family: "Inter", sans-serif;
+  font-size: 64px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: rgba(0, 0, 0, 0.7);
+  text-transform: uppercase;
 }

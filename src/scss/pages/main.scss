@@ -147,7 +147,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: flex-end;
+        justify-content: space-between;
 
         width: 100vw;
         height: 239vh;
@@ -185,32 +185,45 @@
                 text-align: center;
                 font-weight: 500;
                 margin-top: 7vh;
+
             }
         }
+        &__contackts{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
 
-        &__number {
-            margin-bottom: 3.38vh;
+            height: 90px;
+            margin-bottom: 5.17vh;
+        }
+
+        &__number { 
             padding-bottom: 5px;
-
             border-bottom: 1px solid black;
 
             font-family: $title-font;
             font-weight: 600;
-            font-size: 16px;
+            font-size: calc(( 100vw + 618px )/ 63);
             line-height: 19px;
         }
 
         &__social-networks {
             display: flex;
 
-            margin-bottom: 5.17vh;
-
             &_tg {
-                margin-right: 22px;
+                margin-right: 22px; 
+
+                & img {
+                    height: 4.43vh;}              
             }
 
             &_vk {
                 margin-left: 22px;
+
+                & img {
+                    height: 4.43vh;}              
+            }
             }
         }
     }
@@ -220,14 +233,17 @@
             background-image: url(../../design/assets/images/main/main1-2.png);
             background-size: 100vw;
         }
+
         &_2 {
             background-image: url(../../design/assets/images/main/main3.png);
             background-size: 100vw;
         }
+
         &_3 {
             background-image: url(../../design/assets/images/main/main4.png);
             background-size: 100vw;
         }
+
         &_4 {
             background-image: url(../../design/assets/images/main/main5.png);
             background-size: 100vw;
@@ -242,13 +258,14 @@
         margin-top: 30px;
         object-fit: cover;
         background-repeat: no-repeat;
+        background-size: contain;
 
         &__title {
             margin-bottom: 24px;
 
             font-family: $title-font;
             font-weight: 700;
-            font-size: 30px;
+            font-size: calc(( 100vw + 555px )/ 31.5);
             text-align: center;
 
             color: #FFFFFF;
@@ -267,7 +284,8 @@
             text-transform: uppercase;
         }
     }
-}
+
+
 @media screen and (min-width: 769px) {
     .wrapper-main-page-mbl {
         display: none;
