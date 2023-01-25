@@ -5,6 +5,27 @@
 	margin: 0;
 	padding: 0;
 	border: none;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "Annabelle";
+	src: url(../../design/assets/fonts/Annabelle.ttf);
+}
+
+@font-face {
+	font-family: "Calibri";
+	src: url(../../design/assets/fonts/Calibri_bold.ttf);
+}
+
+@font-face {
+	font-family: "Inter";
+	src: url(../../design/assets/fonts/Inter-Regular.ttf);
+}
+
+@font-face {
+	font-family: "Nunito";
+	src: url(../../design/assets/fonts/Nunito-Light.ttf);
 }
 
 h1,
@@ -13,9 +34,11 @@ h3,
 h4,
 h5,
 h6,
-p {
+p, a {
 	margin: 0;
 }
+
+
 
 .button {
 	width: 440px;
@@ -42,12 +65,4 @@ p {
 	box-shadow: none;
 }
 
-.title {
-	font-family: $title-font;
-	font-size: 64px;
-	line-height: 130%;
-	text-align: center;
-	letter-spacing: 0.02em;
-	color: $color-text;
-	text-transform: uppercase;
-}
+
