@@ -1,1 +1,62 @@
 @import "../layouts/variables.scss";
+
+@media screen and (min-width: $mobile) and (max-width: $tablet) {
+
+.mbl-mk {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color-light;
+
+    &__title {
+        color: $color-text;
+        font-family: $title-font;
+        font-weight: 700;
+        font-size: 1.8em;
+        padding-top: 5%;
+    }
+}
+
+    .mbl-mk-card {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid $color-light-green;
+        padding: 5%;
+        margin: 5% 3% 5% 3%;
+        align-items: center;
+    
+        &__img {
+            width: 100%;
+        }
+
+        &__title {
+            color: $color-text;
+            font-family: $title-font;
+            font-weight: 700;
+            padding: 5% 0 5% 0;
+            border-bottom: 1px solid black;
+            width: 95%;
+            text-align: center;
+        }
+
+        &__text {
+            padding-top: 5%;
+            align-self: flex-start;
+            margin-left: 2%;
+            color: $color-text;
+            font-family: $title-font;
+            font-weight: 600;
+            font-size: 1.2em;
+            text-decoration: none;
+
+            &:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+        }
+
+    
+    }
+}
