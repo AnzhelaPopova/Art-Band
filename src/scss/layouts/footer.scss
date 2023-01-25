@@ -9,19 +9,21 @@
     align-items: center;
     background-color: $color-dark-green;
 
-    &__mobile {
-        display: none;
-    }
-
     &__work {
         display: flex;
         flex-direction: row;
         padding-top: 10vh;
     }
 
+    &__nav {
+        display: flex;
+        flex-direction: column;
+    }
+
     &__cosial {
         display: flex;
         flex-direction: row;
+        justify-content: center;
 
         &_items {
             margin: 20px 20px;
@@ -59,7 +61,7 @@
         display: flex;
         flex-direction: column;
         margin: 0px 10vw;
-
+        border: 1 px solid black;
 
             &_items {
             width: 200px;
@@ -96,11 +98,6 @@
         }
       }
     }
-
-@keyframes footer__list_items {
-    0% {scale: 1}
-    100% {scale: 1.2}
-}
 }
 
 @media screen and (max-width: $tablet) {
@@ -109,51 +106,49 @@
         display: flex;
         flex-direction: column;
         background-color: $color-dark-green;
+        height: 100vh;
 
-        // &__mobile {
-        //     display: flex;
-        //     flex-direction: column;
-        //     // align-items: center;
-        //     }
-
-        &__desktop {
+        &__nav {
             display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin:0 74px;
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
         }
     
         &__work {
             display: flex;
             flex-direction: column;
-            padding-top: 10vh;
-            
         }
 
         &__cosial {
             display: flex;
             flex-direction: row;
+            justify-content: center;
+            padding-bottom: 3vh;
     
             &_items {
-                // margin: 20px 20px;
+                margin: 20px 20px;
                 cursor: pointer;
+                padding: auto;
             }
         }
     
         & ul {
             list-style: none;
             color: $color-text;
-            padding: 5px 0 5px 0;
+            padding: 5px 0;
             } 
        
          &__logo {
             font-family: $title-font;
             display: flex;
             font-size: 20px;
-            // width: 50vw;
             justify-content: center;
-            align-items: center;
-
-            // padding-top: 40px;
-            // padding-bottom: 40px;
-            // margin-top: 40px;
+            align-items: flex-end;
+            padding: 3vh 0;
+            flex-grow: 1;
     
                 & span {
                     font-family: $title-font-logo;
@@ -166,54 +161,39 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                border-top: 2px solid black;
-                border-bottom: 2px solid black;
-                border: 1px solid red;
         }
     
         &__list {
             display: flex;
             flex-direction: column;
-            margin: 0px 10vw;
-            padding-top: 10vh;
+            margin: 0px 5vw;
+            padding: 3vh 0;
+            cursor: pointer;
     
                 &_items {
-                font-size: 16px;
+                font-size: 18px;
                 list-style: none;
                 color: $color-text;
                 padding: 10px 0 10px 0;
                 font-family: $title-font;
                 text-decoration: none;
-                align-items: center;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                cursor: pointer;
                 } 
-    
-            &_hours {
-              background: url(../../design/assets/icons/clock.png) left no-repeat;
-              padding: 10px 0px 10px 50px;
-              font-size: 16px;
-              line-height: 30px;
-              font-family: $title-font;
-              line-height: normal;
-            }
-    
-            &_address {
-              background: url(../../design/assets/icons/location.png) left no-repeat;
-              padding: 10px 0px 10px 50px;
-              font-size: 16px;
-              line-height: 30px;
-              font-family: $title-font;
-              line-height: normal;
-            }
-    
-            &_phone {
-              background: url(../../design/assets/icons/phone.png) left no-repeat;
-              padding: 10px 0px 10px 50px;
-              font-size: 16px;
-              line-height: 30px;
-              font-family: $title-font;
-              line-height: normal;
 
+            &_contacts {
+              padding: 10px 0px;
+              font-size: 16px;
+              line-height: 30px;
+              font-family: $title-font;
+              line-height: normal;
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              text-align: center;
+            }
             }
         }
     }
-}
