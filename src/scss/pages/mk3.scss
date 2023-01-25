@@ -7,50 +7,49 @@
     
     .loza-desktop {
         background-color: $color-light;
-        
     }
     
     .loza-content1 {
         display: flex;
         justify-content: center;
         align-items: center;        
-        
+        margin-top: 20px;
+        margin-left: 20px;
         
         &__image-block {
-            border: 1px solid blue;
             display: flex;
             justify-content: center;
         }
     
         &__image {
-            width: 70%;
+            max-width: 90%;
+            object-fit: cover;
         }
 
         &__text-block {
-            border: 1px solid blue;
-            width: 50%;
             display: flex;
             flex-direction: column;
             align-items: center;
+            width: 90%;
         }
 
         &__title {
-            font: $title-font;
-            font-size: 35px;
+            width: 80%;
             text-align: center;
             margin-bottom: 3%;
             margin-top: 4%;
-            font-weight: bolder;
             color: $color-text;
-            width: 80%;
+            font: $title-font;
+            font-size: 3.125vw;
+            font-weight: bolder;
         } 
     
         &__text {
-            font: $default-font;
+            width: 80%;
             margin: 20px;
             color: $color-text;
-            width: 80%;
-            
+            font: $default-font;
+            font-size: 1.250vw;
         }
     
         &__line {
@@ -63,8 +62,10 @@
         display: flex;
         justify-content: center;
         margin-top: 5%;
-        gap: 10px;
         margin-bottom: 30px;
+        margin-left: 25px;
+        margin-right: 25px;
+        gap: 10px;
     
         &__block1 {
             display: flex;
@@ -92,7 +93,6 @@
     
         &__image1 {
             width: 95%;
-            
         }
     
         &__image2 {
@@ -140,10 +140,10 @@
         }
 
         &__buttons_arrow {
-            background-color: $color-dark-green;
             width: 11vw;
             height: 7vh;
             border-radius: 50%;
+            background-color: $color-dark-green;
             
             &:hover {
                 background: $color-light-green;    
@@ -155,14 +155,15 @@
         }
 
         &__buttons_to-main {
+            width: 30vw;
+            height: 7vh;
             background-color: $color-dark-green;
             border-radius: 22px;
             margin-left: 5%;
-            width: 30vw;
-            height: 7vh;
             font: $title-font;
             font-weight: bolder;
             color: $color-text;
+            font-size: 3.562vw;
         }
 
         &__line1 {
@@ -179,12 +180,12 @@
         }
 
         &__title {
-            font: $title-font;
             text-align: center;
             margin: 20px;
             color: $color-text;
+            font: $title-font;
             font-weight: bolder;
-            font-size: 22px;
+            font-size: 5.598vw;
             line-height: 1.2em;
         } 
 
@@ -199,6 +200,7 @@
             width: 80%;
             color: $color-text;
             font: $default-font;
+            font-size: 4.580vw;
         }
 
         &__content2 {
@@ -237,11 +239,13 @@
         }
 
         &__title2 {
-            font: $title-font;
+            width: 100%;
             text-align: center;
             margin-top: 30px;
             color: $color-text;
+            font: $title-font;
             font-weight: bolder;
+            font-size: 5.598vw;
         }
 
         &__image-block3 {
@@ -274,7 +278,5 @@
         &__image9 {
             width: 40%;
         }
-
-        
     }
 }

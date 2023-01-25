@@ -726,37 +726,39 @@ p, a {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
   }
   .loza-content1__image-block {
-    border: 1px solid blue;
     display: flex;
     justify-content: center;
   }
   .loza-content1__image {
-    width: 70%;
+    max-width: 90%;
+    object-fit: cover;
   }
   .loza-content1__text-block {
-    border: 1px solid blue;
-    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 90%;
   }
   .loza-content1__title {
-    font: "Inter", sans-serif;
-    font-size: 35px;
+    width: 80%;
     text-align: center;
     margin-bottom: 3%;
     margin-top: 4%;
-    font-weight: bolder;
     color: rgba(0, 0, 0, 0.7);
-    width: 80%;
+    font: "Inter", sans-serif;
+    font-size: 3.125vw;
+    font-weight: bolder;
   }
   .loza-content1__text {
-    font: "Nunito", sans-serif;
+    width: 80%;
     margin: 20px;
     color: rgba(0, 0, 0, 0.7);
-    width: 80%;
+    font: "Nunito", sans-serif;
+    font-size: 1.25vw;
   }
   .loza-content1__line {
     width: 90%;
@@ -766,8 +768,10 @@ p, a {
     display: flex;
     justify-content: center;
     margin-top: 5%;
-    gap: 10px;
     margin-bottom: 30px;
+    margin-left: 25px;
+    margin-right: 25px;
+    gap: 10px;
   }
   .loza-content2__block1 {
     display: flex;
@@ -829,10 +833,10 @@ p, a {
     margin-top: 20px;
   }
   .loza-mobile__buttons_arrow {
-    background-color: rgba(160, 180, 91, 0.6);
     width: 11vw;
     height: 7vh;
     border-radius: 50%;
+    background-color: rgba(160, 180, 91, 0.6);
   }
   .loza-mobile__buttons_arrow:hover {
     background: #A0B45B;
@@ -841,14 +845,15 @@ p, a {
     transform: translateY(3px);
   }
   .loza-mobile__buttons_to-main {
+    width: 30vw;
+    height: 7vh;
     background-color: rgba(160, 180, 91, 0.6);
     border-radius: 22px;
     margin-left: 5%;
-    width: 30vw;
-    height: 7vh;
     font: "Inter", sans-serif;
     font-weight: bolder;
     color: rgba(0, 0, 0, 0.7);
+    font-size: 3.562vw;
   }
   .loza-mobile__line1 {
     width: 100%;
@@ -862,12 +867,12 @@ p, a {
     margin-top: 20px;
   }
   .loza-mobile__title {
-    font: "Inter", sans-serif;
     text-align: center;
     margin: 20px;
     color: rgba(0, 0, 0, 0.7);
+    font: "Inter", sans-serif;
     font-weight: bolder;
-    font-size: 22px;
+    font-size: 5.598vw;
     line-height: 1.2em;
   }
   .loza-mobile__line2 {
@@ -880,6 +885,7 @@ p, a {
     width: 80%;
     color: rgba(0, 0, 0, 0.7);
     font: "Nunito", sans-serif;
+    font-size: 4.58vw;
   }
   .loza-mobile__content2 {
     margin: 25px;
@@ -910,11 +916,13 @@ p, a {
     border-radius: 15px;
   }
   .loza-mobile__title2 {
-    font: "Inter", sans-serif;
+    width: 100%;
     text-align: center;
     margin-top: 30px;
     color: rgba(0, 0, 0, 0.7);
+    font: "Inter", sans-serif;
     font-weight: bolder;
+    font-size: 5.598vw;
   }
   .loza-mobile__image-block3 {
     display: flex;
