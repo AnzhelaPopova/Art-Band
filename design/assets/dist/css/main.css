@@ -892,6 +892,117 @@ p, a {
     margin: 3% 0 0 15%;
   }
 }
+.about__wrapper {
+  width: 100vw;
+  height: auto;
+  background-color: #FBFFE9;
+}
+
+.about__content {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.about__title,
+.about__whychooseus {
+  width: 100vw;
+  height: 80px;
+  padding-top: 25px;
+}
+.about__title h2,
+.about__whychooseus h2 {
+  color: rgba(0, 0, 0, 0.7);
+  font: "Inter", sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.about__text {
+  width: 50%;
+  height: auto;
+  padding-right: 20px;
+  padding-top: 10px;
+}
+.about__text p {
+  font: "Nunito", sans-serif;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.7);
+  margin-left: 10px;
+  text-indent: 30px;
+  line-height: 2;
+}
+
+.about__carousel {
+  width: 40%;
+  height: auto;
+  padding-left: 50px;
+  padding-top: 20px;
+}
+
+.about__advantages {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.about__advantages__cards {
+  text-align: center;
+  padding-top: 20px;
+}
+.about__advantages__cards p {
+  font: "Nunito", sans-serif;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 767px) {
+  .about__carousel {
+    width: 100vw;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .about__text {
+    width: 100vw;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .about__content {
+    display: flex;
+    flex-direction: column;
+  }
+  .about__title,
+  .about__whychooseus {
+    height: 50px;
+    margin-bottom: 20px;
+  }
+  .about__title h2,
+  .about__whychooseus h2 {
+    font-size: calc(26px + 23.8 * (100vw - 320px) / 100vw);
+  }
+  .about__title p,
+  .about__whychooseus p {
+    font-size: calc(18px + 6.8 * (100vw - 320px) / 1200);
+  }
+  .about__advantages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .about__advantages__cards {
+    width: 35%;
+    padding-top: 20px;
+  }
+  .about__advantages__cards img {
+    width: 60%;
+    height: 60%;
+  }
+  .about__advantages__cards p {
+    font-size: 14px;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 2560px) {
   .main-page-mbl, .main-footer-mbl {
     display: none;
