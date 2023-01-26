@@ -826,7 +826,7 @@ p, a {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 3%;
+    margin-bottom: 4vh;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 2560px) {
@@ -886,7 +886,7 @@ p, a {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 6%;
+    margin-top: 5.5vh;
   }
   .dsk-diary__img {
     width: 70%;
@@ -1174,15 +1174,7 @@ p, a {
   .main-page-mbl-main {
     display: flex;
     flex-direction: column;
-<<<<<<< HEAD
-    align-items: center;
-    justify-content: space-between;
-    width: 100vw;
-    height: 239vh;
-    background-image: url(../ff331d9e0a37ecc0de6c.png);
-=======
     /*background-image: url(../../design/assets/images/main/main-backgr-mbl.png);
->>>>>>> dev
     background-repeat: no-repeat;
     background-size: contain;*/
   }
@@ -1224,26 +1216,7 @@ p, a {
     display: flex;
     flex-direction: column;
   }
-  .main-page-mbl-main__contackts {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 90px;
-    margin-bottom: 5.17vh;
-  }
   .main-page-mbl-main__number {
-<<<<<<< HEAD
-    padding-bottom: 5px;
-    border-bottom: 1px solid black;
-    font-family: "Inter", sans-serif;
-    font-weight: 600;
-    font-size: calc((100vw + 618px) / 63);
-    line-height: 19px;
-  }
-  .main-page-mbl-main__social-networks {
-    display: flex;
-=======
     margin-top: 20vh;
     font-family: "Inter", sans-serif;
     font-weight: 600;
@@ -1255,7 +1228,6 @@ p, a {
     display: flex;
     margin-bottom: 10%;
     justify-content: center;
->>>>>>> dev
   }
   .main-page-mbl-main__social-networks_tg {
     margin-right: 22px;
@@ -1268,12 +1240,9 @@ p, a {
   }
   .main-page-mbl-main__social-networks_vk img {
     height: 4.43vh;
-<<<<<<< HEAD
   }
   .main__booking__dsk {
     display: none;
-=======
->>>>>>> dev
   }
 }
 .main-page-mbl-section {
@@ -1395,7 +1364,7 @@ p, a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 4%;
+    margin-left: 9vw;
   }
   .loza-content1__image-block {
     display: flex;
@@ -1404,7 +1373,7 @@ p, a {
   .loza-content1__image {
     max-width: 100%;
     object-fit: cover;
-    margin-top: 5vh;
+    margin-top: 0;
   }
   .loza-content1__text-block {
     display: flex;
@@ -1415,31 +1384,28 @@ p, a {
   .loza-content1__title {
     width: 80%;
     text-align: center;
-    margin-bottom: 3%;
-    margin-top: 4%;
+    margin-bottom: 3vh;
+    margin-top: 10vh;
     color: rgba(0, 0, 0, 0.7);
     font-family: "Inter", sans-serif;
-    font-size: 3.125vw;
-    font-weight: bolder;
+    font-size: 2.2em;
+    font-weight: 500;
   }
   .loza-content1__text {
     width: 80%;
-    margin: 20px;
+    margin: 5vw;
     color: rgba(0, 0, 0, 0.7);
     font-family: "Nunito", sans-serif;
-    font-size: 1.319vw;
+    font-size: 1.3em;
   }
   .loza-content1__line {
-    width: 90%;
+    width: 80%;
     border-bottom: 1px solid rgba(0, 0, 0, 0.7);
   }
   .loza-content2 {
     display: flex;
     justify-content: center;
-    margin-top: 5%;
-    margin-bottom: 30px;
-    margin-left: 25px;
-    margin-right: 25px;
+    margin: 0 8vw 5% 8vw;
     gap: 10px;
   }
   .loza-content2__block1 {
@@ -1758,7 +1724,7 @@ p, a {
   .mk5-main-content__title {
     font-size: 2.8vw;
     line-height: 3.36vw;
-    /*font-size: calc(22px + 18 * (100vw / 1440));*/
+    font-size: 1.5em;
     text-align: center;
     font-weight: bold;
     font-family: "Inter", sans-serif;
@@ -1901,14 +1867,14 @@ p, a {
     justify-content: center;
   }
   .mkphoto__plant {
-    margin-left: 3em;
+    margin-left: 8vw;
     width: 70%;
     height: 80%;
     border-radius: 15px;
   }
   .mkphoto__plant-text {
     font-weight: 300;
-    margin-left: 2em;
+    margin-left: 8vw;
     font-family: "Nunito", sans-serif;
     margin-top: 2em;
     font-size: calc((27vw - 19px) / 17);
@@ -1940,8 +1906,7 @@ p, a {
     display: none;
   }
   .mkphoto__images {
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin: 5% 8vw 5% 8vw;
     display: flex;
     justify-content: space-around;
   }
