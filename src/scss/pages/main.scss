@@ -9,7 +9,7 @@
     .dsk-main-block {
         background-image: url(../../design/assets/images/main/main-background.png);
         background-repeat: no-repeat;
-        background-size: 100vw;
+        background-size: cover;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -49,8 +49,8 @@
             align-items: center;
             justify-content: center;
             border-radius: 25px;
-            width: 10%;
-            height: 6%;
+            width: 15vw;
+            height: 6vh;
             background-color: rgb(81, 81, 81);
             color: $color-light;
             font-family: $title-font;
@@ -169,9 +169,6 @@
             width: 100vw;
             display: flex;
             justify-content: center;
-
-
-
 
             &_black {
                 font-family: $title-font-logo;
