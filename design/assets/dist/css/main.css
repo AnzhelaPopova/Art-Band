@@ -1843,15 +1843,6 @@ p, a {
     color: rgba(0, 0, 0, 0.7);
   }
 }
-/*.shop-page__heading {
-    text-align: center;
-font-family:$title-font;
-font-style: normal;
-color: $color-text;
-font-size: calc(( 100vw + 310.1px )/ 26.93 );
-font-weight: 600;
-line-height: 48px;
-}*/
 .shop-page__about {
   display: flex;
   margin-top: 51px;
@@ -1918,13 +1909,6 @@ line-height: 48px;
     display: none;
   }
 }
-/*.shop-page__about-img {
-    width: 540px;
-height: 674px;
-border-radius: 45px;
-margin-right: 10px;
-margin-left: 120px;
-}*/
 .shop-page__about-text-green {
   color: #A0B45B;
 }
@@ -2118,14 +2102,10 @@ margin-left: 120px;
 
 .carousel-control-prev-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 fill=%27black%27 width=%278%27 height=%278%27 viewBox=%270 0 8 8%27%3e%3cpath d=%27M5.25 0l-4 4 4 4 1.5-1.5L4.25 4l2.5-2.5L5.25 0z%27/%3e%3c/svg%3e") !important;
-  margin-top: auto;
-  margin-bottom: 130px;
 }
 
 .carousel-control-next-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 fill=%27black%27 width=%278%27 height=%278%27 viewBox=%270 0 8 8%27%3e%3cpath d=%27M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z%27/%3e%3c/svg%3e") !important;
-  margin-top: auto;
-  margin-bottom: 130px;
 }
 
 .later {
