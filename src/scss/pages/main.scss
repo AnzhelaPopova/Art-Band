@@ -143,22 +143,36 @@
         background-color: $color-light;
     }
 
+    .main-page-mbl-main-bgr {
+        background-image: url(../../design/assets/images/main/main-backgr-mbl.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
     .main-page-mbl-main {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
 
-        width: 100vw;
-        height: 239vh;
 
-        background-image: url(../../design/assets/images/main/main-backgr-mbl.png);
+
+        /*background-image: url(../../design/assets/images/main/main-backgr-mbl.png);
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: contain;*/
+
+        &__name {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20vh;
+            width: 90vw;
+        }
 
         &__logo {
-            width: 90vw;
-            margin-bottom: 40vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+
+
+
 
             &_black {
                 font-family: $title-font-logo;
@@ -184,32 +198,35 @@
                 font-family: $title-font;
                 text-align: center;
                 font-weight: 500;
-                margin-top: 7vh;
+                margin-top: 30%;
+
 
             }
         }
         &__contackts{
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
+            
 
-            height: 90px;
-            margin-bottom: 5.17vh;
+
         }
 
         &__number { 
-            padding-bottom: 5px;
-            border-bottom: 1px solid black;
-
+            margin-top: 20vh;
             font-family: $title-font;
             font-weight: 600;
             font-size: calc(( 100vw + 618px )/ 63);
-            line-height: 19px;
+            line-height: 4em;
+            text-align: center;
+            
         }
 
         &__social-networks {
             display: flex;
+            margin-bottom: 10%;
+
+
+            justify-content: center;
 
             &_tg {
                 margin-right: 22px; 
