@@ -3,338 +3,411 @@
 /*desktop*/
 @media screen and (min-width: 767px) {
 
-    .candle-message__about {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin-top: 50px;
-        gap: 50px;
-    }
+    .candle-message {
+        background-color: $color-light;
+        overflow-x: hidden;
 
-    .candle-message__about_line {
-        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-    }
+        &__about {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 50px;
+            gap: 50px;
 
-    .candle-message__about_title {
-        font-family: "Inter", sans-serif;
-    }
+            &_svecha-main {
+                width: 350px;
+                height: 350px;
+            }
 
-    .candle-message__about_description {
-        font-family: "Nunito", sans-serif;
-    }
+            &_line {
+                border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+            }
 
-    .candle-message__images {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin-top: 50px;
-        gap: 60px;
-    }
+            &_title {
+                font-family: "Inter", sans-serif;
+            }
 
-    .candle-message__about_svecha-main {
-        width: 350px;
-        height: 350px;
-    }
+            &_description {
+                font-family: "Nunito", sans-serif;
+            }
+        }
 
-    .candle-message__images_svecha1,
-    .candle-message__images_svecha2,
-    .candle-message__images_svecha3 {
-        width: 250px;
-    }
+        &__images {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 50px;
+            gap: 60px;
 
-    .candle-message__btn {
-        width: 280px;
-        height: 68px;
-        background-color: rgba(160, 180, 91, 0.6);
-        border-radius: 15px;
-        font-size: 24px;
-        font-weight: 300;
-        line-height: 100%;
-        text-align: center;
-        letter-spacing: 0.02em;
-        color: #ffffff;
-        cursor: pointer;
-        margin: 0 auto;
-        display: block;
-    }
-
-    .candle-message__btn :hover {
-        background-color: #9da77e;
-        filter: drop-shadow(0px 0px 10px #97a179);
-        transition: 0.5s all;
-    }
-
-    .sashe__about {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin-top: 50px;
-        gap: 50px;
-    }
-
-    .sashe__about_line {
-        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-    }
-
-    .sashe__about_sashe-main {
-        width: 350px;
-        height: 350px;
-    }
-
-    .sashe__images {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin-top: 50px;
-        gap: 60px;
-    }
-
-    .sashe__images_sashe1,
-    .sashe__images_sashe2,
-    .sashe__images_sashe3 {
-        width: 250px;
+            &_svecha1,
+            &_svecha2,
+            &_svecha3 {
+                width: 250px;
+            }
+        }
     }
 
 
-    .candle-aroma__about {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin-top: 50px;
-        gap: 50px;
+    .sashe {
+
+        &__about {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 50px;
+            gap: 50px;
+
+            &_line {
+                border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+            }
+
+            &_title {
+                font-family: "Inter", sans-serif;
+            }
+
+            &_description {
+                font-family: "Nunito", sans-serif;
+            }
+
+            &_sashe-main {
+                width: 350px;
+                height: 350px;
+            }
+
+        }
+
+        &__images {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 50px;
+            gap: 60px;
+
+            &_sashe1,
+            &_sashe2,
+            &_sashe3 {
+                width: 250px;
+            }
+        }
+
+        &__btn {
+            background-color: $color-light-green;
+            font-family: $default-font;
+            color: $color-light;
+            text-decoration: none;
+            font-size: 1.2em;
+            width: 15vw;
+            height: 6vh;
+            border-radius: 10px;
+            box-shadow: 4px 4px 4px 0 rgba(63, 84, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 3%;
+            margin-left: 535px;
+        }
+
     }
 
-    .candle-aroma__about_aroma-main {
-        width: 350px;
-        height: 350px;
-    }
+    .candle-aroma {
 
-    .candle-aroma__about_line {
-        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-    }
+        &__about {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 50px;
+            gap: 50px;
 
-    .candle-aroma__images {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 50px;
-    }
+            &_aroma-main {
+                width: 350px;
+                height: 350px;
+            }
 
-    .candle-aroma__images_row1 {
-        display: flex;
-        gap: 12pt;
-    }
+            &_line {
+                border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+            }
 
-    .candle-aroma__images_row2 {
-        display: flex;
-        gap: 12pt;
-        height: 210px;
-    }
+            &_title {
+                font-family: "Inter", sans-serif;
+            }
 
-    .candle-aroma__images_aroma1,
-    .candle-aroma__images_aroma3 {
-        align-self: flex-start;
-    }
+            &_description {
+                font-family: "Nunito", sans-serif;
+            }
 
-    .candle-aroma__images_aroma5 {
-        align-self: flex-start;
-        margin-top: 20pt;
-    }
+        }
 
-    .candle-aroma__images_aroma4,
-    .candle-aroma__images_aroma6 {
-        position: relative;
-        top: -165px;
-    }
+        &__images {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
 
-    .candle-aroma__images_aroma1,
-    .candle-aroma__images_aroma3,
-    .candle-aroma__images_aroma5 {
-        height: 180px;
-        width: 280px;
-    }
 
-    .candle-aroma__images_aroma2,
-    .candle-aroma__images_aroma4,
-    .candle-aroma__images_aroma6 {
-        width: 280px;
-        height: 370px;
-    }
+            &_row1 {
+                display: flex;
+                gap: 12pt;
+            }
 
+            &_row2 {
+                display: flex;
+                gap: 12pt;
+                height: 210px;
+            }
+
+            &_aroma1,
+            &_aroma3 {
+                align-self: flex-start;
+                height: 180px;
+                width: 280px;
+            }
+
+            &_aroma5 {
+                align-self: flex-start;
+                margin-top: 20pt;
+                height: 180px;
+                width: 280px;
+            }
+
+            &_aroma4,
+            &_aroma6 {
+                position: relative;
+                top: -165px;
+                width: 280px;
+                height: 370px;
+            }
+
+            &_aroma2 {
+                width: 280px;
+                height: 370px;
+            }
+
+        }
+
+        &__btn {
+            background-color: $color-light-green;
+            font-family: $default-font;
+            color: $color-light;
+            text-decoration: none;
+            font-size: 1.2em;
+            width: 15vw;
+            height: 6vh;
+            border-radius: 10px;
+            box-shadow: 4px 4px 4px 0 rgba(63, 84, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 3%;
+            margin-left: 535px;
+
+
+        }
+    }
 }
 
 /*mobile*/
 
 @media screen and (max-width: 768px) {
 
-    body {
-        background-color: RGB(251, 255, 233);
+    .candle-message {
+        background-color: $color-light;
+        overflow-x: hidden;
+
+        &__about {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+
+            &_title {
+                width: 86.26vw;
+                margin-top: 3.56vw;
+                padding-bottom: 5.6vw;
+                font-family: "Inter", sans-serif;
+                font-weight: 600;
+                font-size: calc((100vw - 19px) / 17);
+                text-align: center;
+                color: rgba(0, 0, 0, 0.7);
+                border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+            }
+
+            &_description {
+                width: 100%;
+                margin: 0 auto;
+                font-weight: 300;
+                line-height: 25px;
+                color: rgba(0, 0, 0, 0.7);
+                font-family: "Nunito", sans-serif;
+            }
+
+            &_svecha-main {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        &__images {
+            display: flex;
+            flex-direction: row-reverse;
+            gap: 15px;
+
+            &_svecha2 {
+                display: none;
+            }
+
+            &_svecha1,
+            &_svecha3 {
+                max-width: 50%;
+                height: auto;
+                margin-top: 15px;
+            }
+        }
     }
 
-    .candle-message__about {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+
+    .sashe {
+
+        &__about {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &_sashe-main {
+                max-width: 100%;
+                height: auto;
+            }
+
+            &_title {
+                width: 86.26vw;
+                margin-top: 3.56vw;
+                padding-bottom: 5.6vw;
+                font-family: "Inter", sans-serif;
+                font-weight: 600;
+                font-size: calc((100vw - 19px) / 17);
+                text-align: center;
+                color: rgba(0, 0, 0, 0.7);
+                border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+            }
+
+            &_description {
+                width: 100%;
+                margin: 0 auto;
+                font-weight: 300;
+                line-height: 25px;
+                color: rgba(0, 0, 0, 0.7);
+                font-family: "Nunito", sans-serif;
+            }
+        }
+
+        &__images {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            &_sashe1,
+            &_sashe2,
+            &_sashe3 {
+                max-width: 50%;
+                margin-top: 15px;
+            }
+
+            &_sashe3 {
+                align-self: center;
+            }
+        }
+
+        &__btn {
+            background-color: $color-light-green;
+            font-family: $default-font;
+            color: $color-light;
+            text-decoration: none;
+            font-size: 1.2em;
+            width: 15vw;
+            height: 4vh;
+            border-radius: 10px;
+            box-shadow: 4px 4px 4px 0 rgba(63, 84, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 3%;
+            margin-left: 535px;
+        }
     }
 
-    .candle-message__about_title {
-        width: 86.26vw;
-        margin-top: 3.56vw;
-        padding-bottom: 5.6vw;
-        font-family: "Inter", sans-serif;
-        font-weight: 600;
-        font-size: calc((100vw - 19px) / 17);
-        text-align: center;
-        color: rgba(0, 0, 0, 0.7);
-        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-    }
+    .candle-aroma {
 
-    .candle-message__about_description {
-        width: 100%;
-        margin: 0 auto;
-        font-weight: 300;
-        line-height: 25px;
-        color: rgba(0, 0, 0, 0.7);
-    }
+        &__about {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
 
-    .candle-message__images {
-        display: flex;
-        flex-direction: row-reverse;
-        gap: 15px;
-    }
+            &_aroma-main {
+                max-width: 100%;
+                height: auto;
+                margin-top: 25px;
+            }
 
-    .candle-message__about_svecha-main {
-        max-width: 100%;
-        height: auto;
-    }
+            &_title {
+                width: 86.26vw;
+                margin-top: 3.56vw;
+                padding-bottom: 5.6vw;
+                font-family: "Inter", sans-serif;
+                font-weight: 600;
+                font-size: calc((100vw - 19px) / 17);
+                text-align: center;
+                color: rgba(0, 0, 0, 0.7);
+                border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+            }
 
-    .candle-message__images_svecha2 {
-        display: none;
-    }
+            &_description {
+                width: 100%;
+                margin: 0 auto;
+                font-weight: 300;
+                line-height: 25px;
+                color: rgba(0, 0, 0, 0.7);
+                font-family: "Nunito", sans-serif;
+            }
+        }
 
-    .candle-message__images_svecha1,
-    .candle-message__images_svecha3 {
-        max-width: 50%;
-        height: auto;
-        margin-top: 15px;
-    }
 
-    .sashe__about {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+        &__images {
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
 
-    .sashe__about_sashe-main {
-        max-width: 100%;
-        height: auto;
-    }
+            &_aroma1,
+            &_aroma3,
+            &_aroma5,
+            &_aroma6 {
+                display: none;
+            }
 
-    .sashe__about_sashe-main_title {
-        width: 86.26vw;
-        margin-top: 3.56vw;
-        padding-bottom: 5.6vw;
-        font-family: "Inter", sans-serif;
-        font-weight: 600;
-        font-size: calc((100vw - 19px) / 17);
-        text-align: center;
-        color: rgba(0, 0, 0, 0.7);
-        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-    }
+            &_aroma2,
+            &_aroma4 {
+                max-width: 100%;
+                margin-top: 15px;
+                height: 100%;
+            }
 
-    .sashe__about_sashe-main_description {
-        width: 100%;
-        margin: 0 auto;
-        font-weight: 300;
-        line-height: 25px;
-        color: rgba(0, 0, 0, 0.7);
-    }
+        }
 
-    .sashe__images {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
+        &__btn {
+            background-color: $color-light-green;
+            font-family: $default-font;
+            color: $color-light;
+            text-decoration: none;
+            font-size: 1.2em;
+            width: 15vw;
+            height: 4vh;
+            border-radius: 10px;
+            box-shadow: 4px 4px 4px 0 rgba(63, 84, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 3%;
+            margin-left: 545px;
+        }
 
-    .sashe__images_sashe1,
-    .sashe__images_sashe2,
-    .sashe__images_sashe3 {
-        max-width: 50%;
-        margin-top: 15px;
-    }
 
-    .sashe__images_sashe3 {
-        align-self: center;
-    }
-
-    .candle-aroma__about {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .candle-aroma__images {
-        display: flex;
-        flex-direction: row;
-        gap: 15px;
-    }
-
-    .candle-aroma__about_aroma-main {
-        max-width: 100%;
-        height: auto;
-        margin-top: 25px;
-    }
-
-    .candle-aroma__images_aroma1,
-    .candle-aroma__images_aroma3,
-    .candle-aroma__images_aroma5,
-    .candle-aroma__images_aroma6 {
-        display: none;
-    }
-
-    .candle-aroma__images_aroma2,
-    .candle-aroma__images_aroma4 {
-        max-width: 100%;
-        margin-top: 15px;
-        height: 100%;
-    }
-
-    .candle-aroma__about_title {
-        width: 86.26vw;
-        margin-top: 3.56vw;
-        padding-bottom: 5.6vw;
-        font-family: "Inter", sans-serif;
-        font-weight: 600;
-        font-size: calc((100vw - 19px) / 17);
-        text-align: center;
-        color: rgba(0, 0, 0, 0.7);
-        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-    }
-
-    .candle-aroma__about_description {
-        width: 100%;
-        margin: 0 auto;
-        font-weight: 300;
-        line-height: 25px;
-        color: rgba(0, 0, 0, 0.7);
-    }
-
-    .candle-message__btn {
-        width: 140px;
-        height: 40px;
-        background-color: rgba(160, 180, 91, 0.6);
-        border-radius: 15px;
-        font-size: 18px;
-        font-weight: 300;
-        line-height: 100%;
-        text-align: center;
-        letter-spacing: 0.02em;
-        color: #ffffff;
-        cursor: pointer;
-    }
-
-    .candle-buttons {
-        display: flex;
-        justify-content: end;
     }
 }
