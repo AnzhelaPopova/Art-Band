@@ -578,8 +578,8 @@ p {
     padding-bottom: 2vw;
   }
   .mkphoto__maintext {
-    font-weight: 300;
     font-family: "Nunito", sans-serif;
+    font-weight: 300;
     margin-top: 2em;
     font-size: calc((27vw - 19px) / 17);
     line-height: 120%;
