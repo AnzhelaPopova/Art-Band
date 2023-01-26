@@ -136,6 +136,54 @@
                 }
             }
         }
+
+    .main__booking__dsk {
+        padding: 3% 15%;
+        background-color: $color-light;
+
+        &__container {
+            border-radius: 45px;
+            background-color: $color-dark-green;
+        }
+
+        &__title {
+            padding: 3vh 0;
+            font-family: $title-font;
+            font-weight: 500;
+            text-align: center;
+            color: $color-text;
+        }
+
+        &__text {
+            font-family: $default-font;
+            text-align: center;
+            color: $color-text;
+        }
+
+        &__maintext {
+            padding: 3vh 0;
+            font-size: 1.5em;
+            font-weight: 600;
+            line-height: 146%;
+            letter-spacing: 0.05em;
+        }
+
+        &__smalltext {
+            padding: 1vh 0;
+            font-weight: 600;
+        }
+
+        &__item {
+            display: flex;
+            margin: 0 28.5vw;
+            gap: 23px;
+        }
+
+        &__img {
+            width: 15%;
+            height: 16%;
+        }
+    }
 }
 
 @media screen and (max-width: $tablet) {
@@ -242,6 +290,9 @@
                     height: 4.43vh;}              
             }
             }
+        }
+        .main__booking__dsk {
+            display: none;
         }
     }
 
