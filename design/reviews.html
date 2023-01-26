@@ -1,76 +1,223 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Art-Band. Отзывы</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Art-Band. Отзывы</title>
 
-		<link rel="stylesheet" href="./assets/styles/normalize.css">
-		<link rel="shortcut icon" href="./assets/icons/icon.png" />
-		<link rel="stylesheet" href="./assets/dist/css/fonts.css" />
-		<link rel="stylesheet" href="./assets/dist/css/main.css" />
-	</head>
-	<body class="reviews-body">
-		<header>
-			<div class="reviews-header__inner">
-				<div class="reviews-arrow">
-					<a class="reviews-arrow__link" href="./about.html">
-						<img class="reviews-arrow__img" src="./assets/icons/arrow.png" alt="Стрелка Назад">
-					</a>
-				</div>
-				<div class="reviews-tomain">
-					<a class="reviews-tomain__link" href="./about.html">НА ГЛАВНУЮ</a>
-				</div>
-			</div>
-		</header>
-		<img class="reviews-line__img" src="./assets/icons/line.png">
-		<div class="reviews-wrapper">
-			<main>
-				<section class="reviews">
-					<h1 class="reviews-title">ОТЗЫВЫ</h1>
-					<div class="reviews-card">
-						<div class="slider__rev" data-slider="itc-slider">
-							<div class="slider__wrapper__rev">
-								<div class="slider__items__rev">
-									<div class="slider__item__rev">
-										<p class="review__text__item">На Сходне открылась творческая Мастерская , расположена, очень удобно рядом станция Сходня , рядом остановка автобусов, парковка есть . В Мастерской проводятся Мастер Классы для детей и взрослых, можно купить подарки ручной работы . Я купила подарочки набор новогодних пряников , игрушку на ёлку домик, мыло ручной работы и много чего интересного увидела, обязательно буду заходить . Огромное спасибо , приветливой хозяйки Мастерской Марине.</p>
-									</div>
-									<div class="slider__item__rev">
-										<p class="review__text__item">Волшебный магазин уникальных изделий ручной работы. Мастер классы проводят мастера высшей категории, которые проходят в атмосфере тепла и уюта. В мастерской интересно и детям, и взрослым. Очень здорово, что на а Сходне появилось такое место, где можно увлекательно провести время вместе с детьми</p>
-									</div>
-									<div class="slider__item__rev">
-										<p class="review__text__item">Отличное творческое место. Можно не только посетить интересные мастер-классы, но и приобрести замечательные подарки ручной работы местных мастеров по привлекательным ценам.</p>
-									</div>
-									<div class="slider__item__rev">
-										<p class="review__text__item">Чудесное место, очень уютная творческая мастерская. Можно не только с пользой провести время, но и купить классные штучки на подарки.</p>
-									</div>
-									<div class="slider__item__rev">
-										<p class="review__text__item">Это реально было потрясающе! Так интересно, столько идей, столько возможностей для творчества! Светлана дала нам полный полет фантазии, не ограничивая рамками какой-то определенной работы! Как здорово, что есть такое место в Химках, где можно так душевно поработать!</p>
-									</div>
-								</div>
-								<button class="slider__control__rev" data-slide="prev"></button>
-								<button class="slider__control__rev" data-slide="next"></button>
-							</div>
-						</div>
-					</div>
-					<div class="reviews-card">
-						<img class="reviews-img" src="./assets/images/reviews/reviews1.jpeg" alt="Фотографии посетителей мастер-классов и их работы">
-						<img class="reviews-img" src="./assets/images/reviews/reviews2.jpeg" alt="Фотографии посетителей мастер-классов и их работы">
-						<img class="reviews-img" src="./assets/images/reviews/reviews6.jpeg" alt="Фотографии посетителей мастер-классов и их работы">
-						<img class="reviews-img" src="./assets/images/reviews/reviews7.jpeg" alt="Фотографии посетителей мастер-классов и их работы">
-						<img class="reviews-img" src="./assets/images/reviews/reviews8.jpeg" alt="Фотографии посетителей мастер-классов и их работы">
-						<img class="reviews-img" src="./assets/images/reviews/reviews3.jpeg" alt="Фотографии посетителей мастер-классов и их работы">
-						<img class="reviews-img" src="./assets/images/reviews/reviews4.jpeg" alt="Фотографии посетителей мастер-классов и их работы">
-						<img class="reviews-img" src="./assets/images/reviews/reviews5.jpeg" alt="Фотографии посетителей мастер-классов и их работы">
-						<img class="reviews-img" src="./assets/images/reviews/reviews9.JPG" alt="Фотографии посетителей мастер-классов и их работы">
-						<img class="reviews-img" src="./assets/images/reviews/reviews10.JPG" alt="Фотографии посетителей мастер-классов и их работы">
-					</div>
-				</section>
-			</main>
-		</div>
+    <link rel="stylesheet" href="./assets/styles/normalize.css" />
+    <link rel="shortcut icon" href="./assets/icons/icon.png" />
+    <link rel="stylesheet" href="./assets/dist/css/fonts.css" />
+    <link rel="stylesheet" href="./assets/dist/css/main.css" />
+  </head>
+  <body class="reviews-body">
+    <header class="mbl-header-btn dsk-nav">
+      <!--DESKTOP HEADER-->
+      <div class="dsk-nav__logo">
+        <a href="./main.html"
+          ><img src="./assets/icons/logo-artband.png" alt="Логотип"
+        /></a>
+      </div>
 
-		<script src="./assets/dist/js/reviews.js" defer></script>
+      <div class="dsk-nav__pages">
+        <a class="dsk-nav__link" href="">Мастер-классы</a>
+        <!--ВСТАВИТЬ ССЫЛКУ НА АБЗАЦ-->
+        <a class="dsk-nav__link" href="./about.html">О нас</a>
+        <a class="dsk-nav__link" href="./reviews.html">Отзывы</a>
+        <a class="dsk-nav__link" href="./shop.html">Магазин handmade</a>
+        <a class="dsk-nav__link" href="">Контакты</a>
+        <!--ВСТАВИТЬ ССЫЛКУ НА АБЗАЦ-->
+      </div>
 
-	</body>
+      <div class="dsk-nav__social">
+        <a href="https://t.me/artbandclub"
+          ><img src="./assets/icons/Telegram.png" alt="Telegram"
+        /></a>
+        <a href="https://vk.com/artbandclub"
+          ><img src="./assets/icons/Vkontact.png" alt="ВКонтакте"
+        /></a>
+      </div>
+
+      <div class="dsk-nav__nmbr">+7 (983) 132-39-08</div>
+
+      <!--MOBILE HEADER ДЛЯ ОСТАЛЬНЫХ СТРАНИЦ-->
+      <div class="mbl-header-btn__back">
+        <a class="mbl-header-btn__link" href="./main.html">НА ГЛАВНУЮ</a>
+      </div>
+    </header>
+    <img class="reviews-line__img" src="./assets/icons/line.png" />
+    <div class="reviews-wrapper">
+      <main>
+        <section class="reviews">
+          <h1 class="reviews-title">ОТЗЫВЫ</h1>
+          <div class="reviews-card">
+            <div class="slider__rev" data-slider="itc-slider">
+              <div class="slider__wrapper__rev">
+                <div class="slider__items__rev">
+                  <div class="slider__item__rev">
+                    <p class="review__text__item">
+                      На Сходне открылась творческая Мастерская , расположена,
+                      очень удобно рядом станция Сходня , рядом остановка
+                      автобусов, парковка есть . В Мастерской проводятся Мастер
+                      Классы для детей и взрослых, можно купить подарки ручной
+                      работы . Я купила подарочки набор новогодних пряников ,
+                      игрушку на ёлку домик, мыло ручной работы и много чего
+                      интересного увидела, обязательно буду заходить . Огромное
+                      спасибо , приветливой хозяйки Мастерской Марине.
+                    </p>
+                  </div>
+                  <div class="slider__item__rev">
+                    <p class="review__text__item">
+                      Волшебный магазин уникальных изделий ручной работы. Мастер
+                      классы проводят мастера высшей категории, которые проходят
+                      в атмосфере тепла и уюта. В мастерской интересно и детям,
+                      и взрослым. Очень здорово, что на а Сходне появилось такое
+                      место, где можно увлекательно провести время вместе с
+                      детьми
+                    </p>
+                  </div>
+                  <div class="slider__item__rev">
+                    <p class="review__text__item">
+                      Отличное творческое место. Можно не только посетить
+                      интересные мастер-классы, но и приобрести замечательные
+                      подарки ручной работы местных мастеров по привлекательным
+                      ценам.
+                    </p>
+                  </div>
+                  <div class="slider__item__rev">
+                    <p class="review__text__item">
+                      Чудесное место, очень уютная творческая мастерская. Можно
+                      не только с пользой провести время, но и купить классные
+                      штучки на подарки.
+                    </p>
+                  </div>
+                  <div class="slider__item__rev">
+                    <p class="review__text__item">
+                      Это реально было потрясающе! Так интересно, столько идей,
+                      столько возможностей для творчества! Светлана дала нам
+                      полный полет фантазии, не ограничивая рамками какой-то
+                      определенной работы! Как здорово, что есть такое место в
+                      Химках, где можно так душевно поработать!
+                    </p>
+                  </div>
+                </div>
+                <button class="slider__control__rev" data-slide="prev"></button>
+                <button class="slider__control__rev" data-slide="next"></button>
+              </div>
+            </div>
+          </div>
+          <div class="reviews-card">
+            <img
+              class="reviews-img"
+              src="./assets/images/reviews/reviews1.jpeg"
+              alt="Фотографии посетителей мастер-классов и их работы"
+            />
+            <img
+              class="reviews-img"
+              src="./assets/images/reviews/reviews2.jpeg"
+              alt="Фотографии посетителей мастер-классов и их работы"
+            />
+            <img
+              class="reviews-img"
+              src="./assets/images/reviews/reviews6.jpeg"
+              alt="Фотографии посетителей мастер-классов и их работы"
+            />
+            <img
+              class="reviews-img"
+              src="./assets/images/reviews/reviews7.jpeg"
+              alt="Фотографии посетителей мастер-классов и их работы"
+            />
+            <img
+              class="reviews-img"
+              src="./assets/images/reviews/reviews8.jpeg"
+              alt="Фотографии посетителей мастер-классов и их работы"
+            />
+            <img
+              class="reviews-img"
+              src="./assets/images/reviews/reviews3.jpeg"
+              alt="Фотографии посетителей мастер-классов и их работы"
+            />
+            <img
+              class="reviews-img"
+              src="./assets/images/reviews/reviews4.jpeg"
+              alt="Фотографии посетителей мастер-классов и их работы"
+            />
+            <img
+              class="reviews-img"
+              src="./assets/images/reviews/reviews5.jpeg"
+              alt="Фотографии посетителей мастер-классов и их работы"
+            />
+            <img
+              class="reviews-img"
+              src="./assets/images/reviews/reviews9.JPG"
+              alt="Фотографии посетителей мастер-классов и их работы"
+            />
+            <img
+              class="reviews-img"
+              src="./assets/images/reviews/reviews10.JPG"
+              alt="Фотографии посетителей мастер-классов и их работы"
+            />
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <!--MOBILE FOOTER-->
+        <div class="footer">
+          <div class="footer__work">
+            <div class="footer__list">
+              <p class="footer__list_hours footer__list_contacts">
+                Пн. - Пт. 11:00 - 19:00 <br />
+                Сб. - Вс. 11:00 - 18:00
+              </p>
+              <p class="footer__list_address footer__list_contacts">
+                Московская область, <br />
+                г.Химки, мкр. Сходня, <br />
+                улица Кирова 3с3, 2 этаж
+              </p>
+              <p class="footer__list_phone footer__list_contacts">
+                +7 (983) 132-39-08
+              </p>
+            </div>
+
+            <div class="footer__nav">
+              <div class="footer__list">
+                <a class="footer__list_items" href="mk.html"> Мастер-классы </a>
+                <a class="footer__list_items" href="about.html">О нас</a>
+                <a class="footer__list_items" href="reviews.html">Отзывы</a>
+                <a class="footer__list_items" href="shop.html"
+                  >Магазин handmade</a
+                >
+                <a class="footer__list_items" href=" #contact ">Контакты</a>
+              </div>
+
+              <div class="footer__cosial">
+                <a href="https://t.me/artbandclub"
+                  ><img
+                    class="footer__cosial_items"
+                    src="./assets/icons/tm_icon_footer.png"
+                    alt="telegram"
+                /></a>
+                <a href="https://vk.com/artbandclub"
+                  ><img
+                    class="footer__cosial_items footer__cosial_small"
+                    src="./assets/icons/vk_icon_footer.png"
+                    alt="vkontacte"
+                /></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer__logo">
+            <p class="footer__copy-dsk">
+              &copy2023 &nbsp <span>Art Band</span>
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./assets/dist/js/reviews.js" defer></script>
+  </body>
 </html>
