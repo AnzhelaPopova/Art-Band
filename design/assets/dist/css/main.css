@@ -1909,16 +1909,39 @@ p, a {
 
 .shop-page__wrapper {
   padding-top: 90px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #FBFFE9;
+  padding: 10px;
+}
+
+.shop-page__backgroung {
+  background-color: #FBFFE9;
 }
 
 @media (max-width: 766px) {
   .shop-page__heading {
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 31px;
     text-align: center;
     text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.7);
+    margin-top: 10px;
+  }
+}
+@media (min-width: 767px) {
+  .shop-page__heading {
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    color: rgba(0, 0, 0, 0.7);
+    margin-top: 15px;
   }
 }
 @media (min-width: 767px) {
@@ -1931,6 +1954,15 @@ p, a {
     color: rgba(0, 0, 0, 0.7);
   }
 }
+/*.shop-page__heading {
+    text-align: center;
+font-family:$title-font;
+font-style: normal;
+color: $color-text;
+font-size: calc(( 100vw + 310.1px )/ 26.93 );
+font-weight: 600;
+line-height: 48px;
+}*/
 .shop-page__about {
   display: flex;
   margin-top: 51px;
@@ -1938,17 +1970,13 @@ p, a {
 
 @media (max-width: 766px) {
   .shop-page__about {
-    margin-top: 30px;
-  }
-}
-@media (max-width: 766px) {
-  .shop-page__about-text {
-    margin-bottom: 10px;
+    margin-top: 20px;
   }
 }
 @media (min-width: 767px) {
   .shop-page__about-text {
     margin-left: 10px;
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
@@ -1959,12 +1987,32 @@ p, a {
 @media (max-width: 766px) {
   .shop-page__about-text {
     margin-left: 10px;
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
     line-height: 25px;
     margin-right: 7px;
-    color: #000000;
+    color: rgba(0, 0, 0, 0.7);
+  }
+}
+@media (max-width: 766px) {
+  .shop-page__about-text {
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 767px) {
+  .shop-page__about-img {
+    width: 540px;
+    height: 674px;
+    border-radius: 45px;
+    margin-right: 10px;
+    margin-left: 120px;
+  }
+}
+@media (max-width: 1053px) {
+  .shop-page__about-img {
+    display: none;
   }
 }
 @media (min-width: 767px) {
@@ -1998,14 +2046,20 @@ margin-left: 120px;
   }
 }
 .shop-page__about-text-small {
+  font-family: "Nunito", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 28px;
   line-height: 38px;
-  color: rgba(0, 0, 0, 0.72);
+  color: rgba(0, 0, 0, 0.7);
   margin-top: 20px;
 }
 
+@media (max-width: 1053px) {
+  .shop-page-line {
+    display: none;
+  }
+}
 @media (max-width: 766px) {
   .shop-page-line {
     display: none;
@@ -2035,10 +2089,13 @@ margin-left: 120px;
 .shop-page__grid-one {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  grid-row-gap: 8px;
 }
 
 .shop-page__grid-one-img {
-  width: 390px;
+  width: 380px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 45px;
@@ -2047,10 +2104,12 @@ margin-left: 120px;
 .shop-page__grid-two {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 8px;
+  grid-template-columns: repeat(auto-fill, minmax(285px, 1fr));
 }
 
 .shop-page__grid-two-img {
-  width: 290px;
+  width: 285px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 45px;
@@ -2060,10 +2119,12 @@ margin-left: 120px;
 .shop-page__grid-three {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 6px;
+  grid-template-columns: repeat(auto-fill, minmax(385px, 1fr));
 }
 
 .shop-page__grid-three-img {
-  width: 391px;
+  width: 385px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 45px;
@@ -2073,10 +2134,12 @@ margin-left: 120px;
 .shop-page__grid-four {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 15px;
+  grid-template-columns: repeat(auto-fill, minmax(283px, 1fr));
 }
 
 .shop-page__grid-four-img {
-  width: 295px;
+  width: 283px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 45px;
@@ -2091,6 +2154,7 @@ margin-left: 120px;
 @media (min-width: 767px) {
   .shop-page__heading_two {
     text-align: center;
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 40px;
@@ -2109,14 +2173,9 @@ margin-left: 120px;
     flex-direction: column;
   }
 }
-@media (min-width: 767px) {
-  .shop-page__mobile-img {
-    display: none;
-  }
-}
 @media (max-width: 766px) {
   .shop-page__mobile-img {
-    width: 378px;
+    width: 360px;
     height: 406px;
     border: 1px solid #A0B45B;
     margin-left: auto;
