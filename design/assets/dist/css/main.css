@@ -748,6 +748,7 @@ p, a {
   }
   .dsk-nav__link:hover {
     text-decoration: underline;
+    color: rgba(0, 0, 0, 0.7);
   }
   .dsk-nav__social {
     width: 8%;
@@ -1060,9 +1061,9 @@ p, a {
     align-items: center;
     background-color: #FBFFE9;
     justify-content: center;
-    padding: 0 5% 0 5%;
+    padding: 0 5% 3% 5%;
     column-gap: 4%;
-    height: 250vh;
+    row-gap: 5vh;
   }
   .dsk-mk__title {
     width: 100vw;
@@ -1075,7 +1076,6 @@ p, a {
   }
   .dsk-mk-card {
     width: 20vw;
-    height: 55vh;
     background-color: white;
     display: flex;
     flex-direction: column;

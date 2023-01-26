@@ -66,9 +66,9 @@
         align-items: center;
         background-color: $color-light;
         justify-content: center;
-        padding: 0 5% 0 5%;
+        padding: 0 5% 3% 5%;
         column-gap: 4%;
-        height: 250vh;
+        row-gap: 5vh;
     
         &__title {
             width: 100vw;
@@ -83,7 +83,6 @@
     
         .dsk-mk-card {
             width: 20vw;
-            height: 55vh;
             background-color: white;
             display: flex;
             flex-direction: column;
