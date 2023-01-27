@@ -9,7 +9,7 @@
     .dsk-main-block {
         background-image: url(../../design/assets/images/main/main-background.png);
         background-repeat: no-repeat;
-        background-size: 100vw;
+        background-size: cover;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -49,8 +49,8 @@
             align-items: center;
             justify-content: center;
             border-radius: 25px;
-            width: 10%;
-            height: 6%;
+            width: 15vw;
+            height: 6vh;
             background-color: rgb(81, 81, 81);
             color: $color-light;
             font-family: $title-font;
@@ -66,9 +66,9 @@
         align-items: center;
         background-color: $color-light;
         justify-content: center;
-        padding: 0 5% 0 5%;
+        padding: 0 5% 3% 5%;
         column-gap: 4%;
-        height: 250vh;
+        row-gap: 5vh;
     
         &__title {
             width: 100vw;
@@ -83,7 +83,6 @@
     
         .dsk-mk-card {
             width: 20vw;
-            height: 55vh;
             background-color: white;
             display: flex;
             flex-direction: column;
@@ -184,6 +183,91 @@
             height: 16%;
         }
     }
+
+    .main-footer-dsk {
+        background-color: $color-dark-green;
+
+        &__container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12%;
+            align-items: center;
+            padding: 3% 7%;
+            font-family: $default-font;
+        }
+
+        &__nav {
+            margin: auto;
+        }
+
+        &__map {
+            width: 100%;
+            height: auto;
+        }
+
+        &__title {
+            margin-bottom: 2vh;
+            color: $color-text;
+            font-family: $title-font;
+            font-size: 32px;
+        }
+
+        &__contacts {
+            font-size: 20px;
+        }
+
+        &__contacts__subtitle {
+            color: $color-text;
+        }
+
+        &__contacts__address {
+            display: block;
+            margin-bottom: 2vh;
+            color: $color-text;
+        }
+
+        &__contacts__phone, &__contacts__vk, &__contacts__telegram {
+            display: flex;
+            align-items: center;
+            gap: 1vw;
+            color: $color-text;
+        }
+
+        &__contacts__phone__img, &__contacts__vk__img, &__contacts__telegram__img {
+            text-align: center;
+            opacity: 0.7;
+            width: 5%;
+        }
+
+        &__contacts__phone__hypertext, &__contacts__vk__hypertext, &__contacts__telegram__hypertext {
+            text-decoration: none;
+            color: $color-text;
+        }
+
+        &__hours {
+            margin-top: 2vh;
+            color: $color-text;
+            font-size: 20px;
+        }
+
+        &__hours__text {
+            color: $color-text;
+            font-size: 20px;
+        }
+
+        &__down {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 10px;
+            font-family: $default-font;
+            padding: 1% 12%;
+        }
+
+        &__down__logo {
+            width: 55%;
+        }
+    }
 }
 
 @media screen and (max-width: $tablet) {
@@ -218,9 +302,6 @@
             width: 100vw;
             display: flex;
             justify-content: center;
-
-
-
 
             &_black {
                 font-family: $title-font-logo;
@@ -294,6 +375,10 @@
         .main__booking__dsk {
             display: none;
         }
+
+        .main-footer-dsk {
+            display: none;
+        }
     }
 
     .main-page-mbl-section {
@@ -351,7 +436,7 @@
             border-radius: 20px;
             text-transform: uppercase;
         }
-    }
+}
 
 
 @media screen and (min-width: 769px) {
