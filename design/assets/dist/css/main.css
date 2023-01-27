@@ -353,7 +353,7 @@
 /*!******************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/app.scss ***!
   \******************************************************************************************************************************************************/
-@charset "UTF-8";
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -893,6 +893,10 @@ p, a {
     margin: 3% 0 0 15%;
   }
 }
+.about__overflow {
+  overflow-x: hidden;
+}
+
 .about__wrapper {
   width: 100vw;
   height: auto;
@@ -1423,6 +1427,9 @@ p, a {
 }
 /*desktop*/
 @media screen and (min-width: 767px) {
+  .wrapper__mk2 {
+    padding: 7px;
+  }
   .candle-message {
     background-color: #FBFFE9;
     overflow-x: hidden;
@@ -1433,6 +1440,10 @@ p, a {
     justify-content: center;
     margin-top: 8vh;
     gap: 5vw;
+    width: 100%;
+  }
+  .candle-message__about img {
+    width: 100%;
   }
   .candle-message__about_line {
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
@@ -1995,6 +2006,7 @@ p, a {
   }
   .neuro__img2 {
     width: 86.77vw;
+    margin-bottom: 30px;
     height: auto;
     margin-top: 6.87vw;
   }
