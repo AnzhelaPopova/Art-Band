@@ -17,7 +17,7 @@
             }
 
            &__plant{
-            margin-left: 3em;
+            margin-left: 8vw;
             width: 70%;
             height: 80%;
             border-radius: 15px;
@@ -25,7 +25,7 @@
            
            &__plant-text{
             font-weight: 300;
-            margin-left: 2em;
+            margin-left: 8vw;
             font-family: $default-font;
             margin-top: 2em;
             font-size: calc((27vw - 19px)/ 17);
@@ -42,8 +42,8 @@
            }
            
            &__maintext{
-            font-weight: 300;
             font-family: $default-font;
+            font-weight: 300;
             margin-top: 2em;
             font-size: calc((27vw - 19px)/ 17);
             line-height: 120%;
@@ -60,8 +60,7 @@
            }
 
            &__images{
-            margin-top: 5%;
-            margin-bottom: 5%;
+            margin: 5% 8vw 5% 8vw;
             display: flex;
             justify-content: space-around;
            }

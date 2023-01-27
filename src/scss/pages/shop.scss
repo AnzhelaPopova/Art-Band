@@ -36,10 +36,16 @@
     line-height: 48px;
     color: $color-text;
 }
+
 &__about {
     display: flex;
 margin-top: 51px;
 &_text{
+
+@media (min-width: 767px) {
+
+    .shop-page__about-text {
+
     margin-left: 10px;
     font-family:$title-font;
 font-style: normal;
@@ -239,6 +245,19 @@ border-radius: 45px;
                     }
                 }
     }
+
+
+}
+
+@media (max-width: 766px) {.shop-page__mobile-img
+    {width: 360px;
+        height: 406px;
+        border: 1px solid #A0B45B;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 26px;
+        background-color: white;
+
     }
 
 .carousel-control-prev-icon {
