@@ -200,11 +200,11 @@
         &__choosemk {
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
         }
 
         &__choosemk__item {
-            width: 200px;
-            height: 200px;
+            padding-bottom: 10px;
         }
     }
 
