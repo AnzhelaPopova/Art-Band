@@ -11,13 +11,10 @@
             display: flex;
             flex-direction: row;
             justify-content: center;
-            margin-top: 50px;
-            gap: 50px;
-
-            &_svecha-main {
-                width: 350px;
-                height: 350px;
-            }
+            margin-top: 8vh;
+            gap: 5vw;
+            
+            
 
             &_line {
                 border-bottom: 1px solid rgba(0, 0, 0, 0.5);
@@ -32,17 +29,21 @@
             }
         }
 
+        &__svecha-main {
+            width: 25vw;
+        }
+
         &__images {
             display: flex;
             flex-direction: row;
             justify-content: center;
-            margin-top: 50px;
-            gap: 60px;
+            margin-top: 7vh;
+            gap: 4vw;
 
             &_svecha1,
             &_svecha2,
             &_svecha3 {
-                width: 250px;
+                width: 20vw;
             }
         }
     }
@@ -54,8 +55,8 @@
             display: flex;
             flex-direction: row;
             justify-content: center;
-            margin-top: 50px;
-            gap: 50px;
+            margin-top: 8vh;
+            gap: 5vw;
 
             &_line {
                 border-bottom: 1px solid rgba(0, 0, 0, 0.5);
@@ -70,8 +71,7 @@
             }
 
             &_sashe-main {
-                width: 350px;
-                height: 350px;
+                width: 30vw;
             }
 
         }
@@ -80,13 +80,13 @@
             display: flex;
             flex-direction: row;
             justify-content: center;
-            margin-top: 50px;
-            gap: 60px;
+            margin-top: 8vh;
+            gap: 5vw;
 
             &_sashe1,
             &_sashe2,
             &_sashe3 {
-                width: 250px;
+                width: 20vw;
             }
         }
 
@@ -115,12 +115,11 @@
             display: flex;
             flex-direction: row;
             justify-content: center;
-            margin-top: 50px;
-            gap: 50px;
+            margin-top: 8vh;
+            gap: 5vw;
 
             &_aroma-main {
-                width: 350px;
-                height: 350px;
+                width: 30vw;
             }
 
             &_line {
@@ -184,6 +183,12 @@
 
         }
 
+        &__block-btn {
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+        }
+
         &__btn {
             background-color: $color-light-green;
             font-family: $default-font;
@@ -198,7 +203,6 @@
             align-items: center;
             justify-content: center;
             margin-bottom: 3%;
-            margin-left: 535px;
 
 
         }
@@ -316,6 +320,12 @@
             }
         }
 
+        &__block-btn {
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+        }
+
         &__btn {
             background-color: $color-light-green;
             font-family: $default-font;
@@ -330,7 +340,6 @@
             align-items: center;
             justify-content: center;
             margin-bottom: 3%;
-            margin-left: 535px;
         }
     }
 
@@ -391,6 +400,12 @@
 
         }
 
+        &__block-btn {
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+        }
+
         &__btn {
             background-color: $color-light-green;
             font-family: $default-font;
@@ -405,7 +420,6 @@
             align-items: center;
             justify-content: center;
             margin-bottom: 3%;
-            margin-left: 545px;
         }
 
 
