@@ -1,1 +1,413 @@
 @import "../layouts/variables.scss";
+
+/*desktop*/
+@media screen and (min-width: 767px) {
+
+    .candle-message {
+        background-color: $color-light;
+        overflow-x: hidden;
+
+        &__about {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 50px;
+            gap: 50px;
+
+            &_svecha-main {
+                width: 350px;
+                height: 350px;
+            }
+
+            &_line {
+                border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+            }
+
+            &_title {
+                font-family: "Inter", sans-serif;
+            }
+
+            &_description {
+                font-family: "Nunito", sans-serif;
+            }
+        }
+
+        &__images {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 50px;
+            gap: 60px;
+
+            &_svecha1,
+            &_svecha2,
+            &_svecha3 {
+                width: 250px;
+            }
+        }
+    }
+
+
+    .sashe {
+
+        &__about {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 50px;
+            gap: 50px;
+
+            &_line {
+                border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+            }
+
+            &_title {
+                font-family: "Inter", sans-serif;
+            }
+
+            &_description {
+                font-family: "Nunito", sans-serif;
+            }
+
+            &_sashe-main {
+                width: 350px;
+                height: 350px;
+            }
+
+        }
+
+        &__images {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 50px;
+            gap: 60px;
+
+            &_sashe1,
+            &_sashe2,
+            &_sashe3 {
+                width: 250px;
+            }
+        }
+
+        &__btn {
+            background-color: $color-light-green;
+            font-family: $default-font;
+            color: $color-light;
+            text-decoration: none;
+            font-size: 1.2em;
+            width: 15vw;
+            height: 6vh;
+            border-radius: 10px;
+            box-shadow: 4px 4px 4px 0 rgba(63, 84, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 3%;
+            margin-left: 535px;
+        }
+
+    }
+
+    .candle-aroma {
+
+        &__about {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 50px;
+            gap: 50px;
+
+            &_aroma-main {
+                width: 350px;
+                height: 350px;
+            }
+
+            &_line {
+                border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+            }
+
+            &_title {
+                font-family: "Inter", sans-serif;
+            }
+
+            &_description {
+                font-family: "Nunito", sans-serif;
+            }
+
+        }
+
+        &__images {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+
+
+            &_row1 {
+                display: flex;
+                gap: 12pt;
+            }
+
+            &_row2 {
+                display: flex;
+                gap: 12pt;
+                height: 210px;
+            }
+
+            &_aroma1,
+            &_aroma3 {
+                align-self: flex-start;
+                height: 180px;
+                width: 280px;
+            }
+
+            &_aroma5 {
+                align-self: flex-start;
+                margin-top: 20pt;
+                height: 180px;
+                width: 280px;
+            }
+
+            &_aroma4,
+            &_aroma6 {
+                position: relative;
+                top: -165px;
+                width: 280px;
+                height: 370px;
+            }
+
+            &_aroma2 {
+                width: 280px;
+                height: 370px;
+            }
+
+        }
+
+        &__btn {
+            background-color: $color-light-green;
+            font-family: $default-font;
+            color: $color-light;
+            text-decoration: none;
+            font-size: 1.2em;
+            width: 15vw;
+            height: 6vh;
+            border-radius: 10px;
+            box-shadow: 4px 4px 4px 0 rgba(63, 84, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 3%;
+            margin-left: 535px;
+
+
+        }
+    }
+}
+
+/*mobile*/
+
+@media screen and (max-width: 768px) {
+
+    .candle-message {
+        background-color: $color-light;
+        overflow-x: hidden;
+
+        &__about {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+
+            &_title {
+                width: 86.26vw;
+                margin-top: 3.56vw;
+                padding-bottom: 5.6vw;
+                font-family: "Inter", sans-serif;
+                font-weight: 600;
+                font-size: calc((100vw - 19px) / 17);
+                text-align: center;
+                color: rgba(0, 0, 0, 0.7);
+                border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+            }
+
+            &_description {
+                width: 100%;
+                margin: 0 auto;
+                font-weight: 300;
+                line-height: 25px;
+                color: rgba(0, 0, 0, 0.7);
+                font-family: "Nunito", sans-serif;
+            }
+
+            &_svecha-main {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        &__images {
+            display: flex;
+            flex-direction: row-reverse;
+            gap: 15px;
+
+            &_svecha2 {
+                display: none;
+            }
+
+            &_svecha1,
+            &_svecha3 {
+                max-width: 50%;
+                height: auto;
+                margin-top: 15px;
+            }
+        }
+    }
+
+
+    .sashe {
+
+        &__about {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &_sashe-main {
+                max-width: 100%;
+                height: auto;
+            }
+
+            &_title {
+                width: 86.26vw;
+                margin-top: 3.56vw;
+                padding-bottom: 5.6vw;
+                font-family: "Inter", sans-serif;
+                font-weight: 600;
+                font-size: calc((100vw - 19px) / 17);
+                text-align: center;
+                color: rgba(0, 0, 0, 0.7);
+                border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+            }
+
+            &_description {
+                width: 100%;
+                margin: 0 auto;
+                font-weight: 300;
+                line-height: 25px;
+                color: rgba(0, 0, 0, 0.7);
+                font-family: "Nunito", sans-serif;
+            }
+        }
+
+        &__images {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            &_sashe1,
+            &_sashe2,
+            &_sashe3 {
+                max-width: 50%;
+                margin-top: 15px;
+            }
+
+            &_sashe3 {
+                align-self: center;
+            }
+        }
+
+        &__btn {
+            background-color: $color-light-green;
+            font-family: $default-font;
+            color: $color-light;
+            text-decoration: none;
+            font-size: 1.2em;
+            width: 15vw;
+            height: 4vh;
+            border-radius: 10px;
+            box-shadow: 4px 4px 4px 0 rgba(63, 84, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 3%;
+            margin-left: 535px;
+        }
+    }
+
+    .candle-aroma {
+
+        &__about {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &_aroma-main {
+                max-width: 100%;
+                height: auto;
+                margin-top: 25px;
+            }
+
+            &_title {
+                width: 86.26vw;
+                margin-top: 3.56vw;
+                padding-bottom: 5.6vw;
+                font-family: "Inter", sans-serif;
+                font-weight: 600;
+                font-size: calc((100vw - 19px) / 17);
+                text-align: center;
+                color: rgba(0, 0, 0, 0.7);
+                border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+            }
+
+            &_description {
+                width: 100%;
+                margin: 0 auto;
+                font-weight: 300;
+                line-height: 25px;
+                color: rgba(0, 0, 0, 0.7);
+                font-family: "Nunito", sans-serif;
+            }
+        }
+
+
+        &__images {
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+
+            &_aroma1,
+            &_aroma3,
+            &_aroma5,
+            &_aroma6 {
+                display: none;
+            }
+
+            &_aroma2,
+            &_aroma4 {
+                max-width: 100%;
+                margin-top: 15px;
+                height: 100%;
+            }
+
+        }
+
+        &__btn {
+            background-color: $color-light-green;
+            font-family: $default-font;
+            color: $color-light;
+            text-decoration: none;
+            font-size: 1.2em;
+            width: 15vw;
+            height: 4vh;
+            border-radius: 10px;
+            box-shadow: 4px 4px 4px 0 rgba(63, 84, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 3%;
+            margin-left: 545px;
+        }
+
+
+    }
+}
