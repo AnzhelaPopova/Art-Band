@@ -9,7 +9,7 @@
     .dsk-main-block {
         background-image: url(../../design/assets/images/main/main-background.png);
         background-repeat: no-repeat;
-        background-size: 100vw;
+        background-size: cover;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -49,8 +49,8 @@
             align-items: center;
             justify-content: center;
             border-radius: 25px;
-            width: 10%;
-            height: 6%;
+            width: 15vw;
+            height: 6vh;
             background-color: rgb(81, 81, 81);
             color: $color-light;
             font-family: $title-font;
@@ -66,9 +66,9 @@
         align-items: center;
         background-color: $color-light;
         justify-content: center;
-        padding: 0 5% 0 5%;
+        padding: 0 5% 3% 5%;
         column-gap: 4%;
-        height: 250vh;
+        row-gap: 5vh;
     
         &__title {
             width: 100vw;
@@ -83,7 +83,6 @@
     
         .dsk-mk-card {
             width: 20vw;
-            height: 55vh;
             background-color: white;
             display: flex;
             flex-direction: column;
@@ -136,6 +135,177 @@
                 }
             }
         }
+
+    .main__booking__dsk {
+        padding: 3% 15%;
+        background-color: $color-light;
+
+        &__container {
+            border-radius: 45px;
+            background-color: $color-dark-green;
+        }
+
+        &__title {
+            padding: 3vh 0;
+            font-family: $title-font;
+            font-weight: 500;
+            text-align: center;
+            color: $color-text;
+        }
+
+        &__text {
+            font-family: $default-font;
+            text-align: center;
+            color: $color-text;
+        }
+
+        &__maintext {
+            padding: 3vh 0;
+            font-size: 1.5em;
+            font-weight: 600;
+            line-height: 146%;
+            letter-spacing: 0.05em;
+        }
+
+        &__smalltext {
+            padding: 1vh 0;
+            font-weight: 600;
+        }
+
+        &__item {
+            display: flex;
+            margin: 0 28.5vw;
+            gap: 23px;
+        }
+
+        &__img {
+            width: 15%;
+            height: 16%;
+        }
+    }
+
+    .main__shop__dsk {
+        padding: 3% 15%;
+        background-color: $color-light;
+
+        &__title {
+            padding: 3vh 0;
+            font-family: $title-font;
+            font-weight: 500;
+            text-align: center;
+            color: $color-text;
+            text-transform: uppercase;
+        }
+
+        &__choosemk {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        &__choosemk__item {
+            padding-bottom: 10px;
+        }
+    }
+
+    .main__reviews__dsk {
+        padding: 3% 15%;
+        background-color: $color-light;
+
+        &__title {
+            padding: 3vh 0;
+            font-family: $title-font;
+            font-weight: 500;
+            text-align: center;
+            color: $color-text;
+        }
+    }
+
+
+    .main-footer-dsk {
+        background-color: $color-dark-green;
+
+        &__container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12%;
+            align-items: center;
+            padding: 3% 7%;
+            font-family: $default-font;
+        }
+
+        &__nav {
+            margin: auto;
+        }
+
+        &__map {
+            width: 100%;
+            height: auto;
+        }
+
+        &__title {
+            margin-bottom: 2vh;
+            color: $color-text;
+            font-family: $title-font;
+            font-size: 32px;
+        }
+
+        &__contacts {
+            font-size: 20px;
+        }
+
+        &__contacts__subtitle {
+            color: $color-text;
+        }
+
+        &__contacts__address {
+            display: block;
+            margin-bottom: 2vh;
+            color: $color-text;
+        }
+
+        &__contacts__phone, &__contacts__vk, &__contacts__telegram {
+            display: flex;
+            align-items: center;
+            gap: 1vw;
+            color: $color-text;
+        }
+
+        &__contacts__phone__img, &__contacts__vk__img, &__contacts__telegram__img {
+            text-align: center;
+            opacity: 0.7;
+            width: 5%;
+        }
+
+        &__contacts__phone__hypertext, &__contacts__vk__hypertext, &__contacts__telegram__hypertext {
+            text-decoration: none;
+            color: $color-text;
+        }
+
+        &__hours {
+            margin-top: 2vh;
+            color: $color-text;
+            font-size: 20px;
+        }
+
+        &__hours__text {
+            color: $color-text;
+            font-size: 20px;
+        }
+
+        &__down {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 10px;
+            font-family: $default-font;
+            padding: 1% 12%;
+        }
+
+        &__down__logo {
+            width: 55%;
+        }
+    }
 }
 
 @media screen and (max-width: $tablet) {
@@ -143,22 +313,33 @@
         background-color: $color-light;
     }
 
+    .main-page-mbl-main-bgr {
+        background-image: url(../../design/assets/images/main/main-backgr-mbl.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
     .main-page-mbl-main {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
 
-        width: 100vw;
-        height: 239vh;
 
-        background-image: url(../../design/assets/images/main/main-backgr-mbl.png);
+
+        /*background-image: url(../../design/assets/images/main/main-backgr-mbl.png);
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: contain;*/
+
+        &__name {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20vh;
+            width: 90vw;
+        }
 
         &__logo {
-            width: 90vw;
-            margin-bottom: 40vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
 
             &_black {
                 font-family: $title-font-logo;
@@ -184,32 +365,35 @@
                 font-family: $title-font;
                 text-align: center;
                 font-weight: 500;
-                margin-top: 7vh;
+                margin-top: 30%;
+
 
             }
         }
         &__contackts{
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
+            
 
-            height: 90px;
-            margin-bottom: 5.17vh;
+
         }
 
         &__number { 
-            padding-bottom: 5px;
-            border-bottom: 1px solid black;
-
+            margin-top: 20vh;
             font-family: $title-font;
             font-weight: 600;
             font-size: calc(( 100vw + 618px )/ 63);
-            line-height: 19px;
+            line-height: 4em;
+            text-align: center;
+            
         }
 
         &__social-networks {
             display: flex;
+            margin-bottom: 10%;
+
+
+            justify-content: center;
 
             &_tg {
                 margin-right: 22px; 
@@ -225,6 +409,9 @@
                     height: 4.43vh;}              
             }
             }
+        }
+        .main__booking__dsk, .main__shop__dsk, .main-footer-dsk, .main__reviews__dsk {
+            display: none;
         }
     }
 
@@ -283,7 +470,7 @@
             border-radius: 20px;
             text-transform: uppercase;
         }
-    }
+}
 
 
 @media screen and (min-width: 769px) {
