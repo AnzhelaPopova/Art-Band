@@ -65,6 +65,7 @@
 }
 
 
+
 &__link {
     background-color: $color-light-green;
     font-family: $default-font;
@@ -78,7 +79,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 3%;
+            margin-bottom: 4vh;
 }
 }
 }
@@ -150,7 +151,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-top: 6%;
+            margin-top: 5.5vh;
         }
 
         &__img {

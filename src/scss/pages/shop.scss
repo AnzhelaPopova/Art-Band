@@ -56,7 +56,9 @@ margin-top: 51px;}
 }
 }
 
-@media (min-width: 767px) {.shop-page__about-text{
+@media (min-width: 767px) {
+
+    .shop-page__about-text {
     margin-left: 10px;
     font-family:$title-font;
 font-style: normal;
@@ -266,8 +268,7 @@ border-radius: 45px;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 26px;
-
-
+        background-color: white;
     }
 }
 
