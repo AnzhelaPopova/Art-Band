@@ -1161,6 +1161,37 @@ p, a {
     width: 15%;
     height: 16%;
   }
+  .main__shop__dsk {
+    padding: 3% 15%;
+    background-color: #FBFFE9;
+  }
+  .main__shop__dsk__title {
+    padding: 3vh 0;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+    text-transform: uppercase;
+  }
+  .main__shop__dsk__choosemk {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .main__shop__dsk__choosemk__item {
+    padding-bottom: 10px;
+  }
+  .main__reviews__dsk {
+    padding: 3% 15%;
+    background-color: #FBFFE9;
+  }
+  .main__reviews__dsk__title {
+    padding: 3vh 0;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+  }
   .main-footer-dsk {
     background-color: rgba(160, 180, 91, 0.6);
   }
@@ -1311,10 +1342,7 @@ p, a {
   .main-page-mbl-main__social-networks_vk img {
     height: 4.43vh;
   }
-  .main__booking__dsk {
-    display: none;
-  }
-  .main-footer-dsk {
+  .main__booking__dsk, .main__shop__dsk, .main-footer-dsk, .main__reviews__dsk {
     display: none;
   }
 }
