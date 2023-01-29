@@ -1449,6 +1449,263 @@ p, a {
     text-decoration: underline;
   }
 }
+@media screen and (min-width: 769px) {
+  .soap-wrapper {
+    background-color: #FBFFE9;
+    overflow-x: hidden;
+  }
+  .soap-article__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 50px;
+  }
+  .soap-article__content_soapphoto {
+    width: 605;
+    height: 415px;
+  }
+  .soap-article__content_line {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  }
+  .soap-article__content_title {
+    text-align: center;
+    margin: 20px;
+    color: rgba(0, 0, 0, 0.7);
+    font-family: "Inter", sans-serif;
+    font-weight: bolder;
+    line-height: 1.2em;
+    font-size: calc((100vw - 166.27px) / 30.136);
+  }
+  .soap-article__content_soaptext {
+    width: 80%;
+    margin: 20px;
+    color: rgba(0, 0, 0, 0.7);
+    font-family: "Nunito", sans-serif;
+    font-size: 1.319vw;
+  }
+  .soap-article__images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    margin-top: 50px;
+  }
+  .soap-article__images_line1 {
+    display: flex;
+    gap: 15px;
+  }
+  .soap-article__images_line2 {
+    display: flex;
+    gap: 15px;
+    height: 215px;
+  }
+  .soap-article__images_soap1, .soap-article__images_soap3 {
+    align-self: flex-start;
+    height: 180px;
+    width: 280px;
+  }
+  .soap-article__images_soap5 {
+    align-self: flex-start;
+    margin-top: 20px;
+    height: 180px;
+    width: 280px;
+  }
+  .soap-article__images_soap4, .soap-article__images_soap6 {
+    position: relative;
+    top: -165px;
+    width: 280px;
+    height: 370px;
+  }
+  .soap-article__images_soap2 {
+    width: 280px;
+    height: 370px;
+  }
+  .scrub-article__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 50px;
+  }
+  .scrub-article__content_scrubphoto {
+    width: 350px;
+    height: 350px;
+  }
+  .scrub-article__content_line {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  }
+  .scrub-article__content_title {
+    text-align: center;
+    margin: 20px;
+    color: rgba(0, 0, 0, 0.7);
+    font-family: "Inter", sans-serif;
+    font-weight: bolder;
+    line-height: 1.2em;
+    font-size: calc((100vw - 166.27px) / 30.136);
+  }
+  .scrub-article__content_scrubtext {
+    width: 80%;
+    margin: 20px;
+    color: rgba(0, 0, 0, 0.7);
+    font-family: "Nunito", sans-serif;
+    font-size: 1.319vw;
+  }
+  .scrub-article__images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 60px;
+  }
+  .scrub-article__images_scrub-process {
+    display: none;
+  }
+  .scrub-article__images_scrub-glasses, .scrub-article__images_cream-balls, .scrub-article__images_scrub-balls {
+    width: 300px;
+  }
+  .scrub-article__btn {
+    background-color: #A0B45B;
+    font-family: "Nunito", sans-serif;
+    color: #FBFFE9;
+    text-decoration: none;
+    font-size: 1.2em;
+    width: 15vw;
+    height: 6vh;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px 0 rgba(63, 84, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3%;
+    margin-left: 535px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .soap-wrapper {
+    background-color: #FBFFE9;
+    overflow-x: hidden;
+  }
+  .soap-article__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+  }
+  .soap-article__content_soapphoto {
+    width: 341px;
+    height: 334px;
+  }
+  .soap-article__content_title {
+    width: 85vw;
+    margin-top: 3vw;
+    padding-bottom: 5vw;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    font-size: calc((100vw - 19px) / 17);
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  }
+  .soap-article__content_soaptext {
+    width: 100%;
+    margin: 0 auto;
+    font-weight: 300;
+    line-height: 25px;
+    color: rgba(0, 0, 0, 0.7);
+    font-family: "Nunito", sans-serif;
+  }
+  .soap-article__images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 15px;
+    gap: 7px;
+  }
+  .soap-article__images_soap6, .soap-article__images_soap3 {
+    display: none;
+  }
+  .soap-article__images_soap1, .soap-article__images_soap5 {
+    width: 161px;
+    height: 118px;
+    border-radius: 15px;
+    margin-top: 15px;
+  }
+  .soap-article__images_soap2, .soap-article__images_soap4 {
+    width: 161px;
+    height: 263px;
+    left: 25px;
+    border-radius: 15px;
+    margin-top: 15px;
+  }
+  .scrub-article__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .scrub-article__content_title {
+    width: 85vw;
+    margin-top: 3vw;
+    padding-bottom: 5vw;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    font-size: calc((100vw - 19px) / 17);
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  }
+  .scrub-article__content_scrubtext {
+    width: 100%;
+    margin: 0 auto;
+    font-weight: 300;
+    line-height: 25px;
+    color: rgba(0, 0, 0, 0.7);
+    font-family: "Nunito", sans-serif;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+  }
+  .scrub-article__content_scrubphoto {
+    width: 341px;
+    height: 334px;
+  }
+  .scrub-article__images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    gap: 7px;
+  }
+  .scrub-article__images_scrub-process, .scrub-article__images_scrub-glasses, .scrub-article__images_cream-balls, .scrub-article__images_scrub-balls {
+    width: 161px;
+    height: 118px;
+    border-radius: 15px;
+  }
+  .scrub-article__btn {
+    background-color: #A0B45B;
+    font-family: "Nunito", sans-serif;
+    color: #FBFFE9;
+    text-decoration: none;
+    font-size: 1.2em;
+    width: 15vw;
+    height: 6vh;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px 0 rgba(63, 84, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3%;
+    margin-left: 535px;
+  }
+}
 /*desktop*/
 @media screen and (min-width: 767px) {
   .candle-message {

@@ -1,3 +1,4 @@
 {
-    "liveServer.settings.multiRootWorkspaceName": "Art-Band"
+  "liveServer.settings.multiRootWorkspaceName": "Art-Band",
+  "liveServer.settings.port": 5502
 }
