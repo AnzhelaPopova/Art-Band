@@ -1,3 +1,109 @@
 @import "../layouts/variables.scss";
 
+@media screen and (min-width: 769px) {
+   
+}
+.about__wrapper{
+width: 100vw;
+height: auto;
+background-color: $color-light;
+}
+.about__content {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
 
+.about__title,
+.about__whychooseus{
+width: 100vw;
+height: 80px;
+padding-top: 25px;
+   h2 {
+    color: $color-text;
+    font:$title-font;
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+   } 
+}
+.about__text{
+    width: 50%;
+    height: auto;
+    padding-right: 20px;
+    padding-top: 10px;
+p{
+    font: $default-font;
+    font-size: 18px;
+    color: $color-text;
+    margin-left: 10px;
+    text-indent: 30px;
+    line-height: 2;
+}
+}
+.about__carousel{
+    width: 40%;
+    height: auto;
+    padding-left: 50px;
+    padding-top: 20px;
+}
+.about__advantages {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+&__cards {
+   text-align: center;
+   padding-top: 20px;
+   p{
+    font: $default-font;
+    font-size: 16px;
+   }
+}
+}
+
+@media screen and (max-width: 767px) {
+  .about__carousel {
+    width: 100vw;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .about__text {
+    width: 100vw;
+    padding-left: 20px; 
+    padding-right: 20px;
+  }
+  .about__content {
+    display: flex;
+    flex-direction: column;
+  }
+  .about__title,
+  .about__whychooseus {
+    height: 50px;
+    margin-bottom: 20px;
+    h2{
+    font-size: calc(26px + 23.8 * (100vw - 320px) / 100vw);
+  }
+    p{
+    font-size: calc(18px + 6.8 * (100vw - 320px) / 1200);
+  }}
+  .about__advantages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+  &__cards {
+    width: 35%;
+    padding-top: 20px;
+    img {
+        width: 60%;
+        height: 60%;
+    }
+    p{
+        font-size: 14px;
+       }
+  }}
+}

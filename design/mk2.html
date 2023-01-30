@@ -1,20 +1,333 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title> О нас </title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>О нас</title>
+    <link rel="stylesheet" href="./assets/styles/normalize.css" />
+    <link rel="shortcut icon" href="./assets/icons/icon.png" />
+    <link rel="stylesheet" href="./assets/dist/css/fonts.css" />
+    <link rel="stylesheet" href="./assets/dist/css/main.css" />
+  </head>
 
-		<link rel="stylesheet" href="./assets/styles/normalize.css">
-		<link rel="shortcut icon" href="./assets/icons/icon.png" />
-		<link rel="stylesheet" href="./assets/dist/css/fonts.css" />
-		<link rel="stylesheet" href="./assets/dist/css/main.css" />
-	</head>
-	<body>
-		<div class="wrapper">
-			
+  <body>
+    <header class="mbl-header-btn dsk-nav">
+      <!--DESKTOP HEADER-->
+      <div class="dsk-nav__logo">
+        <a href="./main.html"
+          ><img src="./assets/icons/logo-artband.png" alt="Логотип"
+        /></a>
+      </div>
 
-		</div>
-	</body>
+      <div class="dsk-nav__pages">
+        <a class="dsk-nav__link" href="main.html#Master-classes">Мастер-классы</a>
+        <!--ВСТАВИТЬ ССЫЛКУ НА АБЗАЦ-->
+        <a class="dsk-nav__link" href="./about.html">О нас</a>
+        <a class="dsk-nav__link" href="main.html#reviews">Отзывы</a>
+        <a class="dsk-nav__link" href="./shop.html">Магазин handmade</a>
+        <a class="dsk-nav__link" href="main.html#contact">Контакты</a>
+        <!--ВСТАВИТЬ ССЫЛКУ НА АБЗАЦ-->
+      </div>
+
+      <div class="dsk-nav__social">
+        <a href="https://t.me/artbandclub"
+          ><img src="./assets/icons/Telegram.png" alt="Telegram"
+        /></a>
+        <a href="https://vk.com/artbandclub"
+          ><img src="./assets/icons/Vkontact.png" alt="ВКонтакте"
+        /></a>
+      </div>
+
+      <div class="dsk-nav__nmbr">+7 (983) 132-39-08</div>
+
+      <!--MOBILE HEADER ДЛЯ ОСТАЛЬНЫХ СТРАНИЦ-->
+      <div class="mbl-header-btn__back">
+        <a class="mbl-header-btn__link" href="./main.html">НА ГЛАВНУЮ</a>
+      </div>
+    </header>
+
+    <main>
+      <div class="candle-message">
+        <div class="candle-message__about">
+          <img
+            class="candle-message__svecha-main"
+            src="./assets/images/mk2/svecha-main.png"
+            alt="свеча с надписью я тебя люблю"
+          />
+          <div class="candle-message__about_text">
+            <h1 class="candle-message__about_title">
+              Мастер-класс «Свеча с тайным <br />
+              посланием»
+            </h1>
+            <br />
+            <div class="candle-message__about_line"></div>
+            <br />
+            <br />
+            <p class="candle-message__about_description">
+              На мастер-классе вы самостоятельно изготовите свечу из <br />
+              соевого воска с тайным посланием, которое проявляется <br />
+              после 20-30 минут горения свечи.
+              <br />
+              <br />
+              Свечу можно будет сделать в стаканчике с крышкой либо <br />
+              в кокосе, а также вы сами выберете фитиль, аромат <br />
+              и послание для свечи.
+              <br />
+              <br />
+              Такой мастер-класс будет интересен как взрослым, так и <br />
+              детям от 6 лет.
+            </p>
+          </div>
+        </div>
+
+        <div class="candle-message__images">
+          <img
+            class="candle-message__images_svecha1"
+            src="./assets/images/mk2/svecha1.png"
+            alt="свеча с надписью любимой бабушке"
+          />
+          <img
+            class="candle-message__images_svecha2"
+            src="./assets/images/mk2/svecha2.png"
+            alt="свеча с надписью самого лучшего нового года"
+          />
+          <img
+            class="candle-message__images_svecha3"
+            src="./assets/images/mk2/svecha3.png"
+            alt="свеча с надписью ты самая лучшая мама в мире"
+          />
+        </div>
+        <br />
+        <br />
+        <br />
+        <div class="dsk-diary mbl-diary">
+          <div class="dsk-diary__block mbl-diary__block">
+            <h2 class="dsk-diary__title mbl-diary__title">
+              Записывайся на мастер-классы <br />
+              и получай подарки!
+            </h2>
+
+            <div class="dsk-diary__discription mbl-diary__discription">
+              <div class="dsk-diary__text mbl-diary__text">
+                <p class="dsk-diary__part mbl-diary__part">
+                  Теперь наши маленькие Кудесники-ученики за каждый мастер-класс
+                  будут награждены наклейкой!
+                </p>
+                <p class="dsk-diary__part mbl-diary__part">
+                  А за каждый 9 мастер класс они получат приятный
+                  Сюрприз-подарок!
+                </p>
+
+                <a class="dsk-diary__link" href="main.html#entry">Записаться</a>
+              </div>
+
+              <div>
+                <img
+                  class="dsk-diary__img mbl-diary__img"
+                  src="./assets/images/diary/diary.png"
+                  alt="Дневник"
+                />
+              </div>
+              <div class="mbl-diary__go">
+                <a class="mbl-diary__link" href="main.html#entry">Записаться</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sashe">
+          <div class="sashe__about">
+            <img
+              class="sashe__about_sashe-main"
+              src="./assets/images/mk2/sashe-main.png"
+              alt="два саше с ягодами"
+            />
+            <div class="sashe__about_text">
+              <h1 class="sashe__about_title">
+                Мастер-класс по изготовлению <br />
+                ароматического саше для дома
+              </h1>
+              <br />
+              <div class="sashe__about_line"></div>
+              <br />
+              <br />
+              <p class="sashe__about_description">
+                Аромасаше - это плиточка соевого воска, которая <br />
+                содержит в себе большое количество ароматических <br />
+                отдушек. Служит она для того, чтобы наполнять дом <br />
+                ароматом. Например, можно положить саше в ящик с <br />
+                постельным бельём, повесить в шкафу с одеждой или <br />
+                даже в автомобиле.
+                <br />
+                <br />
+                В качестве декора можно выбрать сушеный апельсин, <br />
+                палочки корицы, сушеную гвоздику, сухоцветы лаванды, <br />
+                розы, пиона или гипсофилы. Также можно украсить <br />
+                блестящей морской солью. К саше прилагается ленточка, с <br />
+                помощью которой его можно повесить.
+                <br />
+                <br />
+                Цвет, декор, аромат-всё исключительно на ваш вкус!
+              </p>
+            </div>
+          </div>
+
+          <div class="sashe__images">
+            <img
+              class="sashe__images_sashe1"
+              src="./assets/images/mk2/sashe1.png"
+              alt="много плиток саше"
+            />
+            <img
+              class="sashe__images_sashe2"
+              src="./assets/images/mk2/sashe2.png"
+              alt="саше с апельсином и лавандой"
+            />
+            <img
+              class="sashe__images_sashe3"
+              src="./assets/images/mk2/sashe3.png"
+              alt="много саше на веревочках"
+            />
+          </div>
+          <br />
+          <br />
+          <br />
+          <div class="candle-aroma__block-btn">
+            <a class="candle-aroma__btn" href="main.html#entry">Записаться</a>
+          </div>
+        </div>
+
+        <div class="candle-aroma">
+          <div class="candle-aroma__about">
+            <img
+              class="candle-aroma__about_aroma-main"
+              src="./assets/images/mk2/aroma-main.png"
+              alt="две ароматические свечи"
+            />
+
+            <div class="candle-aroma__about_text">
+              <h1 class="candle-aroma__about_title">
+                Мастер-класс по изготовлению <br />
+                ароматических свечей
+              </h1>
+              <br />
+              <div class="candle-aroma__about_line"></div>
+              <br />
+              <br />
+
+              <p class="candle-aroma__about_description">
+                На мастер-классе вы самостоятельно изготовите свою
+                <br />
+                свечу в стакане с деревянной крышкой, либо в кокосе, <br />
+                выбрав аромат, цвет, декор и фитиль.
+                <br />
+                <br />
+
+                Готовое изделие заберёте с собой.
+                <br />
+                <br />
+                А также будет чаепитие с вкусняшками!
+              </p>
+            </div>
+          </div>
+          <div class="candle-aroma__images">
+            <div class="candle-aroma__images_row1">
+              <img
+                class="candle-aroma__images_aroma1"
+                src="./assets/images/mk2/aroma1.png"
+                alt="ароматическая свеча в стакане и свеча в кокосе в руках"
+              />
+              <img
+                class="candle-aroma__images_aroma2"
+                src="./assets/images/mk2/aroma2.png"
+                alt="ароматические свечи и сухоцветы рядом"
+              />
+              <img
+                class="candle-aroma__images_aroma3"
+                src="./assets/images/mk2/aroma3.png"
+                alt="восемь разных свечей"
+              />
+            </div>
+            <div class="candle-aroma__images_row2">
+              <img
+                class="candle-aroma__images_aroma4"
+                src="./assets/images/mk2/aroma4.png"
+                alt="ароматическая свеча в стакане в руке на фоне книги"
+              />
+              <img
+                class="candle-aroma__images_aroma5"
+                src="./assets/images/mk2/aroma5.png"
+                alt="ароматическая свеча золотистого цвета с розами из воска"
+              />
+              <img
+                class="candle-aroma__images_aroma6"
+                src="./assets/images/mk2/aroma6.png"
+                alt="две ароматические свечи с пожеланием самого лучшего нового года"
+              />
+            </div>
+          </div>
+          <br />
+          <br />
+          <br />
+          <div class="candle-aroma__block-btn">
+            <a class="candle-aroma__btn" href="main.html#entry">Записаться</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <!--MOBILE FOOTER-->
+      <div class="footer">
+        <div class="footer__work">
+          <div class="footer__list">
+            <p class="footer__list_hours footer__list_contacts">
+              Пн. - Пт. 11:00 - 19:00 <br />
+              Сб. - Вс. 11:00 - 18:00
+            </p>
+            <p class="footer__list_address footer__list_contacts">
+              Московская область, <br />
+              г.Химки, мкр. Сходня, <br />
+              улица Кирова 3с3, 2 этаж
+            </p>
+            <p class="footer__list_phone footer__list_contacts">
+              +7 (983) 132-39-08
+            </p>
+          </div>
+
+          <div class="footer__nav">
+            <div class="footer__list">
+              <a class="footer__list_items " href="main.html#Master-classes"> Мастер-классы </a>
+              <a class="footer__list_items-mbl" href="mk.html"> Мастер-классы </a>
+              <a class="footer__list_items footer__list_items-mbl" href="about.html">О нас</a>
+              <a class="footer__list_items" href="main.html#reviews">Отзывы</a>
+              <a class="footer__list_items-mbl" href="reviews.html">Отзывы</a>
+              <a class="footer__list_items footer__list_items-mbl" href="shop.html">Магазин handmade</a>
+              <a class="footer__list_items footer__list_items-mbl" href="main.html#contact" >Контакты</a>
+            </div>
+
+            <div class="footer__cosial">
+              <a href="https://t.me/artbandclub"
+                ><img
+                  class="footer__cosial_items"
+                  src="./assets/icons/tm_icon_footer.png"
+                  alt="telegram"
+              /></a>
+              <a href="https://vk.com/artbandclub"
+                ><img
+                  class="footer__cosial_items footer__cosial_small"
+                  src="./assets/icons/vk_icon_footer.png"
+                  alt="vkontacte"
+              /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__logo">
+          <p class="footer__copy-dsk">&copy2023 &nbsp <span>Art Band</span></p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

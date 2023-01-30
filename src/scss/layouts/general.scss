@@ -1,3 +1,4 @@
+
 @import "./variables.scss";
 
 * {
@@ -14,18 +15,28 @@
 }
 
 @font-face {
-	font-family: "Calibri";
-	src: url(../../design/assets/fonts/Calibri_bold.ttf);
-}
-
-@font-face {
 	font-family: "Inter";
 	src: url(../../design/assets/fonts/Inter-Regular.ttf);
 }
 
 @font-face {
+	font-family: "Inter";
+	src: url(../../design/assets/fonts/Inter-Bold.ttf);
+}
+
+@font-face {
+	font-family: "Inter";
+	src: url(../../design/assets/fonts/Inter-SemiBold.ttf);
+}
+
+@font-face {
+	font-family: "Calibri";
+	src: url(../../design/assets/fonts/Calibri_bold.ttf);
+}
+
+@font-face {
 	font-family: "Nunito";
-	src: url(../../design/assets/fonts/Nunito-Light.ttf);
+	src: url(../../design/assets/fonts/Nunito-Regular.ttf);
 }
 
 h1,

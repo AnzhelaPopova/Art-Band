@@ -1,7 +1,311 @@
 @import "../layouts/variables.scss";
 
-.main-page-mbl {
-    overflow-x: hidden;
+@media screen and (min-width: $tablet) and (max-width: $large-desktop) {
+
+    .main-page-mbl, .main-footer-mbl {
+        display: none;
+    }
+
+    .dsk-main-block {
+        background-image: url(../../design/assets/images/main/main-background.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 100vh;
+
+        &__brand {
+            width: 50vw;
+        }
+
+        &__text {
+            font-family: $title-font-logo;
+            font-size: 4em;
+
+            &_bottom {
+                text-align: end;
+            }
+        }
+
+        &__title {
+            font-family: $title-font-logo_green;
+            font-weight: 900;
+            color: $color-title-logo;
+            font-size: 5em;
+            text-align: center;
+        }
+
+        &__discription {
+            color: $color-text;
+            font-family: $title-font;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        &__btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 25px;
+            width: 15vw;
+            height: 6vh;
+            background-color: rgb(81, 81, 81);
+            color: $color-light;
+            font-family: $title-font;
+            font-size: 0.8em;
+            text-decoration: none;
+        }
+    }
+
+    .dsk-mk {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        background-color: $color-light;
+        justify-content: center;
+        padding: 0 5% 3% 5%;
+        column-gap: 4%;
+        row-gap: 5vh;
+    
+        &__title {
+            width: 100vw;
+            text-align: center;
+            color: $color-text;
+            font-family: $title-font;
+            font-weight: 700;
+            font-size: 1.8em;
+            padding: 1% 0 1% 0;
+        }
+    }
+    
+        .dsk-mk-card {
+            width: 20vw;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid $color-light-green;
+            padding: 1%;
+            margin: 0;
+            align-items: center;
+
+        
+            &__img {
+                width: 100%;
+
+                &_block {
+                    width: 98%;
+                    object-fit: scale-down;
+                    object-position: top;
+                    padding: 0%;
+                }
+            }
+    
+            &__title {
+                color: $color-text;
+                font-family: $title-font;
+                font-weight: 700;
+                font-size: 1.1em;
+                padding: 5% 0 5% 0;
+                border-bottom: 1px solid black;
+                width: 95%;
+                text-align: center;
+
+                &_long {
+                    padding: 1% 0 1% 0;
+                }
+            }
+    
+            &__text {
+                padding-top: 5%;
+                align-self: flex-start;
+                margin-left: 2%;
+                color: $color-text;
+                font-family: $title-font;
+                font-weight: 600;
+                font-size: 0.9em;
+                text-decoration: none;
+    
+                &:hover {
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+    .main__booking__dsk {
+        padding: 3% 15%;
+        background-color: $color-light;
+
+        &__container {
+            border-radius: 45px;
+            background-color: $color-dark-green;
+        }
+
+        &__title {
+            padding: 3vh 0;
+            font-family: $title-font;
+            font-weight: 500;
+            text-align: center;
+            color: $color-text;
+        }
+
+        &__text {
+            font-family: $default-font;
+            text-align: center;
+            color: $color-text;
+        }
+
+        &__maintext {
+            padding: 3vh 0;
+            font-size: 1.5em;
+            font-weight: 600;
+            line-height: 146%;
+            letter-spacing: 0.05em;
+        }
+
+        &__smalltext {
+            padding: 1vh 0;
+            font-weight: 600;
+        }
+
+        &__item {
+            display: flex;
+            margin: 0 28.5vw;
+            gap: 23px;
+        }
+
+        &__img {
+            width: 15%;
+            height: 16%;
+        }
+    }
+
+    .main__shop__dsk {
+        padding: 3% 15%;
+        background-color: $color-light;
+
+        &__title {
+            padding: 3vh 0;
+            font-family: $title-font;
+            font-weight: 500;
+            text-align: center;
+            color: $color-text;
+            text-transform: uppercase;
+        }
+
+        &__choosemk {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        &__choosemk__item {
+            padding-bottom: 10px;
+        }
+    }
+
+    .main__reviews__dsk {
+        padding: 3% 15%;
+        background-color: $color-light;
+
+        &__title {
+            padding: 3vh 0;
+            font-family: $title-font;
+            font-weight: 500;
+            text-align: center;
+            color: $color-text;
+        }
+    }
+
+
+    .main-footer-dsk {
+        background-color: $color-dark-green;
+
+        &__container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12%;
+            align-items: center;
+            padding: 3% 7%;
+            font-family: $default-font;
+        }
+
+        &__nav {
+            margin: auto;
+        }
+
+        &__map {
+            width: 100%;
+            height: auto;
+        }
+
+        &__title {
+            margin-bottom: 2vh;
+            color: $color-text;
+            font-family: $title-font;
+            font-size: 32px;
+        }
+
+        &__contacts {
+            font-size: 20px;
+        }
+
+        &__contacts__subtitle {
+            color: $color-text;
+        }
+
+        &__contacts__address {
+            display: block;
+            margin-bottom: 2vh;
+            color: $color-text;
+        }
+
+        &__contacts__phone, &__contacts__vk, &__contacts__telegram {
+            display: flex;
+            align-items: center;
+            gap: 1vw;
+            color: $color-text;
+        }
+
+        &__contacts__phone__img, &__contacts__vk__img, &__contacts__telegram__img {
+            text-align: center;
+            opacity: 0.7;
+            width: 5%;
+        }
+
+        &__contacts__phone__hypertext, &__contacts__vk__hypertext, &__contacts__telegram__hypertext {
+            text-decoration: none;
+            color: $color-text;
+        }
+
+        &__hours {
+            margin-top: 2vh;
+            color: $color-text;
+            font-size: 20px;
+        }
+
+        &__hours__text {
+            color: $color-text;
+            font-size: 20px;
+        }
+
+        &__down {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 10px;
+            font-family: $default-font;
+            padding: 1% 12%;
+        }
+
+        &__down__logo {
+            width: 55%;
+        }
+    }
 }
 
 @media screen and (max-width: $tablet) {
@@ -9,84 +313,87 @@
         background-color: $color-light;
     }
 
+    .main-page-mbl-main-bgr {
+        background-image: url(../../design/assets/images/main/main-backgr-mbl.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
     .main-page-mbl-main {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
 
-        width: 100vw;
-        height: 100vh;
 
-        background-image: url(../../design/assets/images/main/main-background-mbl.png);
-        object-fit: cover;
+
+        /*background-image: url(../../design/assets/images/main/main-backgr-mbl.png);
         background-repeat: no-repeat;
+        background-size: contain;*/
 
-        &__logo {
+        &__name {
             display: flex;
             flex-direction: column;
+            margin-top: 20vh;
+            width: 90vw;
+        }
 
-            margin-top: 12.35vh;
+        &__logo {
+            width: 100vw;
+            display: flex;
+            justify-content: center;
 
             &_black {
                 font-family: $title-font-logo;
-                font-size: calc(( 100vw + 145.5px ) /15.75);
+                font-size: 2.7em;
+                text-align: start;
+                line-height: 0.5em;
             }
 
-            &_right {
-                align-self: flex-end;
-
-                margin-top: -2.5vh;
-                margin-left: -7vw;
-            }
-
-            &_left {
-                margin-bottom: -2vh;
+            &_bottom {
+                text-align: end;
             }
 
             &_green {
-                text-align: center;
-
-                font-family: $title-font-logo_green;
-                font-size: calc(( 100vw + 202.2px )/ 12.6);
-                text-transform: uppercase;
-
-                color: #3c5500;
+            font-family: $title-font-logo_green;
+            font-weight: 900;
+            color: $color-title-logo;
+            font-size: 3.2em;
+            text-align: center;
             }
 
             &_description {
-                margin-top: 2vh;
-
-                text-align: center;
+                color: $color-text;
                 font-family: $title-font;
+                text-align: center;
+                font-weight: 500;
+                margin-top: 30%;
 
-                font-size: calc(( 100vw + 336.92px )/ 29);
-                font-weight: 600;
-                color: rgba(10, 9, 9, 0.7);
+
             }
         }
         &__contackts{
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
+            
 
-            height: 90px;
-            margin-bottom: 5.17vh;
+
         }
 
         &__number { 
-            padding-bottom: 5px;
-            border-bottom: 1px solid black;
-
+            margin-top: 20vh;
             font-family: $title-font;
             font-weight: 600;
             font-size: calc(( 100vw + 618px )/ 63);
-            line-height: 19px;
+            line-height: 4em;
+            text-align: center;
+            
         }
 
         &__social-networks {
             display: flex;
+            margin-bottom: 10%;
+
+
+            justify-content: center;
 
             &_tg {
                 margin-right: 22px; 
@@ -103,35 +410,39 @@
             }
             }
         }
+        .main__booking__dsk, .main__shop__dsk, .main-footer-dsk, .main__reviews__dsk {
+            display: none;
+        }
     }
 
     .main-page-mbl-section {
         &_1 {
-            background-image: url(../../design/assets/images/main/main2.png);
+            background-image: url(../../design/assets/images/main/main1-2.png);
+            background-size: 100vw;
         }
 
         &_2 {
             background-image: url(../../design/assets/images/main/main3.png);
+            background-size: 100vw;
         }
 
         &_3 {
             background-image: url(../../design/assets/images/main/main4.png);
+            background-size: 100vw;
         }
 
         &_4 {
             background-image: url(../../design/assets/images/main/main5.png);
+            background-size: 100vw;
         }
 
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
         width: 100vw;
         height: 30.75vh;
-
         margin-top: 30px;
-
         object-fit: cover;
         background-repeat: no-repeat;
         background-size: contain;
@@ -159,7 +470,7 @@
             border-radius: 20px;
             text-transform: uppercase;
         }
-    }
+}
 
 
 @media screen and (min-width: 769px) {

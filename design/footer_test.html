@@ -1,51 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title> О нас </title>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Art Band</title>
 
-		<link rel="stylesheet" href="./assets/styles/normalize.css">
-		<link rel="shortcut icon" href="./assets/icons/icon.png" />
-		<link rel="stylesheet" href="./assets/fonts" />
-		<link rel="stylesheet" href="./assets/dist/css/main.css" />
-	</head>
-	<body>
+    <link rel="stylesheet" href="./assets/styles/normalize.css" />
+    <link rel="shortcut icon" href="./assets/icons/icon.png" />
+    <link rel="stylesheet" href="./assets/dist/fonts.css" />
+    <link rel="stylesheet" href="./assets/dist/css/main.css" />
+  </head>
 
-    <footer class="footer">
-      
-      <div class="footer__work ">
+  <body>
+    <footer>
+      <!--MOBILE-ФУТЕР ГЛАВНОЙ СТРАНИЦЫ -->
+      <div class="main-footer-mbl">
+        <h3 class="main-footer-mbl__title">
+          ХОЧУ НА МАСТЕР-КЛАСС! <br />
+          КАК ЗАПИСАТЬСЯ?
+        </h3>
 
+        <p class="main-footer-mbl__text">
+          Друзья, все занятия в нашей <br />
+          мастерской проходят по <br />
+          предварительной записи.
+        </p>
+        <p class="main-footer-mbl__text">
+          Будем рады вашим звонкам и сообщениям!
+        </p>
+        <div class="main-footer-mbl__social-block">
+          <div class="main-footer-mbl__icon">
+            <img
+              class="main-footer-mbl__img"
+              src="./assets/icons/telephone.png"
+              alt="Телефон"
+            />
+            <img
+              class="main-footer-mbl__img main-footer-mbl__img_big"
+              src="./assets/icons/Vkontact.png"
+              alt="ВКонтакте"
+            />
+            <img
+              class="main-footer-mbl__img"
+              src="./assets/icons/Telegram.png"
+              alt="Телеграм"
+            />
+          </div>
+          <div class="main-footer-mbl__text main-footer-mbl__link">
+            <p class="main-footer-mbl__number">+7 (983) 132-39-08</p>
+            <a class="main-footer-mbl__web" href="vk.com/artbandclub"
+              >vk.com/artbandclub</a
+            >
+            <a class="main-footer-mbl__web" href="t.me/artbandclub"
+              >t.me/artbandclub</a
+            >
+          </div>
+        </div>
+
+        <h3 class="main-footer-mbl__title main-footer-mbl__title_next">
+          Творческая мастерская <br />
+          “Art Band”
+        </h3>
+        <p class="main-footer-mbl__text main-footer-mbl__address">
+          Московская область, г.Химки, мкр. Сходня, ул. Кирова 3с3, 2 этаж
+        </p>
+        <a
+          class="main-footer-mbl__map"
+          href="https://yandex.ru/maps/10758/himki/house/ulitsa_kirova_3s3/Z04YdA5nSk0BQFtvfXV0cX5gYw==/?ll=37.297853%2C55.950132&z=16.83"
+          ><img src="./assets/images/main/map.png" alt="Карта"
+        /></a>
+        <p class="main-footer-mbl__text">Время работы:</p>
+        <p class="main-footer-mbl__text">
+          Пн. - Пт. 11:00 - 19:00 <br />
+          Сб. - Вс. 11:00 - 18:00
+        </p>
+        <div class="main-footer-mbl__copy">
+          <p class="main-footer-mbl__text">&copy; 2023</p>
+          <p class="main-footer-mbl__brand">Art Band</p>
+        </div>
+      </div>
+      <!--MOBILE-ФУТЕР ОСТАЛЬНЫХ СТРАНИЦ-->
+      <div class="footer">
+        <div class="footer__work">
           <div class="footer__list">
-            <p class="footer__list_hours footer__list_contacts ">Пн. - Пт. 11.00 - 19.00 <br> Сб. - Вс. 11.00 - 18.00 </p>
-            <p class="footer__list_address footer__list_contacts">Московская область, <br> г.Химки, мкр. Сходня, <br> улица Кирова 3с3, 2 этаж </p>
-            <p class="footer__list_phone footer__list_contacts">+7 (983) 132-39-08</p>
+            <p class="footer__list_hours footer__list_contacts">
+              Пн. - Пт. 11:00 - 19:00 <br />
+              Сб. - Вс. 11:00 - 18:00
+            </p>
+            <p class="footer__list_address footer__list_contacts">
+              Московская область, <br />
+              г.Химки, мкр. Сходня, <br />
+              улица Кирова 3с3, 2 этаж
+            </p>
+            <p class="footer__list_phone footer__list_contacts">
+              +7 (983) 132-39-08
+            </p>
           </div>
-  
+
           <div class="footer__nav">
-
             <div class="footer__list">
-              <a class="footer__list_items" href="mk.html" > Мастер-классы </a>
+              <a class="footer__list_items" href="mk.html"> Мастер-классы </a>
               <a class="footer__list_items" href="about.html">О нас</a>
-              <a class="footer__list_items" href="reviews.html">Отзывы</a>
+              <a class="footer__list_items" href="main.html#reviews">Отзывы</a>
               <a class="footer__list_items" href="shop.html">Магазин handmade</a>
-              <a class="footer__list_items" href=" #contact ">Контакты</a>
+              <a class="footer__list_items" href="main.html#contact">Контакты</a>
             </div>
-  
+
             <div class="footer__cosial">
-              <a href="https://t.me/artbandclub"><img class="footer__cosial_items" src="./assets/icons/tm_icon_footer.png" alt="telegram"></a>  
-              <a href="https://vk.com/artbandclub"><img class="footer__cosial_items" src="./assets/icons/vk_icon_footer.png" alt="vkontacte"></a> 
+              <a href="https://t.me/artbandclub"
+                ><img
+                  class="footer__cosial_items"
+                  src="./assets/icons/tm_icon_footer.png"
+                  alt="telegram"
+              /></a>
+              <a href="https://vk.com/artbandclub"
+                ><img
+                  class="footer__cosial_items footer__cosial_small"
+                  src="./assets/icons/vk_icon_footer.png"
+                  alt="vkontacte"
+              /></a>
             </div>
           </div>
-      </div>
-      
-      <div class="footer__logo">
-            <p>&copy2023 &nbsp <span>Art Band</span></p>
-      </div>
+        </div>
 
-      </footer>
-      
-</section>
-</body>
+        <div class="footer__logo">
+          <p class="footer__copy-dsk">&copy2023 &nbsp <span>Art Band</span></p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
