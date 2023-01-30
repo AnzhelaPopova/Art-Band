@@ -534,12 +534,6 @@ p, a {
   .footer__cosial_small {
     width: 48%;
   }
-  .footer ul {
-    font-size: 18px;
-    list-style: none;
-    color: rgba(0, 0, 0, 0.7);
-    padding: 5px 0 5px 0;
-  }
   .footer__logo {
     font-family: "Inter", sans-serif;
     display: flex;
