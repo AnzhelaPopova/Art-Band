@@ -184,6 +184,44 @@
         }
     }
 
+    .main__shop__dsk {
+        padding: 3% 15%;
+        background-color: $color-light;
+
+        &__title {
+            padding: 3vh 0;
+            font-family: $title-font;
+            font-weight: 500;
+            text-align: center;
+            color: $color-text;
+            text-transform: uppercase;
+        }
+
+        &__choosemk {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        &__choosemk__item {
+            padding-bottom: 10px;
+        }
+    }
+
+    .main__reviews__dsk {
+        padding: 3% 15%;
+        background-color: $color-light;
+
+        &__title {
+            padding: 3vh 0;
+            font-family: $title-font;
+            font-weight: 500;
+            text-align: center;
+            color: $color-text;
+        }
+    }
+
+
     .main-footer-dsk {
         background-color: $color-dark-green;
 
@@ -372,11 +410,7 @@
             }
             }
         }
-        .main__booking__dsk {
-            display: none;
-        }
-
-        .main-footer-dsk {
+        .main__booking__dsk, .main__shop__dsk, .main-footer-dsk, .main__reviews__dsk {
             display: none;
         }
     }
