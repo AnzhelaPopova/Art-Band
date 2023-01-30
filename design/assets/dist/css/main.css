@@ -498,6 +498,9 @@ p, a {
   }
 }
 @media screen and (min-width: 769px) {
+  .footer__list_items-mbl {
+    display: none;
+  }
   .footer {
     display: flex;
     flex-direction: column;
@@ -527,12 +530,6 @@ p, a {
   }
   .footer__cosial_small {
     width: 48%;
-  }
-  .footer ul {
-    font-size: 18px;
-    list-style: none;
-    color: rgba(0, 0, 0, 0.7);
-    padding: 5px 0 5px 0;
   }
   .footer__logo {
     font-family: "Inter", sans-serif;
@@ -568,6 +565,7 @@ p, a {
     padding: 10px 0 10px 0;
     font-family: "Inter", sans-serif;
     text-decoration: none;
+    cursor: pointer;
   }
   .footer__list_hours {
     background: url(../8bee01452e99b6d5dfba.png) left no-repeat;
@@ -595,6 +593,9 @@ p, a {
   }
 }
 @media screen and (max-width: 768px) {
+  .footer__list_items {
+    display: none;
+  }
   .footer {
     display: flex;
     flex-direction: column;
@@ -627,11 +628,6 @@ p, a {
   .footer__cosial_small {
     width: 58%;
   }
-  .footer ul {
-    list-style: none;
-    color: rgba(0, 0, 0, 0.7);
-    padding: 5px 0;
-  }
   .footer__logo {
     display: flex;
     width: 100vw;
@@ -658,7 +654,7 @@ p, a {
     padding: 8% 0 0 0;
     cursor: pointer;
   }
-  .footer__list_items {
+  .footer__list_items-mbl {
     list-style: none;
     text-decoration: none;
     display: flex;
