@@ -1447,6 +1447,9 @@ p, a {
 }
 /*desktop*/
 @media screen and (min-width: 767px) {
+  .candle-aroma__btn-mbl {
+    display: none;
+  }
   .candle-message {
     background-color: #FBFFE9;
     overflow-x: hidden;
@@ -1603,6 +1606,9 @@ p, a {
 }
 /*mobile*/
 @media screen and (max-width: 768px) {
+  .candle-aroma__btn {
+    display: none;
+  }
   .candle-message {
     background-color: #FBFFE9;
     overflow-x: hidden;
@@ -1755,7 +1761,7 @@ p, a {
     display: flex;
     justify-content: center;
   }
-  .candle-aroma__btn {
+  .candle-aroma__btn-mbl {
     background-color: #A0B45B;
     font-family: "Nunito", sans-serif;
     color: #FBFFE9;
