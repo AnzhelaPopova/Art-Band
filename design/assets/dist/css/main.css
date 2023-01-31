@@ -690,7 +690,7 @@ p, a {
     line-height: 30px;
   }
 }
-@media screen and (min-width: 375px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .dsk-nav, .dsk-nav__logo, .dsk-nav__pages, .dsk-nav__social, .dsk-nav__nmbr, .dsk-main-block {
     display: none;
   }
@@ -1100,7 +1100,7 @@ p, a {
     color: rgba(0, 0, 0, 0.7);
     font-family: "Inter", sans-serif;
     font-weight: 700;
-    font-size: calc((100vw + 672px) / 96);
+    font-size: calc((100vw + 1593px) / 157.4);
     margin: 0;
     padding: 5% 0 5% 0;
     border-bottom: 1px solid black;
@@ -3065,12 +3065,12 @@ p, a {
     text-align: center;
     font-family: "Nunito", sans-serif;
     font-weight: 500;
-    font-size: 1.1em;
+    font-size: calc((100vw + 716.5px) / 123.7);
     line-height: 2em;
     color: rgba(0, 0, 0, 0.7);
   }
 }
-@media screen and (min-width: 375px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .later__container {
     width: 80vw;
     height: 30vh;
@@ -3087,7 +3087,7 @@ p, a {
     text-align: center;
     font-family: "Nunito", sans-serif;
     font-weight: 500;
-    font-size: 1.1em;
+    font-size: calc((100vw + 2263px) / 216.5);
     line-height: 2em;
     color: rgba(0, 0, 0, 0.7);
   }

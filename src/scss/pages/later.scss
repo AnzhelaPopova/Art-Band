@@ -25,13 +25,13 @@
             text-align: center;
             font-family: $default-font;
             font-weight: 500;
-            font-size: 1.1em;
+            font-size: calc(( 100vw + 716.5px ) / 123.7);
             line-height: 2em;
             color: $color-text;
         }
     }
 
-    @media screen and (min-width: $mobile) and (max-width: $tablet) {
+    @media screen and (max-width: $tablet) {
 
         &__container {
             width: 80vw;
@@ -50,7 +50,7 @@
             text-align: center;
             font-family: $default-font;
             font-weight: 500;
-            font-size: 1.1em;
+            font-size: calc(( 100vw + 2263px ) / 216.5);
             line-height: 2em;
             color: $color-text;
         }
