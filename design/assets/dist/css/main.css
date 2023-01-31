@@ -504,6 +504,9 @@ p, a {
   }
 }
 @media screen and (min-width: 769px) {
+  .footer__list_items-mbl {
+    display: none;
+  }
   .footer {
     display: flex;
     flex-direction: column;
@@ -533,12 +536,6 @@ p, a {
   }
   .footer__cosial_small {
     width: 48%;
-  }
-  .footer ul {
-    font-size: 18px;
-    list-style: none;
-    color: rgba(0, 0, 0, 0.7);
-    padding: 5px 0 5px 0;
   }
   .footer__logo {
     font-family: "Inter", sans-serif;
@@ -574,6 +571,7 @@ p, a {
     padding: 10px 0 10px 0;
     font-family: "Inter", sans-serif;
     text-decoration: none;
+    cursor: pointer;
   }
   .footer__list_hours {
     background: url(../8bee01452e99b6d5dfba.png) left no-repeat;
@@ -601,6 +599,9 @@ p, a {
   }
 }
 @media screen and (max-width: 768px) {
+  .footer__list_items {
+    display: none;
+  }
   .footer {
     display: flex;
     flex-direction: column;
@@ -633,11 +634,6 @@ p, a {
   .footer__cosial_small {
     width: 58%;
   }
-  .footer ul {
-    list-style: none;
-    color: rgba(0, 0, 0, 0.7);
-    padding: 5px 0;
-  }
   .footer__logo {
     display: flex;
     width: 100vw;
@@ -664,7 +660,7 @@ p, a {
     padding: 8% 0 0 0;
     cursor: pointer;
   }
-  .footer__list_items {
+  .footer__list_items-mbl {
     list-style: none;
     text-decoration: none;
     display: flex;
@@ -1708,6 +1704,9 @@ p, a {
 }
 /*desktop*/
 @media screen and (min-width: 767px) {
+  .candle-aroma__btn-mbl {
+    display: none;
+  }
   .candle-message {
     background-color: #FBFFE9;
     overflow-x: hidden;
@@ -1864,6 +1863,9 @@ p, a {
 }
 /*mobile*/
 @media screen and (max-width: 768px) {
+  .candle-aroma__btn {
+    display: none;
+  }
   .candle-message {
     background-color: #FBFFE9;
     overflow-x: hidden;
@@ -2016,7 +2018,7 @@ p, a {
     display: flex;
     justify-content: center;
   }
-  .candle-aroma__btn {
+  .candle-aroma__btn-mbl {
     background-color: #A0B45B;
     font-family: "Nunito", sans-serif;
     color: #FBFFE9;
@@ -3003,7 +3005,6 @@ p, a {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 26px;
-    background-color: white;
   }
   .shop-page__mobile_img-soap-text {
     font-style: normal;
