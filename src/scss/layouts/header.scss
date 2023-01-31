@@ -1,6 +1,6 @@
 @import "./variables.scss";
 
-@media screen and (min-width: $mobile) and (max-width: $tablet) {
+@media screen and (max-width: $tablet) {
 
     .dsk-nav, .dsk-nav__logo, .dsk-nav__pages, .dsk-nav__social, .dsk-nav__nmbr, .dsk-main-block {
         display: none;
