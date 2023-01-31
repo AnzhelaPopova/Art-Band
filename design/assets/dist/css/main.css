@@ -1140,6 +1140,7 @@ p, a {
     font-family: "Nunito", sans-serif;
     text-align: center;
     color: rgba(0, 0, 0, 0.7);
+    font-size: 1.2em;
   }
   .main__booking__dsk__maintext {
     padding: 3vh 0;
@@ -1149,17 +1150,28 @@ p, a {
     letter-spacing: 0.05em;
   }
   .main__booking__dsk__smalltext {
-    padding: 1vh 0;
-    font-weight: 600;
+    margin-bottom: 0;
+  }
+  .main__booking__dsk__media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
+    padding: 2vw 6vw;
+    padding-top: 0;
   }
   .main__booking__dsk__item {
     display: flex;
-    margin: 0 28.5vw;
-    gap: 23px;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    width: 30vw;
+  }
+  .main__booking__dsk__item1 {
+    gap: 2vw;
   }
   .main__booking__dsk__img {
-    width: 15%;
-    height: 16%;
+    align-items: center;
   }
   .main__shop__dsk {
     padding: 3% 15%;
@@ -1175,8 +1187,9 @@ p, a {
   }
   .main__shop__dsk__choosemk {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
+    gap: 1vw;
   }
   .main__shop__dsk__choosemk__item {
     padding-bottom: 10px;
@@ -1198,9 +1211,9 @@ p, a {
   .main-footer-dsk__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 12%;
+    gap: 4%;
     align-items: center;
-    padding: 3% 7%;
+    padding: 7% 7%;
     font-family: "Nunito", sans-serif;
   }
   .main-footer-dsk__nav {
@@ -1227,18 +1240,23 @@ p, a {
     margin-bottom: 2vh;
     color: rgba(0, 0, 0, 0.7);
   }
-  .main-footer-dsk__contacts__phone, .main-footer-dsk__contacts__vk, .main-footer-dsk__contacts__telegram {
+  .main-footer-dsk__media {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1vh;
+  }
+  .main-footer-dsk__media__item {
     display: flex;
     align-items: center;
     gap: 1vw;
     color: rgba(0, 0, 0, 0.7);
   }
-  .main-footer-dsk__contacts__phone__img, .main-footer-dsk__contacts__vk__img, .main-footer-dsk__contacts__telegram__img {
-    text-align: center;
+  .main-footer-dsk__media__img {
     opacity: 0.7;
-    width: 5%;
+    width: 15%;
   }
-  .main-footer-dsk__contacts__phone__hypertext, .main-footer-dsk__contacts__vk__hypertext, .main-footer-dsk__contacts__telegram__hypertext {
+  .main-footer-dsk__media__hypertext {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.7);
   }
@@ -1254,13 +1272,17 @@ p, a {
   .main-footer-dsk__down {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
-    gap: 10px;
+    align-items: flex-end;
+    gap: 5px;
     font-family: "Nunito", sans-serif;
-    padding: 1% 12%;
+    padding: 1% 7%;
   }
   .main-footer-dsk__down__logo {
-    width: 55%;
+    width: 9vw;
+  }
+  .copyright {
+    margin-bottom: 0;
+    padding: 0;
   }
 }
 @media screen and (max-width: 768px) {
