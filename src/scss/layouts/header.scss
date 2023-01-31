@@ -63,6 +63,7 @@
         &__link {
             font-family: $title-font;
             font-weight: 400;
+            font-size: calc(( 100vw + 960px ) / 144);
             text-decoration: none;
             color: $color-text;
 
@@ -78,7 +79,10 @@
 
         &__nmbr {
             font-family: $title-font;
-            font-size: 0.9em;
+            font-size: calc(( 100vw + 1825px ) / 216);
+            hyphens: auto;
+            padding: 0 0 0 4%;
+
         }
     }
 }

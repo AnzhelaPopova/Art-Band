@@ -19,7 +19,8 @@ background-color: $color-light;
 width: 100vw;
 height: 80px;
 padding-top: 25px;
-   h2 {
+   
+&_about {
     color: $color-text;
     font:$title-font;
     font-size: 26px;
