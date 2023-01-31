@@ -2,7 +2,7 @@
 
 @media screen and (min-width: $mobile) and (max-width: $tablet) {
 
-    .mbl-header-btn, .wrapper-mbl-mk  {
+    .mbl-header-btn, .wrapper-mbl-mk,   {
         display: none;
     }
 
@@ -103,6 +103,10 @@
 
 @media screen and (min-width: 769px) {
 
+.footer__list_items-mbl{
+    display: none;
+}    
+
 .footer {
     display: flex;
     flex-direction: column;
@@ -137,14 +141,7 @@
             width: 48%;
         }
     }
-
-    & ul {
-        font-size: 18px;
-        list-style: none;
-        color: $color-text;
-        padding: 5px 0 5px 0;
-        } 
-   
+  
      &__logo {
         font-family: $title-font;
         display: flex;
@@ -183,6 +180,7 @@
             padding: 10px 0 10px 0;
             font-family: $title-font;
             text-decoration: none;
+            cursor: pointer;
             } 
 
         &_hours {
@@ -216,6 +214,10 @@
 }
 
 @media screen and (max-width: $tablet) {
+
+    .footer__list_items {
+        display: none;
+    }
 
     .footer {
         display: flex;
@@ -254,11 +256,6 @@
             }
         }
     
-        & ul {
-            list-style: none;
-            color: $color-text;
-            padding: 5px 0;
-            } 
        
          &__logo {
             display: flex;
@@ -290,7 +287,7 @@
             padding: 8% 0 0 0;
             cursor: pointer;
     
-                &_items {
+                &_items-mbl {
                 list-style: none;
                 text-decoration: none;
                 display: flex;
