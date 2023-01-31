@@ -1,17 +1,20 @@
 @import "../layouts/variables.scss";
 
+.loza__body {
+    overflow-x: hidden;
+}
+
 @media screen and (min-width: $tablet) and (max-width: $large-desktop) {
-    .loza-mobile,
-    .loza-mobile__content1,
-    .loza-mobile__content2,
-    .loza-mobile__image-block3,
-    .loza-mobile__title-block2,
-    .loza-mobile__image-block4 {
+    .loza-mobile {
         display: none;
     }
     
     .loza-desktop {
         background-color: $color-light;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
     }
     
     .loza-content1 {
@@ -19,47 +22,61 @@
         justify-content: center;
         align-items: center;
         margin-left: 9vw;
+        margin: 5.63vw 5vw 5% 5vw;
+        
 
         
         &__image-block {
             display: flex;
             justify-content: center;
+            width: 45vw;
         }
     
         &__image {
-            max-width: 100%;
+            width: 95%;
             object-fit: cover;
-            margin-top: 0;
+            height: 95%;
         }
 
         &__text-block {
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 90%;
+            width: 45vw;
+            margin-left: 4vw;
+            
+            
         }
 
         &__title {
-            width: 80%;
+            
             text-align: center;
-            margin-bottom: 3vh;
-            margin-top: 10vh;
+            margin-top: -0.44vw;
+            margin-bottom: 4.6vw;
+            
+            
             color: $color-text;
             font-family: $title-font;
-            font-size: 2.2em;
-            font-weight: 500;
+            font-size: calc(( 100vw - 53px ) / 34);
+            font-weight: 600;
+            
+            
+            
         } 
     
         &__text {
-            width: 80%;
-            margin: 5vw;
+            
+            margin-top: 4.07vw;
             color: $color-text;
             font-family: $default-font;
-            font-size: 1.3em;
+            font-size: calc(( 100vw - 148px ) / 62);
+            font-weight: 300;
+            
+            
         }
     
         &__line {
-            width: 80%;
+            width: 100%;
             border-bottom: 1px solid $color-text;
         }
     }
@@ -67,8 +84,9 @@
     .loza-content2 {
         display: flex;
         justify-content: center;
-        margin: 0 8vw 5% 8vw;
+        margin: 0 5vw 5% 5vw;
         gap: 10px;
+        
     
         &__block1 {
             display: flex;
@@ -76,6 +94,7 @@
             justify-content: space-around;
             align-items: center;
             gap: 20px;
+            width: 30vw;
         }
     
         &__block2 {
@@ -84,6 +103,7 @@
             justify-content: space-around;
             align-items: center;
             gap: 20px;
+            width: 30vw;
         }
     
         &__block3 {
@@ -92,6 +112,7 @@
             justify-content: space-around;
             align-items: center;
             gap: 20px;
+            width: 30vw;
         }
     
         &__image1 {
