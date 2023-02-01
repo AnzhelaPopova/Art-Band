@@ -51,8 +51,8 @@
         &__title {
             
             text-align: center;
-            margin-top: -0.44vw;
-            margin-bottom: 4.6vw;
+            margin-top: -0.1vw;
+            margin-bottom: 1.6vw;
             
             
             color: $color-text;
@@ -66,10 +66,10 @@
     
         &__text {
             
-            margin-top: 4.07vw;
+            margin-top: 2.07vw;
             color: $color-text;
             font-family: $default-font;
-            font-size: calc(( 100vw - 148px ) / 62);
+            font-size: calc(( 100vw + 48px ) / 64);
             font-weight: 300;
             
             
@@ -149,41 +149,45 @@
     .loza-mobile {
         background-color: $color-light;
         margin: 0 auto;
+        
 
         &__content1 {
             display: flex;
             flex-direction: column;
             align-items: center;
+    
         }
 
         &__image1 {
-            width: 80%;
-            border-radius: 10%;
+            width: 88%;
+            border-radius: 15%;
             margin-top: 20px;
         }
 
         &__title {
             text-align: center;
-            margin: 20px;
+            
             color: $color-text;
             font-family: $title-font;
-            font-weight: bolder;
-            font-size: 5.067vw;
-            line-height: 1.2em;
+            font-weight: 600;
+            
+            font-size: calc(( 100vw - 5px ) / 18);
+            
         } 
 
         &__line2 {
-            width: 80%;
-            height: 10px;
+            width: 88%;
+            height: 20px;
             border-bottom: 1px solid $color-text;
             margin-bottom: 30px;
         }
 
         &__text-block {
-            width: 80%;
+            width: 88%;
             color: $color-text;
             font-family: $default-font;
             font-size: 4.580vw;
+            font-size: calc(( 100vw + 133px ) / 30);
         }
 
         &__content2 {
@@ -227,8 +231,8 @@
             margin-top: 10%;
             color: $color-text;
             font-family: $title-font;
-            font-weight: bolder;
-            font-size: 5.598vw;
+            font-weight: 600;
+            font-size: calc(( 100vw - 5px ) / 18);
         }
 
         &__image-block3 {
