@@ -2,7 +2,7 @@
 
 @media screen and (min-width: $mobile) and (max-width: $tablet) {
 
-    .mbl-header-btn, .wrapper-mbl-mk,   {
+    .mbl-header-btn, .wrapper-mbl-mk   {
         display: none;
     }
 
@@ -135,6 +135,11 @@
             width: 40%;
             margin: 20px 20px;
             cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+                color: $color-text;
+            }
         }
 
         &_small {
@@ -181,6 +186,11 @@
             font-family: $title-font;
             text-decoration: none;
             cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+                color: $color-text;
+            }
             } 
 
         &_hours {
