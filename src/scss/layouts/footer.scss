@@ -2,7 +2,7 @@
 
 @media screen and (min-width: $mobile) and (max-width: $tablet) {
 
-    .mbl-header-btn, .wrapper-mbl-mk  {
+    .mbl-header-btn, .wrapper-mbl-mk   {
         display: none;
     }
 
@@ -75,6 +75,7 @@
         &__number {
             font-size: 0.9em;
             font-weight: 600;
+            margin: 0;
         }
 
         &__address {
@@ -83,6 +84,7 @@
 
         &__map {
             margin-bottom: 8%;
+            max-width: 100%;
         }
 
         &__copy {
@@ -102,6 +104,10 @@
 }
 
 @media screen and (min-width: 769px) {
+
+.footer__list_items-mbl{
+    display: none;
+}    
 
 .footer {
     display: flex;
@@ -131,20 +137,18 @@
             width: 40%;
             margin: 20px 20px;
             cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+                color: $color-text;
+            }
         }
 
         &_small {
             width: 48%;
         }
     }
-
-    & ul {
-        font-size: 18px;
-        list-style: none;
-        color: $color-text;
-        padding: 5px 0 5px 0;
-        } 
-   
+  
      &__logo {
         font-family: $title-font;
         display: flex;
@@ -183,6 +187,12 @@
             padding: 10px 0 10px 0;
             font-family: $title-font;
             text-decoration: none;
+            cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+                color: $color-text;
+            }
             } 
 
         &_hours {
@@ -216,6 +226,10 @@
 }
 
 @media screen and (max-width: $tablet) {
+
+    .footer__list_items {
+        display: none;
+    }
 
     .footer {
         display: flex;
@@ -254,11 +268,6 @@
             }
         }
     
-        & ul {
-            list-style: none;
-            color: $color-text;
-            padding: 5px 0;
-            } 
        
          &__logo {
             display: flex;
@@ -290,7 +299,7 @@
             padding: 8% 0 0 0;
             cursor: pointer;
     
-                &_items {
+                &_items-mbl {
                 list-style: none;
                 text-decoration: none;
                 display: flex;

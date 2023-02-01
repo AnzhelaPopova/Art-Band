@@ -19,7 +19,8 @@ background-color: $color-light;
 width: 100vw;
 height: 80px;
 padding-top: 25px;
-   h2 {
+   
+&_about {
     color: $color-text;
     font:$title-font;
     font-size: 26px;
@@ -66,6 +67,11 @@ p{
 }
 
 @media screen and (max-width: 767px) {
+
+  .about__wrapper {
+    margin-top: 85px;
+  }
+
   .about__carousel {
     width: 100vw;
     padding-left: 10px;

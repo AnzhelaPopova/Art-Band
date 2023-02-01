@@ -2,6 +2,9 @@
 
 /*desktop*/
 @media screen and (min-width: 767px) {
+    .candle-aroma__btn-mbl {
+        display: none;
+    }
 
     .candle-message {
         background-color: $color-light;
@@ -213,9 +216,14 @@
 
 @media screen and (max-width: 768px) {
 
+    .candle-aroma__btn {
+        display: none;
+    }
+
     .candle-message {
         background-color: $color-light;
         overflow-x: hidden;
+        margin-top: 85px;
 
         &__about {
             display: flex;
@@ -406,7 +414,7 @@
             justify-content: center;
         }
 
-        &__btn {
+        &__btn-mbl {
             background-color: $color-light-green;
             font-family: $default-font;
             color: $color-light;

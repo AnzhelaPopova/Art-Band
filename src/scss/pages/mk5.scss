@@ -16,9 +16,8 @@
     grid-template-columns: 1fr 1fr;
     row-gap: 3.7vw;
     padding: 5vw 0 5vw 0;
-    /*font-size: calc(18px + 4 * (100vw / 1440));*/
     font-size: 1.5vw;
-    line-height: 2.08vw;
+    /*line-height: 2.08vw;*/
     font-weight: 300;
     font-family: $default-font;
     color: $color-text;
@@ -32,7 +31,7 @@
     justify-content: center;
 
     &__img {
-        width: 78%;
+        width: 79%;
     }
 }
 
@@ -43,14 +42,13 @@
     align-items: center;
 
     &__inner {
-        width: 90%;
+        width: 83%;
         margin-right: 1.2em;
     }
     
     &__title {
         font-size: 2.8vw;
         line-height: 3.36vw;
-        font-size: 1.5em;
         text-align: center;
         font-weight: bold;
         font-family: $title-font;
@@ -59,7 +57,7 @@
     &__line {
         background-color: rgba(0, 0, 0, 0.5);
         height: 1px;
-        margin: 3vw 0 1vw 0;
+        margin: 1.5vw 0 1vw 0;
     }
 
     &__list {
@@ -70,6 +68,7 @@
         list-style-type: "\2013 \00A0";
         margin-left: 0.8em;
         margin-right: 1.2em;
+        margin-top: 0.3em;
     }
 }
 
@@ -77,9 +76,9 @@
     grid-area: img-box;
 
     &__inner {
-        margin-right: 1.2em;
-        margin-left: 1em;
-        width: 90%;
+        /*margin-right: 1.2em;*/
+        margin-left: 2em;
+        width: 83%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -98,7 +97,7 @@
 
     &__inner {
         margin: auto;
-        width: 78%;
+        width: 79%;
     }
 
     &__text {
@@ -114,6 +113,7 @@
 
     .mk5-wrapper {
         background-color: $color-light;
+        margin-top: 85px;
     }
     
     
@@ -125,9 +125,9 @@
                              "cont";
         row-gap: 3.7vw;
         padding: 5vw 0 5vw 0;
-        /*font-size: calc(18px + 4 * (100vw / 1440));*/
-        font-size: 18px;
-        line-height: 24.5px;
+        font-size: calc((100vw + 87.86px)/ 26.714);
+        /*font-size: 18px;*/
+        line-height: 5.2vw;
         font-weight: 300;
         font-family: $default-font;
         color: $color-text;
@@ -156,8 +156,9 @@
         }
         
         &__title {
-            font-size: 22px;
-            line-height: 26.6px;
+            /*font-size: 22px;*/
+            line-height: 6.1vw;
+            font-size: calc((100vw - 19px)/ 17);
             /*font-size: calc(22px + 18 * (100vw / 1440));*/
             text-align: center;
             font-weight: bold;
