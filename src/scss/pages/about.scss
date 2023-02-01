@@ -67,6 +67,11 @@ p{
 }
 
 @media screen and (max-width: 767px) {
+
+  .about__wrapper {
+    margin-top: 85px;
+  }
+
   .about__carousel {
     width: 100vw;
     padding-left: 10px;

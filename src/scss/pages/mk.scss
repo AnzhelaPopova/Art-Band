@@ -7,6 +7,8 @@
     flex-direction: column;
     align-items: center;
     background-color: $color-light;
+    margin-top: 85px;
+
 
     &__title {
         color: $color-text;
@@ -14,6 +16,7 @@
         font-weight: 700;
         font-size: 1.8em;
         padding-top: 5%;
+
     }
 }
 
