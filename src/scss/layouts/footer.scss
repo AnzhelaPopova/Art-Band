@@ -75,6 +75,7 @@
         &__number {
             font-size: 0.9em;
             font-weight: 600;
+            margin: 0;
         }
 
         &__address {
@@ -83,6 +84,7 @@
 
         &__map {
             margin-bottom: 8%;
+            max-width: 100%;
         }
 
         &__copy {
