@@ -311,6 +311,7 @@
 }
 
 @media screen and (max-width: $tablet) {
+
     .wrapper-main-page-mbl {
         background-color: $color-light;
     }
@@ -413,7 +414,7 @@
             }
             }
         }
-        .main__booking__dsk, .main__shop__dsk, .main-footer-dsk, .main__reviews__dsk {
+        .main__booking__dsk, .main__shop__dsk, .main-footer-dsk, .main__reviews__dsk, .mk-mbl {
             display: none;
         }
     }
@@ -476,7 +477,7 @@
 }
 
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: $tablet) {
     .wrapper-main-page-mbl {
         display: none;
     }
