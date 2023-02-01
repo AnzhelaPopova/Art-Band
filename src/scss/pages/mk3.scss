@@ -14,7 +14,6 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        
     }
     
     .loza-content1 {
@@ -23,8 +22,6 @@
         align-items: center;
         margin-left: 9vw;
         margin: 5.63vw 5vw 5% 5vw;
-        
-
         
         &__image-block {
             display: flex;
@@ -44,35 +41,24 @@
             align-items: center;
             width: 45vw;
             margin-left: 4vw;
-            
-            
         }
 
         &__title {
-            
             text-align: center;
             margin-top: -0.1vw;
             margin-bottom: 1.6vw;
-            
-            
             color: $color-text;
             font-family: $title-font;
             font-size: calc(( 100vw - 53px ) / 34);
             font-weight: 600;
-            
-            
-            
         } 
     
         &__text {
-            
             margin-top: 2.07vw;
             color: $color-text;
             font-family: $default-font;
             font-size: calc(( 100vw + 48px ) / 64);
             font-weight: 300;
-            
-            
         }
     
         &__line {
@@ -86,7 +72,6 @@
         justify-content: center;
         margin: 0 5vw 5% 5vw;
         gap: 10px;
-        
     
         &__block1 {
             display: flex;
@@ -149,13 +134,11 @@
     .loza-mobile {
         background-color: $color-light;
         margin: 0 auto;
-        
 
         &__content1 {
             display: flex;
             flex-direction: column;
             align-items: center;
-    
         }
 
         &__image1 {
@@ -166,13 +149,10 @@
 
         &__title {
             text-align: center;
-            
             color: $color-text;
             font-family: $title-font;
             font-weight: 600;
-            
             font-size: calc(( 100vw - 5px ) / 18);
-            
         } 
 
         &__line2 {
