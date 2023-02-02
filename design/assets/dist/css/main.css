@@ -401,7 +401,7 @@ p, a {
   font-family: "Nunito", sans-serif;
   color: #FBFFE9;
   text-decoration: none;
-  font-size: calc((100vw + 173.8px) / 39.2);
+  font-size: calc((100vw + 173.8px) / 45);
   width: calc((100vw + 480.27px) / 7.1);
   height: calc((100vw + 409px) / 26.1);
   border-radius: 15px;
@@ -416,9 +416,9 @@ p, a {
   background-color: #A0B45B;
   color: #FBFFE9;
   text-decoration: none;
-  font-size: 1em;
-  width: calc((100vw + 2163px) / 26.6);
-  height: calc((100vw + 4428px) / 173.2);
+  font-size: calc((100vw + 173.8px) / 35);
+  width: calc((100vw + 480.27px) / 7.1);
+  height: calc((100vw + 409px) / 26.1);
   border-radius: 15px;
   box-shadow: 4px 4px 4px 0 rgba(63, 84, 0, 0.7);
   display: flex;
@@ -432,9 +432,9 @@ p, a {
   color: rgba(0, 0, 0, 0.7);
   text-decoration: none;
   font-size: 1em;
-  width: calc((100vw + 2163px) / 26.6);
-  height: calc((100vw + 4428px) / 173.2);
-  border-radius: 15px;
+  width: calc((100vw + 2163px) / 20);
+  height: calc((100vw + 4428px) / 120);
+  border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -757,14 +757,14 @@ p, a {
     color: rgba(0, 0, 0, 0.7);
     font-family: "Inter", sans-serif;
     font-weight: 800;
-    font-size: 0.9em;
+    font-size: calc((100vw + 173.8px) / 35);
     text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: rgba(160, 180, 91, 0.6);
     border-radius: 22px;
-    width: 35vw;
+    width: calc((100vw + 480.27px) / 7.1);
     height: 45px;
   }
 }
@@ -810,7 +810,7 @@ p, a {
     padding: 0 0 0 4%;
   }
 }
-@media screen and (min-width: 375px) and (max-width: 768px) {
+@media screen and (min-width: 360px) and (max-width: 768px) {
   .dsk-diary__link {
     display: none;
   }
@@ -1440,16 +1440,6 @@ p, a {
   font-size: calc((100vw + 555px) / 31.5);
   text-align: center;
   color: #FFFFFF;
-}
-.main-page-mbl-section__button {
-  width: 133px;
-  height: 42px;
-  font-family: "Inter", sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  background: #E1EFDB;
-  border-radius: 20px;
-  text-transform: uppercase;
 }
 
 @media screen and (min-width: 768px) {

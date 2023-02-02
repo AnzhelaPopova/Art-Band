@@ -39,14 +39,14 @@
                 color: $color-text;
                 font-family: $title-font;
                 font-weight: 800;
-                font-size: 0.9em;
+                font-size: calc((100vw + 173.8px) / 35);
                 text-decoration: none;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 background-color: $color-dark-green;
                 border-radius: 22px;
-                width: 35vw;
+                width: calc((100vw + 480.27px) / 7.1);
                 height: 45px;
             }
         }
