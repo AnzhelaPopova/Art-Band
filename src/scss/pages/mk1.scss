@@ -1,1 +1,310 @@
 @import "../layouts/variables.scss";
+
+@media screen and (min-width: 769px) {
+  .soap-wrapper {
+    background-color: $color-light;
+    overflow-x: hidden;
+  }
+
+  .soap-article {
+    &__content {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 50px;
+      gap: 50px;
+
+      &_soapphoto {
+        width: 605;
+        height: 415px;
+      }
+
+      &_line {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+      }
+
+      &_title {
+        text-align: center;
+        margin: 20px;
+        color: $color-text;
+        font-family: $title-font;
+        font-weight: bolder;
+        line-height: 1.2em;
+        font-size: calc((100vw - 166.27px) / 30.136);
+      }
+
+      &_soaptext {
+        width: 80%;
+        margin: 20px;
+        color: $color-text;
+        font-family: $default-font;
+        font-size: 1.319vw;
+      }
+    }
+
+    &__images {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100vw;
+      margin-top: 50px;
+
+      &_line1 {
+        display: flex;
+        gap: 15px;
+      }
+
+      &_line2 {
+        display: flex;
+        gap: 15px;
+        height: 215px;
+      }
+
+      &_soap1,
+      &_soap3 {
+        align-self: flex-start;
+        height: 180px;
+        width: 280px;
+      }
+
+      &_soap5 {
+        align-self: flex-start;
+        margin-top: 20px;
+        height: 180px;
+        width: 280px;
+      }
+
+      &_soap4,
+      &_soap6 {
+        position: relative;
+        top: -165px;
+        width: 280px;
+        height: 370px;
+      }
+
+      &_soap2 {
+        width: 280px;
+        height: 370px;
+      }
+    }
+  }
+
+  .scrub-article {
+    &__content {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 50px;
+      gap: 50px;
+
+      &_scrubphoto {
+        width: 350px;
+        height: 350px;
+      }
+
+      &_line {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+      }
+
+      &_title {
+        text-align: center;
+        margin: 20px;
+        color: $color-text;
+        font-family: $title-font;
+        font-weight: bolder;
+        line-height: 1.2em;
+        font-size: calc((100vw - 166.27px) / 30.136);
+      }
+
+      &_scrubtext {
+        width: 80%;
+        margin: 20px;
+        color: $color-text;
+        font-family: $default-font;
+        font-size: 1.319vw;
+      }
+    }
+
+    &__images {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 50px;
+      gap: 60px;
+
+      &_scrub-process {
+        display: none;
+      }
+
+      &_scrub-glasses,
+      &_cream-balls,
+      &_scrub-balls {
+        width: 300px;
+      }
+    }
+    &__btn {
+      background-color: $color-light-green;
+      font-family: $default-font;
+      color: $color-light;
+      text-decoration: none;
+      font-size: 1.2em;
+      width: 15vw;
+      height: 6vh;
+      border-radius: 10px;
+      box-shadow: 4px 4px 4px 0 rgba(63, 84, 0, 0.7);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 3%;
+      margin-left: 535px;
+    }
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .soap-wrapper {
+    background-color: $color-light;
+    overflow-x: hidden;
+  }
+
+  .soap-article {
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 15px;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-bottom: 15px;
+
+      &_soapphoto {
+        width: 341px;
+        height: 334px;
+      }
+
+      &_title {
+        width: 85vw;
+        margin-top: 3vw;
+        padding-bottom: 5vw;
+        font-family: $default-font;
+        font-weight: 600;
+        font-size: calc((100vw - 19px) / 17);
+        text-align: center;
+        color: rgba(0, 0, 0, 0.7);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+      }
+      &_soaptext {
+        width: 100%;
+        margin: 0 auto;
+        font-weight: 300;
+        line-height: 25px;
+        color: rgba(0, 0, 0, 0.7);
+        font-family: $default-font;
+      }
+    }
+
+    &__images {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding-left: 15px;
+      gap: 7px;
+
+      &_soap6,
+      &_soap3 {
+        display: none;
+      }
+
+      &_soap1,
+      &_soap5 {
+        width: 161px;
+        height: 118px;
+        border-radius: 15px;
+        margin-top: 15px;
+      }
+      &_soap2,
+      &_soap4 {
+        width: 161px;
+        height: 263px;
+        left: 25px;
+        border-radius: 15px;
+        margin-top: 15px;
+      }
+    }
+  }
+
+  .scrub-article {
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 15px;
+      padding-left: 15px;
+      padding-right: 15px;
+
+      &_title {
+        width: 85vw;
+        margin-top: 3vw;
+        padding-bottom: 5vw;
+        font-family: $default-font;
+        font-weight: 600;
+        font-size: calc((100vw - 19px) / 17);
+        text-align: center;
+        color: rgba(0, 0, 0, 0.7);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+      }
+
+      &_scrubtext {
+        width: 100%;
+        margin: 0 auto;
+        font-weight: 300;
+        line-height: 25px;
+        color: rgba(0, 0, 0, 0.7);
+        font-family: $default-font;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+      }
+
+      &_scrubphoto {
+        width: 341px;
+        height: 334px;
+      }
+    }
+
+    &__images {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-left: 15px;
+      padding-right: 15px;
+      gap: 7px;
+
+      &_scrub-process,
+      &_scrub-glasses,
+      &_cream-balls,
+      &_scrub-balls {
+        width: 161px;
+        height: 118px;
+        border-radius: 15px;
+      }
+    }
+    &__btn {
+      background-color: $color-light-green;
+      font-family: $default-font;
+      color: $color-light;
+      text-decoration: none;
+      font-size: 1.2em;
+      width: 15vw;
+      height: 6vh;
+      border-radius: 10px;
+      box-shadow: 4px 4px 4px 0 rgba(63, 84, 0, 0.7);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 3%;
+      margin-left: 535px;
+    }
+  }
+}

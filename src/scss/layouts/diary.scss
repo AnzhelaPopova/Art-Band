@@ -27,7 +27,7 @@
     &__title {
         font-family: $default-font;
             font-weight: 900;
-            font-size: 1.4em;
+            font-size: calc(( 100vw + 129px ) / 28);
             color: $color-text;
             text-align: center;
             margin: 8% 3% 8% 3%;
@@ -41,7 +41,7 @@
     &__text {
             font-family: $default-font;
             font-weight: 500;
-            font-size: 1.2em;
+            font-size: calc(( 100vw + 173.8px ) / 39.2);
             color: $color-text;
             display: flex;
             flex-direction: column;
@@ -71,15 +71,15 @@
     font-family: $default-font;
     color: $color-light;
     text-decoration: none;
-    font-size: 1.2em;
-    width: 40vw;
-    height: 5vh;
+    font-size: calc(( 100vw + 173.8px ) / 39.2);
+    width: calc(( 100vw + 480.27px ) / 7.1);
+    height: calc(( 100vw + 409px ) / 26.1);
     border-radius: 15px;
-            box-shadow: 4px 4px 4px 0 rgba(63, 84, 0, 0.7);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 4vh;
+    box-shadow: 4px 4px 4px 0 rgba(63, 84, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4vh;
 }
 }
 }
@@ -113,6 +113,7 @@
         &__title {
             font-family: $default-font;
             font-weight: 900;
+            font-size: calc(( 100vw + 1541.3px ) / 115.46);
             color: $color-text;
             text-align: center;
             margin-bottom: 3vh;
@@ -127,6 +128,7 @@
         &__text {
             font-family: $default-font;
             font-weight: 500;
+            font-size: calc(( 100vw + 1830px ) / 216.5);
             color: $color-text;
             width: 50%;
             display: flex;
@@ -144,8 +146,8 @@
             color: $color-light;
             text-decoration: none;
             font-size: 1em;
-            width: 35%;
-            height: 15%;
+            width: calc(( 100vw + 2163px ) / 26.6);
+            height: calc(( 100vw + 4428px ) / 173.2);
             border-radius: 10px;
             box-shadow: 4px 4px 4px 0 rgba(63, 84, 0, 0.7);
             display: flex;

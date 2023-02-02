@@ -17,12 +17,13 @@
         height: 100vh;
 
         &__brand {
-            width: 50vw;
+            width: calc(( 100vw + 2445.7px ) / 4.94);
         }
 
         &__text {
             font-family: $title-font-logo;
-            font-size: 4em;
+            font-size: calc(( 100vw + 6160px ) / 115.4);
+            line-height: 15px;
 
             &_bottom {
                 text-align: end;
@@ -33,7 +34,7 @@
             font-family: $title-font-logo_green;
             font-weight: 900;
             color: $color-title-logo;
-            font-size: 5em;
+            font-size: calc(( 100vw + 5294px ) / 86.6);
             text-align: center;
         }
 
@@ -42,6 +43,8 @@
             font-family: $title-font;
             text-align: center;
             font-weight: 500;
+            font-size: calc(( 100vw + 7892px ) / 346.4);
+            
         }
 
         &__btn {
@@ -49,13 +52,18 @@
             align-items: center;
             justify-content: center;
             border-radius: 25px;
-            width: 15vw;
-            height: 6vh;
+            width: calc(( 100vw + 6160px ) / 43.3);
+            height: calc(( 100vw + 6160px ) / 173.2);
             background-color: rgb(81, 81, 81);
             color: $color-light;
             font-family: $title-font;
-            font-size: 0.8em;
+            font-size: calc(( 100vw + 4428px ) / 433);
             text-decoration: none;
+
+            &:hover {
+                color: white;
+                text-decoration: none;
+            }
         }
     }
 
@@ -63,7 +71,6 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        align-items: center;
         background-color: $color-light;
         justify-content: center;
         padding: 0 5% 3% 5%;
@@ -76,7 +83,7 @@
             color: $color-text;
             font-family: $title-font;
             font-weight: 700;
-            font-size: 1.8em;
+            font-size: calc(( 100vw + 2442.8px ) / 123.5);
             padding: 1% 0 1% 0;
         }
     }
@@ -95,20 +102,14 @@
         
             &__img {
                 width: 100%;
-
-                &_block {
-                    width: 98%;
-                    object-fit: scale-down;
-                    object-position: top;
-                    padding: 0%;
-                }
             }
     
             &__title {
                 color: $color-text;
                 font-family: $title-font;
                 font-weight: 700;
-                font-size: 1.1em;
+                font-size: calc(( 100vw + 1593px ) / 157.4);
+                margin: 0;
                 padding: 5% 0 5% 0;
                 border-bottom: 1px solid black;
                 width: 95%;
@@ -126,12 +127,13 @@
                 color: $color-text;
                 font-family: $title-font;
                 font-weight: 600;
-                font-size: 0.9em;
+                font-size: calc(( 100vw + 466px ) / 123.5);
                 text-decoration: none;
     
                 &:hover {
                     cursor: pointer;
                     text-decoration: underline;
+                    color: $color-text;
                 }
             }
         }
@@ -146,41 +148,61 @@
         }
 
         &__title {
-            padding: 3vh 0;
+            padding-top: 7vh;
             font-family: $title-font;
             font-weight: 500;
             text-align: center;
             color: $color-text;
+            text-decoration: none;
+            font-size: calc(( 100vw + 2696px ) / 173.2);
+
         }
 
         &__text {
             font-family: $default-font;
             text-align: center;
             color: $color-text;
+            font-size: 1.2em;
         }
 
         &__maintext {
             padding: 3vh 0;
-            font-size: 1.5em;
-            font-weight: 600;
+            font-size: calc(( 100vw + 7892px ) / 577.3);
+            font-weight: 500;
             line-height: 146%;
             letter-spacing: 0.05em;
         }
 
         &__smalltext {
-            padding: 1vh 0;
-            font-weight: 600;
+            // padding: 1vh 0;
+            // font-weight: 600;
+            // font-size: calc(( 100vw - 17px) / 50);
+            margin-bottom: 0;
+        }
+
+        &__media {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1vh;
+            padding: 2vw 6vw;
+            padding-top: 0;
         }
 
         &__item {
             display: flex;
-            margin: 0 28.5vw;
-            gap: 23px;
+            justify-content: center;
+            align-items: center;
+            gap: 1vw;
+            width: 30vw;
+        }
+
+        &__item1 {
+            gap: 2vw;
         }
 
         &__img {
-            width: 15%;
-            height: 16%;
+            align-items: center;
         }
     }
 
@@ -199,8 +221,9 @@
 
         &__choosemk {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             flex-wrap: wrap;
+            gap: 1vw;
         }
 
         &__choosemk__item {
@@ -228,9 +251,9 @@
         &__container {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 12%;
+            gap: 4%;
             align-items: center;
-            padding: 3% 7%;
+            padding: 7% 7%;
             font-family: $default-font;
         }
 
@@ -264,20 +287,26 @@
             color: $color-text;
         }
 
-        &__contacts__phone, &__contacts__vk, &__contacts__telegram {
+        &__media {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1vh;
+        }
+
+        &__media__item {
             display: flex;
             align-items: center;
             gap: 1vw;
             color: $color-text;
         }
 
-        &__contacts__phone__img, &__contacts__vk__img, &__contacts__telegram__img {
-            text-align: center;
+        &__media__img {
             opacity: 0.7;
-            width: 5%;
+            width: 15%;
         }
 
-        &__contacts__phone__hypertext, &__contacts__vk__hypertext, &__contacts__telegram__hypertext {
+        &__media__hypertext {
             text-decoration: none;
             color: $color-text;
         }
@@ -296,19 +325,30 @@
         &__down {
             display: flex;
             justify-content: flex-end;
-            align-items: center;
-            gap: 10px;
+            align-items: flex-end;
+            gap: 5px;
             font-family: $default-font;
-            padding: 1% 12%;
+            padding: 1% 7%;
+
         }
 
         &__down__logo {
-            width: 55%;
+            width: 9vw;
         }
+    }
+
+    .copyright {
+        margin-bottom: 0;
+        padding: 0;
     }
 }
 
 @media screen and (max-width: $tablet) {
+    .main-footer-mbl__map {
+        width: 100vw;
+        height: 71vw;
+    }
+
     .wrapper-main-page-mbl {
         background-color: $color-light;
     }
@@ -333,7 +373,7 @@
             display: flex;
             flex-direction: column;
             margin-top: 20vh;
-            width: 90vw;
+            width: calc(( 100vw + 173.8px ) / 1.57);
         }
 
         &__logo {
@@ -343,7 +383,7 @@
 
             &_black {
                 font-family: $title-font-logo;
-                font-size: 2.7em;
+                font-size: calc(( 100vw + 507px ) / 19.6);
                 text-align: start;
                 line-height: 0.5em;
             }
@@ -356,7 +396,7 @@
             font-family: $title-font-logo_green;
             font-weight: 900;
             color: $color-title-logo;
-            font-size: 3.2em;
+            font-size: calc(( 100vw + 605px ) / 19.6);
             text-align: center;
             }
 
@@ -366,6 +406,7 @@
                 text-align: center;
                 font-weight: 500;
                 margin-top: 30%;
+                font-size: calc(( 100vw + 1585px ) / 78.4);
 
 
             }
@@ -373,8 +414,6 @@
         &__contackts{
             display: flex;
             flex-direction: column;
-            
-
 
         }
 
@@ -399,18 +438,18 @@
                 margin-right: 22px; 
 
                 & img {
-                    height: 4.43vh;}              
+                    height: 9.74vw;}              
             }
 
             &_vk {
                 margin-left: 22px;
 
                 & img {
-                    height: 4.43vh;}              
+                    height: 9.74vw;}              
             }
             }
         }
-        .main__booking__dsk, .main__shop__dsk, .main-footer-dsk, .main__reviews__dsk {
+        .main__booking__dsk, .main__shop__dsk, .main-footer-dsk, .main__reviews__dsk, .mk-mbl {
             display: none;
         }
     }
@@ -434,46 +473,36 @@
         &_4 {
             background-image: url(../../design/assets/images/main/main5.png);
             background-size: 100vw;
+
+            margin-bottom: 30px;
         }
 
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         width: 100vw;
-        height: 30.75vh;
+        height: 67.69vw;
         margin-top: 30px;
         object-fit: cover;
         background-repeat: no-repeat;
         background-size: contain;
 
         &__title {
-            margin-bottom: 24px;
+            margin-top: 24.6vw;
 
             font-family: $title-font;
             font-weight: 700;
-            font-size: calc(( 100vw + 555px )/ 31.5);
+            font-size: calc(( 100vw + 555px )/ 45);
             text-align: center;
 
             color: #FFFFFF;
         }
 
-        &__button {
-            width: 133px;
-            height: 42px;
-
-            font-family: $title-font;
-            font-weight: 700;
-            font-size: 14px;
-
-            background: #E1EFDB;
-            border-radius: 20px;
-            text-transform: uppercase;
-        }
-}
+    }
 
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: $tablet) {
     .wrapper-main-page-mbl {
         display: none;
     }
