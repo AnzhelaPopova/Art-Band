@@ -421,7 +421,7 @@ p, a {
   box-shadow: none;
 }
 
-@media screen and (min-width: 375px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .mbl-header-btn, .wrapper-mbl-mk {
     display: none;
   }
@@ -483,6 +483,7 @@ p, a {
   .main-footer-mbl__number {
     font-size: 0.9em;
     font-weight: 600;
+    margin: 0;
   }
   .main-footer-mbl__address {
     width: 70vw;
@@ -503,7 +504,7 @@ p, a {
     font-size: 1.5em;
   }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .footer__list_items-mbl {
     display: none;
   }
@@ -533,6 +534,10 @@ p, a {
     width: 40%;
     margin: 20px 20px;
     cursor: pointer;
+  }
+  .footer__cosial_items:hover {
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 0.7);
   }
   .footer__cosial_small {
     width: 48%;
@@ -572,6 +577,10 @@ p, a {
     font-family: "Inter", sans-serif;
     text-decoration: none;
     cursor: pointer;
+  }
+  .footer__list_items:hover {
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 0.7);
   }
   .footer__list_hours {
     background: url(../8bee01452e99b6d5dfba.png) left no-repeat;
@@ -688,7 +697,7 @@ p, a {
     line-height: 30px;
   }
 }
-@media screen and (min-width: 375px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .dsk-nav, .dsk-nav__logo, .dsk-nav__pages, .dsk-nav__social, .dsk-nav__nmbr, .dsk-main-block {
     display: none;
   }
@@ -696,26 +705,43 @@ p, a {
     background-color: #FBFFE9;
     border-bottom: 1px solid #A0B45B;
     display: flex;
-    padding: 5% 0 5% 5%;
+    padding: 20px 0 20px 20px;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%;
+    z-index: 2;
   }
   .mbl-header-btn__back {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .mbl-header-btn__back:hover {
+    cursor: pointer;
+  }
+  .mbl-header-btn__back_arrow {
+    padding: 10px;
+    display: block;
+    background-color: rgba(160, 180, 91, 0.6);
+    border-radius: 45px;
+    margin-right: 15px;
+    color: rgba(0, 0, 0, 0.7);
+  }
+  .mbl-header-btn__back_title {
+    color: rgba(0, 0, 0, 0.7);
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-size: 0.9em;
+    text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: rgba(160, 180, 91, 0.6);
     border-radius: 22px;
     width: 35vw;
-    height: 5.5vh;
-  }
-  .mbl-header-btn__back:hover {
-    cursor: pointer;
-  }
-  .mbl-header-btn__link {
-    color: rgba(0, 0, 0, 0.7);
-    font-family: "Inter", sans-serif;
-    font-weight: 800;
-    font-size: 0.9em;
-    text-decoration: none;
+    height: 45px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 2560px) {
@@ -733,12 +759,16 @@ p, a {
     align-items: center;
     justify-content: space-between;
   }
+  .dsk-nav__logo {
+    margin-bottom: 0.5%;
+  }
   .dsk-nav__pages {
     width: 50%;
   }
   .dsk-nav__link {
     font-family: "Inter", sans-serif;
     font-weight: 400;
+    font-size: calc((100vw + 960px) / 144);
     text-decoration: none;
     color: rgba(0, 0, 0, 0.7);
   }
@@ -751,7 +781,9 @@ p, a {
   }
   .dsk-nav__nmbr {
     font-family: "Inter", sans-serif;
-    font-size: 0.9em;
+    font-size: calc((100vw + 1825px) / 216);
+    hyphens: auto;
+    padding: 0 0 0 4%;
   }
 }
 @media screen and (min-width: 375px) and (max-width: 768px) {
@@ -778,7 +810,7 @@ p, a {
   .mbl-diary__title {
     font-family: "Nunito", sans-serif;
     font-weight: 900;
-    font-size: 1.4em;
+    font-size: calc((100vw + 129px) / 28);
     color: rgba(0, 0, 0, 0.7);
     text-align: center;
     margin: 8% 3% 8% 3%;
@@ -790,7 +822,7 @@ p, a {
   .mbl-diary__text {
     font-family: "Nunito", sans-serif;
     font-weight: 500;
-    font-size: 1.2em;
+    font-size: calc((100vw + 173.8px) / 39.2);
     color: rgba(0, 0, 0, 0.7);
     display: flex;
     flex-direction: column;
@@ -814,9 +846,9 @@ p, a {
     font-family: "Nunito", sans-serif;
     color: #FBFFE9;
     text-decoration: none;
-    font-size: 1.2em;
-    width: 40vw;
-    height: 5vh;
+    font-size: calc((100vw + 173.8px) / 39.2);
+    width: calc((100vw + 480.27px) / 7.1);
+    height: calc((100vw + 409px) / 26.1);
     border-radius: 15px;
     box-shadow: 4px 4px 4px 0 rgba(63, 84, 0, 0.7);
     display: flex;
@@ -848,6 +880,7 @@ p, a {
   .dsk-diary__title {
     font-family: "Nunito", sans-serif;
     font-weight: 900;
+    font-size: calc((100vw + 1541.3px) / 115.46);
     color: rgba(0, 0, 0, 0.7);
     text-align: center;
     margin-bottom: 3vh;
@@ -860,6 +893,7 @@ p, a {
   .dsk-diary__text {
     font-family: "Nunito", sans-serif;
     font-weight: 500;
+    font-size: calc((100vw + 1830px) / 216.5);
     color: rgba(0, 0, 0, 0.7);
     width: 50%;
     display: flex;
@@ -875,8 +909,8 @@ p, a {
     color: #FBFFE9;
     text-decoration: none;
     font-size: 1em;
-    width: 35%;
-    height: 15%;
+    width: calc((100vw + 2163px) / 26.6);
+    height: calc((100vw + 4428px) / 173.2);
     border-radius: 10px;
     box-shadow: 4px 4px 4px 0 rgba(63, 84, 0, 0.7);
     display: flex;
@@ -907,8 +941,8 @@ p, a {
   height: 80px;
   padding-top: 25px;
 }
-.about__title h2,
-.about__whychooseus h2 {
+.about__title_about,
+.about__whychooseus_about {
   color: rgba(0, 0, 0, 0.7);
   font-family: "Inter", sans-serif;
   font-weight: bold;
@@ -955,7 +989,10 @@ p, a {
   font-size: 16px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
+  .about__wrapper {
+    margin-top: 85px;
+  }
   .about__carousel {
     width: 100vw;
     padding-left: 25px;
@@ -1051,11 +1088,12 @@ p, a {
     height: 100vh;
   }
   .dsk-main-block__brand {
-    width: 50vw;
+    width: calc((100vw + 2445.7px) / 4.94);
   }
   .dsk-main-block__text {
     font-family: "Annabelle", sans-serif;
-    font-size: 4em;
+    font-size: calc((100vw + 6160px) / 115.4);
+    line-height: 15px;
   }
   .dsk-main-block__text_bottom {
     text-align: end;
@@ -1064,7 +1102,7 @@ p, a {
     font-family: "Calibri", sans-serif;
     font-weight: 900;
     color: #5D6F3A;
-    font-size: 5em;
+    font-size: calc((100vw + 5294px) / 86.6);
     text-align: center;
   }
   .dsk-main-block__discription {
@@ -1072,25 +1110,29 @@ p, a {
     font-family: "Inter", sans-serif;
     text-align: center;
     font-weight: 500;
+    font-size: calc((100vw + 7892px) / 346.4);
   }
   .dsk-main-block__btn {
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 25px;
-    width: 15vw;
-    height: 6vh;
+    width: calc((100vw + 6160px) / 43.3);
+    height: calc((100vw + 6160px) / 173.2);
     background-color: rgb(81, 81, 81);
     color: #FBFFE9;
     font-family: "Inter", sans-serif;
-    font-size: 0.8em;
+    font-size: calc((100vw + 4428px) / 433);
+    text-decoration: none;
+  }
+  .dsk-main-block__btn:hover {
+    color: white;
     text-decoration: none;
   }
   .dsk-mk {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
     background-color: #FBFFE9;
     justify-content: center;
     padding: 0 5% 3% 5%;
@@ -1103,7 +1145,7 @@ p, a {
     color: rgba(0, 0, 0, 0.7);
     font-family: "Inter", sans-serif;
     font-weight: 700;
-    font-size: 1.8em;
+    font-size: calc((100vw + 2442.8px) / 123.5);
     padding: 1% 0 1% 0;
   }
   .dsk-mk-card {
@@ -1120,17 +1162,12 @@ p, a {
   .dsk-mk-card__img {
     width: 100%;
   }
-  .dsk-mk-card__img_block {
-    width: 98%;
-    object-fit: scale-down;
-    object-position: top;
-    padding: 0%;
-  }
   .dsk-mk-card__title {
     color: rgba(0, 0, 0, 0.7);
     font-family: "Inter", sans-serif;
     font-weight: 700;
-    font-size: 1.1em;
+    font-size: calc((100vw + 1593px) / 157.4);
+    margin: 0;
     padding: 5% 0 5% 0;
     border-bottom: 1px solid black;
     width: 95%;
@@ -1146,12 +1183,13 @@ p, a {
     color: rgba(0, 0, 0, 0.7);
     font-family: "Inter", sans-serif;
     font-weight: 600;
-    font-size: 0.9em;
+    font-size: calc((100vw + 466px) / 123.5);
     text-decoration: none;
   }
   .dsk-mk-card__text:hover {
     cursor: pointer;
     text-decoration: underline;
+    color: rgba(0, 0, 0, 0.7);
   }
   .main__booking__dsk {
     padding: 3% 15%;
@@ -1286,10 +1324,10 @@ p, a {
   .main-footer-dsk__down {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
     gap: 10px;
     font-family: "Nunito", sans-serif;
-    padding: 1% 12%;
+    padding: 1% 5%;
+    width: 100%;
   }
   .main-footer-dsk__down__logo {
     width: 55%;
@@ -1315,7 +1353,7 @@ p, a {
     display: flex;
     flex-direction: column;
     margin-top: 20vh;
-    width: 90vw;
+    width: calc((100vw + 173.8px) / 1.57);
   }
   .main-page-mbl-main__logo {
     width: 100vw;
@@ -1324,7 +1362,7 @@ p, a {
   }
   .main-page-mbl-main__logo_black {
     font-family: "Annabelle", sans-serif;
-    font-size: 2.7em;
+    font-size: calc((100vw + 507px) / 19.6);
     text-align: start;
     line-height: 0.5em;
   }
@@ -1335,7 +1373,7 @@ p, a {
     font-family: "Calibri", sans-serif;
     font-weight: 900;
     color: #5D6F3A;
-    font-size: 3.2em;
+    font-size: calc((100vw + 605px) / 19.6);
     text-align: center;
   }
   .main-page-mbl-main__logo_description {
@@ -1344,6 +1382,7 @@ p, a {
     text-align: center;
     font-weight: 500;
     margin-top: 30%;
+    font-size: calc((100vw + 1585px) / 78.4);
   }
   .main-page-mbl-main__contackts {
     display: flex;
@@ -1374,7 +1413,7 @@ p, a {
   .main-page-mbl-main__social-networks_vk img {
     height: 4.43vh;
   }
-  .main__booking__dsk, .main__shop__dsk, .main-footer-dsk, .main__reviews__dsk {
+  .main__booking__dsk, .main__shop__dsk, .main-footer-dsk, .main__reviews__dsk, .mk-mbl {
     display: none;
   }
 }
@@ -1425,17 +1464,18 @@ p, a {
   text-transform: uppercase;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .wrapper-main-page-mbl {
     display: none;
   }
 }
-@media screen and (min-width: 375px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .mbl-mk {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #FBFFE9;
+    margin-top: 85px;
   }
   .mbl-mk__title {
     color: rgba(0, 0, 0, 0.7);
@@ -1452,7 +1492,6 @@ p, a {
     border: 1px solid #A0B45B;
     padding: 5%;
     margin: 5% 3% 5% 3%;
-    align-items: center;
   }
   .mbl-mk-card__img {
     width: 100%;
@@ -1905,6 +1944,7 @@ p, a {
   .candle-message {
     background-color: #FBFFE9;
     overflow-x: hidden;
+    margin-top: 85px;
   }
   .candle-message__about {
     display: flex;
@@ -2177,6 +2217,7 @@ p, a {
   .loza-mobile {
     background-color: #FBFFE9;
     margin: 0 auto;
+    margin-top: 85px;
   }
   .loza-mobile__content1 {
     display: flex;
@@ -2280,6 +2321,7 @@ p, a {
 @media screen and (max-width: 768px) {
   .neuro {
     display: flex;
+    margin-top: 85px;
     flex-direction: column;
     align-items: center;
   }
@@ -2494,6 +2536,7 @@ p, a {
 @media screen and (max-width: 768px) {
   .mk5-wrapper {
     background-color: #FBFFE9;
+    margin-top: 85px;
   }
   .mk5-container {
     display: grid;
@@ -2655,6 +2698,7 @@ p, a {
     width: 80%;
     height: 80%;
     border-radius: 15px;
+    margin-top: 85px;
   }
   .mkphoto__plant-text {
     display: none;
@@ -2714,6 +2758,7 @@ p, a {
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
+  margin-top: 85px;
 }
 
 .reviews {
@@ -2987,7 +3032,7 @@ p, a {
     text-align: center;
     text-transform: uppercase;
     color: rgba(0, 0, 0, 0.7);
-    margin-top: 10px;
+    margin-top: 95px;
   }
   .shop-page__carousel {
     margin-left: auto;
@@ -3070,13 +3115,13 @@ p, a {
   }
 }
 /*для планшета*/
-.later {
-  background-color: #FBFFE9;
-  height: 90vh;
-  display: flex;
-  justify-content: center;
-}
 @media screen and (min-width: 768px) and (max-width: 2560px) {
+  .later {
+    background-color: #FBFFE9;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+  }
   .later__container {
     width: 60vw;
     height: 40vh;
@@ -3093,12 +3138,19 @@ p, a {
     text-align: center;
     font-family: "Nunito", sans-serif;
     font-weight: 500;
-    font-size: 1.1em;
+    font-size: calc((100vw + 716.5px) / 123.7);
     line-height: 2em;
     color: rgba(0, 0, 0, 0.7);
   }
 }
-@media screen and (min-width: 375px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
+  .later {
+    background-color: #FBFFE9;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 85px;
+  }
   .later__container {
     width: 80vw;
     height: 30vh;
@@ -3115,7 +3167,7 @@ p, a {
     text-align: center;
     font-family: "Nunito", sans-serif;
     font-weight: 500;
-    font-size: 1.1em;
+    font-size: calc((100vw + 2263px) / 216.5);
     line-height: 2em;
     color: rgba(0, 0, 0, 0.7);
   }

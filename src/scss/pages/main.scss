@@ -17,12 +17,13 @@
         height: 100vh;
 
         &__brand {
-            width: 50vw;
+            width: calc(( 100vw + 2445.7px ) / 4.94);
         }
 
         &__text {
             font-family: $title-font-logo;
-            font-size: 4em;
+            font-size: calc(( 100vw + 6160px ) / 115.4);
+            line-height: 15px;
 
             &_bottom {
                 text-align: end;
@@ -33,7 +34,7 @@
             font-family: $title-font-logo_green;
             font-weight: 900;
             color: $color-title-logo;
-            font-size: 5em;
+            font-size: calc(( 100vw + 5294px ) / 86.6);
             text-align: center;
         }
 
@@ -42,6 +43,8 @@
             font-family: $title-font;
             text-align: center;
             font-weight: 500;
+            font-size: calc(( 100vw + 7892px ) / 346.4);
+            
         }
 
         &__btn {
@@ -49,13 +52,18 @@
             align-items: center;
             justify-content: center;
             border-radius: 25px;
-            width: 15vw;
-            height: 6vh;
+            width: calc(( 100vw + 6160px ) / 43.3);
+            height: calc(( 100vw + 6160px ) / 173.2);
             background-color: rgb(81, 81, 81);
             color: $color-light;
             font-family: $title-font;
-            font-size: 0.8em;
+            font-size: calc(( 100vw + 4428px ) / 433);
             text-decoration: none;
+
+            &:hover {
+                color: white;
+                text-decoration: none;
+            }
         }
     }
 
@@ -63,7 +71,6 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        align-items: center;
         background-color: $color-light;
         justify-content: center;
         padding: 0 5% 3% 5%;
@@ -76,7 +83,7 @@
             color: $color-text;
             font-family: $title-font;
             font-weight: 700;
-            font-size: 1.8em;
+            font-size: calc(( 100vw + 2442.8px ) / 123.5);
             padding: 1% 0 1% 0;
         }
     }
@@ -95,20 +102,14 @@
         
             &__img {
                 width: 100%;
-
-                &_block {
-                    width: 98%;
-                    object-fit: scale-down;
-                    object-position: top;
-                    padding: 0%;
-                }
             }
     
             &__title {
                 color: $color-text;
                 font-family: $title-font;
                 font-weight: 700;
-                font-size: 1.1em;
+                font-size: calc(( 100vw + 1593px ) / 157.4);
+                margin: 0;
                 padding: 5% 0 5% 0;
                 border-bottom: 1px solid black;
                 width: 95%;
@@ -126,12 +127,13 @@
                 color: $color-text;
                 font-family: $title-font;
                 font-weight: 600;
-                font-size: 0.9em;
+                font-size: calc(( 100vw + 466px ) / 123.5);
                 text-decoration: none;
     
                 &:hover {
                     cursor: pointer;
                     text-decoration: underline;
+                    color: $color-text;
                 }
             }
         }
@@ -296,10 +298,10 @@
         &__down {
             display: flex;
             justify-content: flex-end;
-            align-items: center;
             gap: 10px;
             font-family: $default-font;
-            padding: 1% 12%;
+            padding: 1% 5%;
+            width: 100%;
         }
 
         &__down__logo {
@@ -309,6 +311,7 @@
 }
 
 @media screen and (max-width: $tablet) {
+
     .wrapper-main-page-mbl {
         background-color: $color-light;
     }
@@ -333,7 +336,7 @@
             display: flex;
             flex-direction: column;
             margin-top: 20vh;
-            width: 90vw;
+            width: calc(( 100vw + 173.8px ) / 1.57);
         }
 
         &__logo {
@@ -343,7 +346,7 @@
 
             &_black {
                 font-family: $title-font-logo;
-                font-size: 2.7em;
+                font-size: calc(( 100vw + 507px ) / 19.6);
                 text-align: start;
                 line-height: 0.5em;
             }
@@ -356,7 +359,7 @@
             font-family: $title-font-logo_green;
             font-weight: 900;
             color: $color-title-logo;
-            font-size: 3.2em;
+            font-size: calc(( 100vw + 605px ) / 19.6);
             text-align: center;
             }
 
@@ -366,6 +369,7 @@
                 text-align: center;
                 font-weight: 500;
                 margin-top: 30%;
+                font-size: calc(( 100vw + 1585px ) / 78.4);
 
 
             }
@@ -410,7 +414,7 @@
             }
             }
         }
-        .main__booking__dsk, .main__shop__dsk, .main-footer-dsk, .main__reviews__dsk {
+        .main__booking__dsk, .main__shop__dsk, .main-footer-dsk, .main__reviews__dsk, .mk-mbl {
             display: none;
         }
     }
@@ -473,7 +477,7 @@
 }
 
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: $tablet) {
     .wrapper-main-page-mbl {
         display: none;
     }
