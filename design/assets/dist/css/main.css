@@ -940,12 +940,12 @@ p, a {
   width: 100vw;
   height: 80px;
   padding-top: 25px;
+  text-align: center;
 }
-.about__title_about,
-.about__whychooseus_about {
+.about__title__h2,
+.about__whychooseus__h2 {
   color: rgba(0, 0, 0, 0.7);
-  font: "Inter", sans-serif;
-  font-size: 26px;
+  font-family: "Inter", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
@@ -954,24 +954,25 @@ p, a {
 }
 
 .about__text {
-  width: 50%;
+  width: 50vw;
   height: auto;
-  padding-right: 20px;
+  padding-right: 40px;
   padding-top: 10px;
 }
-.about__text p {
-  font: "Nunito", sans-serif;
+.about__text__paragraph {
+  font-family: "Nunito", sans-serif;
   font-size: 18px;
   color: rgba(0, 0, 0, 0.7);
   margin-left: 10px;
   text-indent: 30px;
-  line-height: 2;
+  line-height: 2.2;
 }
 
 .about__carousel {
-  width: 40%;
+  width: 40vw;
   height: auto;
-  padding-left: 50px;
+  min-height: 500px;
+  padding-left: 30px;
   padding-top: 20px;
 }
 
@@ -995,13 +996,13 @@ p, a {
   }
   .about__carousel {
     width: 100vw;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
   .about__text {
     width: 100vw;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
   .about__content {
     display: flex;
@@ -1012,13 +1013,17 @@ p, a {
     height: 50px;
     margin-bottom: 20px;
   }
-  .about__title h2,
-  .about__whychooseus h2 {
-    font-size: calc(26px + 23.8 * (100vw - 320px) / 100vw);
+  .about__title__h2,
+  .about__whychooseus__h2 {
+    font-size: calc((100vw - 19px) / 17);
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.7);
   }
-  .about__title p,
-  .about__whychooseus p {
-    font-size: calc(18px + 6.8 * (100vw - 320px) / 1200);
+  .about__text .about__title__paragraph,
+  .about__text .about__whychooseus__paragraph {
+    font-weight: 300;
+    font-size: calc((100vw + 87.86px) / 26.714);
+    color: rgba(0, 0, 0, 0.7);
   }
   .about__advantages {
     display: flex;
@@ -1033,8 +1038,39 @@ p, a {
     width: 60%;
     height: 60%;
   }
-  .about__advantages__cards p {
+  .about__advantages__cards__imgtitle {
     font-size: 14px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .about__carousel {
+    width: 25vw;
+    align-self: center;
+  }
+  .about__text {
+    width: 65vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+  .about__text__paragraph {
+    font-size: 24px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1180px) {
+  .about__carousel {
+    width: 60vw;
+    align-self: center;
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+  .about__text {
+    width: 100vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+  .about__content {
+    display: flex;
+    flex-direction: column;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 2560px) {
