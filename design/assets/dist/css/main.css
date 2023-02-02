@@ -964,12 +964,12 @@ p, a {
   width: 100vw;
   height: 80px;
   padding-top: 25px;
+  text-align: center;
 }
-.about__title_about,
-.about__whychooseus_about {
+.about__title__h2,
+.about__whychooseus__h2 {
   color: rgba(0, 0, 0, 0.7);
-  font: "Inter", sans-serif;
-  font-size: 26px;
+  font-family: "Inter", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
@@ -978,24 +978,25 @@ p, a {
 }
 
 .about__text {
-  width: 50%;
+  width: 50vw;
   height: auto;
-  padding-right: 20px;
+  padding-right: 40px;
   padding-top: 10px;
 }
-.about__text p {
-  font: "Nunito", sans-serif;
+.about__text__paragraph {
+  font-family: "Nunito", sans-serif;
   font-size: 18px;
   color: rgba(0, 0, 0, 0.7);
   margin-left: 10px;
   text-indent: 30px;
-  line-height: 2;
+  line-height: 2.2;
 }
 
 .about__carousel {
-  width: 40%;
+  width: 40vw;
   height: auto;
-  padding-left: 50px;
+  min-height: 500px;
+  padding-left: 30px;
   padding-top: 20px;
 }
 
@@ -1019,13 +1020,13 @@ p, a {
   }
   .about__carousel {
     width: 100vw;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
   .about__text {
     width: 100vw;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
   .about__content {
     display: flex;
@@ -1036,13 +1037,17 @@ p, a {
     height: 50px;
     margin-bottom: 20px;
   }
-  .about__title h2,
-  .about__whychooseus h2 {
-    font-size: calc(26px + 23.8 * (100vw - 320px) / 100vw);
+  .about__title__h2,
+  .about__whychooseus__h2 {
+    font-size: calc((100vw - 19px) / 17);
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.7);
   }
-  .about__title p,
-  .about__whychooseus p {
-    font-size: calc(18px + 6.8 * (100vw - 320px) / 1200);
+  .about__text .about__title__paragraph,
+  .about__text .about__whychooseus__paragraph {
+    font-weight: 300;
+    font-size: calc((100vw + 87.86px) / 26.714);
+    color: rgba(0, 0, 0, 0.7);
   }
   .about__advantages {
     display: flex;
@@ -1057,8 +1062,39 @@ p, a {
     width: 60%;
     height: 60%;
   }
-  .about__advantages__cards p {
+  .about__advantages__cards__imgtitle {
     font-size: 14px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .about__carousel {
+    width: 25vw;
+    align-self: center;
+  }
+  .about__text {
+    width: 65vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+  .about__text__paragraph {
+    font-size: 24px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1180px) {
+  .about__carousel {
+    width: 60vw;
+    align-self: center;
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+  .about__text {
+    width: 100vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+  .about__content {
+    display: flex;
+    flex-direction: column;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 2560px) {
@@ -1188,36 +1224,50 @@ p, a {
     background-color: rgba(160, 180, 91, 0.6);
   }
   .main__booking__dsk__title {
-    padding: 3vh 0;
+    padding-top: 7vh;
     font-family: "Inter", sans-serif;
     font-weight: 500;
     text-align: center;
     color: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+    font-size: calc((100vw + 2696px) / 173.2);
   }
   .main__booking__dsk__text {
     font-family: "Nunito", sans-serif;
     text-align: center;
     color: rgba(0, 0, 0, 0.7);
+    font-size: 1.2em;
   }
   .main__booking__dsk__maintext {
     padding: 3vh 0;
-    font-size: 1.5em;
-    font-weight: 600;
+    font-size: calc((100vw + 7892px) / 577.3);
+    font-weight: 500;
     line-height: 146%;
     letter-spacing: 0.05em;
   }
   .main__booking__dsk__smalltext {
-    padding: 1vh 0;
-    font-weight: 600;
+    margin-bottom: 0;
+  }
+  .main__booking__dsk__media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
+    padding: 2vw 6vw;
+    padding-top: 0;
   }
   .main__booking__dsk__item {
     display: flex;
-    margin: 0 28.5vw;
-    gap: 23px;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    width: 30vw;
+  }
+  .main__booking__dsk__item1 {
+    gap: 2vw;
   }
   .main__booking__dsk__img {
-    width: 15%;
-    height: 16%;
+    align-items: center;
   }
   .main__shop__dsk {
     padding: 3% 15%;
@@ -1233,8 +1283,9 @@ p, a {
   }
   .main__shop__dsk__choosemk {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
+    gap: 1vw;
   }
   .main__shop__dsk__choosemk__item {
     padding-bottom: 10px;
@@ -1256,9 +1307,9 @@ p, a {
   .main-footer-dsk__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 12%;
+    gap: 4%;
     align-items: center;
-    padding: 3% 7%;
+    padding: 7% 7%;
     font-family: "Nunito", sans-serif;
   }
   .main-footer-dsk__nav {
@@ -1285,18 +1336,23 @@ p, a {
     margin-bottom: 2vh;
     color: rgba(0, 0, 0, 0.7);
   }
-  .main-footer-dsk__contacts__phone, .main-footer-dsk__contacts__vk, .main-footer-dsk__contacts__telegram {
+  .main-footer-dsk__media {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1vh;
+  }
+  .main-footer-dsk__media__item {
     display: flex;
     align-items: center;
     gap: 1vw;
     color: rgba(0, 0, 0, 0.7);
   }
-  .main-footer-dsk__contacts__phone__img, .main-footer-dsk__contacts__vk__img, .main-footer-dsk__contacts__telegram__img {
-    text-align: center;
+  .main-footer-dsk__media__img {
     opacity: 0.7;
-    width: 5%;
+    width: 15%;
   }
-  .main-footer-dsk__contacts__phone__hypertext, .main-footer-dsk__contacts__vk__hypertext, .main-footer-dsk__contacts__telegram__hypertext {
+  .main-footer-dsk__media__hypertext {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.7);
   }
@@ -1312,13 +1368,17 @@ p, a {
   .main-footer-dsk__down {
     display: flex;
     justify-content: flex-end;
-    gap: 10px;
+    align-items: flex-end;
+    gap: 5px;
     font-family: "Nunito", sans-serif;
-    padding: 1% 5%;
-    width: 100%;
+    padding: 1% 7%;
   }
   .main-footer-dsk__down__logo {
-    width: 55%;
+    width: 9vw;
+  }
+  .copyright {
+    margin-bottom: 0;
+    padding: 0;
   }
 }
 @media screen and (max-width: 768px) {
@@ -2027,64 +2087,68 @@ p, a {
     justify-content: center;
   }
 }
+.loza__body {
+  overflow-x: hidden;
+}
+
 @media screen and (min-width: 768px) and (max-width: 2560px) {
-  .loza-mobile,
-  .loza-mobile__content1,
-  .loza-mobile__content2,
-  .loza-mobile__image-block3,
-  .loza-mobile__title-block2,
-  .loza-mobile__image-block4 {
+  .loza-mobile {
     display: none;
   }
   .loza-desktop {
     background-color: #FBFFE9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
   .loza-content1 {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 9vw;
+    margin: 5.63vw 5vw 5% 5vw;
   }
   .loza-content1__image-block {
     display: flex;
     justify-content: center;
+    width: 45vw;
   }
   .loza-content1__image {
-    max-width: 100%;
+    width: 95%;
     object-fit: cover;
-    margin-top: 0;
+    height: 95%;
   }
   .loza-content1__text-block {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90%;
+    width: 45vw;
+    margin-left: 4vw;
   }
   .loza-content1__title {
-    width: 80%;
     text-align: center;
-    margin-bottom: 3vh;
-    margin-top: 10vh;
+    margin-top: -0.1vw;
+    margin-bottom: 1.6vw;
     color: rgba(0, 0, 0, 0.7);
     font-family: "Inter", sans-serif;
-    font-size: 2.2em;
-    font-weight: 500;
+    font-size: calc((100vw - 53px) / 34);
+    font-weight: 600;
   }
   .loza-content1__text {
-    width: 80%;
-    margin: 5vw;
+    margin-top: 2.07vw;
     color: rgba(0, 0, 0, 0.7);
     font-family: "Nunito", sans-serif;
-    font-size: 1.3em;
+    font-size: calc((100vw + 48px) / 64);
+    font-weight: 300;
   }
   .loza-content1__line {
-    width: 80%;
+    width: 100%;
     border-bottom: 1px solid rgba(0, 0, 0, 0.7);
   }
   .loza-content2 {
     display: flex;
     justify-content: center;
-    margin: 0 8vw 5% 8vw;
+    margin: 0 5vw 5% 5vw;
     gap: 10px;
   }
   .loza-content2__block1 {
@@ -2093,6 +2157,7 @@ p, a {
     justify-content: space-around;
     align-items: center;
     gap: 20px;
+    width: 30vw;
   }
   .loza-content2__block2 {
     display: flex;
@@ -2100,6 +2165,7 @@ p, a {
     justify-content: space-around;
     align-items: center;
     gap: 20px;
+    width: 30vw;
   }
   .loza-content2__block3 {
     display: flex;
@@ -2107,6 +2173,7 @@ p, a {
     justify-content: space-around;
     align-items: center;
     gap: 20px;
+    width: 30vw;
   }
   .loza-content2__image1 {
     width: 95%;
@@ -2142,30 +2209,29 @@ p, a {
     align-items: center;
   }
   .loza-mobile__image1 {
-    width: 80%;
-    border-radius: 10%;
+    width: 88%;
+    border-radius: 15%;
     margin-top: 20px;
   }
   .loza-mobile__title {
     text-align: center;
-    margin: 20px;
     color: rgba(0, 0, 0, 0.7);
     font-family: "Inter", sans-serif;
-    font-weight: bolder;
-    font-size: 5.067vw;
-    line-height: 1.2em;
+    font-weight: 600;
+    font-size: calc((100vw - 5px) / 18);
   }
   .loza-mobile__line2 {
-    width: 80%;
-    height: 10px;
+    width: 88%;
+    height: 20px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.7);
     margin-bottom: 30px;
   }
   .loza-mobile__text-block {
-    width: 80%;
+    width: 88%;
     color: rgba(0, 0, 0, 0.7);
     font-family: "Nunito", sans-serif;
     font-size: 4.58vw;
+    font-size: calc((100vw + 133px) / 30);
   }
   .loza-mobile__content2 {
     margin: 25px;
@@ -2201,8 +2267,8 @@ p, a {
     margin-top: 10%;
     color: rgba(0, 0, 0, 0.7);
     font-family: "Inter", sans-serif;
-    font-weight: bolder;
-    font-size: 5.598vw;
+    font-weight: 600;
+    font-size: calc((100vw - 5px) / 18);
   }
   .loza-mobile__image-block3 {
     display: flex;

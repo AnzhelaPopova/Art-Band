@@ -19,38 +19,41 @@ background-color: $color-light;
 width: 100vw;
 height: 80px;
 padding-top: 25px;
-   
-&_about {
+text-align: center;
+&__h2  
+ {
     color: $color-text;
-    font:$title-font;
-    font-size: 26px;
+    font-family:$title-font;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
+    
    } 
 }
 .about__text{
-    width: 50%;
+    width: 50vw;
     height: auto;
-    padding-right: 20px;
+    padding-right: 40px;
     padding-top: 10px;
-p{
-    font: $default-font;
+&__paragraph {
+    font-family: $default-font;
     font-size: 18px;
     color: $color-text;
     margin-left: 10px;
     text-indent: 30px;
-    line-height: 2;
+    line-height: 2.2;
 }
 }
 .about__carousel{
-    width: 40%;
+    width: 40vw;
     height: auto;
-    padding-left: 50px;
+    min-height: 500px;
+    padding-left: 30px;
     padding-top: 20px;
 }
+
 .about__advantages {
     display: flex;
     justify-content: space-around;
@@ -74,27 +77,34 @@ p{
 
   .about__carousel {
     width: 100vw;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 25px; 
+    padding-right: 25px;
   }
   .about__text {
     width: 100vw;
-    padding-left: 20px; 
-    padding-right: 20px;
+    padding-left: 25px; 
+    padding-right: 25px;
+  
   }
   .about__content {
     display: flex;
     flex-direction: column;
   }
+  
   .about__title,
   .about__whychooseus {
     height: 50px;
     margin-bottom: 20px;
-    h2{
-    font-size: calc(26px + 23.8 * (100vw - 320px) / 100vw);
+    &__h2  {
+    font-size: calc((100vw - 19px)/ 17);
+    font-weight: 600;
+    color: $color-text;
   }
-    p{
-    font-size: calc(18px + 6.8 * (100vw - 320px) / 1200);
+  .about__text
+  &__paragraph{
+      font-weight: 300;
+      font-size: calc((100vw + 87.86px)/ 26.714);
+      color: $color-text;
   }}
   .about__advantages {
     display: flex;
@@ -108,8 +118,41 @@ p{
         width: 60%;
         height: 60%;
     }
-    p{
+    &__imgtitle{
         font-size: 14px;
        }
   }}
 }
+@media screen and (min-width: 1600px){
+  .about__carousel {
+    width: 25vw;
+    align-self: center;
+  }
+  .about__text {
+    width: 65vw;
+    padding-left: 10vw; 
+    padding-right: 10vw;
+    &__paragraph{
+      font-size: 24px;
+      
+  }
+}}
+@media (min-width: 769px) and (max-width: 1180px){
+  .about__carousel {
+    width: 60vw;
+    align-self: center;
+    padding-left: 10vw; 
+    padding-right: 10vw;
+  }
+  .about__text {
+    width: 100vw;
+    padding-left: 10vw; 
+    padding-right: 10vw;
+  
+  }
+  .about__content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
