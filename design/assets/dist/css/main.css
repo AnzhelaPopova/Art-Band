@@ -1206,6 +1206,7 @@ p, a {
     text-align: center;
     color: rgba(0, 0, 0, 0.7);
     text-decoration: none;
+    font-size: calc((100vw + 2696px) / 173.2);
   }
   .main__booking__dsk__text {
     font-family: "Nunito", sans-serif;
@@ -1215,8 +1216,8 @@ p, a {
   }
   .main__booking__dsk__maintext {
     padding: 3vh 0;
-    font-size: 1.5em;
-    font-weight: 600;
+    font-size: calc((100vw + 7892px) / 577.3);
+    font-weight: 500;
     line-height: 146%;
     letter-spacing: 0.05em;
   }
