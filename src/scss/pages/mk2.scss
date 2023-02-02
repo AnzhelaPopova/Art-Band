@@ -2,7 +2,7 @@
 
 /*desktop*/
 @media screen and (min-width: 767px) {
-    .candle-aroma__btn-mbl {
+    .button-record-mbl {
         display: none;
     }
 
@@ -92,24 +92,6 @@
                 width: 20vw;
             }
         }
-
-        &__btn {
-            background-color: $color-light-green;
-            font-family: $default-font;
-            color: $color-light;
-            text-decoration: none;
-            font-size: 1.2em;
-            width: 15vw;
-            height: 6vh;
-            border-radius: 10px;
-            box-shadow: 4px 4px 4px 0 rgba(63, 84, 0, 0.7);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 3%;
-            margin-left: 535px;
-        }
-
     }
 
     .candle-aroma {
@@ -191,24 +173,6 @@
             display: flex;
             justify-content: center;
         }
-
-        &__btn {
-            background-color: $color-light-green;
-            font-family: $default-font;
-            color: $color-light;
-            text-decoration: none;
-            font-size: 1.2em;
-            width: 15vw;
-            height: 6vh;
-            border-radius: 10px;
-            box-shadow: 4px 4px 4px 0 rgba(63, 84, 0, 0.7);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 3%;
-
-
-        }
     }
 }
 
@@ -216,7 +180,7 @@
 
 @media screen and (max-width: 768px) {
 
-    .candle-aroma__btn {
+    .button-record-dsk {
         display: none;
     }
 
@@ -334,21 +298,6 @@
             justify-content: center;
         }
 
-        &__btn {
-            background-color: $color-light-green;
-            font-family: $default-font;
-            color: $color-light;
-            text-decoration: none;
-            font-size: 1.2em;
-            width: 15vw;
-            height: 4vh;
-            border-radius: 10px;
-            box-shadow: 4px 4px 4px 0 rgba(63, 84, 0, 0.7);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 3%;
-        }
     }
 
     .candle-aroma {
@@ -413,23 +362,5 @@
             display: flex;
             justify-content: center;
         }
-
-        &__btn-mbl {
-            background-color: $color-light-green;
-            font-family: $default-font;
-            color: $color-light;
-            text-decoration: none;
-            font-size: 1.2em;
-            width: 15vw;
-            height: 4vh;
-            border-radius: 10px;
-            box-shadow: 4px 4px 4px 0 rgba(63, 84, 0, 0.7);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 3%;
-        }
-
-
     }
 }
