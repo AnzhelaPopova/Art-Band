@@ -61,13 +61,17 @@ text-align: center;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 6vw 10vw 6vw 10vw;
 
 &__cards {
    text-align: center;
    padding-top: 20px;
-   p{
-    font: $default-font;
-    font-size: 16px;
+   
+   p {
+    font-family: $default-font;
+    color: $color-text;
+    font-size: 1.2em;
+    margin-top: 3vh;
    }
 }
 }

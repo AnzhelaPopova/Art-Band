@@ -154,7 +154,7 @@
             text-align: center;
             color: $color-text;
             text-decoration: none;
-            font-size: calc(( 100vw + 2696px ) / 173.2);
+            font-size: calc(( 100vw + 3042.4px ) / 173.2);
 
         }
 
@@ -177,34 +177,53 @@
             margin-bottom: 0;
             text-align: left;
         }
+    }
 
-        &__media {
+
+        .main-booking {
+            display: flex;
+            gap: 1%;
+            justify-content: center;
+            padding-bottom: 7vh;
+        
+
+        &__icon {
             display: flex;
             flex-direction: column;
+            justify-content: space-between;
             align-items: center;
-            gap: 1vh;
-            padding: 2vw 6vw;
-            padding-top: 0;
-        }
-
-        &__item {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 1vw;
-            width: 30vw;
-        }
-
-        &__item1 {
-            gap: 2vw;
         }
 
         &__img {
-            align-items: center;
-            opacity: 0.7;
-            width: 15%;
+            width: 70%;
+
+            &_big {
+                width: 85%;
+            }
+        }
+
+        &__link {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-start;
+            margin-bottom: 0;
+            font-family: $default-font;
+        }
+
+        &__web {
+            text-decoration: none;
+            color: $color-text;
+            font-weight: 300;
+        }
+
+        &__number {
+            font-size: 0.9em;
+            font-weight: 300;
+            margin-bottom: 0;
         }
     }
+    
 
     .main__shop__dsk {
         padding: 3% 15%;
@@ -245,10 +264,14 @@
 
         &__gallery {
             display: grid;
-            grid-template-columns: repeat(3, 30%);
+            grid-template-columns: repeat(4, 30%);
+            grid-template-rows: repeat(2, 40%);
             grid-gap: 1rem;
             margin: 0 auto;
-            padding-bottom: 10vh;
+            width: 60vw;
+            height: 60vh;
+            justify-content: center;
+            margin-bottom: 2vh;
         }
 
         &__img {
@@ -268,7 +291,7 @@
             grid-template-columns: 1fr 1fr;
             gap: 4%;
             align-items: center;
-            padding: 7% 7%;
+            padding: 3% 7% 0 7%;
             font-family: $default-font;
         }
 
@@ -302,35 +325,6 @@
             color: $color-text;
         }
 
-        &__media {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 1vh;
-        }
-
-        &__media__item {
-            display: flex;
-            align-items: center;
-            gap: 1vw;
-            color: $color-text;
-        }
-
-        &__media__img {
-            opacity: 0.7;
-            width: 15%;
-        }
-
-        &__media__hypertext {
-            text-decoration: none;
-            color: $color-text;
-        }
-
-        &__media__hypertext:hover {
-            text-decoration: none;
-            color: $color-text;
-        }
-
         &__hours {
             margin-top: 2vh;
             color: $color-text;
@@ -341,26 +335,77 @@
             color: $color-text;
             font-size: 20px;
         }
-
-        &__down {
+        
+        &__copy {
             display: flex;
+            width: 97vw;
             justify-content: flex-end;
-            align-items: flex-end;
-            gap: 5px;
-            font-family: $default-font;
-            padding: 1% 7%;
-
+            align-items: flex-start;
+            gap: 2%;
         }
 
-        &__down__logo {
-            width: 9vw;
+        &__brand {
+            font-family: $title-font-logo;
+            color: $color-text;
+            font-size: 2em;
+        }
+
+        &__text {
+            align-self: center;
+            font-size: 1.3em;
+            color: $color-text;
+            font-family: $title-font;
         }
     }
 
     .copyright {
         margin-bottom: 0;
         padding: 0;
+        font-size: 1.2em;
     }
+
+    .main-footer-social {
+        display: flex;
+        gap: 3%;
+        line-height: 2em;
+    
+
+    &__icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__img {
+        width: 70%;
+
+        &_big {
+            width: 85%;
+        }
+    }
+
+    &__link {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        margin-bottom: 0;
+    }
+
+    &__web {
+        text-decoration: none;
+        color: $color-text;
+        font-weight: 600;
+    }
+
+    &__number {
+        font-size: 0.9em;
+        font-weight: 600;
+        margin: 0;
+    }
+}
+
 }
 
 @media screen and (max-width: $tablet) {
