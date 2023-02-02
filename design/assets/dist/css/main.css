@@ -730,8 +730,8 @@ p, a {
     border-bottom: 1px solid #A0B45B;
     display: flex;
     padding: 20px 0 20px 20px;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
+    position: fixed;
+    top: 0;
     width: 100%;
     z-index: 2;
   }
@@ -757,15 +757,15 @@ p, a {
     color: rgba(0, 0, 0, 0.7);
     font-family: "Inter", sans-serif;
     font-weight: 800;
-    font-size: calc((100vw + 173.8px) / 35);
+    font-size: 0.9em;
     text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: rgba(160, 180, 91, 0.6);
     border-radius: 22px;
-    width: calc((100vw + 480.27px) / 7.1);
     height: 45px;
+    padding: 0 20px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 2560px) {
@@ -1497,7 +1497,7 @@ p, a {
   margin-bottom: 24px;
   font-family: "Inter", sans-serif;
   font-weight: 700;
-  font-size: calc((100vw + 555px) / 31.5);
+  font-size: calc((100vw + 555px) / 45);
   text-align: center;
   color: #FFFFFF;
 }

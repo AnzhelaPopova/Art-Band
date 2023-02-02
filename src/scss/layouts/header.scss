@@ -11,8 +11,8 @@
         border-bottom: 1px solid $color-light-green;
         display: flex;
         padding: 20px 0 20px 20px;
-        position: fixed; /* Set the navbar to fixed position */
-        top: 0; /* Position the navbar at the top of the page */
+        position: fixed; 
+        top: 0; 
         width: 100%;
         z-index: 2;
 
@@ -39,15 +39,15 @@
                 color: $color-text;
                 font-family: $title-font;
                 font-weight: 800;
-                font-size: calc((100vw + 173.8px) / 35);
+                font-size: 0.9em;
                 text-decoration: none;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 background-color: $color-dark-green;
                 border-radius: 22px;
-                width: calc((100vw + 480.27px) / 7.1);
                 height: 45px;
+                padding: 0 20px;
             }
         }
     }
