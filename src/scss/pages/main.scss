@@ -344,6 +344,10 @@
 }
 
 @media screen and (max-width: $tablet) {
+    .main-footer-mbl__map {
+        width: 100vw;
+        height: 71vw;
+    }
 
     .wrapper-main-page-mbl {
         background-color: $color-light;
@@ -410,8 +414,6 @@
         &__contackts{
             display: flex;
             flex-direction: column;
-            
-
 
         }
 
@@ -436,14 +438,14 @@
                 margin-right: 22px; 
 
                 & img {
-                    height: 4.43vh;}              
+                    height: 9.74vw;}              
             }
 
             &_vk {
                 margin-left: 22px;
 
                 & img {
-                    height: 4.43vh;}              
+                    height: 9.74vw;}              
             }
             }
         }
@@ -471,43 +473,33 @@
         &_4 {
             background-image: url(../../design/assets/images/main/main5.png);
             background-size: 100vw;
+
+            margin-bottom: 30px;
         }
 
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         width: 100vw;
-        height: 30.75vh;
+        height: 67.69vw;
         margin-top: 30px;
         object-fit: cover;
         background-repeat: no-repeat;
         background-size: contain;
 
         &__title {
-            margin-bottom: 24px;
+            margin-top: 24.6vw;
 
             font-family: $title-font;
             font-weight: 700;
-            font-size: calc(( 100vw + 555px )/ 31.5);
+            font-size: calc(( 100vw + 555px )/ 45);
             text-align: center;
 
             color: #FFFFFF;
         }
 
-        &__button {
-            width: 133px;
-            height: 42px;
-
-            font-family: $title-font;
-            font-weight: 700;
-            font-size: 14px;
-
-            background: #E1EFDB;
-            border-radius: 20px;
-            text-transform: uppercase;
-        }
-}
+    }
 
 
 @media screen and (min-width: $tablet) {

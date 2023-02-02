@@ -396,29 +396,53 @@ p, a {
   margin: 0;
 }
 
-.button {
-  width: 440px;
-  height: 68px;
-  background-color: rgba(160, 180, 91, 0.6);
+.button-record-dsk {
+  background-color: #A0B45B;
+  font-family: "Nunito", sans-serif;
+  color: #FBFFE9;
+  text-decoration: none;
+  font-size: calc((100vw + 173.8px) / 45);
+  width: calc((100vw + 480.27px) / 7.1);
+  height: calc((100vw + 409px) / 26.1);
   border-radius: 15px;
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 100%;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: #ffffff;
-  cursor: pointer;
+  box-shadow: 4px 4px 4px 0 rgba(63, 84, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4vh;
 }
 
-.button:hover {
-  background-color: #9da77e;
-  filter: drop-shadow(0px 0px 10px #97a179);
-  transition: 0.5s all;
+.button-record-mbl {
+  background-color: #A0B45B;
+  color: #FBFFE9;
+  text-decoration: none;
+  font-size: calc((100vw + 173.8px) / 35);
+  width: calc((100vw + 480.27px) / 7.1);
+  height: calc((100vw + 409px) / 26.1);
+  border-radius: 15px;
+  box-shadow: 4px 4px 4px 0 rgba(63, 84, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5.5vh;
 }
 
-.button:focus {
-  background-color: #77854e;
-  box-shadow: none;
+.button-more-mbl {
+  background-color: #FBFFE9;
+  color: rgba(0, 0, 0, 0.7);
+  text-decoration: none;
+  font-size: 1em;
+  width: calc((100vw + 2163px) / 20);
+  height: calc((100vw + 4428px) / 120);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6.15vw;
+  padding: 1em;
+  text-transform: uppercase;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
 }
 
 @media screen and (max-width: 768px) {
@@ -706,8 +730,8 @@ p, a {
     border-bottom: 1px solid #A0B45B;
     display: flex;
     padding: 20px 0 20px 20px;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
+    position: fixed;
+    top: 0;
     width: 100%;
     z-index: 2;
   }
@@ -740,8 +764,8 @@ p, a {
     justify-content: center;
     background-color: rgba(160, 180, 91, 0.6);
     border-radius: 22px;
-    width: 35vw;
     height: 45px;
+    padding: 0 20px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 2560px) {
@@ -786,7 +810,7 @@ p, a {
     padding: 0 0 0 4%;
   }
 }
-@media screen and (min-width: 375px) and (max-width: 768px) {
+@media screen and (min-width: 360px) and (max-width: 768px) {
   .dsk-diary__link {
     display: none;
   }
@@ -923,6 +947,10 @@ p, a {
     margin: 3% 0 0 15%;
   }
 }
+.about__overflow {
+  overflow-x: hidden;
+}
+
 .about__wrapper {
   width: 100vw;
   height: auto;
@@ -1358,6 +1386,10 @@ p, a {
   }
 }
 @media screen and (max-width: 768px) {
+  .main-footer-mbl__map {
+    width: 100vw;
+    height: 71vw;
+  }
   .wrapper-main-page-mbl {
     background-color: #FBFFE9;
   }
@@ -1429,13 +1461,13 @@ p, a {
     margin-right: 22px;
   }
   .main-page-mbl-main__social-networks_tg img {
-    height: 4.43vh;
+    height: 9.74vw;
   }
   .main-page-mbl-main__social-networks_vk {
     margin-left: 22px;
   }
   .main-page-mbl-main__social-networks_vk img {
-    height: 4.43vh;
+    height: 9.74vw;
   }
   .main__booking__dsk, .main__shop__dsk, .main-footer-dsk, .main__reviews__dsk, .mk-mbl {
     display: none;
@@ -1444,10 +1476,10 @@ p, a {
 .main-page-mbl-section {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   width: 100vw;
-  height: 30.75vh;
+  height: 67.69vw;
   margin-top: 30px;
   object-fit: cover;
   background-repeat: no-repeat;
@@ -1468,24 +1500,15 @@ p, a {
 .main-page-mbl-section_4 {
   background-image: url(../29ec46d0fd1afe4a1ba8.png);
   background-size: 100vw;
+  margin-bottom: 30px;
 }
 .main-page-mbl-section__title {
-  margin-bottom: 24px;
+  margin-top: 24.6vw;
   font-family: "Inter", sans-serif;
   font-weight: 700;
-  font-size: calc((100vw + 555px) / 31.5);
+  font-size: calc((100vw + 555px) / 45);
   text-align: center;
   color: #FFFFFF;
-}
-.main-page-mbl-section__button {
-  width: 133px;
-  height: 42px;
-  font-family: "Inter", sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  background: #E1EFDB;
-  border-radius: 20px;
-  text-transform: uppercase;
 }
 
 @media screen and (min-width: 768px) {
@@ -1803,8 +1826,11 @@ p, a {
 }
 /*desktop*/
 @media screen and (min-width: 767px) {
-  .candle-aroma__btn-mbl {
+  .button-record-mbl {
     display: none;
+  }
+  .wrapper__mk2 {
+    padding: 7px;
   }
   .candle-message {
     background-color: #FBFFE9;
@@ -1816,6 +1842,10 @@ p, a {
     justify-content: center;
     margin-top: 8vh;
     gap: 5vw;
+    width: 100%;
+  }
+  .candle-message__about img {
+    width: 100%;
   }
   .candle-message__about_line {
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
@@ -1867,22 +1897,6 @@ p, a {
   }
   .sashe__images_sashe1, .sashe__images_sashe2, .sashe__images_sashe3 {
     width: 20vw;
-  }
-  .sashe__btn {
-    background-color: #A0B45B;
-    font-family: "Nunito", sans-serif;
-    color: #FBFFE9;
-    text-decoration: none;
-    font-size: 1.2em;
-    width: 15vw;
-    height: 6vh;
-    border-radius: 10px;
-    box-shadow: 4px 4px 4px 0 rgba(63, 84, 0, 0.7);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 3%;
-    margin-left: 535px;
   }
   .candle-aroma__about {
     display: flex;
@@ -1944,25 +1958,10 @@ p, a {
     display: flex;
     justify-content: center;
   }
-  .candle-aroma__btn {
-    background-color: #A0B45B;
-    font-family: "Nunito", sans-serif;
-    color: #FBFFE9;
-    text-decoration: none;
-    font-size: 1.2em;
-    width: 15vw;
-    height: 6vh;
-    border-radius: 10px;
-    box-shadow: 4px 4px 4px 0 rgba(63, 84, 0, 0.7);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 3%;
-  }
 }
 /*mobile*/
 @media screen and (max-width: 768px) {
-  .candle-aroma__btn {
+  .button-record-dsk {
     display: none;
   }
   .candle-message {
@@ -2056,21 +2055,6 @@ p, a {
     display: flex;
     justify-content: center;
   }
-  .sashe__btn {
-    background-color: #A0B45B;
-    font-family: "Nunito", sans-serif;
-    color: #FBFFE9;
-    text-decoration: none;
-    font-size: 1.2em;
-    width: 15vw;
-    height: 4vh;
-    border-radius: 10px;
-    box-shadow: 4px 4px 4px 0 rgba(63, 84, 0, 0.7);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 3%;
-  }
   .candle-aroma__about {
     display: flex;
     flex-direction: column;
@@ -2117,21 +2101,6 @@ p, a {
     width: 100vw;
     display: flex;
     justify-content: center;
-  }
-  .candle-aroma__btn-mbl {
-    background-color: #A0B45B;
-    font-family: "Nunito", sans-serif;
-    color: #FBFFE9;
-    text-decoration: none;
-    font-size: 1.2em;
-    width: 15vw;
-    height: 4vh;
-    border-radius: 10px;
-    box-shadow: 4px 4px 4px 0 rgba(63, 84, 0, 0.7);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 3%;
   }
 }
 .loza__body {
@@ -2390,6 +2359,7 @@ p, a {
   }
   .neuro__img2 {
     width: 86.77vw;
+    margin-bottom: 30px;
     height: auto;
     margin-top: 6.87vw;
   }
