@@ -374,6 +374,7 @@
             flex-direction: column;
             margin-top: 20vh;
             width: calc(( 100vw + 173.8px ) / 1.57);
+            width: 80vw;
         }
 
         &__logo {
@@ -383,7 +384,7 @@
 
             &_black {
                 font-family: $title-font-logo;
-                font-size: calc(( 100vw + 507px ) / 19.6);
+                font-size: calc(( 100vw + 167px ) / 15.5);
                 text-align: start;
                 line-height: 0.5em;
             }
@@ -396,7 +397,7 @@
             font-family: $title-font-logo_green;
             font-weight: 900;
             color: $color-title-logo;
-            font-size: calc(( 100vw + 605px ) / 19.6);
+            font-size: calc(( 100vw + 244.8px ) / 15.5);
             text-align: center;
             }
 
@@ -406,7 +407,7 @@
                 text-align: center;
                 font-weight: 500;
                 margin-top: 30%;
-                font-size: calc(( 100vw + 1585px ) / 78.4);
+                font-size: calc(( 100vw + 400.5px ) / 38.9);
 
 
             }
@@ -430,6 +431,7 @@
         &__social-networks {
             display: flex;
             margin-bottom: 10%;
+            column-gap: 5vw;
 
 
             justify-content: center;

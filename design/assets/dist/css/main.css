@@ -1410,6 +1410,7 @@ p, a {
     flex-direction: column;
     margin-top: 20vh;
     width: calc((100vw + 173.8px) / 1.57);
+    width: 80vw;
   }
   .main-page-mbl-main__logo {
     width: 100vw;
@@ -1418,7 +1419,7 @@ p, a {
   }
   .main-page-mbl-main__logo_black {
     font-family: "Annabelle", sans-serif;
-    font-size: calc((100vw + 507px) / 19.6);
+    font-size: calc((100vw + 167px) / 15.5);
     text-align: start;
     line-height: 0.5em;
   }
@@ -1429,7 +1430,7 @@ p, a {
     font-family: "Calibri", sans-serif;
     font-weight: 900;
     color: #5D6F3A;
-    font-size: calc((100vw + 605px) / 19.6);
+    font-size: calc((100vw + 244.8px) / 15.5);
     text-align: center;
   }
   .main-page-mbl-main__logo_description {
@@ -1438,7 +1439,7 @@ p, a {
     text-align: center;
     font-weight: 500;
     margin-top: 30%;
-    font-size: calc((100vw + 1585px) / 78.4);
+    font-size: calc((100vw + 400.5px) / 38.9);
   }
   .main-page-mbl-main__contackts {
     display: flex;
@@ -1455,6 +1456,7 @@ p, a {
   .main-page-mbl-main__social-networks {
     display: flex;
     margin-bottom: 10%;
+    column-gap: 5vw;
     justify-content: center;
   }
   .main-page-mbl-main__social-networks_tg {
@@ -3167,7 +3169,7 @@ p, a {
     text-align: center;
     font-family: "Nunito", sans-serif;
     font-weight: 500;
-    font-size: calc((100vw + 2263px) / 216.5);
+    font-size: calc((100vw + 517.25px) / 58.37);
     line-height: 2em;
     color: rgba(0, 0, 0, 0.7);
   }
