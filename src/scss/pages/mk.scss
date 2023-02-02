@@ -1,12 +1,14 @@
 @import "../layouts/variables.scss";
 
-@media screen and (min-width: $mobile) and (max-width: $tablet) {
+@media screen and (max-width: $tablet) {
 
 .mbl-mk {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: $color-light;
+    margin-top: 85px;
+
 
     &__title {
         color: $color-text;
@@ -14,6 +16,7 @@
         font-weight: 700;
         font-size: 1.8em;
         padding-top: 5%;
+
     }
 }
 
@@ -25,7 +28,6 @@
         border: 1px solid $color-light-green;
         padding: 5%;
         margin: 5% 3% 5% 3%;
-        align-items: center;
     
         &__img {
             width: 100%;
