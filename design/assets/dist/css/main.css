@@ -353,7 +353,7 @@
 /*!******************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/app.scss ***!
   \******************************************************************************************************************************************************/
-
+@charset "UTF-8";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -1500,6 +1500,7 @@ p, a {
 .main-page-mbl-section_4 {
   background-image: url(../29ec46d0fd1afe4a1ba8.png);
   background-size: 100vw;
+  margin-bottom: 30px;
 }
 .main-page-mbl-section__title {
   margin-top: 24.6vw;
