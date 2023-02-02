@@ -1004,6 +1004,38 @@ p, a {
     font-size: 14px;
   }
 }
+@media screen and (min-width: 1600px) {
+  .about__carousel {
+    width: 25vw;
+    align-self: center;
+  }
+  .about__text {
+    width: 100vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+  .about__content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 769px) and (max-width: 1180px) {
+  .about__carousel {
+    width: 60vw;
+    align-self: center;
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+  .about__text {
+    width: 100vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+  .about__content {
+    display: flex;
+    flex-direction: column;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 2560px) {
   .main-page-mbl, .main-footer-mbl {
     display: none;

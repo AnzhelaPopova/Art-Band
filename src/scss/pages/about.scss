@@ -115,3 +115,38 @@ p{
        }
   }}
 }
+@media screen and (min-width: 1600px){
+  .about__carousel {
+    width: 25vw;
+    align-self: center;
+  }
+  .about__text {
+    width: 100vw;
+    padding-left: 10vw; 
+    padding-right: 10vw;
+  
+  }
+  .about__content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 769px) and (max-width: 1180px){
+  .about__carousel {
+    width: 60vw;
+    align-self: center;
+    padding-left: 10vw; 
+    padding-right: 10vw;
+  }
+  .about__text {
+    width: 100vw;
+    padding-left: 10vw; 
+    padding-right: 10vw;
+  
+  }
+  .about__content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
