@@ -218,6 +218,12 @@
    * Restore the focus styles unset by the previous rule.
    */
   
+  button:-moz-focusring,
+  [type="button"]:-moz-focusring,
+  [type="reset"]:-moz-focusring,
+  [type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+  }
   
   /**
    * Correct the padding in Firefox.
@@ -432,7 +438,7 @@ p, a {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 5.5vh;
+  margin-top: 6.15vw;
   padding: 1em;
   text-transform: uppercase;
   font-family: "Inter", sans-serif;
@@ -1376,6 +1382,10 @@ p, a {
   }
 }
 @media screen and (max-width: 768px) {
+  .main-footer-mbl__map {
+    width: 100vw;
+    height: 71vw;
+  }
   .wrapper-main-page-mbl {
     background-color: #FBFFE9;
   }
@@ -1447,13 +1457,13 @@ p, a {
     margin-right: 22px;
   }
   .main-page-mbl-main__social-networks_tg img {
-    height: 4.43vh;
+    height: 9.74vw;
   }
   .main-page-mbl-main__social-networks_vk {
     margin-left: 22px;
   }
   .main-page-mbl-main__social-networks_vk img {
-    height: 4.43vh;
+    height: 9.74vw;
   }
   .main__booking__dsk, .main__shop__dsk, .main-footer-dsk, .main__reviews__dsk, .mk-mbl {
     display: none;
@@ -1462,10 +1472,10 @@ p, a {
 .main-page-mbl-section {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   width: 100vw;
-  height: 30.75vh;
+  height: 67.69vw;
   margin-top: 30px;
   object-fit: cover;
   background-repeat: no-repeat;
@@ -1488,7 +1498,7 @@ p, a {
   background-size: 100vw;
 }
 .main-page-mbl-section__title {
-  margin-bottom: 24px;
+  margin-top: 24.6vw;
   font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: calc((100vw + 555px) / 45);
