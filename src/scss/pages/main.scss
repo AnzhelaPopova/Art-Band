@@ -489,25 +489,13 @@
 
             font-family: $title-font;
             font-weight: 700;
-            font-size: calc(( 100vw + 555px )/ 31.5);
+            font-size: calc(( 100vw + 555px )/ 45);
             text-align: center;
 
             color: #FFFFFF;
         }
 
-        &__button {
-            width: 133px;
-            height: 42px;
-
-            font-family: $title-font;
-            font-weight: 700;
-            font-size: 14px;
-
-            background: #E1EFDB;
-            border-radius: 20px;
-            text-transform: uppercase;
-        }
-}
+       }
 
 
 @media screen and (min-width: $tablet) {
