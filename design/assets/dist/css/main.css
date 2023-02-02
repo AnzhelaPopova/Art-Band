@@ -2110,64 +2110,68 @@ p, a {
     margin-bottom: 3%;
   }
 }
+.loza__body {
+  overflow-x: hidden;
+}
+
 @media screen and (min-width: 768px) and (max-width: 2560px) {
-  .loza-mobile,
-  .loza-mobile__content1,
-  .loza-mobile__content2,
-  .loza-mobile__image-block3,
-  .loza-mobile__title-block2,
-  .loza-mobile__image-block4 {
+  .loza-mobile {
     display: none;
   }
   .loza-desktop {
     background-color: #FBFFE9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
   .loza-content1 {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 9vw;
+    margin: 5.63vw 5vw 5% 5vw;
   }
   .loza-content1__image-block {
     display: flex;
     justify-content: center;
+    width: 45vw;
   }
   .loza-content1__image {
-    max-width: 100%;
+    width: 95%;
     object-fit: cover;
-    margin-top: 0;
+    height: 95%;
   }
   .loza-content1__text-block {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90%;
+    width: 45vw;
+    margin-left: 4vw;
   }
   .loza-content1__title {
-    width: 80%;
     text-align: center;
-    margin-bottom: 3vh;
-    margin-top: 10vh;
+    margin-top: -0.1vw;
+    margin-bottom: 1.6vw;
     color: rgba(0, 0, 0, 0.7);
     font-family: "Inter", sans-serif;
-    font-size: 2.2em;
-    font-weight: 500;
+    font-size: calc((100vw - 53px) / 34);
+    font-weight: 600;
   }
   .loza-content1__text {
-    width: 80%;
-    margin: 5vw;
+    margin-top: 2.07vw;
     color: rgba(0, 0, 0, 0.7);
     font-family: "Nunito", sans-serif;
-    font-size: 1.3em;
+    font-size: calc((100vw + 48px) / 64);
+    font-weight: 300;
   }
   .loza-content1__line {
-    width: 80%;
+    width: 100%;
     border-bottom: 1px solid rgba(0, 0, 0, 0.7);
   }
   .loza-content2 {
     display: flex;
     justify-content: center;
-    margin: 0 8vw 5% 8vw;
+    margin: 0 5vw 5% 5vw;
     gap: 10px;
   }
   .loza-content2__block1 {
@@ -2176,6 +2180,7 @@ p, a {
     justify-content: space-around;
     align-items: center;
     gap: 20px;
+    width: 30vw;
   }
   .loza-content2__block2 {
     display: flex;
@@ -2183,6 +2188,7 @@ p, a {
     justify-content: space-around;
     align-items: center;
     gap: 20px;
+    width: 30vw;
   }
   .loza-content2__block3 {
     display: flex;
@@ -2190,6 +2196,7 @@ p, a {
     justify-content: space-around;
     align-items: center;
     gap: 20px;
+    width: 30vw;
   }
   .loza-content2__image1 {
     width: 95%;
@@ -2225,30 +2232,29 @@ p, a {
     align-items: center;
   }
   .loza-mobile__image1 {
-    width: 80%;
-    border-radius: 10%;
+    width: 88%;
+    border-radius: 15%;
     margin-top: 20px;
   }
   .loza-mobile__title {
     text-align: center;
-    margin: 20px;
     color: rgba(0, 0, 0, 0.7);
     font-family: "Inter", sans-serif;
-    font-weight: bolder;
-    font-size: 5.067vw;
-    line-height: 1.2em;
+    font-weight: 600;
+    font-size: calc((100vw - 5px) / 18);
   }
   .loza-mobile__line2 {
-    width: 80%;
-    height: 10px;
+    width: 88%;
+    height: 20px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.7);
     margin-bottom: 30px;
   }
   .loza-mobile__text-block {
-    width: 80%;
+    width: 88%;
     color: rgba(0, 0, 0, 0.7);
     font-family: "Nunito", sans-serif;
     font-size: 4.58vw;
+    font-size: calc((100vw + 133px) / 30);
   }
   .loza-mobile__content2 {
     margin: 25px;
@@ -2284,8 +2290,8 @@ p, a {
     margin-top: 10%;
     color: rgba(0, 0, 0, 0.7);
     font-family: "Inter", sans-serif;
-    font-weight: bolder;
-    font-size: 5.598vw;
+    font-weight: 600;
+    font-size: calc((100vw - 5px) / 18);
   }
   .loza-mobile__image-block3 {
     display: flex;
