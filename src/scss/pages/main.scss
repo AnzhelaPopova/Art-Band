@@ -148,41 +148,61 @@
         }
 
         &__title {
-            padding: 3vh 0;
+            padding-top: 7vh;
             font-family: $title-font;
             font-weight: 500;
             text-align: center;
             color: $color-text;
+            text-decoration: none;
+            font-size: calc(( 100vw + 2696px ) / 173.2);
+
         }
 
         &__text {
             font-family: $default-font;
             text-align: center;
             color: $color-text;
+            font-size: 1.2em;
         }
 
         &__maintext {
             padding: 3vh 0;
-            font-size: 1.5em;
-            font-weight: 600;
+            font-size: calc(( 100vw + 7892px ) / 577.3);
+            font-weight: 500;
             line-height: 146%;
             letter-spacing: 0.05em;
         }
 
         &__smalltext {
-            padding: 1vh 0;
-            font-weight: 600;
+            margin-bottom: 0;
+            text-align: left;
+        }
+
+        &__media {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1vh;
+            padding: 2vw 6vw;
+            padding-top: 0;
         }
 
         &__item {
             display: flex;
-            margin: 0 28.5vw;
-            gap: 23px;
+            justify-content: center;
+            align-items: center;
+            gap: 1vw;
+            width: 30vw;
+        }
+
+        &__item1 {
+            gap: 2vw;
         }
 
         &__img {
+            align-items: center;
+            opacity: 0.7;
             width: 15%;
-            height: 16%;
         }
     }
 
@@ -201,8 +221,9 @@
 
         &__choosemk {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             flex-wrap: wrap;
+            gap: 1vw;
         }
 
         &__choosemk__item {
@@ -221,6 +242,21 @@
             text-align: center;
             color: $color-text;
         }
+
+        &__gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 30%);
+            grid-gap: 1rem;
+            margin: 0 auto;
+            padding-bottom: 10vh;
+        }
+
+        &__img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%; 
+            border-radius: 5%;
+        }
     }
 
 
@@ -230,9 +266,9 @@
         &__container {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 12%;
+            gap: 4%;
             align-items: center;
-            padding: 3% 7%;
+            padding: 7% 7%;
             font-family: $default-font;
         }
 
@@ -266,20 +302,31 @@
             color: $color-text;
         }
 
-        &__contacts__phone, &__contacts__vk, &__contacts__telegram {
+        &__media {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1vh;
+        }
+
+        &__media__item {
             display: flex;
             align-items: center;
             gap: 1vw;
             color: $color-text;
         }
 
-        &__contacts__phone__img, &__contacts__vk__img, &__contacts__telegram__img {
-            text-align: center;
+        &__media__img {
             opacity: 0.7;
-            width: 5%;
+            width: 15%;
         }
 
-        &__contacts__phone__hypertext, &__contacts__vk__hypertext, &__contacts__telegram__hypertext {
+        &__media__hypertext {
+            text-decoration: none;
+            color: $color-text;
+        }
+
+        &__media__hypertext:hover {
             text-decoration: none;
             color: $color-text;
         }
@@ -298,19 +345,29 @@
         &__down {
             display: flex;
             justify-content: flex-end;
-            gap: 10px;
+            align-items: flex-end;
+            gap: 5px;
             font-family: $default-font;
-            padding: 1% 5%;
-            width: 100%;
+            padding: 1% 7%;
+
         }
 
         &__down__logo {
-            width: 55%;
+            width: 9vw;
         }
+    }
+
+    .copyright {
+        margin-bottom: 0;
+        padding: 0;
     }
 }
 
 @media screen and (max-width: $tablet) {
+    .main-footer-mbl__map {
+        width: 100vw;
+        height: 71vw;
+    }
 
     .wrapper-main-page-mbl {
         background-color: $color-light;
@@ -377,8 +434,6 @@
         &__contackts{
             display: flex;
             flex-direction: column;
-            
-
 
         }
 
@@ -403,14 +458,14 @@
                 margin-right: 22px; 
 
                 & img {
-                    height: 4.43vh;}              
+                    height: 9.74vw;}              
             }
 
             &_vk {
                 margin-left: 22px;
 
                 & img {
-                    height: 4.43vh;}              
+                    height: 9.74vw;}              
             }
             }
         }
@@ -438,43 +493,33 @@
         &_4 {
             background-image: url(../../design/assets/images/main/main5.png);
             background-size: 100vw;
+
+            margin-bottom: 30px;
         }
 
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         width: 100vw;
-        height: 30.75vh;
+        height: 67.69vw;
         margin-top: 30px;
         object-fit: cover;
         background-repeat: no-repeat;
         background-size: contain;
 
         &__title {
-            margin-bottom: 24px;
+            margin-top: 24.6vw;
 
             font-family: $title-font;
             font-weight: 700;
-            font-size: calc(( 100vw + 555px )/ 31.5);
+            font-size: calc(( 100vw + 555px )/ 45);
             text-align: center;
 
             color: #FFFFFF;
         }
 
-        &__button {
-            width: 133px;
-            height: 42px;
-
-            font-family: $title-font;
-            font-weight: 700;
-            font-size: 14px;
-
-            background: #E1EFDB;
-            border-radius: 20px;
-            text-transform: uppercase;
-        }
-}
+    }
 
 
 @media screen and (min-width: $tablet) {

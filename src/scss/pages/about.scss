@@ -1,5 +1,8 @@
 @import "../layouts/variables.scss";
 
+.about__overflow {
+  overflow-x: hidden;
+}
 @media screen and (min-width: 769px) {
    
 }
