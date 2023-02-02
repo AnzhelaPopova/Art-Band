@@ -940,9 +940,10 @@ p, a {
   width: 100vw;
   height: 80px;
   padding-top: 25px;
+  text-align: center;
 }
-.about__title_about,
-.about__whychooseus_about {
+.about__title__h2,
+.about__whychooseus__h2 {
   color: rgba(0, 0, 0, 0.7);
   font-family: "Inter", sans-serif;
   font-weight: bold;
@@ -958,7 +959,7 @@ p, a {
   padding-right: 40px;
   padding-top: 10px;
 }
-.about__text p {
+.about__text__paragraph {
   font-family: "Nunito", sans-serif;
   font-size: 18px;
   color: rgba(0, 0, 0, 0.7);
@@ -1012,14 +1013,14 @@ p, a {
     height: 50px;
     margin-bottom: 20px;
   }
-  .about__title h2,
-  .about__whychooseus h2 {
+  .about__title__h2,
+  .about__whychooseus__h2 {
     font-size: calc((100vw - 19px) / 17);
     font-weight: 600;
     color: rgba(0, 0, 0, 0.7);
   }
-  .about__title p,
-  .about__whychooseus p {
+  .about__text .about__title__paragraph,
+  .about__text .about__whychooseus__paragraph {
     font-weight: 300;
     font-size: calc((100vw + 87.86px) / 26.714);
     color: rgba(0, 0, 0, 0.7);
@@ -1037,7 +1038,7 @@ p, a {
     width: 60%;
     height: 60%;
   }
-  .about__advantages__cards p {
+  .about__advantages__cards__imgtitle {
     font-size: 14px;
   }
 }
@@ -1047,13 +1048,12 @@ p, a {
     align-self: center;
   }
   .about__text {
-    width: 100vw;
+    width: 65vw;
     padding-left: 10vw;
     padding-right: 10vw;
   }
-  .about__content {
-    display: flex;
-    flex-direction: column;
+  .about__text__paragraph {
+    font-size: 24px;
   }
 }
 @media (min-width: 769px) and (max-width: 1180px) {

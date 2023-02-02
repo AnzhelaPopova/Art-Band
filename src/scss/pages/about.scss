@@ -19,8 +19,9 @@ background-color: $color-light;
 width: 100vw;
 height: 80px;
 padding-top: 25px;
-   
-&_about {
+text-align: center;
+&__h2  
+ {
     color: $color-text;
     font-family:$title-font;
     font-weight: bold;
@@ -36,7 +37,7 @@ padding-top: 25px;
     height: auto;
     padding-right: 40px;
     padding-top: 10px;
-p{
+&__paragraph {
     font-family: $default-font;
     font-size: 18px;
     color: $color-text;
@@ -94,12 +95,13 @@ p{
   .about__whychooseus {
     height: 50px;
     margin-bottom: 20px;
-    h2{
+    &__h2  {
     font-size: calc((100vw - 19px)/ 17);
     font-weight: 600;
     color: $color-text;
   }
-    p{
+  .about__text
+  &__paragraph{
       font-weight: 300;
       font-size: calc((100vw + 87.86px)/ 26.714);
       color: $color-text;
@@ -116,7 +118,7 @@ p{
         width: 60%;
         height: 60%;
     }
-    p{
+    &__imgtitle{
         font-size: 14px;
        }
   }}
@@ -127,16 +129,14 @@ p{
     align-self: center;
   }
   .about__text {
-    width: 100vw;
+    width: 65vw;
     padding-left: 10vw; 
     padding-right: 10vw;
-  
+    &__paragraph{
+      font-size: 24px;
+      
   }
-  .about__content {
-    display: flex;
-    flex-direction: column;
-  }
-}
+}}
 @media (min-width: 769px) and (max-width: 1180px){
   .about__carousel {
     width: 60vw;
