@@ -104,25 +104,25 @@
             <section class="main-page-mbl-section main-page-mbl-section_1">
               <h2 class="main-page-mbl-section__title">О нас</h2>
               <a href="./about.html">
-                <button class="main-page-mbl-section__button">Подробнее</button>
+                <button class="button-more-mbl button">Подробнее</button>
               </a>
             </section>
             <section class="main-page-mbl-section main-page-mbl-section_2">
               <h2 class="main-page-mbl-section__title">Мастер-классы</h2>
               <a href="./mk.html">
-                <button class="main-page-mbl-section__button">Подробнее</button>
+                <button class="button-more-mbl">Подробнее</button>
               </a>
             </section>
             <section class="main-page-mbl-section main-page-mbl-section_3">
               <h2 class="main-page-mbl-section__title">Магазин handmade</h2>
               <a href="./shop.html">
-                <button class="main-page-mbl-section__button">Подробнее</button>
+                <button class="button-more-mbl">Подробнее</button>
               </a>
             </section>
             <section class="main-page-mbl-section main-page-mbl-section_4">
               <h2 class="main-page-mbl-section__title">Отзывы</h2>
               <a href="./reviews.html">
-                <button class="main-page-mbl-section__button">Подробнее</button>
+                <button class="button-more-mbl">Подробнее</button>
               </a>
             </section>
           </div>
@@ -141,7 +141,7 @@
               alt="Мыло"
             />
             <h2 class="mbl-mk-card__title dsk-mk-card__title">Мыловарение</h2>
-            <a class="mbl-mk-card__text dsk-mk-card__text" href="./mk1.html"
+            <a class="mbl-mk-card__text dsk-mk-card__text" href="later.html"
               >Подробнее →</a
             >
           </div>
@@ -153,14 +153,14 @@
               alt="Свечи"
             />
             <h2 class="mbl-mk-card__title dsk-mk-card__title">Свечекручение</h2>
-            <a class="mbl-mk-card__text dsk-mk-card__text" href="./mk2.html"
+            <a class="mbl-mk-card__text dsk-mk-card__text" href="mk2.html"
               >Подробнее →</a
             >
           </div>
 
           <div class="mbl-mk-card dsk-mk-card">
             <img
-              class="mbl-mk-card__img dsk-mk-card__img dsk-mk-card__img_block"
+              class="mbl-mk-card__img dsk-mk-card__img"
               src="./assets/images/mk/mk1.png"
               alt="Украшение"
             />
@@ -282,8 +282,8 @@
 <!-- Секция предварительной записи Десктоп -->
       <section class="main__booking__dsk" id="entry"  >
         <div class="main__booking__dsk__container">
-          <h2 class="main__booking__dsk__title">КАК ЗАПИСАТЬСЯ?</h2>
-            <p class="main__booking__dsk__text main__booking__dsk__maintext">Друзья, все занятия в нашей мастерской проходят <br><b>по предварительной записи!</b></br>
+          <a href=""><h2 class="main__booking__dsk__title">КАК ЗАПИСАТЬСЯ?</h2></a>
+            <p class="main__booking__dsk__text main__booking__dsk__maintext">Друзья, все занятия в нашей мастерской проходят <br>по предварительной записи!</br>
             Будем рады вашим звонкам и сообщениям.</p>
             <div class="main__booking__dsk__media">
               <div class="main__booking__dsk__item">
@@ -500,10 +500,15 @@
         <p class="main-footer-mbl__text main-footer-mbl__address">
           Московская область, г.Химки, мкр. Сходня, ул. Кирова 3с3, 2 этаж
         </p>
-        <a
-          class="main-footer-mbl__map"
-          href="https://yandex.ru/maps/10758/himki/house/ulitsa_kirova_3s3/Z04YdA5nSk0BQFtvfXV0cX5gYw==/?ll=37.297853%2C55.950132&z=16.83"
-          ><img src="./assets/images/main/map.png" alt="Карта" /></a>
+        <div class="main-footer-mbl__map">
+          <script 
+            type="text/javascript"
+            charset="utf-8"
+            async
+            style="width: 100%; height: 100%;"
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A09d05cfae0cdd175f387fb46f2eb3524d8c2d14680c4fab327abad11f5822f6a&amp;lang=ru_RU&amp;scroll=true"
+          ></script>
+        </div>
         <p class="main-footer-mbl__text">Время работы:</p>
         <p class="main-footer-mbl__text">
           Пн. - Пт. 11:00 - 19:00 <br />

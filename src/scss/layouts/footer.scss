@@ -1,8 +1,8 @@
 @import "./variables.scss";
 
-@media screen and (min-width: $mobile) and (max-width: $tablet) {
+@media screen and (max-width: $tablet) {
 
-    .mbl-header-btn, .wrapper-mbl-mk,   {
+    .mbl-header-btn, .wrapper-mbl-mk   {
         display: none;
     }
 
@@ -75,6 +75,7 @@
         &__number {
             font-size: 0.9em;
             font-weight: 600;
+            margin: 0;
         }
 
         &__address {
@@ -101,7 +102,7 @@
     }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: $tablet) {
 
 .footer__list_items-mbl{
     display: none;
@@ -135,6 +136,11 @@
             width: 40%;
             margin: 20px 20px;
             cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+                color: $color-text;
+            }
         }
 
         &_small {
@@ -181,6 +187,11 @@
             font-family: $title-font;
             text-decoration: none;
             cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+                color: $color-text;
+            }
             } 
 
         &_hours {
