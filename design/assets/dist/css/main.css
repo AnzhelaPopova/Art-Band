@@ -396,37 +396,6 @@ p, a {
   margin: 0;
 }
 
-.button-record-dsk {
-  background-color: #A0B45B;
-  font-family: "Nunito", sans-serif;
-  color: #FBFFE9;
-  text-decoration: none;
-  font-size: calc((100vw + 173.8px) / 45);
-  width: calc((100vw + 480.27px) / 7.1);
-  height: calc((100vw + 409px) / 26.1);
-  border-radius: 15px;
-  box-shadow: 4px 4px 4px 0 rgba(63, 84, 0, 0.7);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 4vh;
-}
-
-.button-record-mbl {
-  background-color: #A0B45B;
-  color: #FBFFE9;
-  text-decoration: none;
-  font-size: calc((100vw + 173.8px) / 35);
-  width: calc((100vw + 480.27px) / 7.1);
-  height: calc((100vw + 409px) / 26.1);
-  border-radius: 15px;
-  box-shadow: 4px 4px 4px 0 rgba(63, 84, 0, 0.7);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 5.5vh;
-}
-
 .button-more-mbl {
   background-color: #FBFFE9;
   color: rgba(0, 0, 0, 0.7);
@@ -810,7 +779,7 @@ p, a {
     padding: 0 0 0 4%;
   }
 }
-@media screen and (min-width: 360px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .dsk-diary__link {
     display: none;
   }
@@ -880,9 +849,14 @@ p, a {
     justify-content: center;
     margin-bottom: 4vh;
   }
+  .mbl-diary__link_mk {
+    margin-top: 6vw;
+    font-family: "Nunito", sans-serif;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 2560px) {
-  .mbl-diary__go, .mbl-diary__link {
+  .mbl-diary__go,
+  .mbl-diary__link {
     display: none;
   }
   .dsk-diary {
@@ -941,6 +915,9 @@ p, a {
     align-items: center;
     justify-content: center;
     margin-top: 5.5vh;
+  }
+  .dsk-diary__link_mk {
+    margin-top: 2vw;
   }
   .dsk-diary__img {
     width: 70%;
@@ -2018,6 +1995,10 @@ p, a {
     display: flex;
     justify-content: center;
   }
+  .dsk-diary__link_mk {
+    margin-top: 6vw;
+    font-family: "Nunito", sans-serif;
+  }
 }
 /*mobile*/
 @media screen and (max-width: 768px) {
@@ -2161,6 +2142,10 @@ p, a {
     width: 100vw;
     display: flex;
     justify-content: center;
+  }
+  .mbl-diary__link_mk {
+    margin-top: 6vw;
+    font-family: "Nunito", sans-serif;
   }
 }
 .loza__body {
