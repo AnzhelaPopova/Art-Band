@@ -989,11 +989,11 @@ p, a {
 }
 .about__text__paragraph {
   font-family: "Nunito", sans-serif;
-  font-size: 18px;
+  font-size: calc((100vw + 68.47px) / 69.789);
   color: rgba(0, 0, 0, 0.7);
   margin-left: 10px;
   text-indent: 30px;
-  line-height: 2.2;
+  line-height: 1.4;
 }
 
 .about__carousel {
@@ -1014,11 +1014,9 @@ p, a {
   text-align: center;
   padding-top: 20px;
 }
-.about__advantages__cards p {
+.about__advantages__imgtitle {
   font-family: "Nunito", sans-serif;
-  color: rgba(0, 0, 0, 0.7);
-  font-size: 1.2em;
-  margin-top: 3vh;
+  font-size: 16px;
 }
 
 @media screen and (max-width: 767px) {
@@ -1035,6 +1033,13 @@ p, a {
     padding-left: 25px;
     padding-right: 25px;
   }
+  .about__text__paragraph {
+    font-weight: 300;
+    font-size: calc((100vw + 87.86px) / 26.714);
+    color: rgba(0, 0, 0, 0.7);
+    line-height: 1.2;
+    margin-top: 10px;
+  }
   .about__content {
     display: flex;
     flex-direction: column;
@@ -1048,12 +1053,6 @@ p, a {
   .about__whychooseus__h2 {
     font-size: calc((100vw - 19px) / 17);
     font-weight: 600;
-    color: rgba(0, 0, 0, 0.7);
-  }
-  .about__text .about__title__paragraph,
-  .about__text .about__whychooseus__paragraph {
-    font-weight: 300;
-    font-size: calc((100vw + 87.86px) / 26.714);
     color: rgba(0, 0, 0, 0.7);
   }
   .about__advantages {
@@ -1084,7 +1083,7 @@ p, a {
     padding-right: 10vw;
   }
   .about__text__paragraph {
-    font-size: 24px;
+    font-size: 28px;
   }
 }
 @media (min-width: 769px) and (max-width: 1180px) {
