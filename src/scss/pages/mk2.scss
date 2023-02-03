@@ -6,6 +6,9 @@
         display: none;
     }
 
+.wrapper__mk2 {
+    padding: 7px;
+}
     .candle-message {
         background-color: $color-light;
         overflow-x: hidden;
@@ -16,8 +19,12 @@
             justify-content: center;
             margin-top: 8vh;
             gap: 5vw;
+
+            width: 100%;
             
-            
+            & img {
+                width: 100%;
+            }
 
             &_line {
                 border-bottom: 1px solid rgba(0, 0, 0, 0.5);
