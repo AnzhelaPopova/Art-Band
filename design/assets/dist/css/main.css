@@ -1008,6 +1008,7 @@ p, a {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 6vw 10vw 6vw 10vw;
 }
 .about__advantages__cards {
   text-align: center;
@@ -1235,7 +1236,7 @@ p, a {
     text-align: center;
     color: rgba(0, 0, 0, 0.7);
     text-decoration: none;
-    font-size: calc((100vw + 2696px) / 173.2);
+    font-size: calc((100vw + 3042.4px) / 173.2);
   }
   .main__booking__dsk__text {
     font-family: "Nunito", sans-serif;
@@ -1254,28 +1255,41 @@ p, a {
     margin-bottom: 0;
     text-align: left;
   }
-  .main__booking__dsk__media {
+  .main-booking {
+    display: flex;
+    gap: 1%;
+    justify-content: center;
+    padding-bottom: 7vh;
+  }
+  .main-booking__icon {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    gap: 1vh;
-    padding: 2vw 6vw;
-    padding-top: 0;
   }
-  .main__booking__dsk__item {
+  .main-booking__img {
+    width: 70%;
+  }
+  .main-booking__img_big {
+    width: 85%;
+  }
+  .main-booking__link {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1vw;
-    width: 30vw;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-bottom: 0;
+    font-family: "Nunito", sans-serif;
   }
-  .main__booking__dsk__item1 {
-    gap: 2vw;
+  .main-booking__web {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 300;
   }
-  .main__booking__dsk__img {
-    align-items: center;
-    opacity: 0.7;
-    width: 15%;
+  .main-booking__number {
+    font-size: 0.9em;
+    font-weight: 300;
+    margin-bottom: 0;
   }
   .main__shop__dsk {
     padding: 3% 15%;
@@ -1311,10 +1325,14 @@ p, a {
   }
   .main__reviews__dsk__gallery {
     display: grid;
-    grid-template-columns: repeat(3, 30%);
+    grid-template-columns: repeat(4, 30%);
+    grid-template-rows: repeat(2, 40%);
     grid-gap: 1rem;
     margin: 0 auto;
-    padding-bottom: 10vh;
+    width: 60vw;
+    height: 60vh;
+    justify-content: center;
+    margin-bottom: 2vh;
   }
   .main__reviews__dsk__img {
     object-fit: cover;
@@ -1330,7 +1348,7 @@ p, a {
     grid-template-columns: 1fr 1fr;
     gap: 4%;
     align-items: center;
-    padding: 7% 7%;
+    padding: 3% 7% 0 7%;
     font-family: "Nunito", sans-serif;
   }
   .main-footer-dsk__nav {
@@ -1357,30 +1375,6 @@ p, a {
     margin-bottom: 2vh;
     color: rgba(0, 0, 0, 0.7);
   }
-  .main-footer-dsk__media {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1vh;
-  }
-  .main-footer-dsk__media__item {
-    display: flex;
-    align-items: center;
-    gap: 1vw;
-    color: rgba(0, 0, 0, 0.7);
-  }
-  .main-footer-dsk__media__img {
-    opacity: 0.7;
-    width: 15%;
-  }
-  .main-footer-dsk__media__hypertext {
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.7);
-  }
-  .main-footer-dsk__media__hypertext:hover {
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.7);
-  }
   .main-footer-dsk__hours {
     margin-top: 2vh;
     color: rgba(0, 0, 0, 0.7);
@@ -1390,20 +1384,62 @@ p, a {
     color: rgba(0, 0, 0, 0.7);
     font-size: 20px;
   }
-  .main-footer-dsk__down {
+  .main-footer-dsk__copy {
     display: flex;
+    width: 97vw;
     justify-content: flex-end;
-    align-items: flex-end;
-    gap: 5px;
-    font-family: "Nunito", sans-serif;
-    padding: 1% 7%;
+    align-items: flex-start;
+    gap: 2%;
   }
-  .main-footer-dsk__down__logo {
-    width: 9vw;
+  .main-footer-dsk__brand {
+    font-family: "Annabelle", sans-serif;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 2em;
+  }
+  .main-footer-dsk__text {
+    align-self: center;
+    font-size: 1.3em;
+    color: rgba(0, 0, 0, 0.7);
+    font-family: "Inter", sans-serif;
   }
   .copyright {
     margin-bottom: 0;
     padding: 0;
+    font-size: 1.2em;
+  }
+  .main-footer-social {
+    display: flex;
+    gap: 3%;
+    line-height: 2em;
+  }
+  .main-footer-social__icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .main-footer-social__img {
+    width: 70%;
+  }
+  .main-footer-social__img_big {
+    width: 85%;
+  }
+  .main-footer-social__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-bottom: 0;
+  }
+  .main-footer-social__web {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 600;
+  }
+  .main-footer-social__number {
+    font-size: 0.9em;
+    font-weight: 600;
+    margin: 0;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1431,6 +1467,7 @@ p, a {
     flex-direction: column;
     margin-top: 20vh;
     width: calc((100vw + 173.8px) / 1.57);
+    width: 80vw;
   }
   .main-page-mbl-main__logo {
     width: 100vw;
@@ -1439,7 +1476,7 @@ p, a {
   }
   .main-page-mbl-main__logo_black {
     font-family: "Annabelle", sans-serif;
-    font-size: calc((100vw + 507px) / 19.6);
+    font-size: calc((100vw + 167px) / 15.5);
     text-align: start;
     line-height: 0.5em;
   }
@@ -1450,7 +1487,7 @@ p, a {
     font-family: "Calibri", sans-serif;
     font-weight: 900;
     color: #5D6F3A;
-    font-size: calc((100vw + 605px) / 19.6);
+    font-size: calc((100vw + 244.8px) / 15.5);
     text-align: center;
   }
   .main-page-mbl-main__logo_description {
@@ -1459,7 +1496,7 @@ p, a {
     text-align: center;
     font-weight: 500;
     margin-top: 30%;
-    font-size: calc((100vw + 1585px) / 78.4);
+    font-size: calc((100vw + 400.5px) / 38.9);
   }
   .main-page-mbl-main__contackts {
     display: flex;
@@ -1476,6 +1513,7 @@ p, a {
   .main-page-mbl-main__social-networks {
     display: flex;
     margin-bottom: 10%;
+    column-gap: 5vw;
     justify-content: center;
   }
   .main-page-mbl-main__social-networks_tg {
@@ -3188,7 +3226,7 @@ p, a {
     text-align: center;
     font-family: "Nunito", sans-serif;
     font-weight: 500;
-    font-size: calc((100vw + 2263px) / 216.5);
+    font-size: calc((100vw + 517.25px) / 58.37);
     line-height: 2em;
     color: rgba(0, 0, 0, 0.7);
   }
