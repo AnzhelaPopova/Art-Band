@@ -1,8 +1,8 @@
 @import "./variables.scss";
 
-@media screen and (min-width: $mobile) and (max-width: $tablet) {
+@media screen and (max-width: $tablet) {
 
-    .mbl-header-btn, .wrapper-mbl-mk  {
+    .mbl-header-btn, .wrapper-mbl-mk   {
         display: none;
     }
 
@@ -75,6 +75,7 @@
         &__number {
             font-size: 0.9em;
             font-weight: 600;
+            margin: 0;
         }
 
         &__address {
@@ -101,7 +102,11 @@
     }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: $tablet) {
+
+.footer__list_items-mbl{
+    display: none;
+}    
 
 .footer {
     display: flex;
@@ -122,7 +127,7 @@
     }
 
     &__cosial {
-    margin-left: 9vw;
+        margin-left: 9vw;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
@@ -131,25 +136,23 @@
             width: 40%;
             margin: 20px 20px;
             cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+                color: $color-text;
+            }
         }
 
         &_small {
             width: 48%;
         }
     }
-
-    & ul {
-        font-size: 18px;
-        list-style: none;
-        color: $color-text;
-        padding: 5px 0 5px 0;
-        } 
-   
+  
      &__logo {
         font-family: $title-font;
         display: flex;
         align-items: flex-end;
-        font-size: 20px;
+        font-size: calc((100vw + 2693px)/ 173.1);
         width: 50vw;
         border-top: 2px solid $color-text;
         justify-content: center;
@@ -158,6 +161,7 @@
         padding-bottom: 40px;
         margin-top: 40px;
 
+
             & span {
                 font-family: $title-font-logo;
                 color: $color-text;
@@ -165,15 +169,21 @@
             } 
         } 
 
-        &__copy-dsk {
+        &__copy-dsk  {
             color: $color-text;
+            font-size: calc((100vw + 14810px)/ 865.5);
+
 
         }
 
         &__list {
         display: flex;
         flex-direction: column;
-        margin: 0px 10vw;
+        margin: 0px 9vw;
+
+            &_contacts {
+                font-size: calc((100vw + 2346.8px)/ 173.1);
+            }
 
             &_items {
             width: 100%;
@@ -183,6 +193,14 @@
             padding: 10px 0 10px 0;
             font-family: $title-font;
             text-decoration: none;
+            cursor: pointer;
+            font-size: calc((100vw + 2693px)/ 173.1);
+
+
+            &:hover {
+                text-decoration: underline;
+                color: $color-text;
+            }
             } 
 
         &_hours {
@@ -192,6 +210,8 @@
           line-height: 30px;
           font-family: $title-font;
           color: $color-text;
+          font-size: calc((100vw + 2346.8px)/ 173.1);
+
         }
 
         &_address {
@@ -201,6 +221,8 @@
           line-height: 30px;
           font-family: $title-font;
           color: $color-text;
+          font-size: calc((100vw + 2346.8px)/ 173.1);
+
         }
 
         &_phone {
@@ -210,12 +232,18 @@
           line-height: 30px;
           font-family: $title-font;
           color: $color-text;
+          font-size: calc((100vw + 2346.8px)/ 173.1);
+
         }
       }
     }
 }
 
 @media screen and (max-width: $tablet) {
+
+    .footer__list_items {
+        display: none;
+    }
 
     .footer {
         display: flex;
@@ -254,11 +282,6 @@
             }
         }
     
-        & ul {
-            list-style: none;
-            color: $color-text;
-            padding: 5px 0;
-            } 
        
          &__logo {
             display: flex;
@@ -267,14 +290,19 @@
             align-items: flex-start;
             gap: 10%;
             margin: 8% 0 8% 0;
-            
+
+                
     
                 & span {
                     font-family: $title-font-logo;
-            color: $color-text;
-            font-size: 1.5em;
+                    color: $color-text;
+                    font-size: calc((100vw - 20.83px)/ 16.9);
                 } 
             } 
+
+        &__copy-dsk {
+            font-size: calc((100vw - 54.75px)/ 16.9);
+        }    
 
         &__items {
                 display: flex;
@@ -290,7 +318,7 @@
             padding: 8% 0 0 0;
             cursor: pointer;
     
-                &_items {
+                &_items-mbl {
                 list-style: none;
                 text-decoration: none;
                 display: flex;
@@ -299,7 +327,7 @@
                 cursor: pointer;
                 font-family: $default-font;
                 font-weight: 700;
-                font-size: 1.2em;
+                font-size: calc((100vw + 123.3px)/ 25.4);
                 text-align: center;
                 color: $color-text;
                 margin-bottom: 8%;
@@ -312,7 +340,7 @@
                 justify-content: center;
                 font-family: $default-font;
                 font-weight: 400;
-                font-size: 1.2em;
+                font-size: calc((100vw + 372.6px)/ 40.7);
                 text-align: center;
                 color: $color-text;
                 margin-bottom: 8%;

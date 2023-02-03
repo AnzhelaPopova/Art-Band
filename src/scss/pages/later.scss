@@ -1,12 +1,14 @@
 @import "../layouts/variables.scss";
 
-    .later {
-        background-color: $color-light;
-        height: 90vh;
-        display: flex;
-        justify-content: center;
+
 
         @media screen and (min-width: $tablet) and (max-width: $large-desktop) {
+
+            .later {
+                background-color: $color-light;
+                height: 90vh;
+                display: flex;
+                justify-content: center;
 
         &__container {
             width: 60vw;
@@ -25,13 +27,21 @@
             text-align: center;
             font-family: $default-font;
             font-weight: 500;
-            font-size: 1.1em;
+            font-size: calc(( 100vw + 716.5px ) / 123.7);
             line-height: 2em;
             color: $color-text;
         }
     }
+    }
 
-    @media screen and (min-width: $mobile) and (max-width: $tablet) {
+    @media screen and (max-width: $tablet) {
+
+        .later {
+            background-color: $color-light;
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            margin-top: 85px;
 
         &__container {
             width: 80vw;
@@ -50,7 +60,7 @@
             text-align: center;
             font-family: $default-font;
             font-weight: 500;
-            font-size: 1.1em;
+            font-size: calc(( 100vw + 517.25px ) / 58.37);
             line-height: 2em;
             color: $color-text;
         }
