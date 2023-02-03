@@ -570,7 +570,7 @@ p, a {
     font-family: "Inter", sans-serif;
     display: flex;
     align-items: flex-end;
-    font-size: 20px;
+    font-size: calc((100vw + 2693px) / 173.1);
     width: 50vw;
     border-top: 2px solid rgba(0, 0, 0, 0.7);
     justify-content: center;
@@ -586,11 +586,15 @@ p, a {
   }
   .footer__copy-dsk {
     color: rgba(0, 0, 0, 0.7);
+    font-size: calc((100vw + 14810px) / 865.5);
   }
   .footer__list {
     display: flex;
     flex-direction: column;
-    margin: 0px 10vw;
+    margin: 0px 9vw;
+  }
+  .footer__list_contacts {
+    font-size: calc((100vw + 2346.8px) / 173.1);
   }
   .footer__list_items {
     width: 100%;
@@ -601,6 +605,7 @@ p, a {
     font-family: "Inter", sans-serif;
     text-decoration: none;
     cursor: pointer;
+    font-size: calc((100vw + 2693px) / 173.1);
   }
   .footer__list_items:hover {
     text-decoration: underline;
@@ -613,6 +618,7 @@ p, a {
     line-height: 30px;
     font-family: "Inter", sans-serif;
     color: rgba(0, 0, 0, 0.7);
+    font-size: calc((100vw + 2346.8px) / 173.1);
   }
   .footer__list_address {
     background: url(../d5e13cb8e0082552fd83.png) left no-repeat;
@@ -621,6 +627,7 @@ p, a {
     line-height: 30px;
     font-family: "Inter", sans-serif;
     color: rgba(0, 0, 0, 0.7);
+    font-size: calc((100vw + 2346.8px) / 173.1);
   }
   .footer__list_phone {
     background: url(../9c369224e745594cca50.png) left no-repeat;
@@ -629,6 +636,7 @@ p, a {
     line-height: 30px;
     font-family: "Inter", sans-serif;
     color: rgba(0, 0, 0, 0.7);
+    font-size: calc((100vw + 2346.8px) / 173.1);
   }
 }
 @media screen and (max-width: 768px) {
@@ -678,7 +686,10 @@ p, a {
   .footer__logo span {
     font-family: "Annabelle", sans-serif;
     color: rgba(0, 0, 0, 0.7);
-    font-size: 1.5em;
+    font-size: calc((100vw - 20.83px) / 16.9);
+  }
+  .footer__copy-dsk {
+    font-size: calc((100vw - 54.75px) / 16.9);
   }
   .footer__items {
     display: flex;
@@ -702,7 +713,7 @@ p, a {
     cursor: pointer;
     font-family: "Nunito", sans-serif;
     font-weight: 700;
-    font-size: 1.2em;
+    font-size: calc((100vw + 123.3px) / 25.4);
     text-align: center;
     color: rgba(0, 0, 0, 0.7);
     margin-bottom: 8%;
@@ -714,7 +725,7 @@ p, a {
     justify-content: center;
     font-family: "Nunito", sans-serif;
     font-weight: 400;
-    font-size: 1.2em;
+    font-size: calc((100vw + 372.6px) / 40.7);
     text-align: center;
     color: rgba(0, 0, 0, 0.7);
     margin-bottom: 8%;
