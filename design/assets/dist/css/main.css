@@ -504,6 +504,9 @@ p, a {
   }
 }
 @media screen and (min-width: 769px) {
+  .footer__list_items-mbl {
+    display: none;
+  }
   .footer {
     display: flex;
     flex-direction: column;
@@ -533,12 +536,6 @@ p, a {
   }
   .footer__cosial_small {
     width: 48%;
-  }
-  .footer ul {
-    font-size: 18px;
-    list-style: none;
-    color: rgba(0, 0, 0, 0.7);
-    padding: 5px 0 5px 0;
   }
   .footer__logo {
     font-family: "Inter", sans-serif;
@@ -574,6 +571,7 @@ p, a {
     padding: 10px 0 10px 0;
     font-family: "Inter", sans-serif;
     text-decoration: none;
+    cursor: pointer;
   }
   .footer__list_hours {
     background: url(../8bee01452e99b6d5dfba.png) left no-repeat;
@@ -601,6 +599,9 @@ p, a {
   }
 }
 @media screen and (max-width: 768px) {
+  .footer__list_items {
+    display: none;
+  }
   .footer {
     display: flex;
     flex-direction: column;
@@ -633,11 +634,6 @@ p, a {
   .footer__cosial_small {
     width: 58%;
   }
-  .footer ul {
-    list-style: none;
-    color: rgba(0, 0, 0, 0.7);
-    padding: 5px 0;
-  }
   .footer__logo {
     display: flex;
     width: 100vw;
@@ -664,7 +660,7 @@ p, a {
     padding: 8% 0 0 0;
     cursor: pointer;
   }
-  .footer__list_items {
+  .footer__list_items-mbl {
     list-style: none;
     text-decoration: none;
     display: flex;
@@ -1161,6 +1157,37 @@ p, a {
     width: 15%;
     height: 16%;
   }
+  .main__shop__dsk {
+    padding: 3% 15%;
+    background-color: #FBFFE9;
+  }
+  .main__shop__dsk__title {
+    padding: 3vh 0;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+    text-transform: uppercase;
+  }
+  .main__shop__dsk__choosemk {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .main__shop__dsk__choosemk__item {
+    padding-bottom: 10px;
+  }
+  .main__reviews__dsk {
+    padding: 3% 15%;
+    background-color: #FBFFE9;
+  }
+  .main__reviews__dsk__title {
+    padding: 3vh 0;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+  }
   .main-footer-dsk {
     background-color: rgba(160, 180, 91, 0.6);
   }
@@ -1311,10 +1338,7 @@ p, a {
   .main-page-mbl-main__social-networks_vk img {
     height: 4.43vh;
   }
-  .main__booking__dsk {
-    display: none;
-  }
-  .main-footer-dsk {
+  .main__booking__dsk, .main__shop__dsk, .main-footer-dsk, .main__reviews__dsk {
     display: none;
   }
 }
