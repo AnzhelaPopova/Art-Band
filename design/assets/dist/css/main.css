@@ -883,7 +883,7 @@ p, a {
     border-radius: 45px;
     box-shadow: 4px 4px 4px 0 rgba(63, 84, 0, 0.6);
     width: 60vw;
-    margin-bottom: 11vh;
+    margin-bottom: 5.5vw;
     padding: 3% 0 3% 0;
   }
   .dsk-diary__title {
@@ -2379,12 +2379,12 @@ p, a {
     flex-direction: column;
     align-items: center;
   }
-  .neuro__img1 {
+  .neuro__img3 {
     width: 86.77vw;
     height: 86.77vw;
     margin-top: 4.07vw;
   }
-  .neuro__img1 img {
+  .neuro__img3 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -2424,7 +2424,7 @@ p, a {
     object-fit: cover;
     border-radius: 15px;
   }
-  .neuro__img3 {
+  .neuro__img1 {
     display: none;
   }
 }
