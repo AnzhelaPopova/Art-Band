@@ -181,6 +181,11 @@
             justify-content: center;
         }
     }
+    .dsk-diary__link_mk {
+        margin-top: 6vw;
+
+        font-family: $default-font;
+    }
 }
 
 /*mobile*/
@@ -369,5 +374,10 @@
             display: flex;
             justify-content: center;
         }
+    }
+    .mbl-diary__link_mk {
+        margin-top: 6vw;
+
+        font-family: $default-font;
     }
 }
