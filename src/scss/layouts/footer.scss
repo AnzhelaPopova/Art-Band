@@ -127,7 +127,7 @@
     }
 
     &__cosial {
-    margin-left: 9vw;
+        margin-left: 9vw;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
@@ -152,7 +152,7 @@
         font-family: $title-font;
         display: flex;
         align-items: flex-end;
-        font-size: 20px;
+        font-size: calc((100vw + 2693px)/ 173.1);
         width: 50vw;
         border-top: 2px solid $color-text;
         justify-content: center;
@@ -161,6 +161,7 @@
         padding-bottom: 40px;
         margin-top: 40px;
 
+
             & span {
                 font-family: $title-font-logo;
                 color: $color-text;
@@ -168,15 +169,21 @@
             } 
         } 
 
-        &__copy-dsk {
+        &__copy-dsk  {
             color: $color-text;
+            font-size: calc((100vw + 14810px)/ 865.5);
+
 
         }
 
         &__list {
         display: flex;
         flex-direction: column;
-        margin: 0px 10vw;
+        margin: 0px 9vw;
+
+            &_contacts {
+                font-size: calc((100vw + 2346.8px)/ 173.1);
+            }
 
             &_items {
             width: 100%;
@@ -187,6 +194,8 @@
             font-family: $title-font;
             text-decoration: none;
             cursor: pointer;
+            font-size: calc((100vw + 2693px)/ 173.1);
+
 
             &:hover {
                 text-decoration: underline;
@@ -201,6 +210,8 @@
           line-height: 30px;
           font-family: $title-font;
           color: $color-text;
+          font-size: calc((100vw + 2346.8px)/ 173.1);
+
         }
 
         &_address {
@@ -210,6 +221,8 @@
           line-height: 30px;
           font-family: $title-font;
           color: $color-text;
+          font-size: calc((100vw + 2346.8px)/ 173.1);
+
         }
 
         &_phone {
@@ -219,6 +232,8 @@
           line-height: 30px;
           font-family: $title-font;
           color: $color-text;
+          font-size: calc((100vw + 2346.8px)/ 173.1);
+
         }
       }
     }
@@ -275,14 +290,19 @@
             align-items: flex-start;
             gap: 10%;
             margin: 8% 0 8% 0;
-            
+
+                
     
                 & span {
                     font-family: $title-font-logo;
-            color: $color-text;
-            font-size: 1.5em;
+                    color: $color-text;
+                    font-size: calc((100vw - 20.83px)/ 16.9);
                 } 
             } 
+
+        &__copy-dsk {
+            font-size: calc((100vw - 54.75px)/ 16.9);
+        }    
 
         &__items {
                 display: flex;
@@ -307,7 +327,7 @@
                 cursor: pointer;
                 font-family: $default-font;
                 font-weight: 700;
-                font-size: 1.2em;
+                font-size: calc((100vw + 123.3px)/ 25.4);
                 text-align: center;
                 color: $color-text;
                 margin-bottom: 8%;
@@ -320,7 +340,7 @@
                 justify-content: center;
                 font-family: $default-font;
                 font-weight: 400;
-                font-size: 1.2em;
+                font-size: calc((100vw + 372.6px)/ 40.7);
                 text-align: center;
                 color: $color-text;
                 margin-bottom: 8%;

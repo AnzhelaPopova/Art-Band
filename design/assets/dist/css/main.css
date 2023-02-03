@@ -353,7 +353,7 @@
 /*!******************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/app.scss ***!
   \******************************************************************************************************************************************************/
-@charset "UTF-8";
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -394,37 +394,6 @@ h5,
 h6,
 p, a {
   margin: 0;
-}
-
-.button-record-dsk {
-  background-color: #A0B45B;
-  font-family: "Nunito", sans-serif;
-  color: #FBFFE9;
-  text-decoration: none;
-  font-size: calc((100vw + 173.8px) / 45);
-  width: calc((100vw + 480.27px) / 7.1);
-  height: calc((100vw + 409px) / 26.1);
-  border-radius: 15px;
-  box-shadow: 4px 4px 4px 0 rgba(63, 84, 0, 0.7);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 4vh;
-}
-
-.button-record-mbl {
-  background-color: #A0B45B;
-  color: #FBFFE9;
-  text-decoration: none;
-  font-size: calc((100vw + 173.8px) / 35);
-  width: calc((100vw + 480.27px) / 7.1);
-  height: calc((100vw + 409px) / 26.1);
-  border-radius: 15px;
-  box-shadow: 4px 4px 4px 0 rgba(63, 84, 0, 0.7);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 5.5vh;
 }
 
 .button-more-mbl {
@@ -570,7 +539,7 @@ p, a {
     font-family: "Inter", sans-serif;
     display: flex;
     align-items: flex-end;
-    font-size: 20px;
+    font-size: calc((100vw + 2693px) / 173.1);
     width: 50vw;
     border-top: 2px solid rgba(0, 0, 0, 0.7);
     justify-content: center;
@@ -586,11 +555,15 @@ p, a {
   }
   .footer__copy-dsk {
     color: rgba(0, 0, 0, 0.7);
+    font-size: calc((100vw + 14810px) / 865.5);
   }
   .footer__list {
     display: flex;
     flex-direction: column;
-    margin: 0px 10vw;
+    margin: 0px 9vw;
+  }
+  .footer__list_contacts {
+    font-size: calc((100vw + 2346.8px) / 173.1);
   }
   .footer__list_items {
     width: 100%;
@@ -601,6 +574,7 @@ p, a {
     font-family: "Inter", sans-serif;
     text-decoration: none;
     cursor: pointer;
+    font-size: calc((100vw + 2693px) / 173.1);
   }
   .footer__list_items:hover {
     text-decoration: underline;
@@ -613,6 +587,7 @@ p, a {
     line-height: 30px;
     font-family: "Inter", sans-serif;
     color: rgba(0, 0, 0, 0.7);
+    font-size: calc((100vw + 2346.8px) / 173.1);
   }
   .footer__list_address {
     background: url(../d5e13cb8e0082552fd83.png) left no-repeat;
@@ -621,6 +596,7 @@ p, a {
     line-height: 30px;
     font-family: "Inter", sans-serif;
     color: rgba(0, 0, 0, 0.7);
+    font-size: calc((100vw + 2346.8px) / 173.1);
   }
   .footer__list_phone {
     background: url(../9c369224e745594cca50.png) left no-repeat;
@@ -629,6 +605,7 @@ p, a {
     line-height: 30px;
     font-family: "Inter", sans-serif;
     color: rgba(0, 0, 0, 0.7);
+    font-size: calc((100vw + 2346.8px) / 173.1);
   }
 }
 @media screen and (max-width: 768px) {
@@ -678,7 +655,10 @@ p, a {
   .footer__logo span {
     font-family: "Annabelle", sans-serif;
     color: rgba(0, 0, 0, 0.7);
-    font-size: 1.5em;
+    font-size: calc((100vw - 20.83px) / 16.9);
+  }
+  .footer__copy-dsk {
+    font-size: calc((100vw - 54.75px) / 16.9);
   }
   .footer__items {
     display: flex;
@@ -702,7 +682,7 @@ p, a {
     cursor: pointer;
     font-family: "Nunito", sans-serif;
     font-weight: 700;
-    font-size: 1.2em;
+    font-size: calc((100vw + 123.3px) / 25.4);
     text-align: center;
     color: rgba(0, 0, 0, 0.7);
     margin-bottom: 8%;
@@ -714,7 +694,7 @@ p, a {
     justify-content: center;
     font-family: "Nunito", sans-serif;
     font-weight: 400;
-    font-size: 1.2em;
+    font-size: calc((100vw + 372.6px) / 40.7);
     text-align: center;
     color: rgba(0, 0, 0, 0.7);
     margin-bottom: 8%;
@@ -810,7 +790,7 @@ p, a {
     padding: 0 0 0 4%;
   }
 }
-@media screen and (min-width: 360px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .dsk-diary__link {
     display: none;
   }
@@ -880,9 +860,14 @@ p, a {
     justify-content: center;
     margin-bottom: 4vh;
   }
+  .mbl-diary__link_mk {
+    margin-top: 6vw;
+    font-family: "Nunito", sans-serif;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 2560px) {
-  .mbl-diary__go, .mbl-diary__link {
+  .mbl-diary__go,
+  .mbl-diary__link {
     display: none;
   }
   .dsk-diary {
@@ -898,7 +883,7 @@ p, a {
     border-radius: 45px;
     box-shadow: 4px 4px 4px 0 rgba(63, 84, 0, 0.6);
     width: 60vw;
-    margin-bottom: 11vh;
+    margin-bottom: 5.5vw;
     padding: 3% 0 3% 0;
   }
   .dsk-diary__title {
@@ -941,6 +926,9 @@ p, a {
     align-items: center;
     justify-content: center;
     margin-top: 5.5vh;
+  }
+  .dsk-diary__link_mk {
+    margin-top: 2vw;
   }
   .dsk-diary__img {
     width: 70%;
@@ -989,11 +977,11 @@ p, a {
 }
 .about__text__paragraph {
   font-family: "Nunito", sans-serif;
-  font-size: 18px;
+  font-size: calc((100vw + 68.47px) / 69.789);
   color: rgba(0, 0, 0, 0.7);
   margin-left: 10px;
   text-indent: 30px;
-  line-height: 2.2;
+  line-height: 1.4;
 }
 
 .about__carousel {
@@ -1008,13 +996,14 @@ p, a {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 6vw 10vw 6vw 10vw;
 }
 .about__advantages__cards {
   text-align: center;
   padding-top: 20px;
 }
-.about__advantages__cards p {
-  font: "Nunito", sans-serif;
+.about__advantages__imgtitle {
+  font-family: "Nunito", sans-serif;
   font-size: 16px;
 }
 
@@ -1032,6 +1021,13 @@ p, a {
     padding-left: 25px;
     padding-right: 25px;
   }
+  .about__text__paragraph {
+    font-weight: 300;
+    font-size: calc((100vw + 87.86px) / 26.714);
+    color: rgba(0, 0, 0, 0.7);
+    line-height: 1.2;
+    margin-top: 10px;
+  }
   .about__content {
     display: flex;
     flex-direction: column;
@@ -1045,12 +1041,6 @@ p, a {
   .about__whychooseus__h2 {
     font-size: calc((100vw - 19px) / 17);
     font-weight: 600;
-    color: rgba(0, 0, 0, 0.7);
-  }
-  .about__text .about__title__paragraph,
-  .about__text .about__whychooseus__paragraph {
-    font-weight: 300;
-    font-size: calc((100vw + 87.86px) / 26.714);
     color: rgba(0, 0, 0, 0.7);
   }
   .about__advantages {
@@ -1081,7 +1071,7 @@ p, a {
     padding-right: 10vw;
   }
   .about__text__paragraph {
-    font-size: 24px;
+    font-size: 28px;
   }
 }
 @media (min-width: 769px) and (max-width: 1180px) {
@@ -1234,7 +1224,7 @@ p, a {
     text-align: center;
     color: rgba(0, 0, 0, 0.7);
     text-decoration: none;
-    font-size: calc((100vw + 2696px) / 173.2);
+    font-size: calc((100vw + 3042.4px) / 173.2);
   }
   .main__booking__dsk__text {
     font-family: "Nunito", sans-serif;
@@ -1251,27 +1241,43 @@ p, a {
   }
   .main__booking__dsk__smalltext {
     margin-bottom: 0;
+    text-align: left;
   }
-  .main__booking__dsk__media {
+  .main-booking {
+    display: flex;
+    gap: 1%;
+    justify-content: center;
+    padding-bottom: 7vh;
+  }
+  .main-booking__icon {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    gap: 1vh;
-    padding: 2vw 6vw;
-    padding-top: 0;
   }
-  .main__booking__dsk__item {
+  .main-booking__img {
+    width: 70%;
+  }
+  .main-booking__img_big {
+    width: 85%;
+  }
+  .main-booking__link {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1vw;
-    width: 30vw;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-bottom: 0;
+    font-family: "Nunito", sans-serif;
   }
-  .main__booking__dsk__item1 {
-    gap: 2vw;
+  .main-booking__web {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 300;
   }
-  .main__booking__dsk__img {
-    align-items: center;
+  .main-booking__number {
+    font-size: 0.9em;
+    font-weight: 300;
+    margin-bottom: 0;
   }
   .main__shop__dsk {
     padding: 3% 15%;
@@ -1305,6 +1311,23 @@ p, a {
     text-align: center;
     color: rgba(0, 0, 0, 0.7);
   }
+  .main__reviews__dsk__gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 30%);
+    grid-template-rows: repeat(2, 40%);
+    grid-gap: 1rem;
+    margin: 0 auto;
+    width: 60vw;
+    height: 60vh;
+    justify-content: center;
+    margin-bottom: 2vh;
+  }
+  .main__reviews__dsk__img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+  }
   .main-footer-dsk {
     background-color: rgba(160, 180, 91, 0.6);
   }
@@ -1313,7 +1336,7 @@ p, a {
     grid-template-columns: 1fr 1fr;
     gap: 4%;
     align-items: center;
-    padding: 7% 7%;
+    padding: 3% 7% 0 7%;
     font-family: "Nunito", sans-serif;
   }
   .main-footer-dsk__nav {
@@ -1340,26 +1363,6 @@ p, a {
     margin-bottom: 2vh;
     color: rgba(0, 0, 0, 0.7);
   }
-  .main-footer-dsk__media {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1vh;
-  }
-  .main-footer-dsk__media__item {
-    display: flex;
-    align-items: center;
-    gap: 1vw;
-    color: rgba(0, 0, 0, 0.7);
-  }
-  .main-footer-dsk__media__img {
-    opacity: 0.7;
-    width: 15%;
-  }
-  .main-footer-dsk__media__hypertext {
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.7);
-  }
   .main-footer-dsk__hours {
     margin-top: 2vh;
     color: rgba(0, 0, 0, 0.7);
@@ -1369,20 +1372,62 @@ p, a {
     color: rgba(0, 0, 0, 0.7);
     font-size: 20px;
   }
-  .main-footer-dsk__down {
+  .main-footer-dsk__copy {
     display: flex;
+    width: 97vw;
     justify-content: flex-end;
-    align-items: flex-end;
-    gap: 5px;
-    font-family: "Nunito", sans-serif;
-    padding: 1% 7%;
+    align-items: flex-start;
+    gap: 2%;
   }
-  .main-footer-dsk__down__logo {
-    width: 9vw;
+  .main-footer-dsk__brand {
+    font-family: "Annabelle", sans-serif;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 2em;
+  }
+  .main-footer-dsk__text {
+    align-self: center;
+    font-size: 1.3em;
+    color: rgba(0, 0, 0, 0.7);
+    font-family: "Inter", sans-serif;
   }
   .copyright {
     margin-bottom: 0;
     padding: 0;
+    font-size: 1.2em;
+  }
+  .main-footer-social {
+    display: flex;
+    gap: 3%;
+    line-height: 2em;
+  }
+  .main-footer-social__icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .main-footer-social__img {
+    width: 70%;
+  }
+  .main-footer-social__img_big {
+    width: 85%;
+  }
+  .main-footer-social__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-bottom: 0;
+  }
+  .main-footer-social__web {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 600;
+  }
+  .main-footer-social__number {
+    font-size: 0.9em;
+    font-weight: 600;
+    margin: 0;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1410,6 +1455,7 @@ p, a {
     flex-direction: column;
     margin-top: 20vh;
     width: calc((100vw + 173.8px) / 1.57);
+    width: 80vw;
   }
   .main-page-mbl-main__logo {
     width: 100vw;
@@ -1418,7 +1464,7 @@ p, a {
   }
   .main-page-mbl-main__logo_black {
     font-family: "Annabelle", sans-serif;
-    font-size: calc((100vw + 507px) / 19.6);
+    font-size: calc((100vw + 167px) / 15.5);
     text-align: start;
     line-height: 0.5em;
   }
@@ -1429,7 +1475,7 @@ p, a {
     font-family: "Calibri", sans-serif;
     font-weight: 900;
     color: #5D6F3A;
-    font-size: calc((100vw + 605px) / 19.6);
+    font-size: calc((100vw + 244.8px) / 15.5);
     text-align: center;
   }
   .main-page-mbl-main__logo_description {
@@ -1438,7 +1484,7 @@ p, a {
     text-align: center;
     font-weight: 500;
     margin-top: 30%;
-    font-size: calc((100vw + 1585px) / 78.4);
+    font-size: calc((100vw + 400.5px) / 38.9);
   }
   .main-page-mbl-main__contackts {
     display: flex;
@@ -1455,6 +1501,7 @@ p, a {
   .main-page-mbl-main__social-networks {
     display: flex;
     margin-bottom: 10%;
+    column-gap: 5vw;
     justify-content: center;
   }
   .main-page-mbl-main__social-networks_tg {
@@ -1958,6 +2005,10 @@ p, a {
     display: flex;
     justify-content: center;
   }
+  .dsk-diary__link_mk {
+    margin-top: 6vw;
+    font-family: "Nunito", sans-serif;
+  }
 }
 /*mobile*/
 @media screen and (max-width: 768px) {
@@ -2101,6 +2152,10 @@ p, a {
     width: 100vw;
     display: flex;
     justify-content: center;
+  }
+  .mbl-diary__link_mk {
+    margin-top: 6vw;
+    font-family: "Nunito", sans-serif;
   }
 }
 .loza__body {
@@ -2324,12 +2379,12 @@ p, a {
     flex-direction: column;
     align-items: center;
   }
-  .neuro__img1 {
+  .neuro__img3 {
     width: 86.77vw;
     height: 86.77vw;
     margin-top: 4.07vw;
   }
-  .neuro__img1 img {
+  .neuro__img3 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -2369,7 +2424,7 @@ p, a {
     object-fit: cover;
     border-radius: 15px;
   }
-  .neuro__img3 {
+  .neuro__img1 {
     display: none;
   }
 }
@@ -2964,17 +3019,17 @@ p, a {
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 40px;
+    font-size: calc((100vw + 852px) / 47.8);
     line-height: 48px;
     color: rgba(0, 0, 0, 0.7);
-    margin-top: 15px;
+    margin-top: 91px;
   }
   .shop-page__heading_two {
     text-align: center;
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 40px;
+    font-size: calc((100vw + 852px) / 47.8);
     line-height: 48px;
     color: rgba(0, 0, 0, 0.7);
   }
@@ -2987,7 +3042,7 @@ p, a {
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 30px;
+    font-size: calc((100vw + 9631px) / 346.6);
     line-height: 36px;
     color: rgba(0, 0, 0, 0.7);
   }
@@ -2998,7 +3053,7 @@ p, a {
     font-family: "Nunito", sans-serif;
     font-style: normal;
     font-weight: 300;
-    font-size: 28px;
+    font-size: calc((100vw + 13674.7px) / 577.6);
     line-height: 38px;
     color: rgba(0, 0, 0, 0.7);
     margin-top: 20px;
@@ -3029,58 +3084,72 @@ p, a {
   }
   .shop-page__grid {
     margin-top: 44px;
+    margin-bottom: 120px;
   }
   .shop-page__grid_one {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 12px;
     grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
-    grid-row-gap: 8px;
+    grid-row-gap: 12px;
   }
   .shop-page__grid_one-img {
-    width: 387px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 45px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
   .shop-page__grid_two {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 8px;
+    grid-column-gap: 12px;
     grid-template-columns: repeat(auto-fill, minmax(285px, 1fr));
+    grid-row-gap: 12px;
   }
   .shop-page__grid_two-img {
-    width: 285px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 45px;
-    margin-top: 7px;
+    margin-top: 12px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
   .shop-page__grid_three {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 6px;
+    grid-column-gap: 12px;
     grid-template-columns: repeat(auto-fill, minmax(385px, 1fr));
+    margin-top: 12px;
+    grid-row-gap: 12px;
   }
   .shop-page__grid_three-img {
-    width: 385px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 45px;
-    margin-top: 7px;
+    margin-top: 12px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
   .shop-page__grid_four {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 15px;
+    grid-column-gap: 12px;
     grid-template-columns: repeat(auto-fill, minmax(283px, 1fr));
+    margin-top: 12px;
+    grid-row-gap: 12px;
   }
   .shop-page__grid_four-img {
-    width: 283px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 45px;
-    margin-top: 7px;
+    margin-top: 12px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
   .shop-page__mobile {
     display: none;
@@ -3092,7 +3161,7 @@ p, a {
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 26px;
+    font-size: calc((100vw + 863.3px) / 62.6);
     line-height: 31px;
     text-align: center;
     text-transform: uppercase;
@@ -3125,7 +3194,7 @@ p, a {
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 300;
-    font-size: 18px;
+    font-size: calc((100vw + 949.8px) / 74.6);
     line-height: 25px;
     margin-right: 7px;
     color: rgba(0, 0, 0, 0.7);
@@ -3232,7 +3301,7 @@ p, a {
     text-align: center;
     font-family: "Nunito", sans-serif;
     font-weight: 500;
-    font-size: calc((100vw + 2263px) / 216.5);
+    font-size: calc((100vw + 517.25px) / 58.37);
     line-height: 2em;
     color: rgba(0, 0, 0, 0.7);
   }

@@ -84,17 +84,18 @@
                   <figure class="main-page-mbl-main__social-networks">
                     <a
                       href="https://vk.com/artbandclub"
-                      class="main-page-mbl-main__social-networks_tg"
+                      class="main-page-mbl-main__social-networks_vk"
                       ><img
-                        src="./assets/images/main/tg.png"
-                        alt="Иконка Телеграм"
+                      src="./assets/images/main/vk.png"
+                      alt="Иконка Вконтакте"
+                    
                     /></a>
                     <a
                       href="https://t.me/artbandclub"
-                      class="main-page-mbl-main__social-networks_vk"
+                      class="main-page-mbl-main__social-networks_tg"
                       ><img
-                        src="./assets/images/main/vk.png"
-                        alt="Иконка Вконтакте"
+                      src="./assets/images/main/tg.png"
+                      alt="Иконка Телеграм"
                     /></a>
                   </figure>
                 </div>
@@ -104,7 +105,7 @@
             <section class="main-page-mbl-section main-page-mbl-section_1">
               <h2 class="main-page-mbl-section__title">О нас</h2>
               <a href="./about.html">
-                <button class="button-more-mbl button">Подробнее</button>
+                <button class="button-more-mbl">Подробнее</button>
               </a>
             </section>
             <section class="main-page-mbl-section main-page-mbl-section_2">
@@ -282,21 +283,35 @@
 <!-- Секция предварительной записи Десктоп -->
       <section class="main__booking__dsk" id="entry"  >
         <div class="main__booking__dsk__container">
-          <a href=""><h2 class="main__booking__dsk__title">КАК ЗАПИСАТЬСЯ?</h2></a>
+          <h2 class="main__booking__dsk__title">КАК ЗАПИСАТЬСЯ?</h2>
             <p class="main__booking__dsk__text main__booking__dsk__maintext">Друзья, все занятия в нашей мастерской проходят <br>по предварительной записи!</br>
             Будем рады вашим звонкам и сообщениям.</p>
-            <div class="main__booking__dsk__media">
-              <div class="main__booking__dsk__item">
-                <img class="main__booking__dsk__img" src="./assets/icons/telephone.png" alt="Значок телефона">
-                <a class="main__booking__dsk__text main__booking__dsk__smalltext" href="tel:89831323908">+7 (983) 132-39-08</a>
+            <div class="main-booking">
+              <div class="main-booking__icon">
+                <img
+                  class="main-booking__img"
+                  src="./assets/icons/telephone.png"
+                  alt="Телефон"
+                />
+                <img
+                  class="main-booking__img main-booking__img_big"
+                  src="./assets/icons/Vkontact.png"
+                  alt="ВКонтакте"
+                />
+                <img
+                  class="main-booking__img"
+                  src="./assets/icons/Telegram.png"
+                  alt="Телеграм"
+                />
               </div>
-              <div class="main__booking__dsk__item">
-                <img class="main__booking__dsk__img" src="./assets/icons/Vkontact.png" alt="Значок Вконтакте">
-                <a class="main__booking__dsk__text main__booking__dsk__smalltext" href="vk.com/artbandclub">vk.com/artbandclub</a>
-              </div>
-              <div class="main__booking__dsk__item main__booking__dsk__item1">
-                <img class="main__booking__dsk__img" src="./assets/icons/Telegram.png" alt="Значок Телеграма">
-                <a class="main__booking__dsk__text main__booking__dsk__smalltext" href="t.me/artbandclub">t.me/artbandclub</a>
+              <div class="main-booking__text main-booking__link">
+                <p class="main-booking__number">+7 (983) 132-39-08</p>
+                <a class="main-booking__web" href="vk.com/artbandclub"
+                  >vk.com/artbandclub</a
+                >
+                <a class="main-booking__web" href="t.me/artbandclub"
+                  >t.me/artbandclub</a
+                >
               </div>
             </div>
           
@@ -333,12 +348,12 @@
             </div>
             <div class="main__shop__dsk__choosemk__item">
               <a href="./mk1.html">
-              <img src="./assets/images/main/item6.png">
+              <img src="./assets/images/main/shop1.png">
               </a>
             </div>
             <div class="main__shop__dsk__choosemk__item">
               <a href="./mk1.html">
-              <img src="./assets/images/main/item7.png">
+              <img src="./assets/images/main/shop2.png">
               </a>
             </div>
           </div>
@@ -347,6 +362,33 @@
     <section class="main__reviews__dsk">
       <div class="main__reviews__dsk__container">
           <h2 class="main__reviews__dsk__title" id="reviews" >ОТЗЫВЫ</h2>
+
+          <div class="main__reviews__dsk__gallery">
+              <div>
+                <img class="main__reviews__dsk__img" src="./assets/images/reviews/reviews1.jpeg">
+              </div>
+              <div>
+                <img class="main__reviews__dsk__img" src="./assets/images/reviews/reviews10.JPG">
+              </div>
+              <div>
+                <img class="main__reviews__dsk__img" src="./assets/images/reviews/reviews11.JPG">
+              </div>
+              <div>
+                <img class="main__reviews__dsk__img" src="./assets/images/reviews/reviews2.jpeg">
+              </div>
+              <div>
+                <img class="main__reviews__dsk__img" src="./assets/images/reviews/reviews3.jpeg">
+              </div>
+              <div>
+                <img class="main__reviews__dsk__img" src="./assets/images/reviews/reviews4.jpeg">
+              </div>
+              <div>
+                <img class="main__reviews__dsk__img" src="./assets/images/reviews/reviews7.jpeg">
+              </div>
+              <div>
+                <img class="main__reviews__dsk__img" src="./assets/images/reviews/reviews6.jpeg">
+              </div>
+          </div>
 
           <div class="main__reviews__dsk__carousel__container">
             <div class="main__reviews__dsk__carousel__row">
@@ -392,30 +434,46 @@
                 <h3 class="main-footer-dsk__contacts__subtitle"><b>Адрес:</b></h3>
                 <p class="main-footer-dsk__contacts__address">Московская область, г. Химки, 
                     мкр. Сходня, ул. Кирова 3с3, 2 этаж</p>
-                <div class="main-footer-dsk__media">
-                  <div class="main-footer-dsk__media__item">
-                    <img class="main-footer-dsk__media__img" src="./assets/images/main/TelephoneRealsize.png" alt="Значок телефона">
-                    <a class="main-footer-dsk__media__hypertext" href="tel:89831323908">+7 (983) 132-39-08</a>
-                  </div>
-                  <div class="main-footer-dsk__media__item">
-                    <img class="main-footer-dsk__media__img" src="./assets/images/main/VKrealsize.png" alt="Значок Вконтакте">
-                    <a class="main-footer-dsk__media__hypertext" href="vk.com/artbandclub">vk.com/artbandclub</a>
-                  </div>
-                  <div class="main-footer-dsk__media__item">
-                  <img class="main-footer-dsk__media__img" src="./assets/images/main/TelegramRealsize.png" alt="Значок Телеграма">
-                  <a class="main-footer-dsk__media__hypertext" href="t.me/artbandclub">t.me/artbandclub</a>
-                </div>
-              </div>
+
+
+                    <div class="main-footer-social">
+                      <div class="main-footer-social__icon">
+                        <img
+                          class="main-footer-social__img"
+                          src="./assets/icons/telephone.png"
+                          alt="Телефон"
+                        />
+                        <img
+                          class="main-footer-social__img main-footer-social__img_big"
+                          src="./assets/icons/Vkontact.png"
+                          alt="ВКонтакте"
+                        />
+                        <img
+                          class="main-footer-social__img"
+                          src="./assets/icons/Telegram.png"
+                          alt="Телеграм"
+                        />
+                      </div>
+                      <div class="main-footer-social__text main-footer-social__link">
+                        <p class="main-footer-social__number">+7 (983) 132-39-08</p>
+                        <a class="main-footer-social__web" href="vk.com/artbandclub"
+                          >vk.com/artbandclub</a
+                        >
+                        <a class="main-footer-social__web" href="t.me/artbandclub"
+                          >t.me/artbandclub</a
+                        >
+                      </div>
+                    </div>
 
                 <h3 class="main-footer-dsk__hours"><b>Время работы:</b></h3>
-                <p class="main-footer-dsk__hours__text">Пн. - Пт.  11.00 - 19.00<br>
-                    Сб. - Вс.  11.00 - 18.00</p>
+                <p class="main-footer-dsk__hours__text">Пн. - Пт.  11:00 - 19:00<br>
+                    Сб. - Вс.  11:00 - 18:00</p>
             </div>
           </div>
         </div>
-        <div class="main-footer-dsk__down">
-          <a><img class="main-footer-dsk__down__logo" src="./assets/images/main/art_band_logo.png" alt="Логотип сайта творческой мастерской Art Band"></a>
-          <p class="copyright">© 2023 Все права защищены</p>
+        <div class="main-footer-dsk__copy">
+          <p class="main-footer-dsk__brand">Art Band</p>
+          <p class="main-footer-dsk__text">&copy; 2023</p>
         </div>
       </div>
       <!--КОНЕЦ ДЕСКТОПА-ФУТЕР ГЛАВНОЙ СТРАНИЦЫ-->
