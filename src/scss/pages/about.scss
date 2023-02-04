@@ -3,84 +3,99 @@
 .about__overflow {
   overflow-x: hidden;
 }
-@media screen and (min-width: 769px) {
-   
-}
-.about__wrapper{
-width: 100vw;
-height: auto;
-background-color: $color-light;
-}
-.about__content {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-  }
 
-.about__title,
-.about__whychooseus{
-width: 100vw;
-height: 80px;
-padding-top: 25px;
-text-align: center;
-&__h2  
- {
-    color: $color-text;
-    font-family:$title-font;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+@media (min-width: $tablet) and (max-width: $large-desktop){
+  .about__wrapper{
+    width: 100vw;
+    height: auto;
+    background-color: $color-light;
+    }
+    .about__content {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        column-gap: 5vw;
+      }
     
-   } 
-}
-.about__text{
-    width: 50vw;
-    height: auto;
-    padding-right: 40px;
-    padding-top: 10px;
-    text-align: justify;
-&__paragraph {
-    font-family: $default-font;
-    font-size: 18px;
-    color: $color-text;
-    margin-left: 10px;
-    text-indent: 30px;
-    line-height: 2.2;
-}
-}
-.about__carousel{
-    width: 40vw;
-    height: auto;
-    min-height: 500px;
-    padding-left: 30px;
-    padding-top: 20px;
+    .about__title {
+      width: 72%;
+      text-align: center;
+      &__h2  
+       {
+          color: $color-text;
+          font-family:$title-font;
+          font-weight: bold;
+          font-size: calc(( 100vw + 3129px ) / 216.5);
+          text-transform: uppercase;
+          text-align: center;
+          padding-top: 7vh;
+          padding-bottom: 4vh;
+          
+         } 
+    }
+    .about__whychooseus {
+    width: 100vw;
+    text-align: center;
+    &__h2  
+     {
+        color: $color-text;
+        font-family:$title-font;
+        font-weight: bold;
+        font-size: calc(( 100vw + 3129px ) / 216.5);
+        text-transform: uppercase;
+        text-align: center;
+        padding-top: 7vh;
+        padding-bottom: 4vh;
+        
+       } 
+    }
+    .about__text{
+        width: 50vw;
+        height: auto;
+
+        text-align: justify;
+    &__paragraph {
+        font-family: $default-font;
+        font-size: calc(( 100vw + 2696px ) / 216.5);
+        color: $color-text;
+        margin-left: 10px;
+        line-height: 1.2em;
+        margin-top: 1vh;
+    }
+    }
+    .about__carousel{
+        width: 25vw;
+        height: auto;
+        padding-top: 1vh;
+    }
+    
+    .about__advantages {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 10vw 6vw 10vw;
+    
+    &__cards {
+       text-align: center;
+       padding-top: 20px;
+       
+       p {
+        font-family: $default-font;
+        color: $color-text;
+        font-size: 1.2em;
+        margin-top: 3vh;
+       }
+    }
+    }
 }
 
-.about__advantages {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 6vw 10vw 6vw 10vw;
 
-&__cards {
-   text-align: center;
-   padding-top: 20px;
-   
-   p {
-    font-family: $default-font;
-    color: $color-text;
-    font-size: 1.2em;
-    margin-top: 3vh;
-   }
-}
-}
-
-@media screen and (max-width: 767px) {
+@media screen and (max-width: $tablet) {
 
   .about__wrapper {
     margin-top: 85px;
+    height: auto;
+    background-color: $color-light;
   }
 
   .about__carousel {
@@ -89,10 +104,18 @@ text-align: center;
     padding-right: 25px;
   }
   .about__text {
-    width: 100vw;
-    padding-left: 25px; 
-    padding-right: 25px;
+display: flex;
+flex-direction: column;
+width: 100%;
+padding: 0 7vw;
+
+
     text-align: justify;
+    color: $color-text;
+        font-family:$default-font;
+        font-size: calc(( 100vw + 409px ) / 49);
+        font-weight: 300;
+        color: $color-text;
   
   }
   .about__content {
@@ -102,68 +125,44 @@ text-align: center;
   
   .about__title,
   .about__whychooseus {
-    height: 50px;
-    margin-bottom: 20px;
+
     &__h2  {
-    font-size: calc((100vw - 19px)/ 17);
+    font-size: calc(( 100vw + 278.3px ) / 32.6);
     font-weight: 600;
     color: $color-text;
+        font-family:$title-font;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 3vh 0 1vh 0;
+
+
   }
-  .about__text
-  &__paragraph{
-      font-weight: 300;
-      font-size: calc((100vw + 87.86px)/ 26.714);
-      color: $color-text;
-      text-align: justify;
-  }}
+  }
+
   .about__advantages {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 3vh;
   
   &__cards {
-    width: 35%;
-    padding-top: 20px;
-    img {
-        width: 60%;
-        height: 60%;
-    }
-    &__imgtitle{
-        font-size: 14px;
-       }
-  }}
-}
-@media screen and (min-width: 1600px){
-  .about__carousel {
-    width: 25vw;
-    align-self: center;
-  }
-  .about__text {
-    width: 65vw;
-    padding: 8vh 4vw 4vh 4vw;
-    text-align: justify;
-    &__paragraph{
-      font-size: 24px;
-      text-align: justify;
-      
-  }
-}}
-@media (min-width: 769px) and (max-width: 1180px){
-  .about__carousel {
-    width: 60vw;
-    align-self: center;
-    padding-left: 10vw; 
-    padding-right: 10vw;
-  }
-  .about__text {
-    width: 100vw;
-    padding-left: 10vw; 
-    padding-right: 10vw;
-  text-align: justify;
-  }
-  .about__content {
     display: flex;
     flex-direction: column;
-  }
-}
+    align-items: center;
+    width: 100%;
+    padding-top: 20px;
+    
+    img {
+        width: 45%;
 
+    }  
+  }
+
+  p {
+    font-family: $default-font;
+    color: $color-text;
+    font-size: calc(( 100vw + 17px ) / 28);
+    margin-top: 3vh;
+    text-align: center;
+   }}
+}
