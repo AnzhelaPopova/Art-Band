@@ -105,6 +105,7 @@
         display: flex;
         justify-content: center;
 
+
         &__block {
             display: flex;
             flex-direction: column;
@@ -115,6 +116,10 @@
             width: 60vw;
             margin-bottom: 5.5vw;
             padding: 3% 0 3% 0;
+
+            &_soap, &_candle {
+                margin-bottom: 0;
+            }
 
         }
 
@@ -171,6 +176,10 @@
         &__img {
             width: 70%;
             margin: 3% 0 0 15%;
+        }
+
+        &__soap {
+            
         }
     }
 }
