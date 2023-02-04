@@ -401,9 +401,9 @@ p, a {
   font-family: "Nunito", sans-serif;
   color: #FBFFE9;
   text-decoration: none;
-  font-size: calc((100vw + 173.8px) / 45);
-  width: calc((100vw + 480.27px) / 7.1);
-  height: calc((100vw + 409px) / 26.1);
+  font-size: calc((100vw + 1065.8px) / 101.8);
+  width: calc((100vw + 556.4px) / 10.1);
+  height: calc((100vw + 617.6px) / 34.64);
   border-radius: 15px;
   box-shadow: 4px 4px 4px 0 rgba(63, 84, 0, 0.7);
   display: flex;
@@ -613,7 +613,7 @@ p, a {
   }
   .footer__list_hours {
     background: url(../8bee01452e99b6d5dfba.png) left no-repeat;
-    padding: 10px 0px 10px 50px;
+    padding: 10px 0px 25px 50px;
     font-size: 18px;
     line-height: 30px;
     font-family: "Inter", sans-serif;
@@ -622,7 +622,7 @@ p, a {
   }
   .footer__list_address {
     background: url(../d5e13cb8e0082552fd83.png) left no-repeat;
-    padding: 10px 0px 10px 50px;
+    padding: 20px 0px 25px 50px;
     font-size: 18px;
     line-height: 30px;
     font-family: "Inter", sans-serif;
@@ -631,7 +631,7 @@ p, a {
   }
   .footer__list_phone {
     background: url(../9c369224e745594cca50.png) left no-repeat;
-    padding: 10px 0px 10px 50px;
+    padding: 30px 0px 10px 50px;
     font-size: 18px;
     line-height: 30px;
     font-family: "Inter", sans-serif;
@@ -917,6 +917,9 @@ p, a {
     margin-bottom: 5.5vw;
     padding: 3% 0 3% 0;
   }
+  .dsk-diary__block_soap, .dsk-diary__block_candle {
+    margin-bottom: 0;
+  }
   .dsk-diary__title {
     font-family: "Nunito", sans-serif;
     font-weight: 900;
@@ -1005,14 +1008,15 @@ p, a {
   height: auto;
   padding-right: 40px;
   padding-top: 10px;
+  text-align: justify;
 }
 .about__text__paragraph {
   font-family: "Nunito", sans-serif;
-  font-size: calc((100vw + 68.47px) / 69.789);
+  font-size: 18px;
   color: rgba(0, 0, 0, 0.7);
   margin-left: 10px;
   text-indent: 30px;
-  line-height: 1.4;
+  line-height: 2.2;
 }
 
 .about__carousel {
@@ -1033,9 +1037,11 @@ p, a {
   text-align: center;
   padding-top: 20px;
 }
-.about__advantages__imgtitle {
+.about__advantages__cards p {
   font-family: "Nunito", sans-serif;
-  font-size: 16px;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 1.2em;
+  margin-top: 3vh;
 }
 
 @media screen and (max-width: 767px) {
@@ -1051,13 +1057,7 @@ p, a {
     width: 100vw;
     padding-left: 25px;
     padding-right: 25px;
-  }
-  .about__text__paragraph {
-    font-weight: 300;
-    font-size: calc((100vw + 87.86px) / 26.714);
-    color: rgba(0, 0, 0, 0.7);
-    line-height: 1.2;
-    margin-top: 10px;
+    text-align: justify;
   }
   .about__content {
     display: flex;
@@ -1073,6 +1073,13 @@ p, a {
     font-size: calc((100vw - 19px) / 17);
     font-weight: 600;
     color: rgba(0, 0, 0, 0.7);
+  }
+  .about__text .about__title__paragraph,
+  .about__text .about__whychooseus__paragraph {
+    font-weight: 300;
+    font-size: calc((100vw + 87.86px) / 26.714);
+    color: rgba(0, 0, 0, 0.7);
+    text-align: justify;
   }
   .about__advantages {
     display: flex;
@@ -1098,11 +1105,12 @@ p, a {
   }
   .about__text {
     width: 65vw;
-    padding-left: 10vw;
-    padding-right: 10vw;
+    padding: 8vh 4vw 4vh 4vw;
+    text-align: justify;
   }
   .about__text__paragraph {
-    font-size: 28px;
+    font-size: 24px;
+    text-align: justify;
   }
 }
 @media (min-width: 769px) and (max-width: 1180px) {
@@ -1116,6 +1124,7 @@ p, a {
     width: 100vw;
     padding-left: 10vw;
     padding-right: 10vw;
+    text-align: justify;
   }
   .about__content {
     display: flex;
@@ -1663,7 +1672,6 @@ p, a {
 }
 .soap {
   display: flex;
-  margin-top: 85px;
   flex-direction: column;
   align-items: center;
 }
@@ -1829,7 +1837,7 @@ p, a {
     width: 89.44vw;
     padding-left: 15px;
     padding-right: 15px;
-    margin-top: 5.63vw;
+    margin-top: 1.5vw;
   }
   .soap__block {
     width: 39.44vw;
@@ -1983,6 +1991,9 @@ p, a {
   margin-top: 85px;
   flex-direction: column;
   align-items: center;
+}
+.candle__upper {
+  margin-top: 0;
 }
 .candle__img3 {
   width: 86.77vw;
@@ -2143,10 +2154,10 @@ p, a {
   .candle {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-top: 2vh;
     width: 89.44vw;
     padding-left: 15px;
     padding-right: 15px;
-    margin-top: 5.63vw;
   }
   .candle__block {
     width: 39.44vw;
@@ -2210,7 +2221,7 @@ p, a {
   .candle-content2 {
     display: flex;
     justify-content: center;
-    margin: 0 5vw 5% 5vw;
+    margin: 0 5vw 2% 5vw;
     gap: 10px;
   }
   .candle-content2__block1 {

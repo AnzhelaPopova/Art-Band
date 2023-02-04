@@ -26,6 +26,10 @@
         flex-direction: column;
         align-items: center;
 
+        &__upper {
+            margin-top: 0;
+        }
+
         &__img3 {
             width: 86.77vw;
             height: 86.77vw;
@@ -84,6 +88,8 @@
         &__img1 {
             display: none;
         }
+
+
     }
 
     .candle-mobile {
@@ -221,12 +227,10 @@
     .candle {
         display: grid;
         grid-template-columns: 1fr 1fr;
-
+        margin-top: 2vh;
         width: 89.44vw;
         padding-left: 15px;
         padding-right: 15px;
-
-        margin-top: 5.63vw;
 
         &__block {
             width: 39.44vw;
@@ -310,7 +314,7 @@
     .candle-content2 {
       display: flex;
       justify-content: center;
-      margin: 0 5vw 5% 5vw;
+      margin: 0 5vw 2% 5vw;
       gap: 10px;
   
       &__block1 {
