@@ -23,6 +23,11 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-top: 8vh;
+
+        &__height {
+            padding-top: 0;
+        }
 
         &__img3 {
             width: 86.77vw;

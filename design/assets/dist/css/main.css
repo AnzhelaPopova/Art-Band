@@ -1089,7 +1089,7 @@ p, a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 3vh;
+    padding-bottom: 3vh;
   }
   .about__advantages__cards {
     display: flex;
@@ -1652,6 +1652,10 @@ p, a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 8vh;
+}
+.soap__height {
+  padding-top: 0;
 }
 .soap__img3 {
   width: 86.77vw;
@@ -2995,8 +2999,8 @@ p, a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 10vh;
-  margin-top: 10vh;
+  margin-bottom: 3vh;
+  margin-top: 3vh;
 }
 
 .reviews-title {
@@ -3009,8 +3013,7 @@ p, a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 7vh;
-  padding-bottom: 7vh;
+  padding-top: 3vh;
 }
 
 /*slider*/
