@@ -82,7 +82,7 @@
        p {
         font-family: $default-font;
         color: $color-text;
-        font-size: 1.2em;
+        font-size: calc(( 100vw + 2696px ) / 288.6);
         margin-top: 3vh;
        }
     }
