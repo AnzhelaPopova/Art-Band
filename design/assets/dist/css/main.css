@@ -470,11 +470,11 @@ p, a {
   .main-footer-mbl__text {
     font-family: "Nunito", sans-serif;
     font-weight: 400;
-    font-size: 1.2em;
+    font-size: calc((100vw + 182.66px) / 33.9);
     text-align: center;
     color: rgba(0, 0, 0, 0.7);
     margin-bottom: 8%;
-    line-height: 30px;
+    line-height: calc((100vw + 996.667px) / 45.22);
   }
   .main-footer-mbl__social-block {
     display: flex;
@@ -1227,15 +1227,15 @@ p, a {
     text-decoration: underline;
     color: rgba(0, 0, 0, 0.7);
   }
-  .main__booking__dsk {
+  .main-booking-dsk {
     padding: 3% 15%;
     background-color: #FBFFE9;
   }
-  .main__booking__dsk__container {
+  .main-booking-dsk__container {
     border-radius: 45px;
     background-color: rgba(160, 180, 91, 0.6);
   }
-  .main__booking__dsk__title {
+  .main-booking-dsk__title {
     padding-top: 7vh;
     font-family: "Inter", sans-serif;
     font-weight: 500;
@@ -1244,20 +1244,20 @@ p, a {
     text-decoration: none;
     font-size: calc((100vw + 3042.4px) / 173.2);
   }
-  .main__booking__dsk__text {
+  .main-booking-dsk__text {
     font-family: "Nunito", sans-serif;
     text-align: center;
     color: rgba(0, 0, 0, 0.7);
-    font-size: 1.2em;
+    font-size: calc((100vw + 1763.38px) / 133.23);
   }
-  .main__booking__dsk__maintext {
-    padding: 3vh 0;
-    font-size: calc((100vw + 7892px) / 577.3);
+  .main-booking-dsk__maintext {
+    padding: 3vh 5vw;
+    font-size: calc((100vw + 1763.38px) / 133.23);
     font-weight: 500;
     line-height: 146%;
     letter-spacing: 0.05em;
   }
-  .main__booking__dsk__smalltext {
+  .main-booking-dsk__smalltext {
     margin-bottom: 0;
     text-align: left;
   }
@@ -1297,11 +1297,14 @@ p, a {
     font-weight: 300;
     margin-bottom: 0;
   }
-  .main__shop__dsk {
+  .main-booking__contact {
+    font-size: calc((100vw + 1763.38px) / 133.23);
+  }
+  .main-shop-dsk {
     padding: 3% 15%;
     background-color: #FBFFE9;
   }
-  .main__shop__dsk__title {
+  .main-shop-dsk__title {
     padding: 3vh 0;
     font-family: "Inter", sans-serif;
     font-weight: 500;
@@ -1309,13 +1312,13 @@ p, a {
     color: rgba(0, 0, 0, 0.7);
     text-transform: uppercase;
   }
-  .main__shop__dsk__choosemk {
+  .main-shop-dsk__choosemk {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 1vw;
   }
-  .main__shop__dsk__choosemk__item {
+  .main-shop-dsk__choosemk_item {
     padding-bottom: 10px;
   }
   .main__reviews__dsk {
@@ -1346,6 +1349,9 @@ p, a {
     height: 100%;
     border-radius: 5%;
   }
+  .main__reviews__dsk__carousel__container {
+    font-size: calc((100vw + 2696px) / 173.2);
+  }
   .main-footer-dsk {
     background-color: rgba(160, 180, 91, 0.6);
   }
@@ -1373,10 +1379,10 @@ p, a {
   .main-footer-dsk__contacts {
     font-size: 20px;
   }
-  .main-footer-dsk__contacts__subtitle {
+  .main-footer-dsk__contacts_subtitle {
     color: rgba(0, 0, 0, 0.7);
   }
-  .main-footer-dsk__contacts__address {
+  .main-footer-dsk__contacts_address {
     display: block;
     margin-bottom: 2vh;
     color: rgba(0, 0, 0, 0.7);
@@ -1464,9 +1470,6 @@ p, a {
   .main-page-mbl-main {
     display: flex;
     flex-direction: column;
-    /*background-image: url(../../design/assets/images/main/main-backgr-mbl.png);
-    background-repeat: no-repeat;
-    background-size: contain;*/
   }
   .main-page-mbl-main__name {
     display: flex;
@@ -1534,7 +1537,7 @@ p, a {
   .main-page-mbl-main__social-networks_vk img {
     height: 9.74vw;
   }
-  .main__booking__dsk, .main__shop__dsk, .main-footer-dsk, .main__reviews__dsk, .mk-mbl {
+  .main-booking-dsk, .main-shop-dsk, .main-footer-dsk, .main__reviews__dsk, .mk-mbl {
     display: none;
   }
 }
@@ -1652,7 +1655,7 @@ p, a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 8vh;
+  margin-top: 85px;
 }
 .soap__height {
   padding-top: 0;

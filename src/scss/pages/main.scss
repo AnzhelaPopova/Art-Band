@@ -138,7 +138,7 @@
             }
         }
 
-    .main__booking__dsk {
+    .main-booking-dsk {
         padding: 3% 15%;
         background-color: $color-light;
 
@@ -162,12 +162,12 @@
             font-family: $default-font;
             text-align: center;
             color: $color-text;
-            font-size: 1.2em;
+            font-size: calc((100vw + 1763.38px)/ 133.23);
         }
 
         &__maintext {
-            padding: 3vh 0;
-            font-size: calc(( 100vw + 7892px ) / 577.3);
+            padding: 3vh 5vw;
+            font-size: calc((100vw + 1763.38px)/ 133.23);
             font-weight: 500;
             line-height: 146%;
             letter-spacing: 0.05em;
@@ -222,10 +222,14 @@
             font-weight: 300;
             margin-bottom: 0;
         }
+
+        &__contact {
+            font-size: calc((100vw + 1763.38px)/ 133.23);
+        }
     }
     
 
-    .main__shop__dsk {
+    .main-shop-dsk {
         padding: 3% 15%;
         background-color: $color-light;
 
@@ -243,11 +247,13 @@
             justify-content: center;
             flex-wrap: wrap;
             gap: 1vw;
+
+            &_item {
+                padding-bottom: 10px;
+            }
         }
 
-        &__choosemk__item {
-            padding-bottom: 10px;
-        }
+       
     }
 
     .main__reviews__dsk {
@@ -279,6 +285,11 @@
             width: 100%;
             height: 100%; 
             border-radius: 5%;
+        }
+       
+
+        &__carousel__container {
+            font-size: calc(( 100vw + 2696px ) / 173.2);
         }
     }
 
@@ -313,16 +324,16 @@
 
         &__contacts {
             font-size: 20px;
-        }
 
-        &__contacts__subtitle {
-            color: $color-text;
-        }
+            &_subtitle {
+                color: $color-text;
+            }
 
-        &__contacts__address {
-            display: block;
-            margin-bottom: 2vh;
-            color: $color-text;
+            &_address {
+                display: block;
+                margin-bottom: 2vh;
+                color: $color-text;
+            }
         }
 
         &__hours {
@@ -428,12 +439,6 @@
         display: flex;
         flex-direction: column;
 
-
-
-        /*background-image: url(../../design/assets/images/main/main-backgr-mbl.png);
-        background-repeat: no-repeat;
-        background-size: contain;*/
-
         &__name {
             display: flex;
             flex-direction: column;
@@ -516,7 +521,7 @@
             }
             }
         }
-        .main__booking__dsk, .main__shop__dsk, .main-footer-dsk, .main__reviews__dsk, .mk-mbl {
+        .main-booking-dsk, .main-shop-dsk, .main-footer-dsk, .main__reviews__dsk, .mk-mbl {
             display: none;
         }
     }
